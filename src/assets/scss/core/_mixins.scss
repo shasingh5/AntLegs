@@ -1,18 +1,18 @@
-@mixin robotoRegular {
-    font-family: $roboto;
-    font-weight: $robotoRegular;
+@mixin poppinsRegular {
+    font-family: $poppins;
+    font-weight: $poppinsRegular;
 }
-@mixin robotoMedium {
-    font-family: $roboto;
-    font-weight: $robotoMedium;
+@mixin poppinsMedium {
+    font-family: $poppins;
+    font-weight: $poppinsMedium;
 }
-@mixin robotoBold {
-    font-family: $roboto;
-    font-weight: $robotoBold;
+@mixin poppinsBold {
+    font-family: $poppins;
+    font-weight: $poppinsBold;
 }
-@mixin robotoBlack{
-    font-family: $roboto;
-    font-weight: $robotoBlack; 
+@mixin poppinsBlack{
+    font-family: $poppins;
+    font-weight: $poppinsBlack; 
 }
 @mixin transitionAll{
     transition: all .3s;

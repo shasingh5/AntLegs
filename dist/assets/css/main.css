@@ -10,8 +10,6 @@ $lg: 1024px;
 $xl: 1440px;
 $xxl: 1920px;
 */
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 html, body {
   margin: 0;
   padding: 0;
@@ -39,7 +37,7 @@ figure {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-top: 0;
   margin-bottom: 24px;
 }
@@ -78,9 +76,9 @@ a:focus, a:hover {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
   color: #4d4e53;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -280,8 +278,6 @@ a[data-toggle="collapse"] {
 }
 
 .breadcrumbWrapper ol.breadcrumb li {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 12px;
   color: #fe8e17;
   text-transform: uppercase;
