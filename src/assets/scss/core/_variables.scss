@@ -1,0 +1,33 @@
+// Paths
+$font-path: '/fonts';
+$icomoon-font-path: '/fonts/icomoon/fonts';
+$images-path: '../img';
+
+$white : #ffffff;
+$black: #000000;
+$green : #008000;
+$red : #fe8e17;
+$redBlood: #f12a00;
+$blue: #081a33;
+$blueLight: #dae1f2;
+$blueLight1: #f0f4ff;
+
+
+//Breakpoints
+//$xs : 767px;
+$xs : 815px; // was 769px but for iPhoneX Landscape it made 815px
+$md: 816px; // was 770px but for iPhoneX Landscape it made 815px
+$lg: 1024px; 
+$xsSmall: 360px;
+/*
+$siteMaxWidth: 640px; 
+$xs: 0;
+$xsm: 374px;
+$sm: 576px;
+$smd: 767px;
+$md: 768px;
+$lmd: 992px;
+$lg: 1024px;
+$xl: 1440px;
+$xxl: 1920px;
+*/

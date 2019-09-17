@@ -1,0 +1,45 @@
+@mixin robotoRegular {
+    font-family: $roboto;
+    font-weight: $robotoRegular;
+}
+@mixin robotoMedium {
+    font-family: $roboto;
+    font-weight: $robotoMedium;
+}
+@mixin robotoBold {
+    font-family: $roboto;
+    font-weight: $robotoBold;
+}
+@mixin robotoBlack{
+    font-family: $roboto;
+    font-weight: $robotoBlack; 
+}
+@mixin transitionAll{
+    transition: all .3s;
+}
+@mixin boxShadowFull {
+    box-shadow: 0px 0px 24px -4px rgba(0, 0, 0, 0.50);
+}
+@mixin scaleImg{
+    transform: scale(1.05);
+}
+
+@mixin respond-to($val, $val2: none) {
+    @if $val2==none {
+        @media (min-width: $val) {
+            @content;
+        }
+    }
+
+    @else if $val2==max {
+        @media (max-width: $val) {
+            @content;
+        }
+    }
+
+    @else {
+        @media (min-width: $val) and (max-width: $val2) {
+            @content;
+        } 
+    }
+}

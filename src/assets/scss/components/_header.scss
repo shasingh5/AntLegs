@@ -1,0 +1,211 @@
+.page-header {
+    background-image: url(https://media-prideofmaui.netdna-ssl.com/wp-content/uploads/2019/04/prideofmaui-header-xs2.jpg);
+    height: 827px;
+    @include respond-to($xs, max) {
+        height: 500px;				
+    }
+
+    p.label {
+        color: #fff;
+        margin-bottom: 5px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.571;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+    }
+}
+    
+@media screen and (min-width:501px) and (max-width:900px) {
+    .page-header {
+        background-image: url(https://media-prideofmaui.netdna-ssl.com/wp-content/uploads/2019/04/prideofmaui-header-small.jpg)
+    }
+}
+
+@media screen and (min-width:901px) and (max-width:1980px) {
+    .page-header {
+        background-image: url(https://media-prideofmaui.netdna-ssl.com/wp-content/uploads/2018/09/prideofmaui-header.jpg)
+    }
+}
+
+@media screen and (min-width:1981px) {
+    .page-header {
+        background-image: url(https://media-prideofmaui.netdna-ssl.com/wp-content/uploads/2018/09/prideofmaui-header-xl.jpg)
+    }
+}
+
+.caption-wrapper {
+    position: relative;
+    left: 0;
+    top: 65%;
+    margin: auto;        
+    max-width: 1170px;
+    width: 100%;
+    @include respond-to($xs, max) {
+        top: 32%;					
+    }
+
+    .caption {
+        @include respond-to($xs, max) {
+            padding: 15px;
+        }
+    }
+
+    .page-title {
+        font-size: 72px;
+        font-weight: 300;
+        line-height: 1.1;
+        margin-bottom: 1rem;
+        margin-top: 0;
+        margin-left: -3px;
+        text-align: left;
+        text-shadow: none;
+        text-transform: none;
+        color: $white;
+        @include respond-to($xs, max) {
+            font-size: 50px;					
+        }
+    }
+
+    .page-description {
+        color: #fff;
+        font-size: 22px;
+        line-height: 1.5;
+        font-weight: 300;
+        margin-bottom: 0;
+        margin-top: -12px;
+        max-width: 580px;
+        margin-top: 20px;
+    }
+}
+
+.bookBox {
+    border: none;
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    top: -75px;
+    box-shadow: 0 0 7px 5px rgba(0, 0, 0, .15);    
+    z-index: 9;
+    background: #fff;
+
+    @include respond-to($xs, max) {
+        top: -80px;
+        margin: 0 15px;					
+    }
+
+    .where, .tabletLine2 {
+        padding: 18px 30px;
+        background: #fff;
+        transition: background .2s;
+        @include respond-to($xs, max) {
+            padding: 18px 10px;				
+        }
+    }
+
+    .checkIn {
+        padding: 18px 10px;
+        background: #fff;
+        transition: background .2s;
+
+        input {
+            width: 100%;
+        }
+    }
+
+    .date-wrap {
+        position: relative;
+        margin-top: 26px;
+        .fa {
+            position: absolute;
+            top: 6px;
+            right: 7px;
+        }
+    }
+
+    .bookNow {
+        @include respond-to($xs, max) {
+            padding: 30px 10px;	
+        }   
+    }
+
+    
+
+    .label {
+        color: #a4a4a4;
+        font-weight: 600;
+        letter-spacing: .1em;
+        margin-bottom: 12px;
+        text-transform: uppercase;
+    }
+
+    .label.small {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .selectMaskNew {
+        width: 100%;
+        height: 30px;
+        position: relative;
+        cursor: pointer;        
+        margin-top: 26px;
+        color: $black;
+        >i {
+            color: #383330;
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            font-size: 16px;
+            opacity: 0.95,;
+        }
+        >select {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            -webkit-tap-highlight-color: transparent!important;
+            cursor: pointer!important;
+            padding: 4px 0;
+            outline: 0;
+            width: 100%;
+            height: 100%;
+            line-height: 100px;         
+        }       
+    }
+
+    .tabletLine2 {
+        .btn {
+            padding: 7px 10px;
+            min-height: auto;
+            min-width: auto;
+        }
+        .input-group {
+            margin-top: 20px;
+        }
+        
+    }
+
+    .book {
+        width: 100%;
+        padding: 49px 20px;
+        margin-left: auto;
+        margin-right: 0;        
+        font-size: 14px;
+        letter-spacing: .1em;
+        position: relative;
+        background-image: linear-gradient(to right, #ff9627 0, #fe630d 51%, #ff9627 100%);
+        transition: .5s;
+        background-size: 200% auto;
+        border-radius: 3px;
+        min-height: auto;
+        color: #fff;
+        &:hover, &:focus {
+            background-position: right center;
+        }
+
+        @include respond-to($xs, max) {
+            padding: 20px;
+        }  
+    }
+}
