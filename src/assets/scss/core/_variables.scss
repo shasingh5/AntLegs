@@ -5,20 +5,25 @@ $images-path: '../img';
 
 $white : #ffffff;
 $black: #000000;
-$green : #008000;
-$red : #fe8e17;
+$halfBlack: #333333;
+$green: #1f9f0e;
+$red: #bc4545;
 $redBlood: #f12a00;
-$blue: #081a33;
+$blue: #316ea7;
 $blueLight: #dae1f2;
 $blueLight1: #f0f4ff;
 
 
 //Breakpoints
 //$xs : 767px;
-$xs : 815px; // was 769px but for iPhoneX Landscape it made 815px
-$md: 816px; // was 770px but for iPhoneX Landscape it made 815px
-$lg: 1024px; 
 $xsSmall: 360px;
+$xxs: 400px;
+$xs : 736; // was 769px but for iPhoneX Landscape it made 815px
+$sm: 768px;
+$md: 1024px; // was 770px but for iPhoneX Landscape it made 815px
+$lg: 1280px; 
+$xl: 1366px;
+
 /*
 $siteMaxWidth: 640px; 
 $xs: 0;

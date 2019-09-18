@@ -1,0 +1,9 @@
+.employer-logo {
+  @include aspect-ratio(100px, 35px);
+}
+
+.ant-card {
+  .card-title {
+    font-size: 12px;
+  }
+}
