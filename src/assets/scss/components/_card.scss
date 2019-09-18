@@ -3,7 +3,33 @@
 }
 
 .ant-card {
+  margin-bottom: 20px;
   .card-title {
-    font-size: 12px;
+    @include multiline-text(12px, 1.4, 1);
+    margin-bottom: 0.25rem;    
+  }
+
+  .card-bold {
+    @include bold-font;
+  }
+
+  .web-link {
+    color: $blue;
+    margin-bottom: 15px;
+  }
+
+  .publish-date {
+    >span {
+      color: $grey;
+    }
   }
 }
+
+.card-pd {
+  padding: 20px;
+}
+
+.filter-col {
+  margin: 20px 0;
+}
+
