@@ -57,3 +57,7 @@ a {
 		text-decoration: none;
 	}
 }
+
+.btn {
+	@include prefixes(box-shadow, none);
+}

@@ -1,9 +1,15 @@
 .employer-logo {
-  @include aspect-ratio(100px, 35px);
+  margin-bottom: 10px;
 }
 
 .ant-card {
   margin-bottom: 20px;
+  padding: 20px;
+  @include prefixes(box-shadow, none);
+  @include transitionAll;
+  &:hover {
+    box-shadow: 0 3px 7px 0 rgba(0,0,0,.16), 0 3px 14px 0 rgba(0,0,0,.12);
+  }
   .card-title {
     @include multiline-text(12px, 1.4, 1);
     margin-bottom: 0.25rem;    
@@ -23,10 +29,6 @@
       color: $grey;
     }
   }
-}
-
-.card-pd {
-  padding: 20px;
 }
 
 .filter-col {

@@ -1,5 +1,5 @@
 body {
-    background: #f2f4f6;
+    background: $silver;
     color: $halfBlack;
     @include regular-font;
     font-size: 12px;
@@ -22,8 +22,8 @@ img {
     left: -250px;
     height: 100vh;
     z-index: 999;
-    background: #7386D5;
-    color: #fff;
+    background: $white;
+    color: $halfBlack;
     transition: all 0.3s;
     overflow-y: scroll;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
@@ -183,7 +183,7 @@ a[data-toggle="collapse"] {
 
 .skeleton-box {
     display: inline-block;
-    height: 1em;
+    height: 10px;
     position: relative;
     overflow: hidden;
     background-color: #DDDBDD;
@@ -254,4 +254,13 @@ a[data-toggle="collapse"] {
 
 .bs-none {
     @include prefixes(box-shadow, none);
+}
+
+.ant-container {
+    @include respond-to(1440px){
+        width: 1410px;
+    }
+    @include respond-to(1600px){
+        width: 1570px;
+    }
 }

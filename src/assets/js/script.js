@@ -1,4 +1,10 @@
 (function ($) {
+    // window.onload = function () {
+    //     $('.skeleton-box').fadeOut(500, function () {
+    //         $('.skeleton-box').remove();
+    //     });
+    // }
+
 
     $("#sidebar").mCustomScrollbar({
         theme: "minimal"
@@ -36,26 +42,24 @@
         });
     });
 
+    
+
 })(jQuery);
 
-//input highlight without required attr
-window.addEventListener('load', function () {
-    var inp = document.querySelectorAll('.group input');
-    var sel = document.querySelectorAll('.group select');
-    var textArea = document.querySelectorAll('.group textarea');
-    for (var i = 0; i < inp.length; i++) {
-        inp[i].addEventListener('change', function () {
-            this.setAttribute('value', this.value);
-        })
-    }
-    for (var i = 0; i < sel.length; i++) {
-        sel[i].addEventListener('change', function () {
-            this.setAttribute("value", this.value);
-        })
-    }
-    for (var i = 0; i < textArea.length; i++) {
-        textArea[i].addEventListener('change', function () {
-            this.setAttribute("value", this.value);
-        })
-    }
-})
+function renderCard() {
+    $('#skeletonBox .employer-logo').html('<img src="assets/images/sample-logo.jpg" alt="Microsoft">');
+    $('#skeletonBox .employer-action').html('<button type="button" class="btn btn-outline-ant waves-effect">Activated</button>');
+    $('#skeletonBox .card-title').text("Hexagone Technologies Private Li...");
+    $('#skeletonBox .emp-name').text("Information Technology");
+    $('#skeletonBox .emp-address').text("Indra Nagar, LBS Marg, Bangalore... ");
+    $('#skeletonBox .web-link').text("www.hexagone.com");
+    $('#skeletonBox .posting').text("Job Postings : 100  |  Hirings : 50 (50%)");
+    $('#skeletonBox .open').text("Open : 50 (50%)  |  On-Hold : 20 (50%)");
+    $('#skeletonBox .closed').text("Closed : 10 (50%)");
+    $('#skeletonBox .publish-date').html("<span>Activated on:</span> Aug 16, 2019");
+    $('#skeletonBox span.skeleton-box').remove();
+}
+
+setTimeout(function () {
+    renderCard();
+}, 5000);

@@ -79,6 +79,14 @@ a:focus, a:hover {
   text-decoration: none;
 }
 
+.btn {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
 body {
   background: #f2f4f6;
   color: #333333;
@@ -104,8 +112,8 @@ img {
   left: -250px;
   height: 100vh;
   z-index: 999;
-  background: #7386D5;
-  color: #fff;
+  background: #ffffff;
+  color: #333333;
   transition: all 0.3s;
   overflow-y: scroll;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
@@ -260,7 +268,7 @@ a[data-toggle="collapse"] {
 
 .skeleton-box {
   display: inline-block;
-  height: 1em;
+  height: 10px;
   position: relative;
   overflow: hidden;
   background-color: #DDDBDD;
@@ -331,6 +339,18 @@ a[data-toggle="collapse"] {
   -ms-box-shadow: none;
   -o-box-shadow: none;
   box-shadow: none;
+}
+
+@media (min-width: 1440px) {
+  .ant-container {
+    width: 1410px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .ant-container {
+    width: 1570px;
+  }
 }
 
 .breadcrumbWrapper {
@@ -408,26 +428,22 @@ a[data-toggle="collapse"] {
 }
 
 .employer-logo {
-  position: relative;
-}
-
-.employer-logo:before {
-  display: block;
-  content: " ";
-  width: 100%;
-  padding-top: 35%;
-}
-
-.employer-logo > .image-inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  margin-bottom: 10px;
 }
 
 .ant-card {
   margin-bottom: 20px;
+  padding: 20px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  transition: all .3s;
+}
+
+.ant-card:hover {
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.16), 0 3px 14px 0 rgba(0, 0, 0, 0.12);
 }
 
 .ant-card .card-title {
@@ -456,10 +472,6 @@ a[data-toggle="collapse"] {
 
 .ant-card .publish-date > span {
   color: #999999;
-}
-
-.card-pd {
-  padding: 20px;
 }
 
 .filter-col {

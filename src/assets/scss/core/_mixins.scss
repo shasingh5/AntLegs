@@ -18,7 +18,7 @@
     font-family: $poppins;
     font-weight: $poppinsBlack; 
 }
-@mixin transitionAll{
+@mixin transitionAll {
     transition: all .3s;
 }
 @mixin boxShadowFull {
