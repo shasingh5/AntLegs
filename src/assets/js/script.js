@@ -48,7 +48,7 @@
 
 function renderCard() {
     $('#skeletonBox .employer-logo').html('<img src="assets/images/sample-logo.jpg" alt="Microsoft">');
-    $('#skeletonBox .employer-action').html('<button type="button" class="btn btn-outline-ant waves-effect">Activated</button>');
+    $('#skeletonBox .employer-action').html('<button type="button" class="btn btn-new waves-effect">New</button>');
     $('#skeletonBox .card-title').text("Hexagone Technologies Private Li...");
     $('#skeletonBox .emp-name').text("Information Technology");
     $('#skeletonBox .emp-address').text("Indra Nagar, LBS Marg, Bangalore... ");

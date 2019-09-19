@@ -42,9 +42,8 @@
 		</a>
     </div>
 
-    <ul class="list-unstyled components">
-        <p>Dummy Heading</p>
-        <li class="active">
+    <ul class="list-unstyled components">        
+        <!-- <li class="active">
             <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
             <ul class="collapse list-unstyled" id="homeSubmenu">
                 <li>
@@ -57,29 +56,33 @@
                     <a href="#">Home 3</a>
                 </li>
             </ul>
+        </li> -->
+        <li class="active">
+            <a href="#" class="dashboard">Dashboard</a>
+        </li>        
+        <li>
+            <a href="#" class="employers">Employers</a>
         </li>
         <li>
-            <a href="#">About</a>
+            <a href="#" class="recruiters">Recruiters</a>
         </li>
         <li>
-            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-            <ul class="collapse list-unstyled" id="pageSubmenu">
-                <li>
-                    <a href="#">Page 1</a>
-                </li>
-                <li>
-                    <a href="#">Page 2</a>
-                </li>
-                <li>
-                    <a href="#">Page 3</a>
-                </li>
-            </ul>
+            <a href="#" class="jobs">Jobs</a>
         </li>
         <li>
-            <a href="#">Portfolio</a>
+            <a href="#" class="interviews">Interviews</a>
         </li>
         <li>
-            <a href="#">Contact</a>
+            <a href="#" class="payments">Payments</a>
+        </li>
+        <li>
+            <a href="#" class="rewards">Rewards & Points</a>
+        </li>
+        <li>
+            <a href="#" class="reports">Reports</a>
+        </li>
+        <li class="manage-admin">
+            <a href="#" class="manage">Manage Admin</a>
         </li>
     </ul>
 </nav>
@@ -138,7 +141,9 @@
 </nav>
       
         <div class="container-fluid ant-container">
-    <div class="filter-col"></div>
+    <div class="filter-col">
+        <a class="main-heading">Manage Employers</a>
+    </div>
     <div class="row">
         <div class="col-sm-6 col-md-4 col-lg-3">
             <!--Card-->
@@ -152,7 +157,7 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="employer-action text-right">
-                            <button type="button" class="btn btn-outline-ant waves-effect">Activated</button>
+                            <button type="button" class="btn btn-activated waves-effect">Activated</button>
                             <!-- <span class="skeleton-box sb-xl" style="width:100%; height:35px;"></span> -->
                         </div>
                     </div>
@@ -274,7 +279,7 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="employer-action text-right">
-                            <button type="button" class="btn btn-outline-ant waves-effect">Activated</button>
+                            <button type="button" class="btn btn-deactivated waves-effect">Deactivated</button>
                             <!-- <span class="skeleton-box sb-xl" style="width:100%; height:35px;"></span> -->
                         </div>
                     </div>
@@ -334,7 +339,7 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="employer-action text-right">
-                            <button type="button" class="btn btn-outline-ant waves-effect">Activated</button>
+                            <button type="button" class="btn btn-new waves-effect">New</button>
                             <!-- <span class="skeleton-box sb-xl" style="width:100%; height:35px;"></span> -->
                         </div>
                     </div>
@@ -394,7 +399,7 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="employer-action text-right">
-                            <button type="button" class="btn btn-outline-ant waves-effect">Activated</button>
+                            <button type="button" class="btn btn-activated waves-effect">Activated</button>
                             <!-- <span class="skeleton-box sb-xl" style="width:100%; height:35px;"></span> -->
                         </div>
                     </div>
@@ -454,7 +459,7 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="employer-action text-right">
-                            <button type="button" class="btn btn-outline-ant waves-effect">Activated</button>
+                            <button type="button" class="btn btn-deactivated waves-effect">Deactivated</button>
                             <!-- <span class="skeleton-box sb-xl" style="width:100%; height:35px;"></span> -->
                         </div>
                     </div>
@@ -514,7 +519,7 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="employer-action text-right">
-                            <button type="button" class="btn btn-outline-ant waves-effect">Activated</button>
+                            <button type="button" class="btn btn-new waves-effect">New</button>
                             <!-- <span class="skeleton-box sb-xl" style="width:100%; height:35px;"></span> -->
                         </div>
                     </div>
@@ -564,62 +569,64 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
             <!--Card-->
-            <div class="card ant-card" data-toggle="modal" data-target="#basicExampleModal">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="employer-logo">
-                            <img src="assets/images/sample-logo.jpg" alt="Microsoft">
-                            <!--span class="skeleton-box sb-xl" style="width:100%; height:35px;"></span-->
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="employer-action text-right">
-                            <button type="button" class="btn btn-outline-ant waves-effect">Activated</button>
-                            <!-- <span class="skeleton-box sb-xl" style="width:100%; height:35px;"></span> -->
-                        </div>
-                    </div>
-                </div>
-                <!--Card content-->
-                <div class="ant-content">
-                    <!--Title-->
-                    <h5 class="card-title card-bold">
-                        Hexagone Technologies Private Li...
-                        <!-- <span class="skeleton-box" style="width:100%;"></span> -->
-                    </h5>
-                    <h5 class="card-title">
-                        Information Technology
-                        <!-- <span class="skeleton-box" style="width:80%;"></span> -->
-                    </h5>
-                    <!--Text-->
-                    <p class="card-title address">
-                        Indra Nagar, LBS Marg, Bangalore...
-                        <!-- <span class="skeleton-box" style="width:90%;"></span> -->
-                    </p>
-                    <a href="#" class="card-title web-link">
-                        www.hexagone.com
-                        <!-- <span class="skeleton-box" style="width:60%;"></span> -->
-                    </a>
-                    <p class="font-xs">
-                        Job Postings : 100 | Hirings : 50 (50%)
-                        <!-- <span class="skeleton-box" style="width:60%;"></span> -->
-                    </p>
-                    <p class="font-xs">
-                        Open : 50 (50%) | On-Hold : 20 (50%)
-                        <!-- <span class="skeleton-box" style="width:60%;"></span> -->
-                    </p>
-                    <p class="font-xs">
-                        Closed : 10 (50%)
-                        <!-- <span class="skeleton-box" style="width:60%;"></span> -->
-                    </p>
-        
-                    <hr>
-                    <p class="publish-date">
-                        <span>Activated on:</span> Aug 16, 2019
-                        <!-- <span class="skeleton-box" style="width:30%;"></span> -->
-                    </p>
-                </div>
-        
-            </div>
+            <!-- skeleton card loading -->
+<div class="card ant-card" id="skeletonBox" data-toggle="modal" data-target="#basicExampleModal">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="employer-logo">
+        <!-- <img src="assets/images/employer-logo-1.jpg" alt="Microsoft"> -->
+        <span class="skeleton-box sb-xl" style="height:30px;"></span>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="employer-action text-right">
+        <!-- <button type="button" class="btn btn-outline-ant waves-effect">Activated</button> -->
+        <span class="skeleton-box sb-xl" style="height:30px;"></span>
+      </div>
+    </div>
+  </div>
+  <!--Card content-->
+  <div class="ant-content">
+    <!--Title-->
+    <h5 class="card-title card-bold">
+      <!-- Hexagone Technologies Private Li... -->
+      <span class="skeleton-box sb-xl"></span>
+    </h5>
+    <h5 class="card-title emp-name">
+      <!-- Information Technology -->
+      <span class="skeleton-box sb-lg"></span>
+    </h5>
+    <!--Text-->
+    <p class="card-title emp-address">
+      <!-- Indra Nagar, LBS Marg, Bangalore... -->
+      <span class="skeleton-box sb-xl"></span>
+    </p>
+    <a href="#" class="card-title web-link">
+      <!-- www.hexagone.com -->
+      <span class="skeleton-box sb-md"></span>
+    </a>
+    <p class="font-xs posting">
+      <!-- Job Postings : 100 | Hirings : 50 (50%) -->
+      <span class="skeleton-box sb-lg" style="height:6px;"></span>
+    </p>
+    <p class="font-xs open">
+      <!-- Open : 50 (50%) | On-Hold : 20 (50%) -->
+      <span class="skeleton-box sb-md" style="height:6px;"></span>
+    </p>
+    <p class="font-xs closed">
+      <!-- Closed : 10 (50%) -->
+      <span class="skeleton-box sb-sm" style="height:6px;"></span>
+    </p>
+
+    <hr>
+    <p class="publish-date">
+      <!-- <span>Activated on:</span> Aug 16, 2019 -->
+      <span class="skeleton-box sb-xs"></span>
+    </p>
+  </div>
+
+</div>
+<!--/.skeleton card loading-->
             <!--/.Card-->
         </div>
     </div>
