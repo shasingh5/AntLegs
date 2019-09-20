@@ -1,18 +1,26 @@
-@mixin regular-font {
-  font-family: $poppins;
-  font-weight: $poppinsRegular;
-}
 @mixin light-font {
     font-family: $poppins;
     font-weight: $poppinsLight;
+}
+@mixin regular-font {
+  font-family: $poppins;
+  font-weight: $poppinsRegular;
 }
 @mixin medium-font {
     font-family: $poppins;
     font-weight: $poppinsMedium;
 }
+@mixin semibold-font {
+  font-family: $poppins;
+  font-weight: $poppinsSemiBold;
+}
 @mixin bold-font {
     font-family: $poppins;
     font-weight: $poppinsBold;
+}
+@mixin extrabold-font {
+  font-family: $poppins;
+  font-weight: $poppinsExtraBold;
 }
 @mixin black-font {
     font-family: $poppins;

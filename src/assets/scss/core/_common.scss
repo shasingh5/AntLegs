@@ -309,6 +309,8 @@ a[data-toggle="collapse"] {
 .main-heading {
     @include black-font;
     font-size: 18px;
+    margin-top: 4px;
+    display: inline-block;
     &::before {
         content: "";
         display: inline-block;
@@ -322,4 +324,95 @@ a[data-toggle="collapse"] {
         top: -1px;
         margin-right: 20px;
     }
+}
+
+.header {
+    padding: 15px 0;
+
+    .filter-open {
+        @include medium-font;
+        font-size: 12px;
+        background: $white;
+        color: $black;
+        padding: 8px 12px;
+        border: 1px solid #b7b7b7;
+        width: 94px;
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;       
+            background-image: url("../images/filter-icon.png");             
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            vertical-align: middle;            
+            margin-right: 10px;
+        }
+    }
+}
+
+#filterOpen {
+    .modal-header {
+        background: $silver;
+    }
+
+    .modal-title {        
+        @include semibold-font;
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $black;
+    }
+}
+
+.filter-body {
+    font-size: 0;
+    padding: 0;
+    min-height: 450px;
+}
+
+.filter {    
+    &-list, &-content {
+        display: inline-block;
+        font-size: 12px;
+        vertical-align: top;
+    }
+    &-list {
+        width: percentage(175/646);
+        border-right: 1px solid $silver;
+        ul {            
+            > li {
+                list-style: none;
+                @include medium-font;
+                color: $halfBlack;
+                > a {
+                    display: block;
+                    padding: 10px 20px;        
+                    &:hover {
+                        color: $halfBlack; 
+                    }            
+                }
+                &.active a {
+                    background: $yellow;
+                    color: $halfBlack;
+                }
+            }
+        }
+    }
+    &-content {
+        width: percentage(471/646);
+        padding: 15px;
+        >div {
+            &:not(:first-child) {
+                display: none;
+            }            
+        }
+
+        h5 {
+            @include medium-font;
+            font-size: 12px;
+        }
+    }
+
 }

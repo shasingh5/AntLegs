@@ -42,6 +42,15 @@
         });
     });
 
+    $('.filter-tabs').on('click', 'li > a', function(event){  
+        event.preventDefault();
+        var id = $(this).attr('href');      
+        $('.filter-content').find('>div').hide();    
+        $('.filter-content').find(id).show();
+        $('.filter-tabs > li').removeClass('active');
+        $(this).parent('li').addClass('active');      
+    });  
+
     
 
 })(jQuery);

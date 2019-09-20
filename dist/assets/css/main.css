@@ -398,8 +398,10 @@ a[data-toggle="collapse"] {
 
 .main-heading {
   font-family: "Poppins", sans-serif;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 18px;
+  margin-top: 4px;
+  display: inline-block;
 }
 
 .main-heading::before {
@@ -414,6 +416,100 @@ a[data-toggle="collapse"] {
   position: relative;
   top: -1px;
   margin-right: 20px;
+}
+
+.header {
+  padding: 15px 0;
+}
+
+.header .filter-open {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  background: #ffffff;
+  color: #000000;
+  padding: 8px 12px;
+  border: 1px solid #b7b7b7;
+  width: 94px;
+}
+
+.header .filter-open::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/filter-icon.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+#filterOpen .modal-header {
+  background: #f2f4f6;
+}
+
+#filterOpen .modal-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000000;
+}
+
+.filter-body {
+  font-size: 0;
+  padding: 0;
+  min-height: 450px;
+}
+
+.filter-list, .filter-content {
+  display: inline-block;
+  font-size: 12px;
+  vertical-align: top;
+}
+
+.filter-list {
+  width: 27.08978%;
+  border-right: 1px solid #f2f4f6;
+}
+
+.filter-list ul > li {
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #333333;
+}
+
+.filter-list ul > li > a {
+  display: block;
+  padding: 10px 20px;
+}
+
+.filter-list ul > li > a:hover {
+  color: #333333;
+}
+
+.filter-list ul > li.active a {
+  background: #ffcc32;
+  color: #333333;
+}
+
+.filter-content {
+  width: 72.91022%;
+  padding: 15px;
+}
+
+.filter-content > div:not(:first-child) {
+  display: none;
+}
+
+.filter-content h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
 }
 
 .breadcrumbWrapper {
