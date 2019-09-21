@@ -313,6 +313,18 @@ a[data-toggle="collapse"] {
             color: $white;
         }
     }
+
+    &-open {
+        border: 1px solid #959595;
+        color: $halfBlack;
+        width: 75px;
+
+        &.active,
+        &:hover {
+            background: $halfBlack;
+            color: $white;
+        }
+    }
 }
 
 .btn-big {
@@ -548,8 +560,16 @@ a[data-toggle="collapse"] {
     }
 }
 
+p.ant-title {
+    margin-bottom: .5rem;
+}
+
 .ant-title {
     @include multiline-text(12px, 1.4, 1);
+}
+
+.medium {
+    font-weight: 500;
 }
 
 .bold {
@@ -579,4 +599,26 @@ a[data-toggle="collapse"] {
 
 .blue-text {
     color: $blue;
+}
+
+.ant-dropdown {
+    border: 1px solid #959595;
+    padding: 5px 20px 5px 10px;
+    width: 100px;
+    text-align: left;
+    &::after {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #000;
+    }
+
+    + .dropdown-menu .dropdown-item {
+        font-size: 10px;
+        &:hover {
+            background: $blue;
+            color: $white;
+        }
+    }
 }

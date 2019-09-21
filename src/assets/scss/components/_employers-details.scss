@@ -2,6 +2,46 @@
     padding: 20px;
 }
 
-.contact-details {
-    margin-top: 45px;
+.candidate-status {
+    font-size: 0;
+    li {
+        list-style: none;
+        display: inline-block;
+        margin-bottom: .5rem;
+        &::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: $yellow;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        &.interviewed::before {
+            background: $blue;
+        }
+
+        &.hirings::before {
+            background: $green2;
+        }
+
+        &.rejections::before {
+            background: $pink;
+        }
+    }
+}
+
+.sort-by {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    .dropdown-menu {
+        width: 100px !important;
+    }
+}
+
+.manage-job {
+    .employer-action {
+        margin-bottom: 15px;
+    }
 }

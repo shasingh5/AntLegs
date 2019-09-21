@@ -40,6 +40,12 @@ ul, ol, li {
 	padding: 0;
 }
 
+ul > li {
+	font-size: 12px;
+	width: 50%;
+	margin-bottom: 10px;
+}
+
 ul,
 ol {
 	padding-left: 0;

@@ -58,6 +58,12 @@ ul, ol, li {
   padding: 0;
 }
 
+ul > li {
+  font-size: 12px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
 ul,
 ol {
   padding-left: 0;
@@ -367,13 +373,13 @@ a[data-toggle="collapse"] {
 }
 
 .btn-new {
-  border: 1px solid #316ea7;
-  color: #316ea7;
+  border: 1px solid #306ba3;
+  color: #306ba3;
   width: 75px;
 }
 
 .btn-new.active, .btn-new:hover {
-  background: #316ea7;
+  background: #306ba3;
   color: #ffffff;
 }
 
@@ -385,6 +391,17 @@ a[data-toggle="collapse"] {
 
 .btn-non-active.active, .btn-non-active:hover {
   background: #ff9d62;
+  color: #ffffff;
+}
+
+.btn-open {
+  border: 1px solid #959595;
+  color: #333333;
+  width: 75px;
+}
+
+.btn-open.active, .btn-open:hover {
+  background: #333333;
   color: #ffffff;
 }
 
@@ -400,9 +417,9 @@ a[data-toggle="collapse"] {
 }
 
 .btn-big.blue {
-  background: #316ea7;
+  background: #306ba3;
   color: #ffffff;
-  border: 1px solid #316ea7;
+  border: 1px solid #306ba3;
 }
 
 .bg-white {
@@ -541,7 +558,7 @@ a[data-toggle="collapse"] {
   content: "Choose File";
   float: right;
   margin-right: 100px;
-  color: #316ea7;
+  color: #306ba3;
   font-weight: 500;
 }
 
@@ -621,6 +638,10 @@ a[data-toggle="collapse"] {
   margin-right: 15px;
 }
 
+p.ant-title {
+  margin-bottom: .5rem;
+}
+
 .ant-title {
   display: block;
   /* Fallback for non-webkit */
@@ -632,6 +653,10 @@ a[data-toggle="collapse"] {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.medium {
+  font-weight: 500;
 }
 
 .bold {
@@ -662,7 +687,31 @@ a[data-toggle="collapse"] {
 }
 
 .blue-text {
-  color: #316ea7;
+  color: #306ba3;
+}
+
+.ant-dropdown {
+  border: 1px solid #959595;
+  padding: 5px 20px 5px 10px;
+  width: 100px;
+  text-align: left;
+}
+
+.ant-dropdown::after {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+}
+
+.ant-dropdown + .dropdown-menu .dropdown-item {
+  font-size: 10px;
+}
+
+.ant-dropdown + .dropdown-menu .dropdown-item:hover {
+  background: #306ba3;
+  color: #ffffff;
 }
 
 .breadcrumbWrapper {
@@ -700,7 +749,7 @@ a[data-toggle="collapse"] {
 }
 
 .breadcrumbWrapper ol.breadcrumb li a:hover {
-  color: #316ea7;
+  color: #306ba3;
   transition: all .4s;
 }
 
@@ -727,7 +776,7 @@ a[data-toggle="collapse"] {
 }
 
 .logo span {
-  color: #316ea7;
+  color: #306ba3;
   letter-spacing: 2px;
 }
 
@@ -809,7 +858,7 @@ a[data-toggle="collapse"] {
 
 .ant-card:hover {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.16), 0 5px 20px 0 rgba(0, 0, 0, 0.12);
-  border-top: 2px solid #316ea7;
+  border-top: 2px solid #306ba3;
 }
 
 .ant-card .card-title {
@@ -840,7 +889,7 @@ a[data-toggle="collapse"] {
 }
 
 .web-link {
-  color: #316ea7;
+  color: #306ba3;
   margin-bottom: 15px;
 }
 
@@ -849,7 +898,7 @@ a[data-toggle="collapse"] {
 }
 
 footer {
-  padding-bottom: 20px;
+  padding: 20px 0;
   color: #999999;
 }
 
@@ -857,6 +906,47 @@ footer {
   padding: 20px;
 }
 
-.contact-details {
-  margin-top: 45px;
+.candidate-status {
+  font-size: 0;
+}
+
+.candidate-status li {
+  list-style: none;
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+.candidate-status li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ffcc32;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.candidate-status li.interviewed::before {
+  background: #306ba3;
+}
+
+.candidate-status li.hirings::before {
+  background: #30a38c;
+}
+
+.candidate-status li.rejections::before {
+  background: #d55881;
+}
+
+.sort-by {
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.sort-by .dropdown-menu {
+  width: 100px !important;
+}
+
+.manage-job .employer-action {
+  margin-bottom: 15px;
 }

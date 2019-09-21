@@ -3,10 +3,31 @@
     <!-- Employer Details -->
     <div class="employer-wrapper card">
         <div class="row">
-            <div class="col col-sm-3">
+            <div class="col col-sm-6">
                 <div class="employer-logo">
                     <img src="assets/images/employer-logo-1.jpg" alt="Microsoft">
                 </div>
+            </div>
+            <div class="col col-sm-6 text-right">
+                <!--Dropdown primary-->
+                <div class="dropdown">
+                    <!--Trigger-->
+                    <button class="btn ant-dropdown dropdown-toggle waves-effect" type="button" id="dropdownMenu1"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Active</button>
+
+                    <!--Menu-->
+                    <div class="dropdown-menu dropdown-primary">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+                <!--/Dropdown primary-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-sm-3">
                 <div class="ant-content">
                     <h5 class="ant-title bold">
                         Hexagone Technologies Private Li...
@@ -51,17 +72,18 @@
                         </div>
                     </div>
                     <div class="col col-sm-8">
-                        <p class="ant-title">Overall Summary</p>
-                        <p class="ant-title">Job Postings : 100  |  Hirings : 50 (50%)</p>
-                        <p class="ant-title">Recruiters Engaged : 100  |  Submissions : 300</p>
-                        <p class="ant-title">Current Status</p>
-                        <ul>
-                            <li>Shortlisted : 100</li>
-                            <li>Interviewed : 100</li>
-                            <li>Hirings : 100</li>
-                            <li>Rejections : 200</li>
+                        <p class="ant-title bold">Overall Summary</p>
+                        <p class="ant-title">Job Postings : <b>100</b> | Hirings : <b>50 (50%)</b></p>
+                        <p class="ant-title">Recruiters Engaged : <b>100</b> | Submissions : <b>300</b></p>
+                        <ul class="candidate-status">
+                            <li class="shortlisted">Shortlisted : <b>100</b></li>
+                            <li class="interviewed">Interviewed : <b>100</b></li>
+                            <li class="hirings">Hirings : <b>100</b></li>
+                            <li class="rejections">Rejections : <b>200</b></li>
                         </ul>
-                        <p class="ant-title">Opoen : 50 (50%)  |  On Hold : 20 (50%)  |  Closed : 10 (50%)</p>
+                        <p class="ant-title medium">Current Status</p>
+                        <p class="ant-title">Opoen : <b>50 (50%)</b> | On Hold : <b>20 (50%)</b> | Closed : <b>10
+                                (50%)</b></p>
                     </div>
                 </div>
             </div>
@@ -69,6 +91,178 @@
         </div>
     </div>
     <!-- /Employer Details -->
+
+    <!-- Sort by -->
+    <div class="sort-by">
+        <div class="row">
+            <div class="col col-sm-12 text-right">
+                <!--Dropdown primary-->
+                <div class="dropdown">
+                    <!--Trigger-->
+                    <button class="btn ant-dropdown dropdown-toggle waves-effect" type="button" id="dropdownMenu2"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort By</button>
+
+                    <!--Menu-->
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Draft</a>
+                        <a class="dropdown-item" href="#">Open</a>
+                        <a class="dropdown-item" href="#">On Hold</a>
+                        <a class="dropdown-item" href="#">Closed</a>
+                    </div>
+                </div>
+                <!--/Dropdown primary-->
+            </div>
+        </div>
+    </div>
+    <!-- /Sort by -->
+
+    <!-- /manage job -->
+    <div class="manage-job">
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <!--Card-->
+                <div class="card ant-card">
+                    <div class="row">
+                        <div class="col col-sm-12">
+                            <div class="employer-action text-right">
+                                <button type="button" class="btn btn-open waves-effect">Open</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card content-->
+                    <div class="ant-content">
+                        <!--Title-->
+                        <h5 class="card-title card-bold">
+                            Director Marketing & Communic...
+                        </h5>
+                        <h5 class="card-title">
+                            Dubai, United Arab Emirates
+                        </h5>
+                        <br>
+                        <p class="ant-title">
+                            Recruiters Engaged : <b>20</b>
+                        </p>
+                        <p class="ant-title">
+                            Total Responses : <b>100</b>
+                        </p>
+                        <p class="publish-date">
+                            <span>Posted on:</span> : 4 days ago
+                            <!-- <span class="skeleton-box" style="width:30%;"></span> -->
+                        </p>
+                    </div>
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <!--Card-->
+                <div class="card ant-card">
+                    <div class="row">
+                        <div class="col col-sm-12">
+                            <div class="employer-action text-right">
+                                <button type="button" class="btn btn-open waves-effect">Open</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card content-->
+                    <div class="ant-content">
+                        <!--Title-->
+                        <h5 class="card-title card-bold">
+                            Director Marketing & Communic...
+                        </h5>
+                        <h5 class="card-title">
+                            Dubai, United Arab Emirates
+                        </h5>
+                        <br>
+                        <p class="ant-title">
+                            Recruiters Engaged : <b>20</b>
+                        </p>
+                        <p class="ant-title">
+                            Total Responses : <b>100</b>
+                        </p>
+                        <p class="publish-date">
+                            <span>Posted on:</span> : 4 days ago
+                            <!-- <span class="skeleton-box" style="width:30%;"></span> -->
+                        </p>
+                    </div>
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <!--Card-->
+                <div class="card ant-card">
+                    <div class="row">
+                        <div class="col col-sm-12">
+                            <div class="employer-action text-right">
+                                <button type="button" class="btn btn-open waves-effect">Open</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card content-->
+                    <div class="ant-content">
+                        <!--Title-->
+                        <h5 class="card-title card-bold">
+                            Director Marketing & Communic...
+                        </h5>
+                        <h5 class="card-title">
+                            Dubai, United Arab Emirates
+                        </h5>
+                        <br>
+                        <p class="ant-title">
+                            Recruiters Engaged : <b>20</b>
+                        </p>
+                        <p class="ant-title">
+                            Total Responses : <b>100</b>
+                        </p>
+                        <p class="publish-date">
+                            <span>Posted on:</span> : 4 days ago
+                            <!-- <span class="skeleton-box" style="width:30%;"></span> -->
+                        </p>
+                    </div>
+
+                </div>
+                <!--/.Card-->
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <!--Card-->
+                <div class="card ant-card">
+                    <div class="row">
+                        <div class="col col-sm-12">
+                            <div class="employer-action text-right">
+                                <button type="button" class="btn btn-open waves-effect">Open</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Card content-->
+                    <div class="ant-content">
+                        <!--Title-->
+                        <h5 class="card-title card-bold">
+                            Director Marketing & Communic...
+                        </h5>
+                        <h5 class="card-title">
+                            Dubai, United Arab Emirates
+                        </h5>
+                        <br>
+                        <p class="ant-title">
+                            Recruiters Engaged : <b>20</b>
+                        </p>
+                        <p class="ant-title">
+                            Total Responses : <b>100</b>
+                        </p>
+                        <p class="publish-date">
+                            <span>Posted on:</span> : 4 days ago
+                            <!-- <span class="skeleton-box" style="width:30%;"></span> -->
+                        </p>
+                    </div>
+
+                </div>
+                <!--/.Card-->
+            </div>
+
+        </div>
+    </div>
+    <!-- manage job -->
 </div>
 
 @@include('./partials/components/filter-modal.hbs')
