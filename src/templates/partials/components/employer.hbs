@@ -10,7 +10,7 @@
     <div class="row">
         <div class="col-sm-6 col-md-4 col-lg-3">
             <!--Card-->
-            <div class="card ant-card" data-toggle="modal" data-target="#basicExampleModal">
+            <div class="card ant-card" data-toggle="modal" data-target="#newRegistration">
                 <div class="row">
                     <div class="col-sm-6">
                         <div class="employer-logo">
@@ -381,60 +381,5 @@
     </div>
 </div>
 
-<!-- Modal -->
-<div class="modal fade" id="filterOpen" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Filter</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body filter-body">
-                <div class="filter-list">
-                    <ul class="filter-tabs">
-                        <li class="active waves-effect">
-                            <a href="#status">Status</a>
-                        </li>
-                        <li class="waves-effect">
-                            <a href="#indutry">Indutry</a>
-                        </li>
-                        <li class="waves-effect">
-                            <a href="#location">Location</a>
-                        </li>
-                        <li class="waves-effect">
-                            <a href="#searchCompany">Search Company</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="filter-content">
-                    <div id="status">
-                        <h5>Filter your status and get results</h5>
-                        <button type="button" class="btn btn-outline-primary waves-effect">Primary</button>
-                        <button type="button" class="btn btn-outline-default waves-effect">Default</button>
-                        <button type="button" class="btn btn-outline-secondary waves-effect">Secondary</button>
-                        <button type="button" class="btn btn-outline-success waves-effect">Success</button>
-                        <button type="button" class="btn btn-outline-info waves-effect">Info</button>
-                        <button type="button" class="btn btn-outline-warning waves-effect">Warning</button>
-                        <button type="button" class="btn btn-outline-danger waves-effect">Danger</button>
-                    </div>
-                    <div id="indutry">
-                        <h5>Filter your indutry and get results</h5>
-                    </div>
-                    <div id="location">
-                        <h5>Filter your Location and get results</h5>
-                    </div>
-                    <div id="searchCompany">
-                        <h5>Search Company</h5>
-                    </div>
-                </div>
-            </div>
-            <!--div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div-->
-        </div>
-    </div>
-</div>
+@@include('./partials/components/filter-modal.hbs')
+@@include('./partials/components/new-registration-modal.hbs')
