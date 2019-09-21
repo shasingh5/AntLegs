@@ -491,12 +491,18 @@ a[data-toggle="collapse"] {
 .modal-dialog .modal-title {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 16px;
   display: inline-block;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   color: #000000;
+}
+
+@media (min-width: 400px) {
+  .modal-dialog .modal-title {
+    font-size: 18px;
+  }
 }
 
 .modal-dialog .close > span {
@@ -645,6 +651,18 @@ a[data-toggle="collapse"] {
 #newRegistration .modal-body {
   padding: 20px 30px;
   min-height: 350px;
+}
+
+.card {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+}
+
+.blue-text {
+  color: #316ea7;
 }
 
 .breadcrumbWrapper {
@@ -833,4 +851,12 @@ a[data-toggle="collapse"] {
 footer {
   padding-bottom: 20px;
   color: #999999;
+}
+
+.employer-wrapper {
+  padding: 20px;
+}
+
+.contact-details {
+  margin-top: 45px;
 }
