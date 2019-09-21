@@ -56,7 +56,7 @@ img {
                     content: "";
                     display: inline-block;
                     width: 20px;
-                    height: 20px;                    
+                    height: 20px;
                     background-repeat: no-repeat;
                     background-position: 0 0;
                     vertical-align: middle;
@@ -65,34 +65,41 @@ img {
                     margin-right: 20px;
                 }
 
-                &.dashboard::before{
+                &.dashboard::before {
                     background-image: url("../images/dashboard-icon.png");
                 }
 
-                &.employers::before{
+                &.employers::before {
                     background-image: url("../images/employers-icon.png");
                 }
-                &.recruiters::before{
+
+                &.recruiters::before {
                     background-image: url("../images/recruiters-icon.png");
                 }
-                &.jobs::before{
+
+                &.jobs::before {
                     background-image: url("../images/jobs-icon.png");
                 }
-                &.interviews::before{
+
+                &.interviews::before {
                     background-image: url("../images/interviews-icon.png");
                 }
-                &.payments::before{
+
+                &.payments::before {
                     background-image: url("../images/payments-icon.png");
                 }
-                &.rewards::before{
+
+                &.rewards::before {
                     background-image: url("../images/rewards-icon.png");
                 }
-                &.reports::before{
+
+                &.reports::before {
                     background-image: url("../images/reports-icon.png");
                 }
-                &.manage::before{
+
+                &.manage::before {
                     background-image: url("../images/manage-icon.png");
-                }                
+                }
             }
         }
     }
@@ -262,9 +269,10 @@ a[data-toggle="collapse"] {
     &-activated {
         width: 75px;
         border: 1px solid $green;
-        color: $green;      
+        color: $green;
 
-        &.active, &:hover {
+        &.active,
+        &:hover {
             background: $green;
             color: $white;
         }
@@ -273,8 +281,10 @@ a[data-toggle="collapse"] {
     &-deactivated {
         border: 1px solid $red;
         color: $red;
-        width: 75px;        
-        &.active, &:hover {
+        width: 75px;
+
+        &.active,
+        &:hover {
             background: $red;
             color: $white;
         }
@@ -284,17 +294,21 @@ a[data-toggle="collapse"] {
         border: 1px solid $blue;
         color: $blue;
         width: 75px;
-        &.active, &:hover {
+
+        &.active,
+        &:hover {
             background: $blue;
             color: $white;
         }
     }
+
     &-non-active {
         border: 1px solid $orange;
         color: $orange;
         width: 75px;
 
-        &.active, &:hover {
+        &.active,
+        &:hover {
             background: $orange;
             color: $white;
         }
@@ -340,12 +354,13 @@ a[data-toggle="collapse"] {
     font-size: 18px;
     margin-top: 4px;
     display: inline-block;
+
     &::before {
         content: "";
         display: inline-block;
         width: 29px;
-        height: 12px;       
-        background-image: url("../images/back-icon.png");             
+        height: 12px;
+        background-image: url("../images/back-icon.png");
         background-repeat: no-repeat;
         background-position: 0 0;
         vertical-align: middle;
@@ -366,30 +381,33 @@ a[data-toggle="collapse"] {
         padding: 8px 12px;
         border: 1px solid #b7b7b7;
         width: 94px;
+
         &::before {
             content: "";
             display: inline-block;
             width: 16px;
-            height: 16px;       
-            background-image: url("../images/filter-icon.png");             
+            height: 16px;
+            background-image: url("../images/filter-icon.png");
             background-repeat: no-repeat;
             background-position: 0 0;
-            vertical-align: middle;            
+            vertical-align: middle;
             margin-right: 10px;
         }
     }
 }
 
-.modal-dialog  {
+.modal-dialog {
     .modal-content {
         border-radius: 6px;
     }
+
     .modal-header {
         border-top-left-radius: 6px !important;
         border-top-right-radius: 6px !important;
         background: $silver;
     }
-    .modal-title {        
+
+    .modal-title {
         @include semibold-font;
         font-size: 18px;
         display: inline-block;
@@ -403,19 +421,44 @@ a[data-toggle="collapse"] {
         >span {
             display: inline-block;
             width: 14px;
-            height: 14px;       
-            background-image: url("../images/close-icon.png");             
+            height: 14px;
+            background-image: url("../images/close-icon.png");
             background-repeat: no-repeat;
             background-position: 0 0;
-            vertical-align: middle;   
-            overflow: hidden;         
+            vertical-align: middle;
+            overflow: hidden;
             text-indent: -99999px;
         }
-    } 
-    
+    }
+
     .modal-footer {
         display: initial;
     }
+}
+
+.custom-file-input:lang(en)~.custom-file-label::after {
+    content: "Upload";
+    margin: 3px;
+    border: 1px solid #b7b7b7;
+    border-radius: 3px;
+    font-weight: 700;
+    padding: 7px 22px;
+    height: 35px;
+    background: $white;
+}
+
+.custom-file-label {
+    height: 42px;
+    padding: 10px .75rem;
+
+    &::before {
+        content: "Choose File";
+        float: right;
+        margin-right: 100px;
+        color: $blue;
+        font-weight: 500;
+    }
+
 }
 
 .filter-body {
@@ -424,28 +467,35 @@ a[data-toggle="collapse"] {
     min-height: 450px;
 }
 
-.filter {    
-    &-list, &-content {
+.filter {
+
+    &-list,
+    &-content {
         display: inline-block;
         font-size: 12px;
         vertical-align: top;
         min-height: 450px;
     }
+
     &-list {
         width: percentage(175/646);
         border-right: 1px solid $silver;
-        ul {            
-            > li {
+
+        ul {
+            >li {
                 list-style: none;
                 @include medium-font;
                 color: $halfBlack;
-                > a {
+
+                >a {
                     display: block;
-                    padding: 10px 20px;        
+                    padding: 10px 20px;
+
                     &:hover {
-                        color: $halfBlack; 
-                    }            
+                        color: $halfBlack;
+                    }
                 }
+
                 &.active a {
                     background: $yellow;
                     color: $halfBlack;
@@ -453,13 +503,15 @@ a[data-toggle="collapse"] {
             }
         }
     }
+
     &-content {
         width: percentage(471/646);
         padding: 15px;
+
         >div {
             &:not(:first-child) {
                 display: none;
-            }            
+            }
         }
 
         h5 {
@@ -471,6 +523,7 @@ a[data-toggle="collapse"] {
 
 .status-action {
     margin-top: 15px;
+
     >button {
         &:not(:last-child) {
             margin-right: 10px;
@@ -486,6 +539,7 @@ a[data-toggle="collapse"] {
 .content-footer {
     margin-top: 20px;
     text-align: center;
+
     .btn:not(:last-child) {
         margin-right: 15px;
     }
@@ -494,7 +548,7 @@ a[data-toggle="collapse"] {
 .ant-title {
     @include multiline-text(12px, 1.4, 1);
 }
-  
+
 .bold {
     font-weight: 700;
 }
@@ -506,5 +560,12 @@ a[data-toggle="collapse"] {
 .modal-lg {
     @include respond-to(992px) {
         width: 646px;
+    }
+}
+
+#newRegistration {
+    .modal-body {
+        padding: 20px 30px;
+        min-height: 350px;
     }
 }

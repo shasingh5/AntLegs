@@ -515,6 +515,30 @@ a[data-toggle="collapse"] {
   display: initial;
 }
 
+.custom-file-input:lang(en) ~ .custom-file-label::after {
+  content: "Upload";
+  margin: 3px;
+  border: 1px solid #b7b7b7;
+  border-radius: 3px;
+  font-weight: 700;
+  padding: 7px 22px;
+  height: 35px;
+  background: #ffffff;
+}
+
+.custom-file-label {
+  height: 42px;
+  padding: 10px .75rem;
+}
+
+.custom-file-label::before {
+  content: "Choose File";
+  float: right;
+  margin-right: 100px;
+  color: #316ea7;
+  font-weight: 500;
+}
+
 .filter-body {
   font-size: 0;
   padding: 0;
@@ -618,6 +642,11 @@ a[data-toggle="collapse"] {
   }
 }
 
+#newRegistration .modal-body {
+  padding: 20px 30px;
+  min-height: 350px;
+}
+
 .breadcrumbWrapper {
   background-color: #f4f4f4;
   border-radius: 0;
@@ -697,6 +726,51 @@ a[data-toggle="collapse"] {
   padding-bottom: 18px;
 }
 
+.dropdown-toggle::after {
+  content: "\f107";
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  border: 0;
+  vertical-align: inherit;
+  margin-left: 10px;
+}
+
+.user-icon, .bell-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  vertical-align: middle;
+  overflow: hidden;
+  text-indent: -99999px;
+  margin-top: -4px;
+  margin-right: 10px;
+}
+
+.user-icon {
+  background-image: url("../images/user-icon.png");
+}
+
+.bell-icon {
+  position: relative;
+  background-image: url("../images/notification-icon.png");
+  overflow: initial;
+}
+
+.bell-icon::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #ffcc32;
+}
+
 .employer-logo {
   margin-bottom: 10px;
 }
@@ -711,10 +785,13 @@ a[data-toggle="collapse"] {
   box-shadow: none;
   transition: all .3s;
   cursor: pointer;
+  border-top: 2px solid #ffffff;
+  height: calc(100% - 20px);
 }
 
 .ant-card:hover {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.16), 0 5px 20px 0 rgba(0, 0, 0, 0.12);
+  border-top: 2px solid #316ea7;
 }
 
 .ant-card .card-title {
@@ -740,6 +817,10 @@ a[data-toggle="collapse"] {
   color: #999999;
 }
 
+.ant-card .ant-content {
+  min-height: 128px;
+}
+
 .web-link {
   color: #316ea7;
   margin-bottom: 15px;
@@ -747,4 +828,9 @@ a[data-toggle="collapse"] {
 
 .filter-col {
   margin: 20px 0;
+}
+
+footer {
+  padding-bottom: 20px;
+  color: #999999;
 }

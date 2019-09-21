@@ -28,3 +28,50 @@
     	padding-bottom: 18px;
 	}	
 }
+
+.dropdown-toggle {
+	&::after {
+		content: "\f107";
+		display: inline-block;
+		font: normal normal normal 14px/1 FontAwesome;
+		font-size: inherit;
+		text-rendering: auto;
+		border: 0;
+		vertical-align: inherit;
+		margin-left: 10px;
+	}
+
+}
+
+.user-icon, .bell-icon {
+	display: inline-block;
+	width: 16px;
+	height: 16px;	
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	vertical-align: middle;
+	overflow: hidden;
+	text-indent: -99999px;
+	margin-top: -4px;
+    margin-right: 10px;
+}
+
+.user-icon {
+	background-image: url("../images/user-icon.png");
+}
+
+.bell-icon {
+	position: relative;
+	background-image: url("../images/notification-icon.png");
+	overflow: initial;
+	&::after {
+		content: '';
+		position: absolute;
+		top: -2px;
+		right: -2px;
+		width: 9px;
+		height: 9px;
+		border-radius: 50%;
+		background: $yellow;
+	}
+}

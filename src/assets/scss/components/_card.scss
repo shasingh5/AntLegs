@@ -8,8 +8,11 @@
   @include prefixes(box-shadow, none);
   @include transitionAll;
   cursor: pointer;
+  border-top: 2px solid $white;
+  height: calc(100% - 20px);
   &:hover {
     box-shadow: 0 5px 10px 0 rgba(0,0,0,.16), 0 5px 20px 0 rgba(0,0,0,.12);
+    border-top: 2px solid $blue;
   }
   .card-title {
     @include multiline-text(12px, 1.4, 1);
@@ -24,6 +27,10 @@
     >span {
       color: $grey;
     }
+  }
+
+  .ant-content {
+    min-height: 128px;
   }
 }
 
