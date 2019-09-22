@@ -21,18 +21,20 @@
 
   .card-bold {
     @include bold-font;
-  }  
-
-  .publish-date {
-    >span {
-      color: $grey;
-    }
-  }
+  }   
 
   .ant-content {
-    min-height: 128px;
+    min-height: 128px;    
   }
 }
+
+.publish-date {
+  font-size: 10px;
+  >span {
+    color: $grey;
+  }
+}
+
 
 .web-link {
   color: $blue;

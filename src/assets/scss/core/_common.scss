@@ -168,6 +168,13 @@ a[data-toggle="collapse"] {
     position: absolute;
     top: 0;
     right: 0;
+
+    >.navbar {
+        .fa-align-justify {
+            font-size: 18px;
+            padding: 2px 5px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -321,8 +328,8 @@ a[data-toggle="collapse"] {
 
         &.active,
         &:hover {
-            background: $halfBlack;
-            color: $white;
+            //background: $halfBlack;
+            color: $halfBlack;
         }
     }
 }
@@ -363,9 +370,13 @@ a[data-toggle="collapse"] {
 
 .main-heading {
     @include black-font;
-    font-size: 18px;
-    margin-top: 4px;
+    font-size: 11px;
+    margin-top: 10px;
     display: inline-block;
+    @include respond-to($xxs) {
+        font-size: 18px;
+        margin-top: 4px;
+    }
 
     &::before {
         content: "";
@@ -378,7 +389,10 @@ a[data-toggle="collapse"] {
         vertical-align: middle;
         position: relative;
         top: -1px;
-        margin-right: 20px;
+        margin-right: 10px;
+        @include respond-to($xxs) {
+            margin-right: 20px;
+        }
     }
 }
 
@@ -427,6 +441,7 @@ a[data-toggle="collapse"] {
         left: 50%;
         transform: translateX(-50%);
         color: $black;
+
         @include respond-to($xxs) {
             font-size: 18px;
         }
@@ -472,6 +487,9 @@ a[data-toggle="collapse"] {
         margin-right: 100px;
         color: $blue;
         font-weight: 500;
+        @include respond-to($xxs, max) {
+            display: none;
+        }
     }
 
 }
@@ -488,20 +506,34 @@ a[data-toggle="collapse"] {
     &-content {
         display: inline-block;
         font-size: 12px;
-        vertical-align: top;
-        min-height: 450px;
+        vertical-align: top;        
+        @include respond-to($xs) {
+            min-height: 450px;
+        }
     }
 
     &-list {
         width: percentage(175/646);
         border-right: 1px solid $silver;
+        @include respond-to($xs, max) {
+            width: percentage(646/646);
+            overflow: auto;
+            border-bottom: 1px solid $silver;
+        }
 
         ul {
+            @include respond-to($xs, max) {
+                width: 410px;
+            }
+
             >li {
                 list-style: none;
                 @include medium-font;
                 color: $halfBlack;
-
+                @include respond-to($xs, max) {
+                    display: inline-block;
+                    margin-bottom: 0;
+                }
                 >a {
                     display: block;
                     padding: 10px 20px;
@@ -520,8 +552,11 @@ a[data-toggle="collapse"] {
     }
 
     &-content {
-        width: percentage(471/646);
+        width: percentage(646/646);
         padding: 15px;
+        @include respond-to($xs) {
+            width: percentage(471/646);
+        }
 
         >div {
             &:not(:first-child) {
@@ -542,6 +577,9 @@ a[data-toggle="collapse"] {
     >button {
         &:not(:last-child) {
             margin-right: 10px;
+            @include respond-to($xxs, max) {
+                margin-bottom: 15px;
+            }
         }
     }
 }
@@ -606,6 +644,8 @@ p.ant-title {
     padding: 5px 20px 5px 10px;
     width: 100px;
     text-align: left;
+    background: $white;
+
     &::after {
         position: absolute;
         right: 10px;
@@ -614,11 +654,16 @@ p.ant-title {
         color: #000;
     }
 
-    + .dropdown-menu .dropdown-item {
-        font-size: 10px;
-        &:hover {
-            background: $blue;
-            color: $white;
+    +.dropdown-menu {
+        padding: 0;
+        min-width: 100px;
+        .dropdown-item {
+            font-size: 10px;
+            padding: 5px 10px;
+            &:hover {
+                background: $blue;
+                color: $white;
+            }
         }
     }
 }
