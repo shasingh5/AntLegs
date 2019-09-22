@@ -60,7 +60,6 @@ ul, ol, li {
 
 ul > li {
   font-size: 12px;
-  margin-bottom: 10px;
 }
 
 ul,
@@ -135,6 +134,10 @@ img {
 #sidebar .sidebar-header .hamburg {
   position: relative;
   top: -3px;
+}
+
+#sidebar ul.components li {
+  margin-bottom: 0;
 }
 
 #sidebar ul.components li:nth-last-child(2) {
@@ -1049,6 +1052,7 @@ footer {
   color: #ffffff;
   font-weight: 700;
   padding: 4px;
+  margin-bottom: 15px;
 }
 
 .responses-list li:not(:last-child) {
@@ -1092,4 +1096,11 @@ footer {
 
 .graph-block img {
   display: inline-block;
+}
+
+.rating {
+  padding: 2px 0;
+  font-size: 15px;
+  margin-bottom: 15px;
+  color: #ffcc32;
 }

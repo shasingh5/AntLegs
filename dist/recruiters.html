@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Welcome to AntLegs</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="vendor/mdb/mdb.min.css" rel="stylesheet">
+<!-- Custom Scroll -->
+<link href="vendor/malihu-custom-scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+<!-- Custom styles -->
+<link href="assets/css/main.min.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <!-- Sidebar  -->
+<nav id="sidebar">    
+
+    <div class="sidebar-header">
+        <a href="javascript:;" id="dismiss" class="hamburg">&nbsp;</a>
+		<a href="#" class="logo">
+			<span>ANT</span>
+			<span>LEGS</span>
+		</a>
+    </div>
+
+    <ul class="list-unstyled components">        
+        <!-- <li class="active">
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li>
+                    <a href="#">Home 1</a>
+                </li>
+                <li>
+                    <a href="#">Home 2</a>
+                </li>
+                <li>
+                    <a href="#">Home 3</a>
+                </li>
+            </ul>
+        </li> -->
+        <li class="waves-effect">
+            <a href="#" class="dashboard">Dashboard</a>
+        </li>        
+        <li class="waves-effect active">
+            <a href="index.html" class="employers">Employers</a>
+        </li>
+        <li class="waves-effect">
+            <a href="recruiters.html" class="recruiters">Recruiters</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#" class="jobs">Jobs</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#" class="interviews">Interviews</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#" class="payments">Payments</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#" class="rewards">Rewards & Points</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#" class="reports">Reports</a>
+        </li>
+        <li class="waves-effect manage-admin">
+            <a href="#" class="manage">Manage Admin</a>
+        </li>
+    </ul>
+</nav>
+<!-- /Sidebar  -->
+
+    <!-- Page Content  -->
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white bs-none">
+	<div class="container-fluid">
+
+		<a href="javascript:;" id="sidebarCollapse" class="hamburg">&nbsp;</a>
+		<a href="#" class="logo">
+			<span>ANT</span>
+			<span>LEGS</span>
+		</a>
+
+		<button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<i class="fas fa-align-justify"></i>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="nav navbar-nav ml-auto">
+				<!-- <li class="nav-item active">
+                <a class="nav-link" href="#">Page</a>
+              </li>               -->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" id="navbar-tools" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="true">
+						<i class="fas fa-bell bell-icon"></i><span>Notification</span></a>
+					<div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbar-tools">
+						<a class="dropdown-item d-xl-none waves-effect waves-light" href="/support/">Support Forum</a>
+						<a class="dropdown-item waves-effect waves-light" href="/snippets/">Editor &amp; Snippets</a>
+						<a class="dropdown-item waves-effect waves-light" href="/articles/">Articles</a>
+						<a class="dropdown-item waves-effect waves-light" href="/news/frontend/">News</a>
+						<a class="dropdown-item waves-effect waves-light" href="/cli/">MDB CLI <span
+								class="badge badge-danger rounded">New</span></a>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" id="navbar-tools" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="true">
+						<i class="fas fa-user-circle user-icon"></i><span>Hi Snahal K</span></a>
+					<div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbar-tools">
+						<a class="dropdown-item d-xl-none waves-effect waves-light" href="/support/">Support Forum</a>
+						<a class="dropdown-item waves-effect waves-light" href="/snippets/">Editor &amp; Snippets</a>
+						<a class="dropdown-item waves-effect waves-light" href="/articles/">Articles</a>
+						<a class="dropdown-item waves-effect waves-light" href="/news/frontend/">News</a>
+						<a class="dropdown-item waves-effect waves-light" href="/cli/">MDB CLI <span
+								class="badge badge-danger rounded">New</span></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+      
+        <div class="container-fluid ant-container">
+    <!-- Employer Header -->
+<div class="row header">
+    <div class="col-7 col-sm-6 col-md-6 col-lg-6">
+        <a href="index.html" class="main-heading">Manage Recruiters</a>
+    </div>
+    <div class="col-5 col-sm-6 col-md-6 col-lg-6 text-right">
+        <button class="btn filter-open waves-effect" data-toggle="modal" data-target="#filterOpen">Filter</button>
+    </div>
+</div>
+<!--/ Employer Header -->
+    <div class="row row-eq-height">        
+        <div class="col-sm-6 col-md-4 col-lg-3">
+    <!--Card-->
+    <div class="card ant-card">
+        <div class="row">
+            <div class="col col-sm-6">
+                <div class="rating">
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star-half-alt"></span>
+    <span class="far fa-star"></span>
+</div>   
+            </div>
+            <div class="col col-sm-6">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-activated waves-effect">Activated</button>
+                </div>
+            </div>
+        </div>
+        <!--Card content-->
+<div class="ant-content">
+    <!--Title-->
+    <h5 class="card-title"><b>TalentSteen</b> (Premium Recruiter)</h5>
+    <h5 class="card-title">Bangalore, Karnataka, India</h5>
+    <!--Text-->
+    <p class="card-title">Information Technology, Banking & Finance</p>
+    <br>
+    <p class="font-xs">Projects : <b>100</b> | Placements : <b>10 (50%)</b></p>
+    <p class="font-xs">Rewards (USD) : <b>200,000</b> | Points : <b>20,000</b></p>
+</div>
+<div class="ant-footer">
+    <hr>
+    <p class="publish-date">
+        <span>Activated on:</span> Aug 16, 2019
+        <!-- <span class="skeleton-box" style="width:30%;"></span> -->
+    </p>
+</div>
+    </div>
+    <!--/.Card-->
+</div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+    <!--Card-->
+    <div class="card ant-card">
+        <div class="row">
+            <div class="col col-sm-6">
+                <div class="rating">
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star-half-alt"></span>
+    <span class="far fa-star"></span>
+</div>
+            </div>
+            <div class="col col-sm-6">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-deactivated waves-effect">Deactivated</button>
+                </div>
+            </div>
+        </div>
+        <!--Card content-->
+<div class="ant-content">
+    <!--Title-->
+    <h5 class="card-title"><b>TalentSteen</b> (Premium Recruiter)</h5>
+    <h5 class="card-title">Bangalore, Karnataka, India</h5>
+    <!--Text-->
+    <p class="card-title">Information Technology, Banking & Finance</p>
+    <br>
+    <p class="font-xs">Projects : <b>100</b> | Placements : <b>10 (50%)</b></p>
+    <p class="font-xs">Rewards (USD) : <b>200,000</b> | Points : <b>20,000</b></p>
+</div>
+<div class="ant-footer">
+    <hr>
+    <p class="publish-date">
+        <span>Activated on:</span> Aug 16, 2019
+        <!-- <span class="skeleton-box" style="width:30%;"></span> -->
+    </p>
+</div>
+    </div>
+    <!--/.Card-->
+</div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+    <!--Card-->
+    <div class="card ant-card" data-toggle="modal" data-target="#newRegistration">
+        <div class="row">
+            <div class="col col-sm-6">
+                <div class="rating">
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star-half-alt"></span>
+    <span class="far fa-star"></span>
+</div>   
+            </div>
+            <div class="col col-sm-6">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-new waves-effect">New</button>
+                </div>
+            </div>
+        </div>
+        <!--Card content-->
+        <div class="ant-content">
+            <!--Title-->
+            <h5 class="card-title"><b>TalentSteen</b> (Premium Recruiter)</h5>
+            <h5 class="card-title">Bangalore, Karnataka, India</h5>
+            <!--Text-->
+            <p class="card-title">Information Technology, Banking & Finance</p>
+            <br>
+            <p class="font-xs">Santhosh Kurichianil : <b>+91 9854433432</b></p>
+            <p class="font-xs">LinkeIn : <a href="#" class="blue-text"><b>https://www.linkedin.com/sant...</b></a></p>
+        </div>
+        <div class="ant-footer">
+            <hr>
+            <p class="publish-date">
+                <span>Activated on:</span> Aug 16, 2019
+                <!-- <span class="skeleton-box" style="width:30%;"></span> -->
+            </p>
+        </div>
+    </div>
+    <!--/.Card-->
+</div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+    <!--Card-->
+    <div class="card ant-card" data-toggle="modal" data-target="#newRegistration">
+        <div class="row">
+            <div class="col col-sm-6">
+                <div class="rating">
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star-half-alt"></span>
+    <span class="far fa-star"></span>
+</div>   
+            </div>
+            <div class="col col-sm-6">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-new waves-effect">New</button>
+                </div>
+            </div>
+        </div>
+        <!--Card content-->
+        <div class="ant-content">
+            <!--Title-->
+            <h5 class="card-title"><b>TalentSteen</b> (Premium Recruiter)</h5>
+            <h5 class="card-title">Bangalore, Karnataka, India</h5>
+            <!--Text-->
+            <p class="card-title">Information Technology, Banking & Finance</p>
+            <br>
+            <p class="font-xs">Santhosh Kurichianil : <b>+91 9854433432</b></p>
+            <p class="font-xs">LinkeIn : <a href="#" class="blue-text"><b>https://www.linkedin.com/sant...</b></a></p>
+        </div>
+        <div class="ant-footer">
+            <hr>
+            <p class="publish-date">
+                <span>Activated on:</span> Aug 16, 2019
+                <!-- <span class="skeleton-box" style="width:30%;"></span> -->
+            </p>
+        </div>
+    </div>
+    <!--/.Card-->
+</div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+    <!--Card-->
+    <div class="card ant-card">
+        <div class="row">
+            <div class="col col-sm-6">
+                <div class="rating">
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star-half-alt"></span>
+    <span class="far fa-star"></span>
+</div>   
+            </div>
+            <div class="col col-sm-6">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-activated waves-effect">Activated</button>
+                </div>
+            </div>
+        </div>
+        <!--Card content-->
+<div class="ant-content">
+    <!--Title-->
+    <h5 class="card-title"><b>TalentSteen</b> (Premium Recruiter)</h5>
+    <h5 class="card-title">Bangalore, Karnataka, India</h5>
+    <!--Text-->
+    <p class="card-title">Information Technology, Banking & Finance</p>
+    <br>
+    <p class="font-xs">Projects : <b>100</b> | Placements : <b>10 (50%)</b></p>
+    <p class="font-xs">Rewards (USD) : <b>200,000</b> | Points : <b>20,000</b></p>
+</div>
+<div class="ant-footer">
+    <hr>
+    <p class="publish-date">
+        <span>Activated on:</span> Aug 16, 2019
+        <!-- <span class="skeleton-box" style="width:30%;"></span> -->
+    </p>
+</div>
+    </div>
+    <!--/.Card-->
+</div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+    <!--Card-->
+    <div class="card ant-card">
+        <div class="row">
+            <div class="col col-sm-6">
+                <div class="rating">
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star-half-alt"></span>
+    <span class="far fa-star"></span>
+</div>
+            </div>
+            <div class="col col-sm-6">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-deactivated waves-effect">Deactivated</button>
+                </div>
+            </div>
+        </div>
+        <!--Card content-->
+<div class="ant-content">
+    <!--Title-->
+    <h5 class="card-title"><b>TalentSteen</b> (Premium Recruiter)</h5>
+    <h5 class="card-title">Bangalore, Karnataka, India</h5>
+    <!--Text-->
+    <p class="card-title">Information Technology, Banking & Finance</p>
+    <br>
+    <p class="font-xs">Projects : <b>100</b> | Placements : <b>10 (50%)</b></p>
+    <p class="font-xs">Rewards (USD) : <b>200,000</b> | Points : <b>20,000</b></p>
+</div>
+<div class="ant-footer">
+    <hr>
+    <p class="publish-date">
+        <span>Activated on:</span> Aug 16, 2019
+        <!-- <span class="skeleton-box" style="width:30%;"></span> -->
+    </p>
+</div>
+    </div>
+    <!--/.Card-->
+</div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+    <!--Card-->
+    <div class="card ant-card" data-toggle="modal" data-target="#newRegistration">
+        <div class="row">
+            <div class="col col-sm-6">
+                <div class="rating">
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star-half-alt"></span>
+    <span class="far fa-star"></span>
+</div>   
+            </div>
+            <div class="col col-sm-6">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-new waves-effect">New</button>
+                </div>
+            </div>
+        </div>
+        <!--Card content-->
+        <div class="ant-content">
+            <!--Title-->
+            <h5 class="card-title"><b>TalentSteen</b> (Premium Recruiter)</h5>
+            <h5 class="card-title">Bangalore, Karnataka, India</h5>
+            <!--Text-->
+            <p class="card-title">Information Technology, Banking & Finance</p>
+            <br>
+            <p class="font-xs">Santhosh Kurichianil : <b>+91 9854433432</b></p>
+            <p class="font-xs">LinkeIn : <a href="#" class="blue-text"><b>https://www.linkedin.com/sant...</b></a></p>
+        </div>
+        <div class="ant-footer">
+            <hr>
+            <p class="publish-date">
+                <span>Activated on:</span> Aug 16, 2019
+                <!-- <span class="skeleton-box" style="width:30%;"></span> -->
+            </p>
+        </div>
+    </div>
+    <!--/.Card-->
+</div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+    <!--Card-->
+    <div class="card ant-card" data-toggle="modal" data-target="#newRegistration">
+        <div class="row">
+            <div class="col col-sm-6">
+                <div class="rating">
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star"></span>
+    <span class="fas fa-star-half-alt"></span>
+    <span class="far fa-star"></span>
+</div>   
+            </div>
+            <div class="col col-sm-6">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-new waves-effect">New</button>
+                </div>
+            </div>
+        </div>
+        <!--Card content-->
+        <div class="ant-content">
+            <!--Title-->
+            <h5 class="card-title"><b>TalentSteen</b> (Premium Recruiter)</h5>
+            <h5 class="card-title">Bangalore, Karnataka, India</h5>
+            <!--Text-->
+            <p class="card-title">Information Technology, Banking & Finance</p>
+            <br>
+            <p class="font-xs">Santhosh Kurichianil : <b>+91 9854433432</b></p>
+            <p class="font-xs">LinkeIn : <a href="#" class="blue-text"><b>https://www.linkedin.com/sant...</b></a></p>
+        </div>
+        <div class="ant-footer">
+            <hr>
+            <p class="publish-date">
+                <span>Activated on:</span> Aug 16, 2019
+                <!-- <span class="skeleton-box" style="width:30%;"></span> -->
+            </p>
+        </div>
+    </div>
+    <!--/.Card-->
+</div>        
+    </div>
+</div>
+
+<!-- Filter Modal -->
+<div class="modal fade" id="filterOpen" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Filter</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body filter-body">
+                <div class="filter-list">
+                    <ul class="filter-tabs">
+                        <li class="active waves-effect">
+                            <a href="#status">Status</a>
+                        </li>
+                        <li class="waves-effect">
+                            <a href="#indutry">Indutry</a>
+                        </li>
+                        <li class="waves-effect">
+                            <a href="#location">Location</a>
+                        </li>
+                        <li class="waves-effect">
+                            <a href="#searchCompany">Search Company</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="filter-content">
+                    <div id="status">
+                        <div class="content-body">
+                            <h5>Filter your status and get results</h5>
+                            <div class="status-action">
+                                <button type="button" class="btn btn-new waves-effect">New</button>
+                                <button type="button" class="btn btn-activated active waves-effect">Activated</button>
+                                <button type="button" class="btn btn-non-active waves-effect">Non-Active</button>
+                                <button type="button" class="btn btn-deactivated waves-effect">Deactivated</button>
+                            </div>
+                        </div>
+                        <div class="content-footer">
+                            <button type="button" class="btn btn-big blue waves-effect">Filter</button>
+                            <button type="button" class="btn btn-big waves-effect">Reset</button>
+                        </div>
+                    </div>
+                    <div id="indutry">                        
+                        <div class="content-body">
+                            <h5>Filter your <b>indutry</b> and get results</h5>
+                            <div class="status-action">
+                                <button type="button" class="btn btn-new waves-effect">New</button>
+                                <button type="button" class="btn btn-activated active waves-effect">Activated</button>
+                                <button type="button" class="btn btn-non-active waves-effect">Non-Active</button>
+                                <button type="button" class="btn btn-deactivated waves-effect">Deactivated</button>
+                            </div>
+                        </div>
+                        <div class="content-footer">
+                            <button type="button" class="btn btn-big blue waves-effect">Filter</button>
+                            <button type="button" class="btn btn-big waves-effect">Reset</button>
+                        </div>
+                    </div>
+                    <div id="location">
+                        <h5>Filter your <b>Location</b> and get results</h5>
+                    </div>
+                    <div id="searchCompany">
+                        <h5>Search <b>Company</b></h5>
+                    </div>
+                </div>
+            </div>
+            <!--div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div-->
+        </div>
+    </div>
+</div>
+<!-- /Filter Modal -->
+<!-- Filter Modal -->
+<div class="modal fade" id="newRegistration" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">New Registration</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<div class="employer-logo">
+							<img src="assets/images/sample-logo.jpg" alt="Microsoft">
+
+						</div>
+						<div class="ant-content">
+
+							<h5 class="ant-title bold">
+								Hexagone Technologies Private Li...
+
+							</h5>
+							<h5 class="ant-title">
+								Information Technology
+							</h5>
+
+							<h5 class="ant-title address">
+								Indra Nagar, LBS Marg, Bangalore...
+
+							</h5>
+							<a href="#" class="ant-title web-link">
+								www.hexagone.com
+							</a>
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<h5 class="ant-title bold">Contact Details</h5>
+						<h5 class="ant-title">Santhosh Kurichianil</h5>
+						<h5 class="ant-title">Head Recruitment</h5>
+						<h5 class="ant-title">Human Resources</h5>
+						<h5 class="ant-title">+91 9767783435</h5>
+						<a href="#" class="ant-title web-link">
+							santhosh.kurichianil@gmail.com
+							<!-- <span class="skeleton-box" style="width:60%;"></span> -->
+						</a>
+					</div>
+				</div>
+				<div class="file-upload">
+					<h5 class="ant-title"><span class="bold">Upload Your Company Logo:</span></span> <span>(Format : JPEG,
+							PNG, BMP or GIF and size not exceeding 2MB)</span></h5>
+					<div class="input-group">
+						<div class="custom-file">
+							<input type="file" class="custom-file-input" id="inputGroupFile01"
+								aria-describedby="inputGroupFileAddon01">
+							<label class="custom-file-label" for="inputGroupFile01">No file  chosen</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer text-center">
+				<button type="button" class="btn btn-big blue waves-effect" data-dismiss="modal">Activate</button>
+				<button type="button" class="btn btn-big waves-effect">Delete</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /Filter Modal -->
+        <footer>
+  <p class="text-center">Antlegs Technology Solutions Private Limited.</p>
+</footer>
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+
+  <!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="vendor/MDB/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="vendor/MDB/mdb.min.js"></script>
+<!-- Custom Scroll -->
+<script type="text/javascript" src="vendor/malihu-custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- AntLegs core JavaScript -->
+<script src="./assets/js/script.js"></script>
+</body>
+
+</html>
