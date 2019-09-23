@@ -69,6 +69,31 @@ function renderCard() {
     $('#skeletonBox span.skeleton-box').remove();
 }
 
+function recruiterRenderCard() { 
+    var starHtml = '<span class="fas fa-star"></span><span class ="fas fa-star"> </span> <span class="fas fa-star"> </span> <span class ="fas fa-star-half-alt"> </span> <span class ="far fa-star"> </span>';
+    
+    $('.recuiters-list .rating').html(starHtml);    
+    
+    $(".recuiters-list").find(".activated-recruiter .employer-action").html('<button type="button" class="btn btn-activated waves-effect">Activated</button>');
+    $(".recuiters-list").find(".deactivated-recruiter .employer-action").html('<button type="button" class="btn btn-deactivated waves-effect">Deactivated</button>');
+    $(".recuiters-list").find(".new-recruiter .employer-action").html('<button type="button" class="btn btn-new waves-effect">New</button>');  
+    
+    $('.recuiters-list .recruiter-name').html("<b>TalentSteen</b> (Premium Recruiter)");
+    $('.recuiters-list .recruiter-address').text("Bangalore, Karnataka, India");
+    $('.recuiters-list .company-type').text("Information Technology, Banking & Finance");
+    
+    $(".recuiters-list").find('.deactivated-recruiter .pp, .activated-recruiter .pp').html("Projects : <b>100</b> | Placements : <b>10 (50%)</b>");
+    $(".recuiters-list").find('.deactivated-recruiter .rp, .activated-recruiter .rp').html("Rewards (USD) : <b>200,000</b> | Points : <b>20,000");
+    
+    $(".recuiters-list").find('.new-recruiter .pp').html("Santhosh Kurichianil : <b>+91 9854433432</b>");
+    $(".recuiters-list").find('.new-recruiter .rp').html('LinkeIn : <a href="#" class="blue-text"><b>https://www.linkedin.com/sant...</b></a>');
+    
+    $('.recuiters-list .publish-date').html("<span>Activated on:</span> Aug 16, 2019");
+    
+    $('.recuiters-list span.skeleton-box').remove();
+}
+
 setTimeout(function () {
     renderCard();
-}, 5000);
+    recruiterRenderCard();
+}, 3000);
