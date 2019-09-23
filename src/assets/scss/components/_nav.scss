@@ -29,8 +29,11 @@
 
 #content {
 	.navbar {
-		padding-top: 13px;
-    	padding-bottom: 13px;
+		padding: 13px 0;
+		@include respond-to(991.98px, max) {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
 	}	
 }
 

@@ -360,12 +360,15 @@ a[data-toggle="collapse"] {
 }
 
 .ant-container {
-    @include respond-to(1440px) {
-        width: 1410px;
+    @include respond-to(1440px) {        
+        width: percentage(1410/1440);
     }
 
     @include respond-to(1600px) {
-        width: 1570px;
+        width: percentage(1570/1600);
+    }
+    @include respond-to(1920px) {
+        width: percentage(1890/1920);
     }
 }
 
@@ -668,3 +671,5 @@ p.ant-title {
         }
     }
 }
+
+
