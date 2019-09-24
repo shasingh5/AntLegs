@@ -51,6 +51,11 @@
         $(this).parent('li').addClass('active');      
     });  
 
+    $('[data-toggle="pophover"]').popover({
+        html: true,
+        //trigger: "hover"
+    });
+
     
 
 })(jQuery);

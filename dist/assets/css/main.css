@@ -75,7 +75,7 @@ ol ol {
 }
 
 a {
-  color: inherit;
+  color: #306ba3;
   text-decoration: none;
 }
 
@@ -732,7 +732,7 @@ a[data-toggle="collapse"] {
 }
 
 p.ant-title {
-  margin-bottom: .5rem;
+  margin-bottom: .2rem;
 }
 
 .ant-title {
@@ -812,6 +812,37 @@ p.ant-title {
 .ant-dropdown + .dropdown-menu .dropdown-item:hover {
   background: #306ba3;
   color: #ffffff;
+}
+
+ul.bank-details {
+  padding: 10px;
+}
+
+ul.bank-details li {
+  list-style: none;
+  font-size: 10px;
+  display: table;
+}
+
+ul.bank-details li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+ul.bank-details li span {
+  min-width: 80px;
+  display: table-cell;
+}
+
+.bank-popover {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background-image: url("../images/info-icon.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  vertical-align: middle;
+  overflow: hidden;
+  text-indent: -99999px;
 }
 
 .breadcrumbWrapper {
@@ -1011,6 +1042,10 @@ p.ant-title {
 
 .filter-col {
   margin: 20px 0;
+}
+
+.card-title.nsa, .ant-title.nsa {
+  margin-bottom: 10px;
 }
 
 footer {
