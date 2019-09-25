@@ -1,0 +1,49 @@
+.modal-dialog {
+    .modal-content {
+        border-radius: 6px;
+    }
+
+    .modal-header {
+        border-top-left-radius: 6px !important;
+        border-top-right-radius: 6px !important;
+        background: $silver;
+    }
+
+    .modal-title {
+        @include semibold-font;
+        font-size: 16px;
+        display: inline-block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $black;
+
+        @include respond-to($xxs) {
+            font-size: 18px;
+        }
+    }
+
+    .close {
+        >span {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background-image: url("../images/close-icon.png");
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            vertical-align: middle;
+            overflow: hidden;
+            text-indent: -99999px;
+        }
+    }
+
+    .modal-footer {
+        display: initial;
+    }
+}
+
+.modal-lg {
+    @include respond-to(992px) {
+        width: 646px;
+    }
+}

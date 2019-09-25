@@ -2,13 +2,23 @@
 @import "core/variables";
 @import "core/mixins";
 @import "core/fonts";
+@import "core/typography";
+@import "core/rem";
 @import "core/base";
 @import "core/common";
 @import "core/breadcrumb";
-@import "core/rem";
+@import "core/skeleton-box";
+@import "core/modal";
+@import "core/button";
 
 @import "components/nav";
-@import "components/card";
+@import "components/sidebar-nav";
+@import "components/content";
 @import "components/footer";
-@import "components/employers-details";
+@import "components/ant-dropdown";
+@import "components/filter-modal";
+@import "components/form";
+@import "components/card";
 @import "components/star-rating";
+@import "components/bank-details-popover";
+@import "components/employers-details";

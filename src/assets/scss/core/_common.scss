@@ -15,177 +15,8 @@ img {
     display: block;
 }
 
-#sidebar {
-    width: 210px;
-    position: fixed;
-    top: 0;
-    left: -215px;
-    height: 100vh;
-    z-index: 999;
-    background: $white;
-    color: $halfBlack;
-    transition: all 0.3s;
-    overflow-y: scroll;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
-
-    &.active {
-        left: 0;
-    }
-
-    .sidebar-header {
-        padding: 18px 20px;
-
-        .hamburg {
-            position: relative;
-            top: -3px;
-        }
-    }
-
-    ul.components {
-        li {
-            margin-bottom: 0;
-            &:nth-last-child(2) {
-                border-bottom: 1px solid #e9e9e9;
-            }
-
-            &:last-child {
-                margin-top: 50px;
-            }
-
-            >a {
-                &::before {
-                    content: "";
-                    display: inline-block;
-                    width: 20px;
-                    height: 20px;
-                    background-repeat: no-repeat;
-                    background-position: 0 0;
-                    vertical-align: middle;
-                    position: relative;
-                    top: -1px;
-                    margin-right: 20px;
-                }
-
-                &.dashboard::before {
-                    background-image: url("../images/dashboard-icon.png");
-                }
-
-                &.employers::before {
-                    background-image: url("../images/employers-icon.png");
-                }
-
-                &.recruiters::before {
-                    background-image: url("../images/recruiters-icon.png");
-                }
-
-                &.jobs::before {
-                    background-image: url("../images/jobs-icon.png");
-                }
-
-                &.interviews::before {
-                    background-image: url("../images/interviews-icon.png");
-                }
-
-                &.payments::before {
-                    background-image: url("../images/payments-icon.png");
-                }
-
-                &.rewards::before {
-                    background-image: url("../images/rewards-icon.png");
-                }
-
-                &.reports::before {
-                    background-image: url("../images/reports-icon.png");
-                }
-
-                &.manage::before {
-                    background-image: url("../images/manage-icon.png");
-                }
-            }
-        }
-    }
-
-    ul p {
-        color: #fff;
-        padding: 10px;
-    }
-
-    ul li a {
-        padding: 15px;
-        font-size: 14px;
-        display: block;
-    }
-
-    ul li a:hover {
-        color: $halfBlack;
-        background: $yellow;
-    }
-
-    ul li.active>a,
-    a[aria-expanded="true"] {
-        color: $halfBlack;
-        background: $yellow;
-    }
-
-    .dropdown-toggle::after {
-        display: block;
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translateY(-50%);
-    }
-
-    ul ul a {
-        font-size: 0.9em !important;
-        padding-left: 30px !important;
-        background: $halfBlack;
-    }
-}
-
 a[data-toggle="collapse"] {
     position: relative;
-}
-
-.overlay {
-    display: none;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 998;
-    opacity: 0;
-    transition: all 0.5s ease-in-out;
-
-    &.active {
-        display: block;
-        opacity: 1;
-    }
-}
-
-#content {
-    width: 100%;
-    min-height: 100vh;
-    transition: all 0.3s;
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    >.navbar {
-        .fa-align-justify {
-            font-size: 18px;
-            padding: 2px 5px;
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -210px;
-    }
-
-    #sidebar.active {
-        margin-left: 0;
-    }
 }
 
 .col-center {
@@ -208,148 +39,7 @@ a[data-toggle="collapse"] {
     }
 }
 
-.skeleton-box {
-    display: inline-block;
-    height: 10px;
-    position: relative;
-    overflow: hidden;
-    background-color: #DDDBDD;
 
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        transform: translateX(-100%);
-        background-image: linear-gradient(90deg,
-                rgba(#fff, 0) 0,
-                rgba(#fff, 0.3) 30%,
-                rgba(#fff, 0.6) 60%,
-                rgba(#fff, 0));
-        animation: shimmer 2.0s infinite;
-    }
-
-    @keyframes shimmer {
-        100% {
-            transform: translateX(100%);
-        }
-    }
-}
-
-.sb-xs {
-    width: 20%;
-}
-
-.sb-sm {
-    width: 40%;
-}
-
-.sb-md {
-    width: 60%;
-}
-
-.sb-lg {
-    width: 80%;
-}
-
-.sb-xl {
-    width: 100%;
-}
-
-.font-xs {
-    font-size: 10px;
-}
-
-.btn[class*=btn-outline-] {
-    padding: 4px 5px;
-}
-
-.btn {
-    border-radius: 5px;
-    font-size: 10px;
-    padding: 4px 5px;
-    margin: 0;
-    text-transform: capitalize;
-    @include transitionAll;
-
-    &-activated {
-        width: 75px;
-        border: 1px solid $green;
-        color: $green;
-
-        &.active,
-        &:hover {
-            background: $green;
-            color: $white;
-        }
-    }
-
-    &-deactivated {
-        border: 1px solid $red;
-        color: $red;
-        width: 75px;
-
-        &.active,
-        &:hover {
-            background: $red;
-            color: $white;
-        }
-    }
-
-    &-new {
-        border: 1px solid $blue;
-        color: $blue;
-        width: 75px;
-
-        &.active,
-        &:hover {
-            background: $blue;
-            color: $white;
-        }
-    }
-
-    &-non-active {
-        border: 1px solid $orange;
-        color: $orange;
-        width: 75px;
-
-        &.active,
-        &:hover {
-            background: $orange;
-            color: $white;
-        }
-    }
-
-    &-open {
-        border: 1px solid #959595;
-        color: $halfBlack;
-        width: 75px;
-
-        &.active,
-        &:hover {
-            //background: $halfBlack;
-            color: $halfBlack;
-        }
-    }
-}
-
-.btn-big {
-    width: 120px;
-    border: 1px solid #b7b7b7;
-    @include bold-font;
-    font-size: 14px;
-    letter-spacing: 1px;
-    padding: 14px 20px;
-    box-shadow: none;
-
-    &.blue {
-        background: $blue;
-        color: $white;
-        border: 1px solid $blue;
-    }
-}
 
 .bg-white {
     background: $white;
@@ -360,13 +50,14 @@ a[data-toggle="collapse"] {
 }
 
 .ant-container {
-    @include respond-to(1440px) {        
+    @include respond-to(1440px) {
         width: percentage(1410/1440);
     }
 
     @include respond-to(1600px) {
         width: percentage(1570/1600);
     }
+
     @include respond-to(1920px) {
         width: percentage(1890/1920);
     }
@@ -377,6 +68,7 @@ a[data-toggle="collapse"] {
     font-size: 11px;
     margin-top: 10px;
     display: inline-block;
+
     @include respond-to($xxs) {
         font-size: 18px;
         margin-top: 4px;
@@ -394,6 +86,7 @@ a[data-toggle="collapse"] {
         position: relative;
         top: -1px;
         margin-right: 10px;
+
         @include respond-to($xxs) {
             margin-right: 20px;
         }
@@ -426,168 +119,6 @@ a[data-toggle="collapse"] {
     }
 }
 
-.modal-dialog {
-    .modal-content {
-        border-radius: 6px;
-    }
-
-    .modal-header {
-        border-top-left-radius: 6px !important;
-        border-top-right-radius: 6px !important;
-        background: $silver;
-    }
-
-    .modal-title {
-        @include semibold-font;
-        font-size: 16px;
-        display: inline-block;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        color: $black;
-
-        @include respond-to($xxs) {
-            font-size: 18px;
-        }
-    }
-
-    .close {
-        >span {
-            display: inline-block;
-            width: 14px;
-            height: 14px;
-            background-image: url("../images/close-icon.png");
-            background-repeat: no-repeat;
-            background-position: 0 0;
-            vertical-align: middle;
-            overflow: hidden;
-            text-indent: -99999px;
-        }
-    }
-
-    .modal-footer {
-        display: initial;
-    }
-}
-
-.custom-file-input:lang(en)~.custom-file-label::after {
-    content: "Upload";
-    margin: 3px;
-    border: 1px solid #b7b7b7;
-    border-radius: 3px;
-    font-weight: 700;
-    padding: 7px 22px;
-    height: 35px;
-    background: $white;
-}
-
-.custom-file-label {
-    height: 42px;
-    padding: 10px .75rem;
-
-    &::before {
-        content: "Choose File";
-        float: right;
-        margin-right: 100px;
-        color: $blue;
-        font-weight: 500;
-        @include respond-to($xxs, max) {
-            display: none;
-        }
-    }
-
-}
-
-.filter-body {
-    font-size: 0;
-    padding: 0;
-    min-height: 450px;
-}
-
-.filter {
-
-    &-list,
-    &-content {
-        display: inline-block;
-        font-size: 12px;
-        vertical-align: top;        
-        @include respond-to($xs) {
-            min-height: 450px;
-        }
-    }
-
-    &-list {
-        width: percentage(175/646);
-        border-right: 1px solid $silver;
-        @include respond-to($xs, max) {
-            width: percentage(646/646);
-            overflow: auto;
-            border-bottom: 1px solid $silver;
-        }
-
-        ul {
-            @include respond-to($xs, max) {
-                width: 410px;
-            }
-
-            >li {
-                list-style: none;
-                @include medium-font;
-                color: $halfBlack;
-                @include respond-to($xs, max) {
-                    display: inline-block;
-                    margin-bottom: 0;
-                }
-                >a {
-                    display: block;
-                    padding: 10px 20px;
-
-                    &:hover {
-                        color: $halfBlack;
-                    }
-                }
-
-                &.active a {
-                    background: $yellow;
-                    color: $halfBlack;
-                }
-            }
-        }
-    }
-
-    &-content {
-        width: percentage(646/646);
-        padding: 15px;
-        @include respond-to($xs) {
-            width: percentage(471/646);
-        }
-
-        >div {
-            &:not(:first-child) {
-                display: none;
-            }
-        }
-
-        h5 {
-            @include medium-font;
-            font-size: 12px;
-        }
-    }
-}
-
-.status-action {
-    margin-top: 15px;
-
-    >button {
-        &:not(:last-child) {
-            margin-right: 10px;
-            @include respond-to($xxs, max) {
-                margin-bottom: 15px;
-            }
-        }
-    }
-}
-
 .content-body {
     min-height: 340px;
     border-bottom: 1px solid #ececec;
@@ -610,94 +141,10 @@ p.ant-title {
     @include multiline-text(12px, 1.4, 1);
 }
 
-.medium {
-    font-weight: 500;
-}
-
-.bold {
-    font-weight: 700;
-}
-
 .file-upload {
     margin-top: 30px;
-}
-
-.modal-lg {
-    @include respond-to(992px) {
-        width: 646px;
-    }
-}
-
-#newRegistration {
-    .modal-body {
-        padding: 20px 30px;
-        min-height: 350px;
-    }
-}
-
-.card {
-    @include prefixes(box-shadow, none);
 }
 
 .blue-text {
     color: $blue;
 }
-
-.ant-dropdown {
-    border: 1px solid #959595;
-    padding: 5px 20px 5px 10px;
-    width: 100px;
-    text-align: left;
-    background: $white;
-
-    &::after {
-        position: absolute;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-        color: #000;
-    }
-
-    +.dropdown-menu {
-        padding: 0;
-        min-width: 100px;
-        .dropdown-item {
-            font-size: 10px;
-            padding: 5px 10px;
-            &:hover {
-                background: $blue;
-                color: $white;
-            }
-        }
-    }
-}
-
-ul.bank-details {
-    padding: 10px;
-    li {        
-        list-style: none;
-        font-size: 10px;
-        display: table;
-        &:not(:last-child) {
-            margin-bottom: 10px;
-        }
-        span {
-            min-width: 80px;
-            display: table-cell;
-        }
-    }
-}
-
-.bank-popover {
-    display: inline-block;
-    width: 14px;
-    height: 14px;
-    background-image: url("../images/info-icon.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    vertical-align: middle;
-    overflow: hidden;
-    text-indent: -99999px;
-}
-
-

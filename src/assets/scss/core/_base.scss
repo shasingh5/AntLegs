@@ -67,7 +67,7 @@ a {
 }
 
 .card-wrapper {
-
+	
     .col-md-4 {
         @include respond-to(768px, 1154px){
             -ms-flex: 0 0 33.333333%;

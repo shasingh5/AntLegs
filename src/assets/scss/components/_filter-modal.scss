@@ -1,0 +1,95 @@
+.filter-body {
+    font-size: 0;
+    padding: 0;
+    min-height: 450px;
+}
+
+.filter {
+    &-list,
+    &-content {
+        display: inline-block;
+        font-size: 12px;
+        vertical-align: top;        
+        @include respond-to($xs) {
+            min-height: 450px;
+        }
+    }
+
+    &-list {
+        width: percentage(175/646);
+        border-right: 1px solid $silver;
+        @include respond-to($xs, max) {
+            width: percentage(646/646);
+            overflow: auto;
+            border-bottom: 1px solid $silver;
+        }
+
+        ul {
+            @include respond-to($xs, max) {
+                width: 410px;
+            }
+
+            >li {
+                list-style: none;
+                @include medium-font;
+                color: $halfBlack;
+                @include respond-to($xs, max) {
+                    display: inline-block;
+                    margin-bottom: 0;
+                }
+                >a {
+                    display: block;
+                    padding: 10px 20px;
+
+                    &:hover {
+                        color: $halfBlack;
+                    }
+                }
+
+                &.active a {
+                    background: $yellow;
+                    color: $halfBlack;
+                }
+            }
+        }
+    }
+
+    &-content {
+        width: percentage(646/646);
+        padding: 15px;
+        @include respond-to($xs) {
+            width: percentage(471/646);
+        }
+
+        >div {
+            &:not(:first-child) {
+                display: none;
+            }
+        }
+
+        h5 {
+            @include medium-font;
+            font-size: 12px;
+        }
+    }
+}
+
+.status-action {
+    margin-top: 15px;
+
+    >button {
+        &:not(:last-child) {
+            margin-right: 10px;
+            @include respond-to($xxs, max) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+#newRegistration {
+    .modal-body {
+        padding: 20px 30px;
+        min-height: 350px;
+    }
+}

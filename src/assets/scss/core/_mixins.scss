@@ -1,60 +1,72 @@
-@mixin light-font {
-    font-family: $poppins;
-    font-weight: $poppinsLight;
-}
-@mixin regular-font {
+@mixin font-family {
   font-family: $poppins;
-  font-weight: $poppinsRegular;
-}
-@mixin medium-font {
-    font-family: $poppins;
-    font-weight: $poppinsMedium;
-}
-@mixin semibold-font {
-  font-family: $poppins;
-  font-weight: $poppinsSemiBold;
-}
-@mixin bold-font {
-    font-family: $poppins;
-    font-weight: $poppinsBold;
-}
-@mixin extrabold-font {
-  font-family: $poppins;
-  font-weight: $poppinsExtraBold;
-}
-@mixin black-font {
-    font-family: $poppins;
-    font-weight: $poppinsBlack; 
-}
-@mixin transitionAll {
-    transition: all .3s;
-}
-@mixin boxShadowFull {
-    box-shadow: 0px 0px 24px -4px rgba(0, 0, 0, 0.50);
 }
 
-@mixin scaleImg{
-    transform: scale(1.05);
+@mixin light-font {
+  @include font-family;
+  font-weight: $fontLight;
+}
+
+@mixin regular-font {
+  @include font-family;
+  font-weight: $fontRegular;
+}
+
+@mixin medium-font {
+  @include font-family;
+  font-weight: $fontMedium;
+}
+
+@mixin semibold-font {
+  @include font-family;
+  font-weight: $fontSemiBold;
+}
+
+@mixin bold-font {
+  @include font-family;
+  font-weight: $fontBold;
+}
+
+@mixin extrabold-font {
+  @include font-family;
+  font-weight: $fontExtraBold;
+}
+
+@mixin black-font {
+  @include font-family;
+  font-weight: $fontBlack;
+}
+
+@mixin transitionAll {
+  transition: all .3s;
+}
+
+@mixin boxShadowFull {
+  box-shadow: 0px 0px 24px -4px rgba(0, 0, 0, 0.50);
+}
+
+@mixin scaleImg {
+  transform: scale(1.05);
 }
 
 @mixin respond-to($val, $val2: none) {
-    @if $val2==none {
-        @media (min-width: $val) {
-            @content;
-        }
+  @if $val2==none {
+    @media (min-width: $val) {
+      @content;
     }
+  }
 
-    @else if $val2==max {
-        @media (max-width: $val) {
-            @content;
-        }
+  @else if $val2==max {
+    @media (max-width: $val) {
+      @content;
     }
+  }
 
-    @else {
-        @media (min-width: $val) and (max-width: $val2) {
-            @content;
-        } 
+  @else {
+    @media (min-width: $val) and (max-width: $val2) {
+      @content;
     }
+  }
 }
 
 @mixin aspect-ratio($width, $height) {
@@ -80,12 +92,15 @@
   @-webkit-keyframes #{$animation-name} {
     @content;
   }
+
   @-moz-keyframes #{$animation-name} {
     @content;
-  }  
+  }
+
   @-o-keyframes #{$animation-name} {
     @content;
-  }    
+  }
+
   @keyframes #{$animation-name} {
     @content;
   }
@@ -152,10 +167,10 @@
   @font-face {
     font-family: quote($font-name);
     src: url($file-name + '.eot');
-    src: url($file-name + '.eot?#iefix')  format('embedded-opentype'),
+    src: url($file-name + '.eot?#iefix') format('embedded-opentype'),
     url($file-name + '.woff') format('woff'),
-    url($file-name + '.ttf')  format('truetype'),
-    url($file-name + '.svg##{$font-name}')  format('svg');
+    url($file-name + '.ttf') format('truetype'),
+    url($file-name + '.svg##{$font-name}') format('svg');
     font-weight: $weight;
     font-style: $style;
   }

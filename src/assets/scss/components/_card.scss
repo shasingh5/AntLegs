@@ -35,6 +35,10 @@
   }
 }
 
+.card {
+    @include prefixes(box-shadow, none);
+}
+
 
 .web-link {
   color: $blue;
