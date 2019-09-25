@@ -10,33 +10,44 @@
   cursor: pointer;
   border-top: 2px solid $white;
   height: calc(100% - 20px);
+
   &:hover {
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,.16), 0 5px 20px 0 rgba(0,0,0,.12);
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .16), 0 5px 20px 0 rgba(0, 0, 0, .12);
     border-top: 2px solid $blue;
   }
+
   .card-title {
     @include multiline-text(12px, 1.4, 1);
-    margin-bottom: 0.25rem;    
+    margin-bottom: 0.25rem;
   }
 
   .card-bold {
     @include bold-font;
-  }   
+  }
 
   .ant-content {
-    min-height: 128px;    
+    min-height: 128px;
+
+  }
+}
+
+.ant-content {
+  h5 {
+    font-size: 12px;
+    line-height: 1.4;
   }
 }
 
 .publish-date {
   font-size: 10px;
+
   >span {
     color: $grey;
   }
 }
 
 .card {
-    @include prefixes(box-shadow, none);
+  @include prefixes(box-shadow, none);
 }
 
 
@@ -49,7 +60,7 @@
   margin: 20px 0;
 }
 
-.card-title.nsa, .ant-title.nsa {
+.card-title.nsa,
+.ant-title.nsa {
   margin-bottom: 10px;
 }
-

@@ -39,11 +39,13 @@
 
 .dropdown-toggle {
 	&::after {
-		content: "\f107";
-		display: inline-block;
-		font: normal normal normal 14px/1 FontAwesome;
-		font-size: inherit;
-		text-rendering: auto;
+		//content: "\f107";
+		width: 8px;
+		height: 5px;
+		background-image: url("../images/dropdown-arrow.png");
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		display: inline-block;		
 		border: 0;
 		vertical-align: inherit;
 		margin-left: 10px;		

@@ -203,6 +203,11 @@ a[data-toggle="collapse"] {
   font-size: 11px;
   margin-top: 10px;
   display: inline-block;
+  color: #000000;
+}
+
+.main-heading:hover {
+  color: #000000;
 }
 
 @media (min-width: 400px) {
@@ -569,11 +574,12 @@ p.ant-title {
 }
 
 .dropdown-toggle::after {
-  content: "\f107";
+  width: 8px;
+  height: 5px;
+  background-image: url("../images/dropdown-arrow.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
   border: 0;
   vertical-align: inherit;
   margin-left: 10px;
@@ -710,6 +716,7 @@ p.ant-title {
   padding: 15px;
   font-size: 14px;
   display: block;
+  color: #333333;
 }
 
 #sidebar ul li a:hover {
@@ -866,6 +873,7 @@ footer {
 .filter-list ul > li > a {
   display: block;
   padding: 10px 20px;
+  color: #000000;
 }
 
 .filter-list ul > li > a:hover {
@@ -993,6 +1001,11 @@ footer {
   min-height: 128px;
 }
 
+.ant-content h5 {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
 .publish-date {
   font-size: 10px;
 }
@@ -1018,12 +1031,13 @@ footer {
   margin: 20px 0;
 }
 
-.card-title.nsa, .ant-title.nsa {
+.card-title.nsa,
+.ant-title.nsa {
   margin-bottom: 10px;
 }
 
 .rating {
-  font-size: 15px;
+  font-size: 12px;
   margin-bottom: 15px;
   color: #ffcc32;
 }
@@ -1076,6 +1090,7 @@ ul.bank-details li span {
 .candidate-status li {
   list-style: none;
   display: inline-block;
+  margin-top: 0.6em;
   margin-bottom: .5rem;
   width: 100%;
 }

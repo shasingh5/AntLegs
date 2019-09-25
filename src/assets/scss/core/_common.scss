@@ -68,6 +68,10 @@ a[data-toggle="collapse"] {
     font-size: 11px;
     margin-top: 10px;
     display: inline-block;
+    color: $black;
+    &:hover {
+        color: $black;
+    }
 
     @include respond-to($xxs) {
         font-size: 18px;
