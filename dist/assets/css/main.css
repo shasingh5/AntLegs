@@ -585,7 +585,8 @@ p.ant-title {
   margin-left: 10px;
 }
 
-.user-icon, .bell-icon {
+.user-icon,
+.bell-icon {
   display: inline-block;
   width: 16px;
   height: 16px;
@@ -617,6 +618,187 @@ p.ant-title {
   height: 9px;
   border-radius: 50%;
   background: #ffcc32;
+}
+
+.notification-globle {
+  color: #333333;
+}
+
+.notification-globle .dropdown-menu {
+  padding: 0;
+  margin: 0;
+  width: 465px;
+}
+
+.notification-globle h4 {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  background: #f2f4f6;
+  padding: 14px;
+  margin-bottom: 0;
+}
+
+.notification-globle ul {
+  margin: 0;
+  padding: 0;
+}
+
+.notification-globle ul li {
+  list-style: none;
+  margin: 1px 0;
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 1px;
+}
+
+.notification-globle ul li.unread-msg, .notification-globle ul li.read-msg {
+  background: #eaf0f6;
+}
+
+.notification-globle ul li.unread-msg .alert-list > span, .notification-globle ul li.read-msg .alert-list > span {
+  position: relative;
+}
+
+.notification-globle ul li.unread-msg .alert-list > span.alert-time::after, .notification-globle ul li.read-msg .alert-list > span.alert-time::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #306ba3;
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  right: 8px;
+}
+
+.notification-globle ul li.read-msg {
+  background: #ffffff;
+}
+
+.notification-globle ul li.read-msg .alert-list > span.alert-time::after {
+  background: transparent;
+}
+
+.notification-globle a.alert-list {
+  display: table;
+  width: 100%;
+  color: #333333;
+  padding: 14px 10px;
+}
+
+.notification-globle a.alert-list > span[class|=alert] {
+  display: table-cell;
+}
+
+.notification-globle a.alert-list > span.alert-msg {
+  width: 72.36842%;
+}
+
+.notification-globle a.alert-list > span.alert-time {
+  width: 72.36842%;
+  color: #999999;
+  text-align: right;
+  padding-right: 25px;
+  font-size: 10px;
+  font-weight: 300;
+}
+
+.notification-globle a.alert-list > span.alert-time > i {
+  font-style: normal;
+  display: block;
+}
+
+.notification-globle a.alert-list > span.alert-time > i:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.inline-email {
+  padding-left: 40px;
+  position: relative;
+}
+
+.inline-email::before {
+  content: "";
+  width: 22px;
+  height: 16px;
+  background: url("../images/blue-down-arrow.png") center no-repeat;
+  display: inline-block;
+  position: absolute;
+  top: 14px;
+  left: 12px;
+}
+
+.inline-email a.alert-list {
+  padding-left: 0;
+}
+
+.inline-email .email-box {
+  background: #f4f4f4;
+  max-width: 400px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.inline-email .email-box .btn:not(:last-child) {
+  margin-right: 15px;
+}
+
+.inline-email .email-box .btn:hover, .inline-email .email-box .btn:focus {
+  box-shadow: none;
+}
+
+.inline-email .email-box .btn.active {
+  font-weight: 600;
+}
+
+.inline-email .email-box .btn::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url("../images/email-icon.png") center no-repeat;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.inline-email .email-box .btn.delete::before {
+  background: url("../images/delete-icon.png") center no-repeat;
+}
+
+.inline-email .my-group {
+  margin-top: 10px;
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+}
+
+.inline-email .my-group .text-area {
+  border: 0;
+  max-width: 100%;
+  max-height: 100%;
+  font-size: 10px;
+  padding: 10px;
+}
+
+.inline-email .my-group .input-group-btn .btn {
+  height: 100%;
+  min-width: 35px;
+  text-indent: -99999px;
+}
+
+.inline-email .my-group .input-group-btn .btn:hover, .inline-email .my-group .input-group-btn .btn:focus {
+  box-shadow: none;
+}
+
+.inline-email .my-group .input-group-btn .btn::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url("../images/next-arrow-icon.png") center no-repeat;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 #sidebar {

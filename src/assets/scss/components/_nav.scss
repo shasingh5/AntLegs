@@ -9,9 +9,11 @@
 .logo {
 	@include bold-font;
 	@include rem(font-size, 22px);
+
 	span {
 		color: $blue;
 		letter-spacing: 2px;
+
 		&:last-child {
 			color: $yellow;
 		}
@@ -20,21 +22,23 @@
 
 .navbar {
 	font-weight: 400;
+
 	.dropdown-menu a {
 		padding: 5px 10px;
 		font-size: 12px;
-		font-weight: normal;		
+		font-weight: normal;
 	}
 }
 
 #content {
 	.navbar {
 		padding: 13px 0;
+
 		@include respond-to(991.98px, max) {
 			padding-left: 15px;
 			padding-right: 15px;
 		}
-	}	
+	}
 }
 
 .dropdown-toggle {
@@ -45,25 +49,26 @@
 		background-image: url("../images/dropdown-arrow.png");
 		background-repeat: no-repeat;
 		background-position: 0 0;
-		display: inline-block;		
+		display: inline-block;
 		border: 0;
 		vertical-align: inherit;
-		margin-left: 10px;		
+		margin-left: 10px;
 	}
 
 }
 
-.user-icon, .bell-icon {
+.user-icon,
+.bell-icon {
 	display: inline-block;
 	width: 16px;
-	height: 16px;	
+	height: 16px;
 	background-repeat: no-repeat;
 	background-position: 0 0;
 	vertical-align: middle;
 	overflow: hidden;
 	text-indent: -99999px;
 	margin-top: -4px;
-    margin-right: 10px;
+	margin-right: 10px;
 }
 
 .user-icon {
@@ -74,6 +79,7 @@
 	position: relative;
 	background-image: url("../images/notification-icon.png");
 	overflow: initial;
+
 	&::after {
 		content: '';
 		position: absolute;
@@ -83,5 +89,199 @@
 		height: 9px;
 		border-radius: 50%;
 		background: $yellow;
+	}
+}
+
+.notification-globle {
+	color: $halfBlack;
+
+	.dropdown-menu {
+		padding: 0;
+		margin: 0;
+		width: 465px;
+	}
+
+	h4 {
+		font-size: 18px;
+		font-weight: 600;
+		text-align: center;
+		background: $silver;
+		padding: 14px;
+		margin-bottom: 0;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+		li {
+			list-style: none;
+			margin: 1px 0;
+			border-bottom: 1px solid #e2e2e2;
+			padding-bottom: 1px;
+
+			&.unread-msg,
+			&.read-msg {
+				background: #eaf0f6;
+
+				.alert-list >span {
+					position: relative;
+
+					&.alert-time {
+						&::after {
+							content: "";
+							width: 8px;
+							height: 8px;
+							border-radius: 50%;
+							background: $blue;
+							display: inline-block;
+							position: absolute;
+							top: 5px;
+							right: 8px;
+						}
+					}
+				}
+			}
+
+			&.read-msg {
+				background: $white;
+
+				.alert-list >span.alert-time::after {
+					background: transparent;
+				}
+			}
+		}
+	}
+
+	a.alert-list {
+		display: table;
+		width: 100%;
+		color: $halfBlack;
+		padding: 14px 10px;
+
+		>span[class|=alert] {
+			display: table-cell;
+		}
+
+		>span {
+			&.alert-msg {
+				width: percentage(330/456);
+			}
+
+			&.alert-time {
+				width: percentage(330/456);
+				color: $grey;
+				text-align: right;
+				padding-right: 25px;
+				font-size: 10px;
+				font-weight: 300;
+
+				>i {
+					font-style: normal;
+					display: block;
+
+					&:not(:last-child) {
+						margin-bottom: 5px;
+					}
+				}
+			}
+		}
+
+
+	}
+}
+
+.inline-email {
+	padding-left: 40px;
+	position: relative;
+
+	&::before {
+		content: "";
+		width: 22px;
+		height: 16px;
+		background: url("../images/blue-down-arrow.png") center no-repeat;
+		display: inline-block;
+		position: absolute;
+		top: 14px;
+		left: 12px;
+	}
+
+	a.alert-list {
+		padding-left: 0;
+	}
+
+	.email-box {
+		background: #f4f4f4;
+		max-width: 400px;
+		padding: 10px;
+		margin-bottom: 15px;
+
+		.btn {
+			&:not(:last-child) {
+				margin-right: 15px;
+			}
+
+			&:hover,
+			&:focus {
+				box-shadow: none;
+			}
+
+			&.active {
+				font-weight: 600;
+			}
+
+			&::before {
+				content: "";
+				width: 15px;
+				height: 15px;
+				background: url("../images/email-icon.png") center no-repeat;
+				display: inline-block;
+				margin-right: 10px;
+				vertical-align: middle;
+			}
+
+			&.delete::before {
+				background: url("../images/delete-icon.png") center no-repeat;
+			}
+		}
+	}
+
+	.my-group {
+		margin-top: 10px;
+		border: 1px solid #c8c8c8;
+		border-radius: 5px;
+
+		.text-area {
+			border: 0;
+			max-width: 100%;
+			max-height: 100%;
+			font-size: 10px;
+			padding: 10px;
+		}
+
+		.input-group-btn {
+			.btn {
+				height: 100%;
+				min-width: 35px;
+				text-indent: -99999px;
+
+				&:hover,
+				&:focus {
+					box-shadow: none;
+				}
+
+				&::before {
+					content: "";
+					width: 15px;
+					height: 15px;
+					background: url("../images/next-arrow-icon.png") center no-repeat;
+					display: inline-block;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+				}
+			}
+		}
 	}
 }
