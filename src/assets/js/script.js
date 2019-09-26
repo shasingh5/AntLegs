@@ -10,6 +10,10 @@
         theme: "minimal"
     });
 
+    $("#notification").mCustomScrollbar({
+        theme: "minimal-dark"
+    });
+
     $('#dismiss, .overlay').on('click', function () {
         $('#sidebar').removeClass('active');
         $('.overlay').removeClass('active');
@@ -20,6 +24,10 @@
         $('.overlay').addClass('active');
         $('.collapse.in').toggleClass('in');
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+    });    
+
+    $('.dropdown-menu').click(function(e) {
+        e.stopPropagation();
     });
 
 
@@ -54,6 +62,17 @@
     $('[data-toggle="pophover"]').popover({
         html: true,
         //trigger: "hover"
+    });
+
+    
+    $(".inline-email .alert-list").on("click", function(event){                
+        $(this).next(".email-box").slideToggle();
+        $(this).parent().toggleClass("open");            
+    });
+
+    $(".email-box > .email").on("click", function(event){
+        $(this).parent(".email-box").find(".msg-box").slideToggle();
+        $(this).toggleClass("active");
     });
 
     
