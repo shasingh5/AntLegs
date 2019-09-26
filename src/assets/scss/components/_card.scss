@@ -1,5 +1,11 @@
 .employer-logo {
   margin-bottom: 10px;
+
+  img.lazy {
+    width: 100px;
+    height: 35px;
+    display: block;
+  }
 }
 
 .ant-card {

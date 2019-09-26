@@ -630,6 +630,8 @@ p.ant-title {
   width: 465px;
   -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+  -ms-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -1197,6 +1199,12 @@ footer {
 
 .employer-logo {
   margin-bottom: 10px;
+}
+
+.employer-logo img.lazy {
+  width: 100px;
+  height: 35px;
+  display: block;
 }
 
 .ant-card {

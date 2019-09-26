@@ -5,6 +5,8 @@
     //     });
     // }
 
+    // Lazy Loading initialization
+    $('.lazy').Lazy();
 
     $("#sidebar").mCustomScrollbar({
         theme: "minimal"
@@ -80,7 +82,7 @@
 })(jQuery);
 
 function renderCard() {
-    $('#skeletonBox .employer-logo').html('<img src="assets/images/sample-logo.jpg" alt="Microsoft">');
+    $('#skeletonBox .employer-logo').html('<img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg" alt="Sample Logo"/>');
     $('#skeletonBox .employer-action').html('<button type="button" class="btn btn-new waves-effect">New</button>');
     $('#skeletonBox .card-title').text("Hexagone Technologies Private Li...");
     $('#skeletonBox .emp-name').text("Information Technology");
