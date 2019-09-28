@@ -69,6 +69,20 @@
       color: $halfBlack;
     }
   }
+
+  &-common {
+    padding: 8px 12px;    
+    font-size: 12px;
+    font-weight: 500;
+    min-width: 100px;
+    background: $white;
+    border: 1px solid #b7b7b7;
+    text-transform: uppercase;
+    &.active {
+      background: $blue;
+      color: $white;
+    }
+  }
 }
 
 .btn-big {

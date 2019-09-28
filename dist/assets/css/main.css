@@ -245,6 +245,7 @@ a[data-toggle="collapse"] {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 12px;
+  text-transform: uppercase;
   background: #ffffff;
   color: #000000;
   padding: 8px 12px;
@@ -510,6 +511,21 @@ p.ant-title {
 
 .btn-open.active, .btn-open:hover {
   color: #333333;
+}
+
+.btn-common {
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  min-width: 100px;
+  background: #ffffff;
+  border: 1px solid #b7b7b7;
+  text-transform: uppercase;
+}
+
+.btn-common.active {
+  background: #306ba3;
+  color: #ffffff;
 }
 
 .btn-big {
@@ -1036,6 +1052,7 @@ footer {
   width: 100px;
   text-align: left;
   background: #ffffff;
+  text-transform: uppercase;
 }
 
 .ant-dropdown::after {
@@ -1059,6 +1076,15 @@ footer {
 .ant-dropdown + .dropdown-menu .dropdown-item:hover {
   background: #306ba3;
   color: #ffffff;
+}
+
+.ad-big {
+  padding: 8px 12px;
+  padding-right: 25px;
+  font-size: 12px;
+  font-weight: 500;
+  min-width: 118px;
+  border: 1px solid #b7b7b7;
 }
 
 .filter-body {
@@ -1436,4 +1462,20 @@ ul.bank-details li span {
 
 .graph-block img {
   display: inline-block;
+}
+
+.header-button {
+  margin: 0;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 0;
+  font-size: 0;
+  display: inline-flex;
+  text-align: right;
+}
+
+.header-button li {
+  list-style: none;
+  display: table-cell;
+  padding: 10px;
 }

@@ -4,7 +4,7 @@
     width: 100px;
     text-align: left;
     background: $white;
-
+    text-transform: uppercase;
     &::after {
         position: absolute;
         right: 10px;
@@ -16,13 +16,30 @@
     +.dropdown-menu {
         padding: 0;
         min-width: 100px;
+
         .dropdown-item {
             font-size: 10px;
             padding: 5px 10px;
+
             &:hover {
                 background: $blue;
                 color: $white;
             }
+        }
+    }
+}
+
+.ad-big {
+    padding: 8px 12px;
+    padding-right: 25px;
+    font-size: 12px;
+    font-weight: 500;
+    min-width: 118px;
+    border: 1px solid #b7b7b7;
+
+    +.dropdown-menu {
+        .dropdown-item {
+            
         }
     }
 }

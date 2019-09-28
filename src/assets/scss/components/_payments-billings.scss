@@ -1,0 +1,14 @@
+.header-button {
+    margin: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 0;
+    font-size: 0;
+    display: inline-flex;
+    text-align: right;
+    li {
+        list-style: none;
+        display: table-cell;
+        padding: 10px;
+    }
+}

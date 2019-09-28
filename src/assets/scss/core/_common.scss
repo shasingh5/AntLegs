@@ -103,6 +103,7 @@ a[data-toggle="collapse"] {
     .filter-open {
         @include medium-font;
         font-size: 12px;
+        text-transform: uppercase;
         background: $white;
         color: $black;
         padding: 8px 12px;
