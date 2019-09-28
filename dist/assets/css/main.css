@@ -304,6 +304,14 @@ p.ant-title {
   color: #306ba3;
 }
 
+.white-wrapper {
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 5px;
+  height: 90%;
+}
+
 .breadcrumbWrapper {
   background-color: #f4f4f4;
   border-radius: 0;
@@ -456,6 +464,7 @@ p.ant-title {
   padding: 4px 5px;
   margin: 0;
   text-transform: capitalize;
+  color: #000000;
   transition: all .3s;
 }
 
@@ -1223,6 +1232,39 @@ footer {
   }
 }
 
+select.select {
+  min-width: 74px;
+  padding: 5px 20px 5px 5px;
+  font-size: 10px;
+  border: 1px solid #b7b7b7;
+  border-radius: 5px;
+  background: url("../images/dropdown-arrow.png") 90% 50% no-repeat;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  /* CAUTION: IE hackery ahead */
+  /* target Internet Explorer 9 to undo the custom arrow */
+}
+
+select.select:focus, select.select:active, select.select:visited {
+  box-shadow: none;
+  outline: none;
+}
+
+select.select::-ms-expand {
+  display: none;
+  /* remove default arrow on ie10 and ie11 */
+}
+
+@media screen and (min-width: 0\0) {
+  select.select {
+    background: none\9;
+    padding: 5px\9;
+  }
+}
+
 .employer-logo {
   margin-bottom: 10px;
 }
@@ -1452,6 +1494,7 @@ ul.bank-details li span {
 
 .graph-block {
   text-align: center;
+  padding-top: 15px;
 }
 
 @media (max-width: 736px) {
@@ -1477,5 +1520,19 @@ ul.bank-details li span {
 .header-button li {
   list-style: none;
   display: table-cell;
-  padding: 10px;
+  padding: 0 10px;
+}
+
+.header-button li .btn-group > .btn-group:not(:last-child) > .btn,
+.header-button li .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+  border-radius: 5px;
+}
+
+.header-button li .btn-group > .btn-group:not(:first-child) > .btn,
+.header-button li .btn-group > .btn:not(:first-child) {
+  border-radius: 5px;
+}
+
+.invoice-tab-pane .candidate-status li {
+  width: 100%;
 }

@@ -153,3 +153,11 @@ p.ant-title {
 .blue-text {
     color: $blue;
 }
+
+.white-wrapper {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: $white;
+    border-radius: 5px;
+    height: percentage(90/100);
+}

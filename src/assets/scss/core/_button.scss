@@ -8,6 +8,7 @@
   padding: 4px 5px;
   margin: 0;
   text-transform: capitalize;
+  color: $black;
   @include transitionAll;
 
   &-activated {

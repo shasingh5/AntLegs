@@ -19,8 +19,36 @@
         margin-right: 100px;
         color: $blue;
         font-weight: 500;
+
         @include respond-to($xxs, max) {
             display: none;
         }
+    }
+}
+
+select.select {
+    min-width: 74px;
+    padding: 5px 20px 5px 5px;
+    font-size: 10px;
+    border: 1px solid #b7b7b7;
+    border-radius: 5px;
+    background: url("../images/dropdown-arrow.png") 90% 50% no-repeat;
+    @include prefixes(appearance, none);
+
+    &:focus, &:active, &:visited {
+        box-shadow: none;
+        outline: none;
+    }
+
+    /* CAUTION: IE hackery ahead */
+    &::-ms-expand {
+        display: none;
+        /* remove default arrow on ie10 and ie11 */
+    }
+
+    /* target Internet Explorer 9 to undo the custom arrow */
+    @media screen and (min-width:0\0) {
+        background: none\9;
+        padding: 5px\9;
     }
 }
