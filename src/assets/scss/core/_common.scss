@@ -71,11 +71,15 @@ a[data-toggle="collapse"] {
     color: $black;
     &:hover {
         color: $black;
-    }
+    }    
 
     @include respond-to($xxs) {
         font-size: 18px;
         margin-top: 4px;
+    }
+
+    @include respond-to($sm, $md) {
+        font-size: 14px;        
     }
 
     &::before {

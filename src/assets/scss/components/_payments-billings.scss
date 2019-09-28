@@ -7,10 +7,39 @@
     display: inline-flex;
     text-align: right;
 
+    @include respond-to(500px, max) {
+        margin-top: 15px;
+    }
+
+    @include respond-to($sm, max) {
+        width: 100%;
+        display: table;
+        text-align: center;
+    }
+
+    @include respond-to($sm, $md) {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
     li {
         list-style: none;
         display: table-cell;
         padding: 0 10px;
+
+        @include respond-to($sm, max) {
+            display: inline-block;
+        }
+
+        &:last-child {
+            @include respond-to($sm, max) {
+                margin-top: 15px;
+            }
+        }
+
+        @include respond-to($sm, $md) {
+            padding: 0 5px;
+        }
 
         .btn-group>.btn-group:not(:last-child)>.btn,
         .btn-group>.btn:not(:last-child):not(.dropdown-toggle) {
@@ -26,8 +55,41 @@
 
 .invoice-tab-pane {
     .candidate-status {
-        li {            
-            width: 100%;            
+        li {
+            width: 100%;
+        }
+    }
+}
+
+.ant-tab {
+
+    .nav-tabs .nav-link {
+        color: $halfBlack;
+        border: none;
+        outline: none;
+
+        @include respond-to(400px, max) {
+            font-size: 11px;
+        }
+    }
+
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active,
+    .nav-tabs .nav-link:hover {
+        color: $halfBlack;
+        background-color: #fff;
+        border: none;
+        border-bottom: 3px solid $blue;
+        font-weight: 600;
+    }
+
+    .invoice-tab-pane {
+        .graph-block {
+            @include respond-to($xs, max) {
+                margin: 0;
+                margin-bottom: 20px;
+                padding-top: 0;
+            }
         }
     }
 }

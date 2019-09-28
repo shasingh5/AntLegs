@@ -217,6 +217,12 @@ a[data-toggle="collapse"] {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-heading {
+    font-size: 14px;
+  }
+}
+
 .main-heading::before {
   content: "";
   display: inline-block;
@@ -575,6 +581,10 @@ p.ant-title {
 
 .logo span:last-child {
   color: #ffcc32;
+}
+
+.logo + .btn {
+  color: #ffffff;
 }
 
 .navbar {
@@ -1234,7 +1244,7 @@ footer {
 
 select.select {
   min-width: 74px;
-  padding: 5px 20px 5px 5px;
+  padding: 5px 20px 5px 10px;
   font-size: 10px;
   border: 1px solid #b7b7b7;
   border-radius: 5px;
@@ -1517,10 +1527,49 @@ ul.bank-details li span {
   text-align: right;
 }
 
+@media (max-width: 500px) {
+  .header-button {
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-button {
+    width: 100%;
+    display: table;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header-button {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+}
+
 .header-button li {
   list-style: none;
   display: table-cell;
   padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .header-button li {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-button li:last-child {
+    margin-top: 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header-button li {
+    padding: 0 5px;
+  }
 }
 
 .header-button li .btn-group > .btn-group:not(:last-child) > .btn,
@@ -1535,4 +1584,34 @@ ul.bank-details li span {
 
 .invoice-tab-pane .candidate-status li {
   width: 100%;
+}
+
+.ant-tab .nav-tabs .nav-link {
+  color: #333333;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 400px) {
+  .ant-tab .nav-tabs .nav-link {
+    font-size: 11px;
+  }
+}
+
+.ant-tab .nav-tabs .nav-item.show .nav-link,
+.ant-tab .nav-tabs .nav-link.active,
+.ant-tab .nav-tabs .nav-link:hover {
+  color: #333333;
+  background-color: #fff;
+  border: none;
+  border-bottom: 3px solid #306ba3;
+  font-weight: 600;
+}
+
+@media (max-width: 736px) {
+  .ant-tab .invoice-tab-pane .graph-block {
+    margin: 0;
+    margin-bottom: 20px;
+    padding-top: 0;
+  }
 }

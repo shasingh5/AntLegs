@@ -9,7 +9,7 @@
     $('.lazy').Lazy();
 
     $("#sidebar").mCustomScrollbar({
-        theme: "minimal"
+        theme: "minimal-dark"
     });
 
     $("#notification").mCustomScrollbar({
