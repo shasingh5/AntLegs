@@ -54,14 +54,16 @@
         display: inline-block;
         min-width: 30px;
         height: 24px;
-        text-align: center;
-        background: $yellow;
+        text-align: center;        
         color: $white;
         font-weight: 700;
         padding: 4px;
         margin-bottom: 15px;
         &:not(:last-child) {
             border-right: 1px solid $white;
+        }
+        &.shortlisted {
+            background: $yellow;
         }
         &.interviewed {
             background: $blue;

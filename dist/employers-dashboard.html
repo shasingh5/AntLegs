@@ -265,53 +265,37 @@
 </nav>
       
         <div class="container-fluid ant-container">
-    <!-- Billing & Payments Header -->
+    <!-- Dashboard Header -->
     <div class="row header">
         <div class="col-12 col-md-5 col-lg-6">
-            <a href="index.html" class="main-heading">Manage Billing & Payments</a>
+            <a href="index.html" class="main-heading">Dashboard</a>
         </div>
         <div class="col-12 col-md-7 col-lg-6 text-right">
             <ul class="header-button">
                 <li>
-                    <!--Dropdown primary-->
-                    <div class="dropdown">
-                        <!--Trigger-->
-                        <button class="btn ant-dropdown ad-big dropdown-toggle waves-effect" type="button"
-                            id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">Sort</button>
-
-                        <!--Menu-->
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item waves-effect" href="#">New</a>
-                            <a class="dropdown-item waves-effect" href="#">Cleared</a>
-                            <a class="dropdown-item waves-effect" href="#">Pending</a>
-                            <a class="dropdown-item waves-effect" href="#">Cancelled</a>
-                        </div>
-                    </div>
-                    <!--/Dropdown primary-->
-                </li>
-                <li>
-                    <button class="btn filter-open waves-effect" data-toggle="modal"
-                        data-target="#filterOpen">Filter</button>
-                </li>
-                <li>
                     <div class="btn-group" role="group" aria-label="Basic example">
-                        <a href="#" class="btn btn-common active btn-rounded">EMPLOYER</a>
+                        <a href="#" class="btn btn-common active btn-rounded">Main</a>
+                        <a href="#" class="btn btn-common btn-rounded">EMPLOYER</a>
                         <a href="#" class="btn btn-common btn-rounded">RECRUITER</a>
                     </div>
                 </li>
             </ul>
         </div>
     </div>
-    <!--/ Billing & Payments Header -->
+    <!--/ Dashboard Header -->
     <div class="row row-eq-height">
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-6">
             <div class="white-wrapper">
+                <h1 class="ant-title bold">Yearly Job Posting Ratios</h1>
                 <div class="row">
-                    <div class="col-7 col-sm-6">
-                        <h1 class="ant-title bold">Hirings for the period Jan - Dec, 2019</h1>
+                    <div class="col-7 col-sm-8">
+                        <p class="span">
+                            <span>Postings : <b>100</b></span>
+                            <span>Response : <b>8711</b> </span>
+                            <span>Recruiters Engaged : <b>67</b></span>
+                        </p>
                     </div>
-                    <div class="col-5 col-sm-6">
+                    <div class="col-5 col-sm-4">
                         <div class="employer-action text-right">
                             <select name="" id="" class="select" required="required">
                                 <option value="">2019</option>
@@ -323,64 +307,314 @@
                     </div>
                 </div>
 
+                <ul class="candidate-status graph-legend">
+                    <li class="shortlisted">Shortlisted : (20%)</li>
+                    <li class="interviewed">Interviewed : (40%)</li>
+                    <li class="hirings">Hirings : (10%)</li>
+                    <li class="rejections">Rejections : (60%)</li>
+                </ul>
+
                 <div class="graph-block">
-                    <img src="assets/images/graph.jpg" alt="Graph">
+                    <img src="assets/images/graph-1.jpg" alt="Graph">
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-4">
-            <div class="white-wrapper ant-tab">
-                <ul class="nav nav-tabs nav-justified md-tabs" id="myTabJust" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="home-tab-just" data-toggle="tab" href="#home-just" role="tab"
-                            aria-controls="home-just" aria-selected="true">Reward & Points</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="profile-tab-just" data-toggle="tab" href="#profile-just" role="tab"
-                            aria-controls="profile-just" aria-selected="false">Invoices</a>
-                    </li>
-                </ul>
-                <div class="tab-content card pt-4" id="myTabContentJust">
-                    <div class="tab-pane fade show active" id="home-just" role="tabpanel"
-                        aria-labelledby="home-tab-just">
-                        <p class="ant-title">Total Rewards (USD): <b>200000</b></p>
-                        <p class="ant-title">Total Points : <b>20000</b></p>
-                        <br>
-                        <p class="ant-title">Membership Level : <b>Premium</b></p>
-                        <br>
-                        <div class="rating">
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"> </span>
-                            <span class="fas fa-star"> </span>
-                            <span class="fas fa-star-half-alt"> </span>
-                            <span class="far fa-star"> </span>
+        <div class="col-12 col-md-6">
+            <div class="white-wrapper">
+                <div class="row">
+                    <div class="col-7 col-sm-8">
+                        <p class="ant-title bold">Quick Actions</p>
+                    </div>
+                    <div class="col-5 col-sm-4">
+                        <div class="employer-action text-right">
+                            <select name="" id="" class="select" required="required">
+                                <option value="">Select Employer</option>
+                                <option value="">Microsoft</option>
+                                <option value="">TCS</option>
+                                <option value="">Tech Mahindra</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="profile-just" role="tabpanel" aria-labelledby="profile-tab-just">
-                        <div class="invoice-tab-pane">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="graph-block">
-                                        <img src="assets/images/graph-circle-2.jpg" alt="Graph">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <p class="ant-title nsa">Invoices Received : <b>20</b></p>
-                                    <p class="ant-title nsa">New Invoices :<b>2100</b></p>
-                                    <ul class="candidate-status">
-                                        <li class="hirings">Invoices Cleared : <b>10</b></li>
-                                        <li class="shortlisted">Invoices Pending : <b>30</b></li>
-                                        <li class="rejections">Invoices Cancelled : <b>20</b></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+                </div>
+                <div class="graph-block">
+                    <img src="assets/images/calendar.jpg" alt="Graph">
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="row row-eq-height">
+        <div class="col-12 col-md-6">
+            <div class="white-wrapper">                
+                <div class="row">
+                    <div class="col-7 col-sm-4">
+                        <p class="ant-title bold">Recent Activity</p>
+                    </div>
+                    <div class="col-5 col-sm-8">
+                        <div class="employer-action text-right">
+                            <select name="" id="" class="select" required="required">
+                                <option value="">Select Employer</option>
+                                <option value="">Microsoft</option>
+                                <option value="">TCS</option>
+                                <option value="">Tech Mahindra</option>
+                            </select>
+                            <select name="" id="" class="select" required="required">
+                                <option value="">Select Jobs</option>
+                                <option value="">Accounts</option>
+                                <option value="">HR</option>
+                                <option value="">Sale Executive</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="activities-wrapper">
+                    <ul class="activities-list">
+	<li>
+		<span>Aug 31, 2019</span>
+		<span> <a href="#">Submit</a></span>
+		<span>The proile of Santhosh Kurichianil posted for Java Developer... </span>
+	</li>
+	<li>
+		<span>Aug 31, 2019</span>
+		<span> <a href="#">Submit</a></span>
+		<span>The proile of Santhosh Kurichianil posted for Java Developer... </span>
+	</li>
+	<li>
+		<span>Aug 31, 2019</span>
+		<span> <a href="#">Submit</a></span>
+		<span>The proile of Santhosh Kurichianil posted for Java Developer... </span>
+	</li>
+	<li>
+		<span>Aug 31, 2019</span>
+		<span> <a href="#">Submit</a></span>
+		<span>The proile of Santhosh Kurichianil posted for Java Developer... </span>
+	</li>
+	<li>
+		<span>Aug 31, 2019</span>
+		<span> <a href="#">Submit</a></span>
+		<span>The proile of Santhosh Kurichianil posted for Java Developer... </span>
+	</li>
+	<li>
+		<span>Aug 31, 2019</span>
+		<span> <a href="#">Submit</a></span>
+		<span>The proile of Santhosh Kurichianil posted for Java Developer... </span>
+	</li>
+	<li>
+		<span>Aug 31, 2019</span>
+		<span> <a href="#">Submit</a></span>
+		<span>The proile of Santhosh Kurichianil posted for Java Developer... </span>
+	</li>
+	<li>
+		<span>Aug 31, 2019</span>
+		<span> <a href="#">Submit</a></span>
+		<span>The proile of Santhosh Kurichianil posted for Java Developer... </span>
+	</li>
+	<li>
+		<span>Aug 31, 2019</span>
+		<span> <a href="#">Submit</a></span>
+		<span>The proile of Santhosh Kurichianil posted for Java Developer... </span>
+	</li>
+	<li>
+		<span>Aug 31, 2019</span>
+		<span> <a href="#">Submit</a></span>
+		<span>The proile of Santhosh Kurichianil posted for Java Developer... </span>
+	</li>
+	<li>
+		<span>Aug 31, 2019</span>
+		<span> <a href="#">Submit</a></span>
+		<span>The proile of Santhosh Kurichianil posted for Java Developer... </span>
+	</li>
+	<li>
+		<span>Aug 31, 2019</span>
+		<span> <a href="#">Submit</a></span>
+		<span>The proile of Santhosh Kurichianil posted for Java Developer... </span>
+	</li>
+	<li>
+		<span>Aug 31, 2019</span>
+		<span> <a href="#">Submit</a></span>
+		<span>The proile of Santhosh Kurichianil posted for Java Developer... </span>
+	</li>
+	<li>
+		<span>Aug 31, 2019</span>
+		<span> <a href="#">Submit</a></span>
+		<span>The proile of Santhosh Kurichianil posted for Java Developer... </span>
+	</li>
+	<li>
+		<span>Aug 31, 2019</span>
+		<span> <a href="#">Submit</a></span>
+		<span>The proile of Santhosh Kurichianil posted for Java Developer... </span>
+	</li>
+	<li>
+		<span>Aug 31, 2019</span>
+		<span> <a href="#">Submit</a></span>
+		<span>The proile of Santhosh Kurichianil posted for Java Developer... </span>
+	</li>
+	<li>
+		<span>Aug 31, 2019</span>
+		<span> <a href="#">Submit</a></span>
+		<span>The proile of Santhosh Kurichianil posted for Java Developer... </span>
+	</li>
+	<li>
+		<span>Aug 31, 2019</span>
+		<span> <a href="#">Submit</a></span>
+		<span>The proile of Santhosh Kurichianil posted for Java Developer... </span>
+	</li>
+	<li>
+		<span>Aug 31, 2019</span>
+		<span> <a href="#">Submit</a></span>
+		<span>The proile of Santhosh Kurichianil posted for Java Developer... </span>
+	</li>
+	<li>
+		<span>Aug 31, 2019</span>
+		<span> <a href="#">Submit</a></span>
+		<span>The proile of Santhosh Kurichianil posted for Java Developer... </span>
+	</li>
+	<li>
+		<span>Aug 31, 2019</span>
+		<span> <a href="#">Submit</a></span>
+		<span>The proile of Santhosh Kurichianil posted for Java Developer... </span>
+	</li>
+
+</ul>
+                    
+                    <div class="text-center">
+                        <a href="$" class="link">View All</a>
+                    </div>                    
+                </div>              
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="white-wrapper">
+                <div class="row">
+                    <div class="col-7 col-sm-8">
+                        <p class="ant-title bold">Open Jobs</p>
+                    </div>
+                    <div class="col-5 col-sm-4">
+                        <div class="employer-action text-right">
+                            <select name="" id="" class="select" required="required">
+                                <option value="">Select Employer</option>
+                                <option value="">Microsoft</option>
+                                <option value="">TCS</option>
+                                <option value="">Tech Mahindra</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="activities-wrapper">
+                    <ul class="open-job-list">
+	<li>
+		<h2 class="ant-title"><b>Markegting & Communications Director</b> | Hexagon Technologies</h2>
+		<div class="div-table">			
+			<span>
+				<ul class="responses-list">
+					<li>In Progress:</li>
+					<li class="shortlisted">20</li>
+					<li class="interviewed">12</li>
+					<li class="hirings">10</li>
+					<li class="rejections">08</li>
+					<li>Recruiters Engaged : <b>20</b></li>
+				</ul>
+			</span>			
+			<span class="last-activity"><i>Last Activity : </i>10 days ago</span>
+		</div>
+	</li>
+	<li>
+		<h2 class="ant-title"><b>Markegting & Communications Director</b> | Hexagon Technologies</h2>
+		<div class="div-table">			
+			<span>
+				<ul class="responses-list">
+					<li>In Progress:</li>
+					<li class="shortlisted">20</li>
+					<li class="interviewed">12</li>
+					<li class="hirings">10</li>
+					<li class="rejections">08</li>
+					<li>Recruiters Engaged : <b>20</b></li>
+				</ul>
+			</span>			
+			<span class="last-activity"><i>Last Activity : </i>10 days ago</span>
+		</div>
+	</li>
+	<li>
+		<h2 class="ant-title"><b>Markegting & Communications Director</b> | Hexagon Technologies</h2>
+		<div class="div-table">			
+			<span>
+				<ul class="responses-list">
+					<li>In Progress:</li>
+					<li class="shortlisted">20</li>
+					<li class="interviewed">12</li>
+					<li class="hirings">10</li>
+					<li class="rejections">08</li>
+					<li>Recruiters Engaged : <b>20</b></li>
+				</ul>
+			</span>			
+			<span class="last-activity"><i>Last Activity : </i>10 days ago</span>
+		</div>
+	</li>
+	<li>
+		<h2 class="ant-title"><b>Markegting & Communications Director</b> | Hexagon Technologies</h2>
+		<div class="div-table">			
+			<span>
+				<ul class="responses-list">
+					<li>In Progress:</li>
+					<li class="shortlisted">20</li>
+					<li class="interviewed">12</li>
+					<li class="hirings">10</li>
+					<li class="rejections">08</li>
+					<li>Recruiters Engaged : <b>20</b></li>
+				</ul>
+			</span>			
+			<span class="last-activity"><i>Last Activity : </i>10 days ago</span>
+		</div>
+	</li>
+	<li>
+		<h2 class="ant-title"><b>Markegting & Communications Director</b> | Hexagon Technologies</h2>
+		<div class="div-table">			
+			<span>
+				<ul class="responses-list">
+					<li>In Progress:</li>
+					<li class="shortlisted">20</li>
+					<li class="interviewed">12</li>
+					<li class="hirings">10</li>
+					<li class="rejections">08</li>
+					<li>Recruiters Engaged : <b>20</b></li>
+				</ul>
+			</span>			
+			<span class="last-activity"><i>Last Activity : </i>10 days ago</span>
+		</div>
+	</li>
+</ul>
+                    
+                    <div class="text-center">
+                        <a href="$" class="link">View All</a>
+                    </div>                    
+                </div> 
+            </div>
+
+            <div class="white-wrapper">
+                <div class="row">
+                    <div class="col-7 col-sm-8">
+                        <p class="ant-title bold">Quick Actions</p>
+                    </div>
+                    <div class="col-5 col-sm-4">
+                        <div class="employer-action text-right">
+                            <select name="" id="" class="select" required="required">
+                                <option value="">Select Employer</option>
+                                <option value="">Microsoft</option>
+                                <option value="">TCS</option>
+                                <option value="">Tech Mahindra</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="graph-block">
+                    <img src="assets/images/calendar.jpg" alt="Graph">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <div class="row row-eq-height card-wrapper">
         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
     <!--Card-->
@@ -728,7 +962,7 @@
 		</div>
 	</div>
 </div>
-<!--/ Employer new registration modal -->        
+<!--/ Employer new registration modal -->
         <footer>
   <p class="text-center">Antlegs Technology Solutions Private Limited.</p>
 </footer>
