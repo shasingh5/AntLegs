@@ -1878,3 +1878,67 @@ ul.bank-details li span {
     margin-top: 15px;
   }
 }
+
+#calendar {
+  background: #ffffff;
+}
+
+.fc-toolbar {
+  margin-bottom: 0;
+  padding: 10px;
+  background: #316ea7;
+}
+
+.fc-toolbar h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 8px;
+}
+
+.fc .fc-button {
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  min-width: 100px;
+  height: auto;
+  background: #fff;
+  text-transform: uppercase;
+}
+
+.fc .fc-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.fc .fc-button.fc-state-active {
+  background: #ffcc32;
+}
+
+.fc .fc-prev-button, .fc .fc-next-button {
+  min-width: inherit;
+}
+
+.fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
+  font-size: 20px;
+  padding: 15px;
+}
+
+.fc-day-header {
+  background: #2a5e8e;
+  color: #ffffff;
+}
+
+#interviewScheduled .modal-body {
+  background: #f2f4f6;
+}
+
+#interviewScheduled .modal-dialog .modal-title {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+#dashboardCalendar .fc-day-number {
+  font-size: 12px;
+  padding: 10px;
+}

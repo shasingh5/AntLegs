@@ -1,0 +1,65 @@
+#calendar {
+    background: $white;
+}
+
+.fc-toolbar {
+    margin-bottom: 0;
+    padding: 10px;
+    background: #316ea7;
+
+    h2 {
+        font-size: 18px;
+        font-weight: 700;
+        color: $white;
+        margin-top: 8px;
+    }
+}
+
+.fc .fc-button {        
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 500;
+    min-width: 100px;
+    height: auto;
+    background: #fff;
+    text-transform: uppercase;
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    &.fc-state-active {
+        background: $yellow;
+    }
+}
+
+.fc .fc-prev-button, .fc .fc-next-button {
+    min-width: inherit;
+}
+
+.fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
+    font-size: 20px;
+    padding: 15px;
+}
+
+.fc-day-header {
+    background: #2a5e8e;
+    color: $white;   
+}
+
+#interviewScheduled {
+    .modal-body {        
+        background: #f2f4f6;
+    }
+
+    .modal-dialog .modal-title {
+        font-size: 13px;
+        font-weight: 400;
+    }
+}
+
+#dashboardCalendar .fc-day-number {
+    font-size: 12px;
+    padding: 10px;
+}
+
+

@@ -85,6 +85,97 @@
         $(this).toggleClass("active");
     });
 
+    //Please read document from https://fullcalendar.io/docs
+    //interveiw full calendar
+    $('#calendar').fullCalendar({
+        aspectRatio: 2,
+        header: {
+            left: 'month,agendaWeek',
+            center: 'prev, title, next',
+            right: 'today'
+        },
+        //defaultDate: '2019-09-29',
+        navLinks: true, // can click day/week names to navigate views
+        selectable: true,
+        selectHelper: true,
+        select: function (start, end) {
+            // Display the modal.
+            // You could fill in the start and end fields based on the parameters
+            $('#interviewScheduled').modal('show');
+
+        },
+        // eventClick: function (event, element) {
+        //     // Display the modal and set the values to the event values.
+        //     $('#interviewScheduled').modal('show');
+        //     $('#interviewScheduled').find('#title').val(event.title);
+        //     $('#interviewScheduled').find('#starts-at').val(event.start);
+        //     $('#interviewScheduled').find('#ends-at').val(event.end);
+
+        // },
+        editable: true,
+        eventLimit: true // allow "more" link when too many events
+
+    });
+
+    // Bind the dates to datetimepicker.
+    // You should pass the options you need
+    $("#starts-at, #ends-at").datetimepicker();
+
+    // Whenever the user clicks on the "save" button om the dialog
+    $('#save-event').on('click', function () {
+        var title = $('#title').val();
+        if (title) {
+            var eventData = {
+                title: title,
+                start: $('#starts-at').val(),
+                end: $('#ends-at').val()
+            };
+            $('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
+        }
+        $('#calendar').fullCalendar('unselect');
+
+        // Clear modal inputs
+        // $('.modal').find('input').val('');
+
+        // hide modal
+        $('#interviewScheduled').modal('hide');
+    });
+
+    //dashboard small calendar
+    $('#dashboardCalendar').fullCalendar({
+        aspectRatio: 3,
+        header: {
+            left: 'month',
+            center: 'prev, title, next',
+            right: 'today'
+        },
+        //defaultDate: '2019-09-29',
+        navLinks: true, // can click day/week names to navigate views
+        selectable: true,
+        selectHelper: true,
+        select: function (start, end) {
+            // Display the modal.
+            // You could fill in the start and end fields based on the parameters
+            $('.rollover').show();
+
+        },
+        // eventClick: function (event, element) {
+        //     // Display the modal and set the values to the event values.
+        //     $('#interviewScheduled').modal('show');
+        //     $('#interviewScheduled').find('#title').val(event.title);
+        //     $('#interviewScheduled').find('#starts-at').val(event.start);
+        //     $('#interviewScheduled').find('#ends-at').val(event.end);
+
+        // },
+        editable: true,
+        eventLimit: true // allow "more" link when too many events
+
+    });
+    
+    $(".rollover-header").on("click", ".close", function (event) {
+        $('.rollover').hide();
+    });
+
 })(jQuery);
 
 function renderCard() {
