@@ -23,22 +23,24 @@
         }
     }
 
-    .close {
-        >span {
-            display: inline-block;
-            width: 14px;
-            height: 14px;
-            background-image: url("../images/close-icon.png");
-            background-repeat: no-repeat;
-            background-position: 0 0;
-            vertical-align: middle;
-            overflow: hidden;
-            text-indent: -99999px;
-        }
-    }
+    
 
     .modal-footer {
         display: initial;
+    }
+}
+
+.close {
+    >span {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        background-image: url("../images/close-icon.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        vertical-align: middle;
+        overflow: hidden;
+        text-indent: -99999px;
     }
 }
 

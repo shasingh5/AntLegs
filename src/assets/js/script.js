@@ -16,6 +16,14 @@
         theme: "minimal-dark"
     });
 
+    $(".rollover-list").mCustomScrollbar({
+        theme: "minimal-dark"
+    });
+
+    $(".recent-activities").mCustomScrollbar({
+        theme: "minimal-dark"
+    });
+
     $('#dismiss, .overlay').on('click', function () {
         $('#sidebar').removeClass('active');
         $('.overlay').removeClass('active');

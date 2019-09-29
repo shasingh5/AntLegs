@@ -105,8 +105,10 @@
 		width: 465px;
 		@include prefixes(box-shadow, 0px 0px 8px 0px rgba(0, 0, 0, 0.3));		
 
-		@include respond-to($xs, max) {
+		@include respond-to(990px, max) {
+			max-width: 700px;
 			width: 100%;
+			left: 0;
 		}
 
 		&:after,
@@ -120,8 +122,8 @@
 			position: absolute;
 			pointer-events: none;
 
-			@include respond-to($xs, max) {
-				left: 21%;
+			@include respond-to(990px, max) {
+				left: 65px;
 			}
 		}
 
