@@ -38,7 +38,7 @@
   &-new {
     border: 1px solid $blue;
     color: $blue;
-    width: 75px;
+    min-width: 75px;
 
     &.active,
     &:hover {

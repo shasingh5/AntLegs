@@ -23,6 +23,11 @@
     $(".recent-activities").mCustomScrollbar({
         theme: "minimal-dark"
     });
+ 
+    $(".modal-body").mCustomScrollbar({
+        theme: "minimal-dark"
+    });
+
 
     $('#dismiss, .overlay').on('click', function () {
         $('#sidebar').removeClass('active');

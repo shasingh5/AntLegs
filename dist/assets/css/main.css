@@ -419,6 +419,10 @@ p.ant-title {
   width: 100%;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .modal-dialog .modal-content {
   border-radius: 6px;
 }
@@ -468,6 +472,11 @@ p.ant-title {
   }
 }
 
+.modal-body {
+  background: #ffffff;
+  max-height: 550px;
+}
+
 .btn[class*=btn-outline-] {
   padding: 4px 5px;
 }
@@ -507,7 +516,7 @@ p.ant-title {
 .btn-new {
   border: 1px solid #306ba3;
   color: #306ba3;
-  width: 75px;
+  min-width: 75px;
 }
 
 .btn-new.active, .btn-new:hover {
@@ -1931,6 +1940,7 @@ ul.bank-details li span {
 
 #interviewScheduled .modal-body {
   background: #f2f4f6;
+  max-height: 550px;
 }
 
 #interviewScheduled .modal-dialog .modal-title {
@@ -1941,4 +1951,27 @@ ul.bank-details li span {
 #dashboardCalendar .fc-day-number {
   font-size: 12px;
   padding: 10px;
+}
+
+ul.time-slots {
+  margin: 0;
+  padding: 0;
+}
+
+ul.time-slots li {
+  list-style: none;
+  display: inline-block;
+  font-size: 10px;
+  border: 1px solid #333333;
+  padding: 5px 12px;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+
+.id-content {
+  padding: 20px;
+}
+
+.id-content p {
+  margin-bottom: 5px;
 }
