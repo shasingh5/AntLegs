@@ -1,0 +1,125 @@
+<div class="container-fluid ant-container">
+    <!-- Employer Header -->
+    <div class="row header">
+        <div class="col col-sm-6 col-md-6 col-lg-6">
+            <a href="#" class="main-heading">Manage Jobs</a>
+        </div>        
+    </div>
+    <!--/ Employer Header -->
+    <!-- Employer responseDetails -->
+    <div class="employer-wrapper card">
+        <div class="row">
+            <div class="col col-sm-6">
+                <div class="employer-logo">
+                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-3.jpg" alt="Microsoft"/>
+                </div>
+            </div>
+            <div class="col col-sm-6 text-right">
+                <!--Dropdown primary-->
+                <div class="dropdown">
+                    <!--Trigger-->
+                    <button class="btn ant-dropdown dropdown-toggle waves-effect" type="button" id="dropdownMenu1"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Open</button>
+
+                    <!--Menu-->
+                    <div class="dropdown-menu dropdown-primary">
+                        <a class="dropdown-item" href="#">Draft</a>
+                        <a class="dropdown-item" href="#">On Hold</a>
+                        <a class="dropdown-item" href="#">Closed</a>                        
+                    </div>
+                </div>
+                <!--/Dropdown primary-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="ant-content">
+                    <h5 class="ant-title bold">
+                        Director Marketing & Communications
+                    </h5>
+                    <h5 class="ant-title ">
+                        Hexaware Technologies Pvt Ltd
+                    </h5>  
+                    <h5 class="ant-title address">
+                      Chennai, Tamil Nadu, India
+                    </h5>
+                    <br>
+                    <p class="ant-title">
+                        Openings : <b>20</b> | <a href="#" class="weblink blue-text">View JD</a>
+                    </p>
+                    
+                </div>
+                <div class="ant-footer">
+                    <hr>
+                    <p class="publish-date">
+                        <span>Posted on</span> <b>20 days ago</b>
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="contact-response">                    
+                    <p class="ant-title">Salary (USD PA) : <b>2,00,000</b></p>
+                    <p class="ant-title">Reward (USD) : <b>20,000</b></p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="graph-block">
+                            <img src="assets/images/graph-circle.jpg" alt="Graph">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-8">
+                        <p class="ant-title bold">Overall Summary</p>                        
+                        <p class="ant-title">Recruiters Engaged : <b>10</b></p>
+                        <p class="ant-title">Total Submissions : <b>30</b></p>
+                        <br>
+                        <ul class="candidate-status">
+                            <li class="shortlisted">Shortlisted : <b>100 (50%)</b></li>
+                            <li class="interviewed">Interviewed : <b>50 (50%) </b></li>
+                            <li class="hirings">Hirings : <b>20 (20%)</b></li>
+                            <li class="rejections">Rejections : <b>200 (75%)</b></li>
+                        </ul>                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- /Employer Details -->
+
+    <!-- Sort by -->
+    <div class="sort-by">
+        <div class="row">
+            <div class="col col-sm-12 text-right">
+                <!--Dropdown primary-->
+                <div class="dropdown">
+                    <!--Trigger-->
+                    <button class="btn ant-dropdown dropdown-toggle waves-effect" type="button" id="dropdownMenu2"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort By</button>
+
+                    <!--Menu-->
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Shortlisted</a>
+                        <a class="dropdown-item" href="#">Interviewed</a>
+                        <a class="dropdown-item" href="#">Hired</a>
+                        <a class="dropdown-item" href="#">Rejected</a>
+                    </div>
+                </div>
+                <!--/Dropdown primary-->
+            </div>
+        </div>
+    </div>
+    <!-- /Sort by -->
+
+    <!-- /manage job -->
+    <div class="manage-job">
+        <div class="row card-wrapper">
+            @@include('./partials/components/jobs-hire-card.hbs')
+            @@include('./partials/components/jobs-hire-card.hbs')
+            @@include('./partials/components/jobs-hire-card.hbs')
+            @@include('./partials/components/jobs-hire-card.hbs')
+        </div>
+    </div>
+    <!-- manage job -->
+</div>

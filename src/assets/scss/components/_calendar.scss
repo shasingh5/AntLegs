@@ -46,6 +46,26 @@
     color: $white;   
 }
 
+.fc-toolbar .fc-center {
+    @include respond-to(580px, max) {
+        margin-top: 20px;
+    }
+}
+
+.fc-toolbar {
+    .fc-left, .fc-right {
+        @include respond-to(400px, max) {
+            float: none;
+            display: inline-block;
+        }        
+    }
+    .fc-right {
+        @include respond-to(400px, max) {
+            margin-top: 20px;
+        }
+    }
+}
+
 #interviewScheduled {
     .modal-body {        
         background: #f2f4f6;

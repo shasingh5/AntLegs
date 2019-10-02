@@ -11,6 +11,22 @@ body.modal-open {
         border-top-left-radius: 6px !important;
         border-top-right-radius: 6px !important;
         background: $silver;
+
+        &.shortlisted {
+            border-bottom: 6px solid $yellow;
+        }
+
+        &.interviewed {
+            border-bottom: 6px solid #306ba3;
+        }
+
+        &.hirings {
+            border-bottom: 6px solid #30a38c;
+        }
+
+        &.rejections {
+            border-bottom: 6px solid #d55881;
+        }
     }
 
     .modal-title {
@@ -58,3 +74,4 @@ body.modal-open {
     background: $white;
     max-height: 550px;
 }
+

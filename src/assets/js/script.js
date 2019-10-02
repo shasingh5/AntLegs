@@ -24,7 +24,11 @@
         theme: "minimal-dark"
     });
  
-    $(".modal-body").mCustomScrollbar({
+    // $(".modal-body").mCustomScrollbar({
+    //     theme: "minimal-dark"
+    // });
+    
+    $(".candidate-wrapper").mCustomScrollbar({
         theme: "minimal-dark"
     });
 
@@ -91,6 +95,7 @@
     });
 
     //Please read document from https://fullcalendar.io/docs
+    
     //interveiw full calendar
     $('#calendar').fullCalendar({
         aspectRatio: 2,

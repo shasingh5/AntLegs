@@ -68,17 +68,17 @@
         <li class="waves-effect">
             <a href="index.html" class="employers">Employers</a>
         </li>
-        <li class="waves-effect">
+        <li class="waves-effect active">
             <a href="recruiters.html" class="recruiters">Recruiters</a>
         </li>
         <li class="waves-effect">
             <a href="#" class="jobs">Jobs</a>
         </li>
-        <li class="waves-effect active">
+        <li class="waves-effect">
             <a href="interviews-calendar.html" class="interviews">Interviews</a>
         </li>
         <li class="waves-effect">
-            <a href="#" class="payments">Payments</a>
+            <a href="payments-billings.html" class="payments">Payments</a>
         </li>
         <li class="waves-effect">
             <a href="#" class="rewards">Rewards & Points</a>
@@ -266,44 +266,80 @@
 			</ul>
 		</div>
 	</div>
-</nav> 
-        
+</nav>
+      
         <div class="container-fluid ant-container">
-    <!-- Interviews Header -->
-    <div class="row header">
-        <div class="col-12 col-md-5 col-lg-6">
-            <a href="index.html" class="main-heading">Manage Interviews</a>
+    <!-- jobs Header -->
+<div class="row header">
+    <div class="col-7 col-sm-6 col-md-6 col-lg-6">
+        <a href="#" class="main-heading">Manage Jobs</a>
+    </div>
+    <div class="col-5 col-sm-6 col-md-6 col-lg-6 text-right">
+        <button class="btn filter-open waves-effect" data-toggle="modal" data-target="#filterOpen">Filter</button>
+    </div>
+</div>
+<!--/ jobs Header -->
+    <div class="row row-eq-height recuiters-list card-wrapper">        
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+    <!--Card-->
+    <div class="card ant-card">
+        <div class="row">
+            <div class="col col-sm-6">
+                <div class="employer-logo">
+                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg" alt="Microsoft"/>                    
+                </div>
+            </div>
+            <div class="col col-sm-6">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-open waves-effect">Draft</button>
+                </div>
+            </div>
         </div>
-        <div class="col-12 col-md-7 col-lg-6 text-right">
-            <ul class="header-button">   
-                <li>
-                    <button class="btn filter-open waves-effect" data-toggle="modal" data-target="#filterOpen">Filter</button>
-                </li>             
-                <li>
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <a href="interviews-calendar.html" class="btn btn-common btn-rounded">Calendar</a>
-                        <a href="interviews-details.html" class="btn btn-common active btn-rounded">Details</a>
-                    </div>
-                </li>
+        <!--Card content-->
+        <div class="ant-content">
+            <!--Title-->
+            <h5 class="card-title card-bold">
+                Director Marketing & Communic...
+            </h5>
+            <h5 class="card-title">
+                Hexaware Technologies
+            </h5>
+            <h5 class="card-title">
+                Dubai, United Arab Emirates
+            </h5>
+            <br>            
+            <p class="ant-title">
+                Receruiters Engaged : <b>20</b>
+            </p>
+            <p class="ant-title">
+                Total Submissions :  <b>100</b>
+            </p>
+            <ul class="responses-list">
+                <li class="shortlisted">20</li>
+                <li class="interviewed">12</li>
+                <li class="hirings">10</li>
+                <li class="rejections">08</li>
             </ul>
+            <p class="publish-date">
+                <span>Posted on:</span> <b>4 days ago</b>               
+            </p>
         </div>
+
     </div>
-    <!--/ Interviews Header -->
-    
-    <div class="row row-eq-height card-wrapper">
-        <div class="col-sm-6 col-md-4 col-lg-3">
+    <!--/.Card-->
+</div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
     <!--Card-->
-    <div class="card ant-card" data-toggle="modal" data-target="#interviewDetails">
+    <div class="card ant-card">
         <div class="row">
             <div class="col col-sm-6">
                 <div class="employer-logo">
-                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg"
-                        alt="Microsoft" />
+                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/sample-logo.jpg" alt="Microsoft"/>                    
                 </div>
             </div>
             <div class="col col-sm-6">
                 <div class="employer-action text-right">
-                    <button type="button" class="btn btn-new waves-effect">New Request</button>
+                    <button type="button" class="btn btn-open waves-effect">Draft</button>
                 </div>
             </div>
         </div>
@@ -311,52 +347,47 @@
         <div class="ant-content">
             <!--Title-->
             <h5 class="card-title card-bold">
-                Hexagone Technologies Private Li...
+                Director Marketing & Communic...
             </h5>
-            <h5 class="card-title address nsa">
-                Indra Nagar, LBS Marg, Bangalore...
+            <h5 class="card-title">
+                Hexaware Technologies
             </h5>
-            <!--Text-->
-            <p class="card-title bold">
-                Santhosh Kurichianil
+            <h5 class="card-title">
+                Dubai, United Arab Emirates
+            </h5>
+            <br>            
+            <p class="ant-title">
+                Receruiters Engaged : <b>20</b>
             </p>
-            <p class="card-title">
-                Python Developer
+            <p class="ant-title">
+                Total Submissions :  <b>100</b>
             </p>
-            <p class="card-title">
-                Mode : <b>Skype</b>
-            </p>
-            <p class="card-title">
-                Interview Slots
-            </p>    
-            <ul class="time-slots">
-                <li>08/30/19 | 04:30pm</li>
-                <li>09/12/19 | 02:30pm</li>
-            </ul>        
-        </div>
-        <div class="ant-footer">
-            <hr>
+            <ul class="responses-list">
+                <li class="shortlisted">20</li>
+                <li class="interviewed">12</li>
+                <li class="hirings">10</li>
+                <li class="rejections">08</li>
+            </ul>
             <p class="publish-date">
-               2 days ago
+                <span>Posted on:</span> <b>4 days ago</b>               
             </p>
         </div>
 
     </div>
     <!--/.Card-->
 </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
     <!--Card-->
-    <div class="card ant-card" data-toggle="modal" data-target="#interviewDetails">
+    <div class="card ant-card">
         <div class="row">
             <div class="col col-sm-6">
                 <div class="employer-logo">
-                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg"
-                        alt="Microsoft" />
+                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/sample-logo.jpg" alt="Microsoft"/>                    
                 </div>
             </div>
             <div class="col col-sm-6">
                 <div class="employer-action text-right">
-                    <button type="button" class="btn btn-new waves-effect">New Request</button>
+                    <button type="button" class="btn btn-open waves-effect">Draft</button>
                 </div>
             </div>
         </div>
@@ -364,52 +395,47 @@
         <div class="ant-content">
             <!--Title-->
             <h5 class="card-title card-bold">
-                Hexagone Technologies Private Li...
+                Director Marketing & Communic...
             </h5>
-            <h5 class="card-title address nsa">
-                Indra Nagar, LBS Marg, Bangalore...
+            <h5 class="card-title">
+                Hexaware Technologies
             </h5>
-            <!--Text-->
-            <p class="card-title bold">
-                Santhosh Kurichianil
+            <h5 class="card-title">
+                Dubai, United Arab Emirates
+            </h5>
+            <br>            
+            <p class="ant-title">
+                Receruiters Engaged : <b>20</b>
             </p>
-            <p class="card-title">
-                Python Developer
+            <p class="ant-title">
+                Total Submissions :  <b>100</b>
             </p>
-            <p class="card-title">
-                Mode : <b>Skype</b>
-            </p>
-            <p class="card-title">
-                Interview Slots
-            </p>    
-            <ul class="time-slots">
-                <li>08/30/19 | 04:30pm</li>
-                <li>09/12/19 | 02:30pm</li>
-            </ul>        
-        </div>
-        <div class="ant-footer">
-            <hr>
+            <ul class="responses-list">
+                <li class="shortlisted">20</li>
+                <li class="interviewed">12</li>
+                <li class="hirings">10</li>
+                <li class="rejections">08</li>
+            </ul>
             <p class="publish-date">
-               2 days ago
+                <span>Posted on:</span> <b>4 days ago</b>               
             </p>
         </div>
 
     </div>
     <!--/.Card-->
 </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
     <!--Card-->
-    <div class="card ant-card" data-toggle="modal" data-target="#interviewDetails">
+    <div class="card ant-card">
         <div class="row">
             <div class="col col-sm-6">
                 <div class="employer-logo">
-                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg"
-                        alt="Microsoft" />
+                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg" alt="Microsoft"/>                    
                 </div>
             </div>
             <div class="col col-sm-6">
                 <div class="employer-action text-right">
-                    <button type="button" class="btn btn-new waves-effect">New Request</button>
+                    <button type="button" class="btn btn-open waves-effect">Draft</button>
                 </div>
             </div>
         </div>
@@ -417,52 +443,47 @@
         <div class="ant-content">
             <!--Title-->
             <h5 class="card-title card-bold">
-                Hexagone Technologies Private Li...
+                Director Marketing & Communic...
             </h5>
-            <h5 class="card-title address nsa">
-                Indra Nagar, LBS Marg, Bangalore...
+            <h5 class="card-title">
+                Hexaware Technologies
             </h5>
-            <!--Text-->
-            <p class="card-title bold">
-                Santhosh Kurichianil
+            <h5 class="card-title">
+                Dubai, United Arab Emirates
+            </h5>
+            <br>            
+            <p class="ant-title">
+                Receruiters Engaged : <b>20</b>
             </p>
-            <p class="card-title">
-                Python Developer
+            <p class="ant-title">
+                Total Submissions :  <b>100</b>
             </p>
-            <p class="card-title">
-                Mode : <b>Skype</b>
-            </p>
-            <p class="card-title">
-                Interview Slots
-            </p>    
-            <ul class="time-slots">
-                <li>08/30/19 | 04:30pm</li>
-                <li>09/12/19 | 02:30pm</li>
-            </ul>        
-        </div>
-        <div class="ant-footer">
-            <hr>
+            <ul class="responses-list">
+                <li class="shortlisted">20</li>
+                <li class="interviewed">12</li>
+                <li class="hirings">10</li>
+                <li class="rejections">08</li>
+            </ul>
             <p class="publish-date">
-               2 days ago
+                <span>Posted on:</span> <b>4 days ago</b>               
             </p>
         </div>
 
     </div>
     <!--/.Card-->
 </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
     <!--Card-->
-    <div class="card ant-card" data-toggle="modal" data-target="#interviewDetails">
+    <div class="card ant-card">
         <div class="row">
             <div class="col col-sm-6">
                 <div class="employer-logo">
-                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg"
-                        alt="Microsoft" />
+                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg" alt="Microsoft"/>                    
                 </div>
             </div>
             <div class="col col-sm-6">
                 <div class="employer-action text-right">
-                    <button type="button" class="btn btn-new waves-effect">New Request</button>
+                    <button type="button" class="btn btn-open waves-effect">Draft</button>
                 </div>
             </div>
         </div>
@@ -470,52 +491,47 @@
         <div class="ant-content">
             <!--Title-->
             <h5 class="card-title card-bold">
-                Hexagone Technologies Private Li...
+                Director Marketing & Communic...
             </h5>
-            <h5 class="card-title address nsa">
-                Indra Nagar, LBS Marg, Bangalore...
+            <h5 class="card-title">
+                Hexaware Technologies
             </h5>
-            <!--Text-->
-            <p class="card-title bold">
-                Santhosh Kurichianil
+            <h5 class="card-title">
+                Dubai, United Arab Emirates
+            </h5>
+            <br>            
+            <p class="ant-title">
+                Receruiters Engaged : <b>20</b>
             </p>
-            <p class="card-title">
-                Python Developer
+            <p class="ant-title">
+                Total Submissions :  <b>100</b>
             </p>
-            <p class="card-title">
-                Mode : <b>Skype</b>
-            </p>
-            <p class="card-title">
-                Interview Slots
-            </p>    
-            <ul class="time-slots">
-                <li>08/30/19 | 04:30pm</li>
-                <li>09/12/19 | 02:30pm</li>
-            </ul>        
-        </div>
-        <div class="ant-footer">
-            <hr>
+            <ul class="responses-list">
+                <li class="shortlisted">20</li>
+                <li class="interviewed">12</li>
+                <li class="hirings">10</li>
+                <li class="rejections">08</li>
+            </ul>
             <p class="publish-date">
-               2 days ago
+                <span>Posted on:</span> <b>4 days ago</b>               
             </p>
         </div>
 
     </div>
     <!--/.Card-->
 </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
     <!--Card-->
-    <div class="card ant-card" data-toggle="modal" data-target="#interviewDetails">
+    <div class="card ant-card">
         <div class="row">
             <div class="col col-sm-6">
                 <div class="employer-logo">
-                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg"
-                        alt="Microsoft" />
+                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/sample-logo.jpg" alt="Microsoft"/>                    
                 </div>
             </div>
             <div class="col col-sm-6">
                 <div class="employer-action text-right">
-                    <button type="button" class="btn btn-new waves-effect">New Request</button>
+                    <button type="button" class="btn btn-open waves-effect">Draft</button>
                 </div>
             </div>
         </div>
@@ -523,52 +539,47 @@
         <div class="ant-content">
             <!--Title-->
             <h5 class="card-title card-bold">
-                Hexagone Technologies Private Li...
+                Director Marketing & Communic...
             </h5>
-            <h5 class="card-title address nsa">
-                Indra Nagar, LBS Marg, Bangalore...
+            <h5 class="card-title">
+                Hexaware Technologies
             </h5>
-            <!--Text-->
-            <p class="card-title bold">
-                Santhosh Kurichianil
+            <h5 class="card-title">
+                Dubai, United Arab Emirates
+            </h5>
+            <br>            
+            <p class="ant-title">
+                Receruiters Engaged : <b>20</b>
             </p>
-            <p class="card-title">
-                Python Developer
+            <p class="ant-title">
+                Total Submissions :  <b>100</b>
             </p>
-            <p class="card-title">
-                Mode : <b>Skype</b>
-            </p>
-            <p class="card-title">
-                Interview Slots
-            </p>    
-            <ul class="time-slots">
-                <li>08/30/19 | 04:30pm</li>
-                <li>09/12/19 | 02:30pm</li>
-            </ul>        
-        </div>
-        <div class="ant-footer">
-            <hr>
+            <ul class="responses-list">
+                <li class="shortlisted">20</li>
+                <li class="interviewed">12</li>
+                <li class="hirings">10</li>
+                <li class="rejections">08</li>
+            </ul>
             <p class="publish-date">
-               2 days ago
+                <span>Posted on:</span> <b>4 days ago</b>               
             </p>
         </div>
 
     </div>
     <!--/.Card-->
 </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
     <!--Card-->
-    <div class="card ant-card" data-toggle="modal" data-target="#interviewDetails">
+    <div class="card ant-card">
         <div class="row">
             <div class="col col-sm-6">
                 <div class="employer-logo">
-                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg"
-                        alt="Microsoft" />
+                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/sample-logo.jpg" alt="Microsoft"/>                    
                 </div>
             </div>
             <div class="col col-sm-6">
                 <div class="employer-action text-right">
-                    <button type="button" class="btn btn-new waves-effect">New Request</button>
+                    <button type="button" class="btn btn-open waves-effect">Draft</button>
                 </div>
             </div>
         </div>
@@ -576,52 +587,47 @@
         <div class="ant-content">
             <!--Title-->
             <h5 class="card-title card-bold">
-                Hexagone Technologies Private Li...
+                Director Marketing & Communic...
             </h5>
-            <h5 class="card-title address nsa">
-                Indra Nagar, LBS Marg, Bangalore...
+            <h5 class="card-title">
+                Hexaware Technologies
             </h5>
-            <!--Text-->
-            <p class="card-title bold">
-                Santhosh Kurichianil
+            <h5 class="card-title">
+                Dubai, United Arab Emirates
+            </h5>
+            <br>            
+            <p class="ant-title">
+                Receruiters Engaged : <b>20</b>
             </p>
-            <p class="card-title">
-                Python Developer
+            <p class="ant-title">
+                Total Submissions :  <b>100</b>
             </p>
-            <p class="card-title">
-                Mode : <b>Skype</b>
-            </p>
-            <p class="card-title">
-                Interview Slots
-            </p>    
-            <ul class="time-slots">
-                <li>08/30/19 | 04:30pm</li>
-                <li>09/12/19 | 02:30pm</li>
-            </ul>        
-        </div>
-        <div class="ant-footer">
-            <hr>
+            <ul class="responses-list">
+                <li class="shortlisted">20</li>
+                <li class="interviewed">12</li>
+                <li class="hirings">10</li>
+                <li class="rejections">08</li>
+            </ul>
             <p class="publish-date">
-               2 days ago
+                <span>Posted on:</span> <b>4 days ago</b>               
             </p>
         </div>
 
     </div>
     <!--/.Card-->
 </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
     <!--Card-->
-    <div class="card ant-card" data-toggle="modal" data-target="#interviewDetails">
+    <div class="card ant-card">
         <div class="row">
             <div class="col col-sm-6">
                 <div class="employer-logo">
-                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg"
-                        alt="Microsoft" />
+                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg" alt="Microsoft"/>                    
                 </div>
             </div>
             <div class="col col-sm-6">
                 <div class="employer-action text-right">
-                    <button type="button" class="btn btn-new waves-effect">New Request</button>
+                    <button type="button" class="btn btn-open waves-effect">Draft</button>
                 </div>
             </div>
         </div>
@@ -629,86 +635,29 @@
         <div class="ant-content">
             <!--Title-->
             <h5 class="card-title card-bold">
-                Hexagone Technologies Private Li...
+                Director Marketing & Communic...
             </h5>
-            <h5 class="card-title address nsa">
-                Indra Nagar, LBS Marg, Bangalore...
+            <h5 class="card-title">
+                Hexaware Technologies
             </h5>
-            <!--Text-->
-            <p class="card-title bold">
-                Santhosh Kurichianil
+            <h5 class="card-title">
+                Dubai, United Arab Emirates
+            </h5>
+            <br>            
+            <p class="ant-title">
+                Receruiters Engaged : <b>20</b>
             </p>
-            <p class="card-title">
-                Python Developer
+            <p class="ant-title">
+                Total Submissions :  <b>100</b>
             </p>
-            <p class="card-title">
-                Mode : <b>Skype</b>
-            </p>
-            <p class="card-title">
-                Interview Slots
-            </p>    
-            <ul class="time-slots">
-                <li>08/30/19 | 04:30pm</li>
-                <li>09/12/19 | 02:30pm</li>
-            </ul>        
-        </div>
-        <div class="ant-footer">
-            <hr>
+            <ul class="responses-list">
+                <li class="shortlisted">20</li>
+                <li class="interviewed">12</li>
+                <li class="hirings">10</li>
+                <li class="rejections">08</li>
+            </ul>
             <p class="publish-date">
-               2 days ago
-            </p>
-        </div>
-
-    </div>
-    <!--/.Card-->
-</div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-    <!--Card-->
-    <div class="card ant-card" data-toggle="modal" data-target="#interviewDetails">
-        <div class="row">
-            <div class="col col-sm-6">
-                <div class="employer-logo">
-                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg"
-                        alt="Microsoft" />
-                </div>
-            </div>
-            <div class="col col-sm-6">
-                <div class="employer-action text-right">
-                    <button type="button" class="btn btn-new waves-effect">New Request</button>
-                </div>
-            </div>
-        </div>
-        <!--Card content-->
-        <div class="ant-content">
-            <!--Title-->
-            <h5 class="card-title card-bold">
-                Hexagone Technologies Private Li...
-            </h5>
-            <h5 class="card-title address nsa">
-                Indra Nagar, LBS Marg, Bangalore...
-            </h5>
-            <!--Text-->
-            <p class="card-title bold">
-                Santhosh Kurichianil
-            </p>
-            <p class="card-title">
-                Python Developer
-            </p>
-            <p class="card-title">
-                Mode : <b>Skype</b>
-            </p>
-            <p class="card-title">
-                Interview Slots
-            </p>    
-            <ul class="time-slots">
-                <li>08/30/19 | 04:30pm</li>
-                <li>09/12/19 | 02:30pm</li>
-            </ul>        
-        </div>
-        <div class="ant-footer">
-            <hr>
-            <p class="publish-date">
-               2 days ago
+                <span>Posted on:</span> <b>4 days ago</b>               
             </p>
         </div>
 
@@ -716,7 +665,6 @@
     <!--/.Card-->
 </div>
     </div>
-    
 </div>
 
 <!-- Filter Modal -->
@@ -794,101 +742,62 @@
     </div>
 </div>
 <!-- /Filter Modal -->
-<!-- Filter Modal -->
-<div class="modal fade" id="interviewDetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Interview Details</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="id-content">
-                    <div class="employer-logo">
-                        <img class="lazy" src="assets/images/sample-logo.jpg"
-                            data-src="assets/images/employer-logo-1.jpg" alt="Microsoft" />
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-sm-6">
-                            <div class="ant-content">
-                                <!--Title-->
-                                <p class=" bold">
-                                    Hexagone Technologies Private Li...
-                                </p>
-                                <p class=" address">
-                                    Indra Nagar, LBS Marg, Bangalore...
-                                </p>
-                                <!--Text-->
-                                <p class=" bold">
-                                    Santhosh Kurichianil
-                                </p>
-                                <p class="">
-                                    Python Developer
-                                </p>
-                                <br>
-                                <p class=" bold">
-                                    Interview Details
-                                </p>
-                                <p class="">
-                                    Santhosh Kurichianil
-                                </p>
-                                <p class="">
-                                    Project Manager (Information Technology)
-                                </p>
-                                <p class="">
-                                    +91 99877676
-                                </p>
-                                <br>
-                                <p class=" bold">
-                                    Recruiter
-                                </p>
-                                <p class="">
-                                    TalentSheen
-                                </p>
-                                <p class="">
-                                    Arshad Mehta +91 8987763234
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="ant-content">
-                                <!--Title-->
-                                <p class="bold">
-                                    Mode : Skype
-                                </p>
-                                <p class="bold">
-                                    Interview Slots
-                                </p>
-
-                                <ul class="time-slots">
-                                    <li>08/30/19 | 04:30pm</li>
-                                    <li>09/12/19 | 02:30pm</li>
-                                    <li>09/16/19 | 09:30am</li>
-                                </ul>
-                                <br>
-                                <p class="bold">
-                                    Venue Details
-                                </p>
-                                <p class="">
-                                    Banglore Office, <br> 39, 2nd floor, NGFT Lane, <br> Indra Nagar, Banglore, 587000
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer text-center">
-                <button type="button" class="btn btn-big waves-effect" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
+<!-- Recruiter new registration modal -->
+<div class="modal fade" id="newRegistration" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">New Registration</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<div class="ant-content">
+							<h5 class="ant-title">Registered on : <b>12/08/2019</b></h5>
+							<br>
+							<h5 class="ant-title bold">
+								Talentsteen
+							</h5>
+							<h5 class="ant-title address">
+								Bangalore, Karnataka, India
+							</h5>
+							<br>
+							<h5 class="ant-title bold nsa">
+								Preferred Industry
+							</h5>
+							<p class="ant-title">Information Technology, Banking & Finance</p>
+							<!--a href="#" class="ant-title web-link">
+								www.hexagone.com
+							</a-->
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+						<h5 class="ant-title bold">Contact Details</h5>
+						<h5 class="ant-title">Santhosh Kurichianil</h5>
+						<h5 class="ant-title">Head Recruitment</h5>
+						<h5 class="ant-title">Human Resources</h5>
+						<h5 class="ant-title">+91 9767783435</h5>
+						<br>
+						<a href="#" class="ant-title web-link">
+							santhosh.kurichianil@gmail.com
+						</a>
+						<br>
+						<p class="ant-title">LinkeIn : <a href="#"><b>https://www.linkedin.com/sant...</b></a></p>
+					</div>
+				</div>				
+			</div>
+			<div class="modal-footer text-center">
+				<button type="button" class="btn btn-big blue waves-effect" data-dismiss="modal">Activate</button>
+				<button type="button" class="btn btn-big waves-effect">Delete</button>
+			</div>
+		</div>
+	</div>
 </div>
-<!-- /Filter Modal -->
-
-        
+<!--/ Recruiter new registration modal -->
         <footer>
   <p class="text-center">Antlegs Technology Solutions Private Limited.</p>
 </footer>
