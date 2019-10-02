@@ -39,6 +39,11 @@
 .fc-ltr .fc-basic-view .fc-day-top .fc-day-number {
     font-size: 20px;
     padding: 15px;
+
+    @include respond-to(580px, max) {
+       font-size: 12px;
+       padding: 5px;
+    }
 }
 
 .fc-day-header {
@@ -82,5 +87,7 @@
     font-size: 12px;
     padding: 10px;
 }
+
+
 
 

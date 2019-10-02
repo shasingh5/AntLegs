@@ -151,6 +151,12 @@ p.ant-title {
 	@include multiline-text(12px, 1.4, 1);
 }
 
+.job-title {
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 1.4;
+}
+
 .file-upload {
 	margin-top: 30px;
 }
