@@ -34,8 +34,7 @@
 
 <body>
 
-  <div class="wrapper">
-    <!-- Sidebar  -->
+  <div class="wrapper">    
     <!-- Sidebar  -->
 <nav id="sidebar">    
 
@@ -266,69 +265,60 @@
 			</ul>
 		</div>
 	</div>
-</nav>
-      
+</nav>      
         <div class="container-fluid ant-container">
     <!-- Employer Header -->
-<div class="row header">
-    <div class="col-7 col-sm-6 col-md-6 col-lg-6">
-        <a href="index.html" class="main-heading">Manage Employers</a>
+    <div class="row header">
+        <div class="col col-sm-6 col-md-6 col-lg-6">
+            <a href="employers-details.html" class="main-heading">Manage Employers</a>
+        </div>        
     </div>
-    <div class="col-5 col-sm-6 col-md-6 col-lg-6 text-right">
-        <button class="btn filter-open waves-effect" data-toggle="modal" data-target="#filterOpen">Filter</button>
-    </div>
-</div>
-<!--/ Employer Header -->
-    <div class="row row-eq-height card-wrapper">
-        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
-            <!--Card-->
-            <div class="card ant-card">
-                <div class="row">
-                    <div class="col col-sm-6">
-                        <div class="employer-logo">                            
-                            <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg" alt="Microsoft"/>
-                        </div>
-                    </div>
-                    <div class="col col-sm-6">
-                        <div class="employer-action text-right">
-                            <button type="button" class="btn btn-activated waves-effect">Activated</button>
+    <!--/ Employer Header -->
+    <!-- Employer Details -->
+    <div class="employer-wrapper card">
+        <div class="row">
+            <div class="col col-sm-6">
+                <div class="employer-logo">
+                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg" alt="Microsoft"/>
+                </div>
+            </div>
+            <div class="col col-sm-6 text-right">
+                <!--Dropdown primary-->
+                <div class="dropdown">
+                    <!--Trigger-->
+                    <button class="btn ant-dropdown dropdown-toggle waves-effect" type="button" id="dropdownMenu1"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Active</button>
 
-                        </div>
+                    <!--Menu-->
+                    <div class="dropdown-menu dropdown-primary">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
                     </div>
                 </div>
-                <!--Card content-->
+                <!--/Dropdown primary-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-sm-6 col-md-3">
                 <div class="ant-content">
-                    <!--Title-->
-                    <h5 class="card-title card-bold">
+                    <h5 class="ant-title bold">
                         Hexagone Technologies Private Li...
 
                     </h5>
-                    <h5 class="card-title">
+                    <h5 class="ant-title">
                         Information Technology
-
                     </h5>
-                    <!--Text-->
-                    <p class="card-title address">
+
+                    <h5 class="ant-title address">
                         Indra Nagar, LBS Marg, Bangalore...
 
-                    </p>
-                    <a href="#" class="card-title web-link">
+                    </h5>
+                    <h5 class="ant-title blue-text">Branch Offices</h5>
+                    <a href="#" class="ant-title web-link">
                         www.hexagone.com
-
                     </a>
-                    <p class="font-xs">
-                        Job Postings : 100 | Hirings : 50 (50%)
-
-                    </p>
-                    <p class="font-xs">
-                        Open : 50 (50%) | On-Hold : 20 (50%)
-
-                    </p>
-                    <p class="font-xs">
-                        Closed : 10 (50%)
-
-                    </p>
-
                 </div>
                 <div class="ant-footer">
                     <hr>
@@ -337,587 +327,241 @@
                         <!-- <span class="skeleton-box" style="width:30%;"></span> -->
                     </p>
                 </div>
-
             </div>
-            <!--/.Card-->
-        </div>
-
-        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
-            <!--Card-->
-            <div class="card ant-card">
+            <div class="col col-sm-6 col-md-3">
+                <div class="contact-details">
+                    <h5 class="ant-title bold">Contact Details</h5>
+                    <h5 class="ant-title">Santhosh Kurichianil</h5>
+                    <h5 class="ant-title">Head Recruitment</h5>
+                    <h5 class="ant-title">Human Resources</h5>
+                    <h5 class="ant-title">+91 9767783435</h5>
+                    <a href="#" class="ant-title web-link">santhosh.kurichianil@gmail.com</a>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6">
                 <div class="row">
-                    <div class="col col-sm-6">
-                        <div class="employer-logo">                            
-                            <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-2.jpg" alt="Microsoft"/>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="graph-block">
+                            <img src="assets/images/graph-circle.jpg" alt="Graph">
                         </div>
                     </div>
-                    <div class="col col-sm-6">
-                        <div class="employer-action text-right">
-                            <button type="button" class="btn btn-deactivated waves-effect">Deactivated</button>
-
-                        </div>
+                    <div class="col-sm-6 col-md-8">
+                        <p class="ant-title bold">Overall Summary</p>
+                        <p class="ant-title">Job Postings : <b>100</b> | Hirings : <b>50 (50%)</b></p>
+                        <p class="ant-title">Recruiters Engaged : <b>100</b> | Submissions : <b>300</b></p>
+                        <ul class="candidate-status">
+                            <li class="shortlisted">Shortlisted : <b>100</b></li>
+                            <li class="interviewed">Interviewed : <b>100</b></li>
+                            <li class="hirings">Hirings : <b>100</b></li>
+                            <li class="rejections">Rejections : <b>200</b></li>
+                        </ul>
+                        <p class="ant-title medium">Current Status</p>
+                        <p class="ant-title">Opoen : <b>50 (50%)</b> | On Hold : <b>20 (50%)</b> | Closed : <b>10
+                                (50%)</b></p>
                     </div>
                 </div>
-                <!--Card content-->
-                <div class="ant-content">
-                    <!--Title-->
-                    <h5 class="card-title card-bold">
-                        Hexagone Technologies Private Li...
-
-                    </h5>
-                    <h5 class="card-title">
-                        Information Technology
-
-                    </h5>
-                    <!--Text-->
-                    <p class="card-title address">
-                        Indra Nagar, LBS Marg, Bangalore...
-
-                    </p>
-                    <a href="employers-details.html" class="card-title web-link">
-                        www.hexagone.com
-
-                    </a>
-                    <p class="font-xs">
-                        Job Postings : 100 | Hirings : 50 (50%)
-
-                    </p>
-                    <p class="font-xs">
-                        Open : 50 (50%) | On-Hold : 20 (50%)
-
-                    </p>
-                    <p class="font-xs">
-                        Closed : 10 (50%)
-
-                    </p>
-
-                </div>
-                <div class="ant-footer">
-                    <hr>
-                    <p class="publish-date">
-                        <span>Activated on:</span> Aug 16, 2019
-                        <!-- <span class="skeleton-box" style="width:30%;"></span> -->
-                    </p>
-                </div>
-
             </div>
-            <!--/.Card-->
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
-            <!--Card-->
-            <!-- skeleton card loading -->
-<div class="card ant-card" id="skeletonBox" data-toggle="modal" data-target="#newRegistration">
-  <div class="row">
-    <div class="col col-sm-6">
-      <div class="employer-logo">
-        <!-- <img src="assets/images/employer-logo-1.jpg" alt="Microsoft"> -->
-        <span class="skeleton-box sb-xl" style="height:30px;"></span>
-      </div>
-    </div>
-    <div class="col col-sm-6">
-      <div class="employer-action text-right">
-        <!-- <button type="button" class="btn btn-outline-ant waves-effect">Activated</button> -->
-        <span class="skeleton-box sb-xl" style="height:30px;"></span>
-      </div>
-    </div>
-  </div>
-  <!--Card content-->
-  <div class="ant-content">
-    <!--Title-->
-    <h5 class="card-title card-bold">
-      <!-- Hexagone Technologies Private Li... -->
-      <span class="skeleton-box sb-xl"></span>
-    </h5>
-    <h5 class="card-title emp-name">
-      <!-- Information Technology -->
-      <span class="skeleton-box sb-lg"></span>
-    </h5>
-    <!--Text-->
-    <p class="card-title emp-address">
-      <!-- Indra Nagar, LBS Marg, Bangalore... -->
-      <span class="skeleton-box sb-xl"></span>
-    </p>
-    <a href="#" class="card-title web-link">
-      <!-- www.hexagone.com -->
-      <span class="skeleton-box sb-md"></span>
-    </a>
-    <p class="font-xs posting">
-      <!-- Job Postings : 100 | Hirings : 50 (50%) -->
-      <span class="skeleton-box sb-lg" style="height:6px;"></span>
-    </p>
-    <p class="font-xs open">
-      <!-- Open : 50 (50%) | On-Hold : 20 (50%) -->
-      <span class="skeleton-box sb-md" style="height:6px;"></span>
-    </p>
-    <p class="font-xs closed">
-      <!-- Closed : 10 (50%) -->
-      <span class="skeleton-box sb-sm" style="height:6px;"></span>
-    </p>
 
-    <hr>
-    <p class="publish-date">
-      <!-- <span>Activated on:</span> Aug 16, 2019 -->
-      <span class="skeleton-box sb-md"></span>
-    </p>
-  </div>
+        </div>
+    </div>
+    <!-- /Employer Details -->
+
+    <!-- Sort by -->
+    <div class="sort-by">
+        <div class="row">
+            <div class="col col-sm-12 text-right">
+                <!--Dropdown primary-->
+                <div class="dropdown">
+                    <!--Trigger-->
+                    <button class="btn ant-dropdown dropdown-toggle waves-effect" type="button" id="dropdownMenu2"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sort By</button>
+
+                    <!--Menu-->
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Draft</a>
+                        <a class="dropdown-item" href="#">Open</a>
+                        <a class="dropdown-item" href="#">On Hold</a>
+                        <a class="dropdown-item" href="#">Closed</a>
+                    </div>
+                </div>
+                <!--/Dropdown primary-->
+            </div>
+        </div>
+    </div>
+    <!-- /Sort by -->
+
+    <!-- /manage job -->
+    <div class="manage-job">
+        <div class="row card-wrapper">
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+    <!--Card-->
+    <div class="card ant-card">
+        <div class="row">
+            <div class="col col-sm-12">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-open waves-effect">Open</button>
+                </div>
+            </div>
+        </div>
+        <!--Card content-->
+        <div class="ant-content">
+            <!--Title-->
+            <h5 class="card-title card-bold">
+                Director Marketing & Communic...
+            </h5>
+            <h5 class="card-title">
+                Dubai, United Arab Emirates
+            </h5>
+            <br>
+            <p class="ant-title">
+                Recruiters Engaged : <b>20</b>
+            </p>
+            <p class="ant-title">
+                Total Responses : <b>100</b>
+            </p>
+            <ul class="responses-list">
+                <li class="shortlisted">20</li>
+                <li class="interviewed">12</li>
+                <li class="hirings">10</li>
+                <li class="rejections">08</li>
+            </ul>
+            <p class="publish-date">
+                <span>Posted on:</span> 4 days ago                
+            </p>
+        </div>
+
+    </div>
+    <!--/.Card-->
 </div>
-<!--/.skeleton card loading-->
-            <!--/.Card-->
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
-            <!--Card-->
-            <div class="card ant-card" data-toggle="modal" data-target="#newRegistration">
-                <div class="row">
-                    <div class="col col-sm-6">
-                        <div class="employer-logo">
-                            <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-3.jpg" alt="Microsoft"/>
-                        </div>
-                    </div>
-                    <div class="col col-sm-6">
-                        <div class="employer-action text-right">
-                            <button type="button" class="btn btn-new waves-effect">New</button>
-
-                        </div>
-                    </div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+    <!--Card-->
+    <div class="card ant-card">
+        <div class="row">
+            <div class="col col-sm-12">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-open waves-effect">Open</button>
                 </div>
-                <!--Card content-->
-                <div class="ant-content">
-                    <!--Title-->
-                    <h5 class="card-title card-bold">
-                        Hexagone Technologies Private Li...
-
-                    </h5>
-                    <h5 class="card-title">
-                        Information Technology
-
-                    </h5>
-                    <!--Text-->
-                    <p class="card-title address">
-                        Indra Nagar, LBS Marg, Bangalore...
-
-                    </p>
-                    <a href="#" class="card-title web-link">
-                        www.hexagone.com
-                    </a>
-                    <!-- <p class="font-xs">
-                        Job Postings : 100 | Hirings : 50 (50%)
-
-                    </p>
-                    <p class="font-xs">
-                        Open : 50 (50%) | On-Hold : 20 (50%)
-                    </p>
-                    <p class="font-xs">
-                        Closed : 10 (50%)
-                    </p> -->
-
-                                     
-                </div>
-                <div class="ant-footer">
-                    <hr>
-                    <p class="publish-date">
-                        <span>Activated on:</span> Aug 16, 2019
-                        <!-- <span class="skeleton-box" style="width:30%;"></span> -->
-                    </p>
-                </div>
-
             </div>
-            <!--/.Card-->
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
-            <!--Card-->
-            <div class="card ant-card" data-toggle="modal" data-target="#basicExampleModal">
-                <div class="row">
-                    <div class="col col-sm-6">
-                        <div class="employer-logo">
-                            <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-4.jpg" alt="Microsoft"/>
-                        </div>
-                    </div>
-                    <div class="col col-sm-6">
-                        <div class="employer-action text-right">
-                            <button type="button" class="btn btn-activated waves-effect">Activated</button>
-
-                        </div>
-                    </div>
-                </div>
-                <!--Card content-->
-                <div class="ant-content">
-                    <!--Title-->
-                    <h5 class="card-title card-bold">
-                        Hexagone Technologies Private Li...
-
-                    </h5>
-                    <h5 class="card-title">
-                        Information Technology
-
-                    </h5>
-                    <!--Text-->
-                    <p class="card-title address">
-                        Indra Nagar, LBS Marg, Bangalore...
-
-                    </p>
-                    <a href="#" class="card-title web-link">
-                        www.hexagone.com
-
-                    </a>
-                    <p class="font-xs">
-                        Job Postings : 100 | Hirings : 50 (50%)
-
-                    </p>
-                    <p class="font-xs">
-                        Open : 50 (50%) | On-Hold : 20 (50%)
-
-                    </p>
-                    <p class="font-xs">
-                        Closed : 10 (50%)
-
-                    </p>
-
-                </div>
-                <div class="ant-footer">
-                    <hr>
-                    <p class="publish-date">
-                        <span>Activated on:</span> Aug 16, 2019
-                        <!-- <span class="skeleton-box" style="width:30%;"></span> -->
-                    </p>
-                </div>
-
-            </div>
-            <!--/.Card-->
+        <!--Card content-->
+        <div class="ant-content">
+            <!--Title-->
+            <h5 class="card-title card-bold">
+                Director Marketing & Communic...
+            </h5>
+            <h5 class="card-title">
+                Dubai, United Arab Emirates
+            </h5>
+            <br>
+            <p class="ant-title">
+                Recruiters Engaged : <b>20</b>
+            </p>
+            <p class="ant-title">
+                Total Responses : <b>100</b>
+            </p>
+            <ul class="responses-list">
+                <li class="shortlisted">20</li>
+                <li class="interviewed">12</li>
+                <li class="hirings">10</li>
+                <li class="rejections">08</li>
+            </ul>
+            <p class="publish-date">
+                <span>Posted on:</span> 4 days ago                
+            </p>
         </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
-            <!--Card-->
-            <div class="card ant-card" data-toggle="modal" data-target="#basicExampleModal">
-                <div class="row">
-                    <div class="col col-sm-6">
-                        <div class="employer-logo">
-                            <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-5.jpg" alt="Microsoft"/>
-                        </div>
-                    </div>
-                    <div class="col col-sm-6">
-                        <div class="employer-action text-right">
-                            <button type="button" class="btn btn-deactivated waves-effect">Deactivated</button>
 
-                        </div>
-                    </div>
-                </div>
-                <!--Card content-->
-                <div class="ant-content">
-                    <!--Title-->
-                    <h5 class="card-title card-bold">
-                        Hexagone Technologies Private Li...
-
-                    </h5>
-                    <h5 class="card-title">
-                        Information Technology
-
-                    </h5>
-                    <!--Text-->
-                    <p class="card-title address">
-                        Indra Nagar, LBS Marg, Bangalore...
-
-                    </p>
-                    <a href="#" class="card-title web-link">
-                        www.hexagone.com
-
-                    </a>
-                    <p class="font-xs">
-                        Job Postings : 100 | Hirings : 50 (50%)
-
-                    </p>
-                    <p class="font-xs">
-                        Open : 50 (50%) | On-Hold : 20 (50%)
-
-                    </p>
-                    <p class="font-xs">
-                        Closed : 10 (50%)
-
-                    </p>
-
-                </div>
-                <div class="ant-footer">
-                    <hr>
-                    <p class="publish-date">
-                        <span>Activated on:</span> Aug 16, 2019
-                        <!-- <span class="skeleton-box" style="width:30%;"></span> -->
-                    </p>
-                </div>
-
-            </div>
-            <!--/.Card-->
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
-            <!--Card-->
-            <div class="card ant-card" data-toggle="modal" data-target="#basicExampleModal">
-                <div class="row">
-                    <div class="col col-sm-6">
-                        <div class="employer-logo">
-                            <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-6.jpg" alt="Microsoft"/>
-                        </div>
-                    </div>
-                    <div class="col col-sm-6">
-                        <div class="employer-action text-right">
-                            <button type="button" class="btn btn-new waves-effect">New</button>
-
-                        </div>
-                    </div>
-                </div>
-                <!--Card content-->
-                <div class="ant-content" data-toggle="modal" data-target="#newRegistration">
-                    <!--Title-->
-                    <h5 class="card-title card-bold">
-                        Hexagone Technologies Private Li...
-
-                    </h5>
-                    <h5 class="card-title">
-                        Information Technology
-
-                    </h5>
-                    <!--Text-->
-                    <p class="card-title address">
-                        Indra Nagar, LBS Marg, Bangalore...
-
-                    </p>
-                    <a href="#" class="card-title web-link">
-                        www.hexagone.com
-
-                    </a>
-                    <p class="font-xs">
-                        Job Postings : 100 | Hirings : 50 (50%)
-
-                    </p>
-                    <p class="font-xs">
-                        Open : 50 (50%) | On-Hold : 20 (50%)
-
-                    </p>
-                    <p class="font-xs">
-                        Closed : 10 (50%)
-
-                    </p>
-
-                </div>
-                <div class="ant-footer">
-                    <hr>
-                    <p class="publish-date">
-                        <span>Activated on:</span> Aug 16, 2019
-                        <!-- <span class="skeleton-box" style="width:30%;"></span> -->
-                    </p>
-                </div>
-
-            </div>
-            <!--/.Card-->
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
-            <!--Card-->
-            <!-- skeleton card loading -->
-<div class="card ant-card" id="skeletonBox" data-toggle="modal" data-target="#newRegistration">
-  <div class="row">
-    <div class="col col-sm-6">
-      <div class="employer-logo">
-        <!-- <img src="assets/images/employer-logo-1.jpg" alt="Microsoft"> -->
-        <span class="skeleton-box sb-xl" style="height:30px;"></span>
-      </div>
     </div>
-    <div class="col col-sm-6">
-      <div class="employer-action text-right">
-        <!-- <button type="button" class="btn btn-outline-ant waves-effect">Activated</button> -->
-        <span class="skeleton-box sb-xl" style="height:30px;"></span>
-      </div>
-    </div>
-  </div>
-  <!--Card content-->
-  <div class="ant-content">
-    <!--Title-->
-    <h5 class="card-title card-bold">
-      <!-- Hexagone Technologies Private Li... -->
-      <span class="skeleton-box sb-xl"></span>
-    </h5>
-    <h5 class="card-title emp-name">
-      <!-- Information Technology -->
-      <span class="skeleton-box sb-lg"></span>
-    </h5>
-    <!--Text-->
-    <p class="card-title emp-address">
-      <!-- Indra Nagar, LBS Marg, Bangalore... -->
-      <span class="skeleton-box sb-xl"></span>
-    </p>
-    <a href="#" class="card-title web-link">
-      <!-- www.hexagone.com -->
-      <span class="skeleton-box sb-md"></span>
-    </a>
-    <p class="font-xs posting">
-      <!-- Job Postings : 100 | Hirings : 50 (50%) -->
-      <span class="skeleton-box sb-lg" style="height:6px;"></span>
-    </p>
-    <p class="font-xs open">
-      <!-- Open : 50 (50%) | On-Hold : 20 (50%) -->
-      <span class="skeleton-box sb-md" style="height:6px;"></span>
-    </p>
-    <p class="font-xs closed">
-      <!-- Closed : 10 (50%) -->
-      <span class="skeleton-box sb-sm" style="height:6px;"></span>
-    </p>
-
-    <hr>
-    <p class="publish-date">
-      <!-- <span>Activated on:</span> Aug 16, 2019 -->
-      <span class="skeleton-box sb-md"></span>
-    </p>
-  </div>
+    <!--/.Card-->
 </div>
-<!--/.skeleton card loading-->
-            <!--/.Card-->
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+    <!--Card-->
+    <div class="card ant-card">
+        <div class="row">
+            <div class="col col-sm-12">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-open waves-effect">Open</button>
+                </div>
+            </div>
+        </div>
+        <!--Card content-->
+        <div class="ant-content">
+            <!--Title-->
+            <h5 class="card-title card-bold">
+                Director Marketing & Communic...
+            </h5>
+            <h5 class="card-title">
+                Dubai, United Arab Emirates
+            </h5>
+            <br>
+            <p class="ant-title">
+                Recruiters Engaged : <b>20</b>
+            </p>
+            <p class="ant-title">
+                Total Responses : <b>100</b>
+            </p>
+            <ul class="responses-list">
+                <li class="shortlisted">20</li>
+                <li class="interviewed">12</li>
+                <li class="hirings">10</li>
+                <li class="rejections">08</li>
+            </ul>
+            <p class="publish-date">
+                <span>Posted on:</span> 4 days ago                
+            </p>
+        </div>
+
+    </div>
+    <!--/.Card-->
+</div>
+            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+    <!--Card-->
+    <div class="card ant-card">
+        <div class="row">
+            <div class="col col-sm-12">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-open waves-effect">Open</button>
+                </div>
+            </div>
+        </div>
+        <!--Card content-->
+        <div class="ant-content">
+            <!--Title-->
+            <h5 class="card-title card-bold">
+                Director Marketing & Communic...
+            </h5>
+            <h5 class="card-title">
+                Dubai, United Arab Emirates
+            </h5>
+            <br>
+            <p class="ant-title">
+                Recruiters Engaged : <b>20</b>
+            </p>
+            <p class="ant-title">
+                Total Responses : <b>100</b>
+            </p>
+            <ul class="responses-list">
+                <li class="shortlisted">20</li>
+                <li class="interviewed">12</li>
+                <li class="hirings">10</li>
+                <li class="rejections">08</li>
+            </ul>
+            <p class="publish-date">
+                <span>Posted on:</span> 4 days ago                
+            </p>
+        </div>
+
+    </div>
+    <!--/.Card-->
+</div>
         </div>
     </div>
+    <!-- manage job -->
 </div>
-
-<!-- Filter Modal -->
-<div class="modal fade" id="filterOpen" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Filter</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body filter-body">
-                <div class="filter-list">
-                    <ul class="filter-tabs">
-                        <li class="active waves-effect">
-                            <a href="#status">Status</a>
-                        </li>
-                        <li class="waves-effect">
-                            <a href="#indutry">Indutry</a>
-                        </li>
-                        <li class="waves-effect">
-                            <a href="#location">Location</a>
-                        </li>
-                        <li class="waves-effect">
-                            <a href="#searchCompany">Search Company</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="filter-content">
-                    <div id="status">
-                        <div class="content-body">
-                            <h5>Filter your status and get results</h5>
-                            <div class="status-action">
-                                <button type="button" class="btn btn-new waves-effect">New</button>
-                                <button type="button" class="btn btn-activated active waves-effect">Activated</button>
-                                <button type="button" class="btn btn-non-active waves-effect">Non-Active</button>
-                                <button type="button" class="btn btn-deactivated waves-effect">Deactivated</button>
-                            </div>
-                        </div>
-                        <div class="content-footer">
-                            <button type="button" class="btn btn-big blue waves-effect">Filter</button>
-                            <button type="button" class="btn btn-big waves-effect">Reset</button>
-                        </div>
-                    </div>
-                    <div id="indutry">                        
-                        <div class="content-body">
-                            <h5>Filter your <b>indutry</b> and get results</h5>
-                            <div class="status-action">
-                                <button type="button" class="btn btn-new waves-effect">New</button>
-                                <button type="button" class="btn btn-activated active waves-effect">Activated</button>
-                                <button type="button" class="btn btn-non-active waves-effect">Non-Active</button>
-                                <button type="button" class="btn btn-deactivated waves-effect">Deactivated</button>
-                            </div>
-                        </div>
-                        <div class="content-footer">
-                            <button type="button" class="btn btn-big blue waves-effect">Filter</button>
-                            <button type="button" class="btn btn-big waves-effect">Reset</button>
-                        </div>
-                    </div>
-                    <div id="location">
-                        <h5>Filter your <b>Location</b> and get results</h5>
-                    </div>
-                    <div id="searchCompany">
-                        <h5>Search <b>Company</b></h5>
-                    </div>
-                </div>
-            </div>
-            <!--div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div-->
-        </div>
-    </div>
-</div>
-<!-- /Filter Modal -->
-<!-- Employer new registration modal -->
-<div class="modal fade" id="newRegistration" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-	aria-hidden="true">
-	<div class="modal-dialog modal-lg" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">New Registration</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				<div class="row">
-					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-						<div class="employer-logo">
-							<img src="assets/images/sample-logo.jpg" alt="Microsoft">
-
-						</div>
-						<div class="ant-content">
-
-							<h5 class="ant-title bold">
-								Hexagone Technologies Private Li...
-
-							</h5>
-							<h5 class="ant-title">
-								Information Technology
-							</h5>
-
-							<h5 class="ant-title address">
-								Indra Nagar, LBS Marg, Bangalore...
-
-							</h5>
-							<a href="#" class="ant-title web-link">
-								www.hexagone.com
-							</a>
-						</div>
-					</div>
-					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-						<h5 class="ant-title bold">Contact Details</h5>
-						<h5 class="ant-title">Santhosh Kurichianil</h5>
-						<h5 class="ant-title">Head Recruitment</h5>
-						<h5 class="ant-title">Human Resources</h5>
-						<h5 class="ant-title">+91 9767783435</h5>
-						<a href="#" class="ant-title web-link">
-							santhosh.kurichianil@gmail.com
-							<!-- <span class="skeleton-box" style="width:60%;"></span> -->
-						</a>
-					</div>
-				</div>
-				<div class="file-upload">
-					<h5 class="ant-title"><span class="bold">Upload Your Company Logo:</span></span> <span>(Format : JPEG,
-							PNG, BMP or GIF and size not exceeding 2MB)</span></h5>
-					<div class="input-group">
-						<div class="custom-file">
-							<input type="file" class="custom-file-input" id="inputGroupFile01"
-								aria-describedby="inputGroupFileAddon01">
-							<label class="custom-file-label" for="inputGroupFile01">No file  chosen</label>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="modal-footer text-center">
-				<button type="button" class="btn btn-big blue waves-effect" data-dismiss="modal">Activate</button>
-				<button type="button" class="btn btn-big waves-effect">Delete</button>
-			</div>
-		</div>
-	</div>
-</div>
-<!--/ Employer new registration modal -->
         <footer>
   <p class="text-center">Antlegs Technology Solutions Private Limited.</p>
 </footer>
     </div>
+    <!-- /Page Content  -->
   </div>
 
   <div class="overlay"></div>
