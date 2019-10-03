@@ -7,6 +7,9 @@
     h4 {
         font-size: 30px;
         color: $black;
+        @include respond-to(400px, max) {
+            font-size: 20px;
+        }
 
         &.bold {
             font-weight: 600;
@@ -17,22 +20,33 @@
 .groups-content {
     padding: 125px 0 50px 70px;
     background: $white;
+    @include respond-to(400px, max) {
+        padding: 30px 10px 10px;
+    }
 
     h4 {
         margin-bottom: 15px;
         line-height: 1.5;
+        span {
+            border-bottom: 3px solid $yellow;
+        }
     }
 
     p {
         font-size: 20px;
         font-weight: 300;
         color: #666666;
+        @include respond-to(400px, max) {
+            font-size: 16px;
+        }
     }
 }
 
 .cf-content {
     padding-top: 125px;
-
+    @include respond-to(400px, max) {
+        padding-top: 60px;
+    }
     h4 {
         position: relative;
         padding-bottom: 20px;
@@ -100,17 +114,45 @@
     }
 }
 
-.find-content {
-    padding: 125px 0 50px 70px;   
+.nic {
+    padding: 80px 0;
+    background: $white;
 
-    h4 {
-        margin-bottom: 15px;
-        line-height: 1.5;
+    @include respond-to(400px, max) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .row {
+        border: 2px solid $yellow;
+        border-radius: 5px;
+
+        .light {
+            background: #fffaea;
+        }
+    }
+
+    h1 {
+        font-size: 30px;
+        font-weight: 600;
+        color: $black;
+        padding: 35px 20px 30px;
+        position: relative;
+        &::before {
+            content: " ";
+            width: 51px;
+            height: 51px;
+            background: url("../images/check-icon.png") center no-repeat;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 30px;
+        }
     }
 
     p {
-        font-size: 20px;
-        font-weight: 300;
+        font-size: 14px;
+        line-height: 1.5;
         color: #666666;
+        padding: 20px;
     }
 }
