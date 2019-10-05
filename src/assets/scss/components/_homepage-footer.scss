@@ -26,6 +26,10 @@
     .icon {
         position: relative;
         color: $halfBlack;
+        @include respond-to($xxs, max) {
+            margin-bottom: 20px;
+        }
+
         &::before {
             content: " ";
             width: 30px;
@@ -33,6 +37,10 @@
             display: inline-block;
             vertical-align: middle;
             margin-right: 20px;
+
+            @include respond-to($xxs, max) {
+                margin-right: 10px;
+            }
         }
 
         &.call {

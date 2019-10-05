@@ -1,14 +1,14 @@
 <div class="head registration">
 	<div class="container">
-		<div class="registration-wrapper sign-in" title="*mandatory fields">
-			<div class="row">
-				<div class="col-5">
+		<div class="registration-wrapper sign-in">
+			<div class="row no-padding">
+				<div class="col-12 col-md-5">
 					<img class="lazy" src="assets/images/sing-in.jpg" data-src="assets/images/sing-in.jpg"
 						alt="sing in" />
 				</div>
-				<div class="col-7">
+				<div class="col-12 col-md-7">
 					<div class="sign-form">
-						<div class="text-left">
+						<div class="text-left mandatory" title="*mandatory fields">
 							<h2 class="heading">Sign-In</h2>
 						</div>
 						<div class="form-antlegs">
@@ -35,7 +35,7 @@
 										</div>
 									</div>
 									<div class="col-6 clearfix">
-										<a href="#" class="link float-right">Forgot Password?</a>
+										<a href="#" class="link float-right forgot-Password">Forgot Password?</a>
 									</div>
 									<div class="col-12">
 										<div class="form-group last-group clearfix">
@@ -45,7 +45,7 @@
 								</div>
 							</form>
 
-							<a href="#" class="link float-left">Register</a>
+							<a href="registration.html" class="link float-left">Register</a>
 						</div>
 					</div>
 				</div>
@@ -55,42 +55,30 @@
 				<div class="row">
 					<div class="col-12">
 						<h5>Forgot Password</h5>
-						
+
 						<div class="clearfix"></div>
 						<div class="form-antlegs">
-
-						
-						
-						<form class="form-inline" action="/action_page.php">
-							<div class="row">
-								<div class="col-5">
-									
-									<div class="form-group">											
-										<label for="email">Enter Registered Email ID*</label>
+							<form class="" action="/">
+								<div class="row">
+									<div class="col-12 col-xl-3">
+										<div class="form-group">
+											<label for="email">Enter Registered Email ID*</label>
+										</div>
 									</div>
-								</div>
-								<div class="col-5">
-									<div class="form-group">											
-										<input class="form-control" id="inputName" type="text">
+									<div class="col-12 col-xl-4">
+										<div class="form-group">
+											<input class="form-control" id="inputName" type="text">
+										</div>
 									</div>
-								</div>
-								<div class="col-3">
-									<button type="submit" class="btn btn-primary">Send verification link</button>
-								</div>
-								<div class="col-1">
-									<button type="submit" class="btn btn-link">Cancel</button>
-								</div>
-							</div>
-							<!--div class="form-group">
-											<label for="inputName">Registered Email ID</label>
-								<input class="form-control" id="inputName" type="text">
-							</div>
-							<label for="email">Enter Registered Email ID*</label>
-							<input type="email" class="form-control" id="email">							
-							
-							<button type="submit" class="btn btn-primary">Send verification link</button>
-							<button type="submit" class="btn btn-link">Cancel</button-->
-						</form>
+									<div class="col-12 col-sm-8 col-md-5 col-xl-3">
+										<button type="submit" class="btn btn-send waves-effect">Send verification
+											link</button>
+									</div>
+									<div class="col-12 col-sm-4 col-md-4 col-xl-2">
+										<button type="submit" class="btn btn-cancel">Cancel</button>
+									</div>
+								</div>								
+							</form>
 						</div>
 					</div>
 				</div>

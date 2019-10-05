@@ -210,7 +210,7 @@ a[data-toggle="collapse"] {
   color: #000000;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 420px) {
   .main-heading {
     font-size: 18px;
     margin-top: 4px;
@@ -237,7 +237,7 @@ a[data-toggle="collapse"] {
   margin-right: 10px;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 420px) {
   .main-heading::before {
     margin-right: 20px;
   }
@@ -466,7 +466,7 @@ body.modal-open {
   color: #000000;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 420px) {
   .modal-dialog .modal-title {
     font-size: 18px;
   }
@@ -951,6 +951,12 @@ body.modal-open {
   font-size: 18px;
 }
 
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .navbar-blue .navbar-nav > li.nav-item {
+    font-size: 14px;
+  }
+}
+
 .navbar-blue .navbar-nav > li.nav-item a.nav-link {
   color: #accae5;
   padding-left: 20px;
@@ -1291,7 +1297,7 @@ footer {
   margin-right: 10px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .status-action > button:not(:last-child) {
     margin-bottom: 15px;
   }
@@ -1326,7 +1332,7 @@ footer {
   font-weight: 500;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .custom-file-label::before {
     display: none;
   }
@@ -1497,7 +1503,7 @@ ul.bank-details li span {
   padding: 20px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .contact-details {
     margin-top: 20px;
   }
@@ -1801,7 +1807,7 @@ ul.bank-details li span {
   font-size: 0;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .open-job-list {
     margin-left: -10px;
     margin-right: -10px;
@@ -1833,7 +1839,7 @@ ul.bank-details li span {
   line-height: 1.2;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .open-job-list > li .div-table > span {
     display: block;
     width: 100%;
@@ -1924,7 +1930,7 @@ ul.bank-details li span {
   display: table-cell;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .rollover-content ul > li > span {
     display: block;
   }
@@ -1937,7 +1943,7 @@ ul.bank-details li span {
   color: #999999;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .rollover-content ul > li > span:last-child {
     width: 100%;
   }
@@ -1947,13 +1953,13 @@ ul.bank-details li span {
   max-height: 270px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .rollover-list {
     max-height: 150px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .ra-wrap .employer-action {
     margin-top: 15px;
   }
@@ -2487,6 +2493,12 @@ ul.time-slots li {
   color: #333333;
 }
 
+@media (max-width: 420px) {
+  .footer .icon {
+    margin-bottom: 20px;
+  }
+}
+
 .footer .icon::before {
   content: " ";
   width: 30px;
@@ -2494,6 +2506,12 @@ ul.time-slots li {
   display: inline-block;
   vertical-align: middle;
   margin-right: 20px;
+}
+
+@media (max-width: 420px) {
+  .footer .icon::before {
+    margin-right: 10px;
+  }
 }
 
 .footer .icon.call {
@@ -2568,6 +2586,41 @@ ul.time-slots li {
   transform: translate(-50%, 0);
 }
 
+.mandatory {
+  position: relative;
+}
+
+.mandatory::after {
+  content: attr(title);
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 13px;
+  color: #666666;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .mandatory::after {
+    top: 100%;
+    left: 50%;
+    right: inherit;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 580px) and (max-width: 768px) {
+  .mandatory::after {
+    right: 0;
+  }
+}
+
+@media (min-width: 736px) {
+  .mandatory::after {
+    font-size: 16px;
+  }
+}
+
 .registration-wrapper {
   padding: 10px;
   background: #ffffff;
@@ -2588,40 +2641,10 @@ ul.time-slots li {
   }
 }
 
-.registration-wrapper::after {
-  content: attr(title);
-  position: absolute;
-  top: 75px;
-  right: 70px;
-  font-size: 14px;
-  color: #666666;
-}
-
-@media (max-width: 420px) {
-  .registration-wrapper::after {
-    left: 50%;
-    right: inherit;
-    transform: translateX(-50%);
-  }
-}
-
-@media (min-width: 580px) and (max-width: 736px) {
-  .registration-wrapper::after {
-    top: 20px;
-    right: 0;
-  }
-}
-
-@media (min-width: 736px) {
-  .registration-wrapper::after {
-    top: 55px;
-    font-size: 16px;
-  }
-}
-
 @media (max-width: 736px) {
   .registration-wrapper .white-wrapper {
     padding: 0;
+    margin-top: 30px;
   }
 }
 
@@ -2710,6 +2733,8 @@ ul.time-slots li {
 
 .sign-in {
   padding: 0;
+  border: 0;
+  overflow: hidden;
 }
 
 .sign-in img.lazy {
@@ -2717,9 +2742,130 @@ ul.time-slots li {
 }
 
 .sign-form {
-  padding: 50px 20px;
+  padding: 50px 100px 20px 50px;
+}
+
+@media (max-width: 1024px) {
+  .sign-form {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sign-form .form-antlegs {
+    padding-bottom: 40px;
+  }
 }
 
 .sign-form h2 {
   text-align: left;
+}
+
+.forgot-block {
+  background: #eaeaea;
+  padding: 50px 40px;
+  display: none;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .forgot-block {
+    padding-bottom: 40px;
+  }
+}
+
+.forgot-block::after {
+  bottom: 100%;
+  left: 85%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(234, 234, 234, 0);
+  border-bottom-color: #eaeaea;
+  border-width: 15px;
+  margin-left: -15px;
+}
+
+.forgot-block .form-antlegs {
+  margin-top: 0;
+}
+
+.forgot-block h5 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.forgot-block label {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333 !important;
+}
+
+.forgot-block .btn {
+  padding: 11px 17px;
+  font-size: 18px;
+  color: #306ba3;
+}
+
+.forgot-block .btn-send {
+  border: 1px solid #306ba3;
+}
+
+.forgot-block .btn-cancel {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.row .no-padding {
+  margin: 0;
+}
+
+.row .no-padding > div {
+  padding: 0;
+}
+
+.testimonial-wrapper {
+  background: #ffffff;
+  padding: 50px 0;
+}
+
+.testimonial-item {
+  width: 550px;
+  background: #999999;
+}
+
+.testimonial-block {
+  background: #306ba3;
+  color: #ffffff;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding: 40px;
+}
+
+.testimonial-photo {
+  position: relative;
+}
+
+.testimonial-photo::before {
+  content: " ";
+  display: block;
+  width: 47px;
+  height: 40px;
+  background: url("../images/quote-icon.png") 0 0 no-repeat;
+  margin-bottom: 20px;
+}
+
+.testimonial-photo img.lazy {
+  width: 106px;
+  height: 106px;
+  margin-left: -60px;
+  -webkit-box-shadow: 0px 10px 15px 3px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 10px 15px 3px rgba(0, 0, 0, 0.25);
+  -ms-box-shadow: 0px 10px 15px 3px rgba(0, 0, 0, 0.25);
+  -o-box-shadow: 0px 10px 15px 3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 10px 15px 3px rgba(0, 0, 0, 0.25);
 }

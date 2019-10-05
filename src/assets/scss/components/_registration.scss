@@ -2,6 +2,7 @@
     background-size: cover;
     background-color: $blue;
     padding-bottom: 60px;
+
     @include respond-to($xs) {
         background-size: contain;
     }
@@ -28,6 +29,35 @@
     }
 }
 
+.mandatory {
+    position: relative;
+    &::after {
+        content: attr(title);
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 13px;
+        color: #666666;
+        z-index: 1;
+
+        @include respond-to($sm, max) {
+            top: 100%;
+            left: 50%;
+            right: inherit;
+            transform: translateX(-50%);
+        }
+
+        @include respond-to(580px, $sm) {            
+            right: 0;
+        }
+
+        @include respond-to($xs) {            
+            font-size: 16px;
+        }
+
+    }
+}
+
 .registration-wrapper {
     //text-align: center;
     padding: 10px;
@@ -42,35 +72,12 @@
         padding: 50px;
     }
 
-    &::after {
-        content: attr(title);
-        position: absolute;
-        top: 75px;
-        right: 70px;
-        font-size: 14px;
-        color: #666666;
 
-        @include respond-to(420px, max) {
-            left: 50%;
-            right: inherit;
-            transform: translateX(-50%);
-        }        
-
-        @include respond-to(580px, $xs) {
-            top: 20px;
-            right: 0;
-        }
-
-        @include respond-to($xs) {
-            top: 55px;
-            font-size: 16px;
-        }
-        
-    }
 
     .white-wrapper {
         @include respond-to($xs, max) {
             padding: 0;
+            margin-top: 30px;
         }
     }
 
@@ -105,13 +112,16 @@
 
 .form-antlegs {
     margin-top: 30px;
+
     .form-group {
-        margin-bottom: 2.2rem;        
+        margin-bottom: 2.2rem;
+
         label {
             display: block;
             font-size: 18px;
             color: #666;
             text-align: left;
+
             @include respond-to(1600px) {
                 font-size: 26px;
             }
@@ -123,6 +133,7 @@
             padding: 10px;
             border: 1px solid #acacac;
             color: $black;
+
             @include respond-to(1600px) {
                 font-size: 26px;
                 padding: 15px;

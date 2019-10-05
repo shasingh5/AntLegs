@@ -1,5 +1,7 @@
 .sign-in {
     padding: 0;
+    border: 0;
+    overflow: hidden;
 
     img.lazy {
         width: 100%;
@@ -7,9 +9,82 @@
 }
 
 .sign-form {
-    padding: 50px 20px;
+    padding: 50px 100px 20px 50px;
+    @include respond-to($md, max) {
+        padding: 15px;
+    }
+
+    .form-antlegs {
+        @include respond-to($md, max) {
+            padding-bottom: 40px;
+        }
+    }
 
     h2 {
         text-align: left;
+    }
+}
+
+.forgot-block {
+    background: #eaeaea;
+    padding: 50px 40px;
+    display: none;
+    position: relative;
+    @include respond-to($md, max) {
+        padding-bottom: 40px;
+    }
+
+    &::after {
+        bottom: 100%;
+        left: 85%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(234, 234, 234, 0);
+        border-bottom-color: #eaeaea;
+        border-width: 15px;
+        margin-left: -15px;
+    }
+
+    .form-antlegs {
+        margin-top: 0;
+    }
+
+    h5 {
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    label {
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 400;
+        color: $halfBlack !important;
+    }
+
+    .btn {
+        padding: 11px 17px;
+        font-size: 18px;
+        color: $blue;
+
+        &-send {
+            border: 1px solid $blue;
+        }
+
+        &-cancel {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+}
+
+.row .no-padding {
+    margin: 0;
+
+    >div {
+        padding: 0;
     }
 }

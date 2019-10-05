@@ -188,6 +188,13 @@
         $('.rollover').hide();
     });
 
+    $(".forgot-Password").on("click", function (event) {
+        event.preventDefault();
+        $(".forgot-block").slideToggle();
+    });
+
+    
+
 })(jQuery);
 
 function renderCard() {
