@@ -77,160 +77,101 @@
 </nav>   
   <div class="head registration">
 	<div class="container">
-		<div class="registration-wrapper" title="*mandatory fields">
-
-			<h2 class="heading">Register</h2>
-
-			<div class="white-wrapper ant-tab">
-				<ul class="nav nav-tabs justify-content-center md-tabs" id="myTabJust" role="tablist">
-					<li class="nav-item">
-						<a class="nav-link active" id="home-tab-just" data-toggle="tab" href="#home-just" role="tab"
-							aria-controls="home-just" aria-selected="true">EMPLOYER</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" id="profile-tab-just" data-toggle="tab" href="#profile-just" role="tab"
-							aria-controls="profile-just" aria-selected="false">RECRUITER</a>
-					</li>
-				</ul>
-				<div class="tab-content card pt-4" id="myTabContentJust">
-					<div class="tab-pane fade show active" id="home-just" role="tabpanel" aria-labelledby="home-tab-just">
-						<div class="form-antlegs">
-							<form autocomplete="off" class="form" role="form">
-								<div class="row">
-									<div class="col-12 col-md-6">
-										<div class="form-group">
-											<label for="inputName">Company Name*</label>
-											<input class="form-control" id="inputName" type="text">
-										</div>
-									</div>
-									<div class="col-12 col-md-6">
-										<div class="form-group">
-											<label for="inputName">Industry*</label>
-											<input class="form-control" id="inputName" type="text">
-										</div>
-									</div>
-									<div class="col-12 col-md-6">
-										<div class="form-group">
-											<label for="inputName">Location*</label>
-											<input class="form-control" id="inputName" type="text">
-										</div>
-									</div>
-									<div class="col-12 col-md-6">
-										<div class="form-group">
-											<label for="inputName">Website*</label>
-											<input class="form-control" id="inputName" type="text">
-										</div>
-									</div>
-									<div class="col-12 col-md-6">
-										<div class="form-group">
-											<label for="inputName">Contact Person Name*</label>
-											<input class="form-control" id="inputName" type="text">
-										</div>
-									</div>
-									<div class="col-12 col-md-6">
-										<div class="form-group">
-											<label for="inputName">Designation*</label>
-											<input class="form-control" id="inputName" type="text">
-										</div>
-									</div>
-									<div class="col-12 col-md-6">
-										<div class="form-group">
-											<label for="inputName">Contact No*</label>
-											<input class="form-control" id="inputName" type="text">
-										</div>
-									</div>
-									<div class="col-12 col-md-6">
-										<div class="form-group">
-											<label for="inputEmail3">Email*</label>
-											<input class="form-control" id="inputEmail3" type="email">
-										</div>
-									</div>
-									<div class="col-12">
-										<div class="form-check small">
-											<label class="form-check-label">
-												<input class="form-check-input" type="checkbox">
-												<span>I agree & accept to the <a href="#">terms & conditions</a></span>
-											</label>
-										</div>
-									</div>
-									<div class="col-12">
-										<div class="form-group last-group">
-											<button class="btn btn-get float-center" type="submit">Register</button>
-										</div>
-									</div>
-								</div>
-							</form>
-							<a href="#" class="link">Sign-In</a>
+		<div class="registration-wrapper sign-in" title="*mandatory fields">
+			<div class="row">
+				<div class="col-5">
+					<img class="lazy" src="assets/images/sing-in.jpg" data-src="assets/images/sing-in.jpg"
+						alt="sing in" />
+				</div>
+				<div class="col-7">
+					<div class="sign-form">
+						<div class="text-left">
+							<h2 class="heading">Sign-In</h2>
 						</div>
-					</div>
-					<div class="tab-pane fade" id="profile-just" role="tabpanel" aria-labelledby="profile-tab-just">
 						<div class="form-antlegs">
 							<form autocomplete="off" class="form" role="form">
 								<div class="row">
-									<div class="col-12 col-md-6">
+									<div class="col-12">
 										<div class="form-group">
-											<label for="inputName">Full Name*</label>
-											<input class="form-control" id="inputName" type="text">
-										</div>
-									</div>
-									<div class="col-12 col-md-6">
-										<div class="form-group">
-											<label for="inputName">Display Name*</label>
-											<input class="form-control" id="inputName" type="text">
-										</div>
-									</div>
-									<div class="col-12 col-md-6">
-										<div class="form-group">
-											<label for="inputName">Industry Prefered (Max3)</label>
-											<input class="form-control" id="inputName" type="text">
-										</div>
-									</div>
-									<div class="col-12 col-md-6">
-										<div class="form-group">
-											<label for="inputName">Current Location*</label>
-											<input class="form-control" id="inputName" type="text">
-										</div>
-									</div>
-									<div class="col-12 col-md-6">
-										<div class="form-group">
-											<label for="inputName">Email*</label>
-											<input class="form-control" id="inputName" type="text">
-										</div>
-									</div>
-									<div class="col-12 col-md-6">
-										<div class="form-group">
-											<label for="inputName">Contact No*</label>
+											<label for="inputName">Registered Email ID</label>
 											<input class="form-control" id="inputName" type="text">
 										</div>
 									</div>
 									<div class="col-12">
 										<div class="form-group">
-											<label for="inputName">LinkedIn Profile URL*</label>
-											<input class="form-control" id="inputName" type="text">
+											<label for="inputName">Password</label>
+											<input class="form-control" id="inputName" type="password">
 										</div>
 									</div>
-									<div class="col-12">
+									<div class="col-6">
 										<div class="form-check small">
 											<label class="form-check-label">
 												<input class="form-check-input" type="checkbox">
-												<span>I agree & accept to the <a href="#">terms & conditions</a></span>
+												<span>Remember Me</span>
 											</label>
 										</div>
 									</div>
+									<div class="col-6 clearfix">
+										<a href="#" class="link float-right">Forgot Password?</a>
+									</div>
 									<div class="col-12">
-										<div class="form-group last-group">
-											<button class="btn btn-get float-center" type="submit">Register</button>
+										<div class="form-group last-group clearfix">
+											<button class="btn btn-get float-left" type="submit">Sign-In</button>
 										</div>
 									</div>
 								</div>
 							</form>
-							<a href="#" class="link">Sign-In</a>
+
+							<a href="#" class="link float-left">Register</a>
 						</div>
 					</div>
 				</div>
 			</div>
 
+			<div class="forgot-block">
+				<div class="row">
+					<div class="col-12">
+						<h5>Forgot Password</h5>
+						
+						<div class="clearfix"></div>
+						<div class="form-antlegs">
 
+						
+						
+						<form class="form-inline" action="/action_page.php">
+							<div class="row">
+								<div class="col-5">
+									
+									<div class="form-group">											
+										<label for="email">Enter Registered Email ID*</label>
+									</div>
+								</div>
+								<div class="col-5">
+									<div class="form-group">											
+										<input class="form-control" id="inputName" type="text">
+									</div>
+								</div>
+								<div class="col-3">
+									<button type="submit" class="btn btn-primary">Send verification link</button>
+								</div>
+								<div class="col-1">
+									<button type="submit" class="btn btn-link">Cancel</button>
+								</div>
+							</div>
+							<!--div class="form-group">
+											<label for="inputName">Registered Email ID</label>
+								<input class="form-control" id="inputName" type="text">
+							</div>
+							<label for="email">Enter Registered Email ID*</label>
+							<input type="email" class="form-control" id="email">							
+							
+							<button type="submit" class="btn btn-primary">Send verification link</button>
+							<button type="submit" class="btn btn-link">Cancel</button-->
+						</form>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </div> 

@@ -2536,7 +2536,15 @@ ul.time-slots li {
 }
 
 .registration {
-  background-size: contain;
+  background-size: cover;
+  background-color: #306ba3;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 736px) {
+  .registration {
+    background-size: contain;
+  }
 }
 
 .heading {
@@ -2561,8 +2569,7 @@ ul.time-slots li {
 }
 
 .registration-wrapper {
-  text-align: center;
-  padding: 50px;
+  padding: 10px;
   background: #ffffff;
   border-radius: 10px;
   border: 10px solid #ffffff;
@@ -2575,12 +2582,68 @@ ul.time-slots li {
   z-index: 1;
 }
 
+@media (min-width: 736px) {
+  .registration-wrapper {
+    padding: 50px;
+  }
+}
+
+.registration-wrapper::after {
+  content: attr(title);
+  position: absolute;
+  top: 75px;
+  right: 70px;
+  font-size: 14px;
+  color: #666666;
+}
+
+@media (max-width: 420px) {
+  .registration-wrapper::after {
+    left: 50%;
+    right: inherit;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 580px) and (max-width: 736px) {
+  .registration-wrapper::after {
+    top: 20px;
+    right: 0;
+  }
+}
+
+@media (min-width: 736px) {
+  .registration-wrapper::after {
+    top: 55px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 736px) {
+  .registration-wrapper .white-wrapper {
+    padding: 0;
+  }
+}
+
 .registration-wrapper .nav-tabs .nav-link {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.5);
   border-bottom: 6px solid transparent;
-  padding: 10px 50px;
+  padding: 40px 22px 10px;
+}
+
+@media (min-width: 736px) {
+  .registration-wrapper .nav-tabs .nav-link {
+    font-size: 26px;
+    padding: 10px 50px;
+  }
+}
+
+@media (min-width: 736px) and (max-width: 768px) {
+  .registration-wrapper .nav-tabs .nav-link {
+    padding: 10px 30px;
+  }
 }
 
 .registration-wrapper .nav-tabs .nav-link.active, .registration-wrapper .nav-tabs .nav-link:hover {
@@ -2589,44 +2652,74 @@ ul.time-slots li {
   border-bottom: 6px solid #306ba3;
 }
 
-.form-registration {
+.form-antlegs {
   margin-top: 30px;
 }
 
-.form-registration .form-group {
+.form-antlegs .form-group {
   margin-bottom: 2.2rem;
 }
 
-.form-registration .form-group label {
+.form-antlegs .form-group label {
   display: block;
-  font-size: 26px;
+  font-size: 18px;
   color: #666;
   text-align: left;
 }
 
-.form-registration .form-group .form-control {
-  font-size: 26px;
-  height: 78px;
-  padding: 15px;
+@media (min-width: 1600px) {
+  .form-antlegs .form-group label {
+    font-size: 26px;
+  }
+}
+
+.form-antlegs .form-group .form-control {
+  font-size: 18px;
+  height: 50px;
+  padding: 10px;
   border: 1px solid #acacac;
   color: #000000;
 }
 
-.form-registration .last-group {
+@media (min-width: 1600px) {
+  .form-antlegs .form-group .form-control {
+    font-size: 26px;
+    padding: 15px;
+    height: 78px;
+  }
+}
+
+.form-antlegs .last-group {
   margin-top: 2rem;
 }
 
-.form-registration .last-group .btn-get {
+.form-antlegs .last-group .btn-get {
   padding-left: 40px;
   padding-right: 40px;
 }
 
-.form-registration .form-check {
+.form-antlegs .form-check {
   text-align: left;
   font-size: 16px;
   color: #666;
 }
 
-.form-registration .link {
+.form-antlegs .link {
   font-size: 18px;
+}
+
+.sign-in {
+  padding: 0;
+}
+
+.sign-in img.lazy {
+  width: 100%;
+}
+
+.sign-form {
+  padding: 50px 20px;
+}
+
+.sign-form h2 {
+  text-align: left;
 }
