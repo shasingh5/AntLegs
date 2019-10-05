@@ -81,8 +81,8 @@
             transform: translate(0, -50%);
         }
 
-        &.sumbit::before {
-            background: #c9eed9 url("../images/sumbit-icon.png") center no-repeat;
+        &.submit::before {
+            background: #c9eed9 url("../images/user-submit-icon.png") center no-repeat;
         }
 
         &.organize::before {
@@ -97,8 +97,8 @@
             background: #e3cbf0 url("../images/search-icon.png") center no-repeat;
         }
 
-        &.empower ::before {
-            background: #eccbda url("../images/empower -icon.png") center no-repeat;
+        &.empower::before {
+            background: #eccbda url("../images/empower-icon.png") center no-repeat;
         }
 
         h5 {

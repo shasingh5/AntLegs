@@ -31,6 +31,7 @@
 
 .mandatory {
     position: relative;
+
     &::after {
         content: attr(title);
         position: absolute;
@@ -47,11 +48,11 @@
             transform: translateX(-50%);
         }
 
-        @include respond-to(580px, $sm) {            
+        @include respond-to(580px, $sm) {
             right: 0;
         }
 
-        @include respond-to($xs) {            
+        @include respond-to($xs) {
             font-size: 16px;
         }
 
@@ -161,4 +162,58 @@
         font-size: 18px;
     }
 
+}
+
+.multi-select {
+    .btn-group {
+        display: inline-block;
+        width: 100%;
+
+
+        .btn-default.dropdown-toggle {
+            width: 100%;
+            font-size: 18px;
+            height: 50px;
+            padding: 10px 40px 10px 10px;
+            border: 1px solid #acacac;
+            color: $black;
+            background: $white !important;
+
+            @include respond-to(1600px) {
+                font-size: 26px;
+                padding: 15px;
+                height: 78px;
+            }
+
+            &::after {
+                position: absolute;
+                top: 50%;
+                right: 15px;
+                transform: translateY(-50%);
+                width: 21px;
+                height: 13px;
+                background-image: url("../images/big-down-arrow.png");
+            }
+
+            .multiselect-selected-text {
+                display: block;
+                text-align: left;
+            }
+
+        }
+
+        .dropdown-menu {
+            width: 100%;
+        }
+
+        .multiselect-container>li>a>label.radio, .multiselect-container>li>a>label.checkbox {
+            font-size: 18px;
+            color: #000;
+            padding: 5px 15px;
+        }
+
+        .multiselect-container>li>a>label>input[type=checkbox] {
+            margin-right: 10px;
+        }
+    }
 }

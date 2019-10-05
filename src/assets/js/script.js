@@ -23,11 +23,11 @@
     $(".recent-activities").mCustomScrollbar({
         theme: "minimal-dark"
     });
- 
+
     $(".modal-body-scroll").mCustomScrollbar({
         theme: "minimal-dark"
     });
-    
+
     $(".candidate-wrapper").mCustomScrollbar({
         theme: "minimal-dark"
     });
@@ -95,7 +95,7 @@
     });
 
     //Please read document from https://fullcalendar.io/docs
-    
+
     //interveiw full calendar       
     $('#calendar').fullCalendar({
         //aspectRatio: 1,
@@ -183,7 +183,7 @@
         eventLimit: true // allow "more" link when too many events
 
     });
-    
+
     $(".rollover-header").on("click", ".close", function (event) {
         $('.rollover').hide();
     });
@@ -199,33 +199,65 @@
         slidesToScroll: 1,
         dots: true,
         arrows: false,
-        responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,                
-              }
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
             },
             {
-              breakpoint: 815,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
+                breakpoint: 815,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             },
             {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
             // You can unslick at a given breakpoint now by adding:
             // settings: "unslick"
             // instead of a settings object
-          ]
-    });    
+        ]
+    });
+
+
+
+    $('#multiple-checkboxes').multiselect({
+        enableFiltering: false,
+        numberDisplayed: 2, 
+        onChange: function (option, checked) {
+            // Get selected options.
+            var selectedOptions = $('#multiple-checkboxes option:selected');
+
+            if (selectedOptions.length >= 3) {
+                // Disable all other checkboxes.
+                var nonSelectedOptions = $('#multiple-checkboxes option').filter(function () {
+                    return !$(this).is(':selected');
+                });
+                nonSelectedOptions.each(function () {
+                    var input = $('input[value="' + $(this).val() + '"]');
+                    input.prop('disabled', true);
+                    input.parent('li').addClass('disabled');
+                    
+                });
+
+                
+            } else {
+                // Enable all checkboxes.
+                $('#multiple-checkboxes option').each(function () {
+                    var input = $('input[value="' + $(this).val() + '"]');
+                    input.prop('disabled', false);
+                    input.parent('li').addClass('disabled');
+                });
+            }
+        }
+    });
 
 })(jQuery);
 

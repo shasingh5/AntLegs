@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 <!-- Bootstrap core CSS -->
 <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
 <!-- Material Design Bootstrap -->
 <link href="vendor/mdb/mdb.min.css" rel="stylesheet">
 <!-- Custom Scroll -->
@@ -67,11 +68,11 @@
               	</li>
                   </li>
                   <li class="nav-item">
-                	<a class="nav-link sing-in" href="sign-in.html">Sign-in</a>
+                	<a class="nav-link" href="sign-in.html">Sign-in</a>
               	</li>
                   </li>
                   <li class="nav-item">
-                	<a class="nav-link" href="registration.html">Join Now</a>
+                	<a class="nav-link nav-active" href="registration.html">Register</a>
               	</li>				
 			</ul>
 		</div>
@@ -79,7 +80,7 @@
 </nav>   
   <div class="head registration">
 	<div class="container">
-		<div class="registration-wrapper" title="*mandatory fields">
+		<div class="registration-wrapper">
 
 
 			<div class="text-center mandatory" title="*mandatory fields">
@@ -160,13 +161,16 @@
 										</div>
 									</div>
 									<div class="col-12">
-										<div class="form-group last-group">
-											<button class="btn btn-get float-center" type="submit">Register</button>
+										<div class="form-group last-group text-center">
+											<button class="btn btn-get" type="submit">Register</button>
 										</div>
 									</div>
 								</div>
 							</form>
-							<a href="sign-in.html" class="link">Sign-In</a>
+							<div class="text-center">
+								<a href="sign-in.html" class="link">Sign-In</a>
+							</div>
+							
 						</div>
 					</div>
 					<div class="tab-pane fade" id="profile-just" role="tabpanel" aria-labelledby="profile-tab-just">
@@ -187,19 +191,18 @@
 									</div>
 									<div class="col-12 col-md-6">
 										<div class="form-group">
-											<!--label for="inputName">Industry Prefered (Max3)</label>
-											<input class="form-control" id="inputName" type="text"-->
-											<select class="mdb-select colorful-select dropdown-primary md-form" multiple
-												searchable="Search here..">
-												<option value="" disabled selected>Choose your country</option>
-												<option value="1">USA</option>
-												<option value="2">Germany</option>
-												<option value="3">France</option>
-												<option value="4">Poland</option>
-												<option value="5">Japan</option>
-											</select>
-											<label class="mdb-main-label">Label example</label>
-											<button class="btn-save btn btn-primary btn-sm">Save</button>
+											<label for="inputName">Industry Prefered (Max3)</label>
+											<!--input class="form-control" id="inputName" type="text"-->
+											<div class="multi-select">
+												<select id="multiple-checkboxes"  class="form-control" multiple="multiple">
+														<option value="Airline / Aviation">Airline / Aviation</option>
+														<option value="Accounts / Finance">Accounts / Finance</option>
+														<option value="Advertising / Media / Events">Advertising / Media / Events</option>
+														<option value="Automobile">Automobile</option>
+														<option value="Banking">Banking</option>
+														<option value="Marketing">Marketing</option>
+												</select>
+											</div>
 										</div>
 
 									</div>
@@ -236,13 +239,16 @@
 										</div>
 									</div>
 									<div class="col-12">
-										<div class="form-group last-group">
-											<button class="btn btn-get float-center" type="submit">Register</button>
+										<div class="form-group last-group text-center">
+											<button class="btn btn-get" type="submit">Register</button>
 										</div>
 									</div>
 								</div>
 							</form>
-							<a href="sign-in.html" class="link">Sign-In</a>
+							<div class="text-center">
+								<a href="sign-in.html" class="link">Sign-In</a>
+							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -251,23 +257,7 @@
 
 		</div>
 	</div>
-</div> 
-  <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <h4 class="bold">Contact Us</h4>
-                    <br>
-                    <a href="tel:1800 300 9322" class="icon call">1800 300 9322</a>
-                    <a href="mailto:contact@antlegs.com" class="icon email">contact@antlegs.com</a>
-                    <p class="icon address">58/241 Koramangala, Bangalore, Karnataka, India - 560034</p>
-                </div>
-            </div>
-        </div>
-        <div class="bottom-footer">
-            <p class="text-center">Copyright © 2019 AntLegs Ltd.  All Rights Reserved</p>
-        </div>
-    </div> 
+</div>   
   
 
   <!-- SCRIPTS -->
@@ -278,6 +268,7 @@
 <script type="text/javascript" src="vendor/MDB/popper.min.js"></script>
 <!-- Bootstrap core JavaScript -->
 <script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.42/js/bootstrap-datetimepicker.min.js"></script>
 
 <!-- MDB core JavaScript -->

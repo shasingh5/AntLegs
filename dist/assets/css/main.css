@@ -217,7 +217,7 @@ a[data-toggle="collapse"] {
   }
 }
 
-@media (min-width: 815px) and (max-width: 1024px) {
+@media (min-width: 812px) and (max-width: 1024px) {
   .main-heading {
     font-size: 14px;
   }
@@ -981,7 +981,7 @@ body.modal-open {
   margin-right: 10px;
 }
 
-.navbar-blue .navbar-nav > li.nav-item a.nav-link.sing-in {
+.navbar-blue .navbar-nav > li.nav-item a.nav-link.nav-active {
   background: #ffffff;
   color: #333333;
   border-radius: 5px;
@@ -1636,7 +1636,7 @@ ul.bank-details li span {
   }
 }
 
-@media (max-width: 815px) {
+@media (max-width: 812px) {
   .header-button {
     width: 100%;
     display: table;
@@ -1644,7 +1644,7 @@ ul.bank-details li span {
   }
 }
 
-@media (min-width: 815px) and (max-width: 1024px) {
+@media (min-width: 812px) and (max-width: 1024px) {
   .header-button {
     margin-left: -5px;
     margin-right: -5px;
@@ -1657,19 +1657,19 @@ ul.bank-details li span {
   padding: 0 10px;
 }
 
-@media (max-width: 815px) {
+@media (max-width: 812px) {
   .header-button li {
     display: inline-block;
   }
 }
 
-@media (max-width: 815px) {
+@media (max-width: 812px) {
   .header-button li:last-child {
     margin-top: 15px;
   }
 }
 
-@media (min-width: 815px) and (max-width: 1024px) {
+@media (min-width: 812px) and (max-width: 1024px) {
   .header-button li {
     padding: 0 5px;
   }
@@ -2109,7 +2109,7 @@ ul.time-slots li {
 .head {
   margin-top: -40px;
   padding: 0;
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/hp-masthead.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
@@ -2283,7 +2283,7 @@ ul.time-slots li {
   color: #666666;
 }
 
-@media (max-width: 815px) {
+@media (max-width: 812px) {
   .groups-content p {
     font-size: 16px;
   }
@@ -2333,8 +2333,8 @@ ul.time-slots li {
   transform: translate(0, -50%);
 }
 
-.feature-list > li.sumbit::before {
-  background: #c9eed9 url("../images/sumbit-icon.png") center no-repeat;
+.feature-list > li.submit::before {
+  background: #c9eed9 url("../images/user-submit-icon.png") center no-repeat;
 }
 
 .feature-list > li.organize::before {
@@ -2349,8 +2349,8 @@ ul.time-slots li {
   background: #e3cbf0 url("../images/search-icon.png") center no-repeat;
 }
 
-.feature-list > li.empower ::before {
-  background: #eccbda url("../images/empower -icon.png") center no-repeat;
+.feature-list > li.empower::before {
+  background: #eccbda url("../images/empower-icon.png") center no-repeat;
 }
 
 .feature-list > li h5 {
@@ -2447,7 +2447,7 @@ ul.time-slots li {
   color: #666666;
 }
 
-@media (max-width: 815px) {
+@media (max-width: 812px) {
   .find-content p {
     font-size: 16px;
   }
@@ -2484,26 +2484,6 @@ ul.time-slots li {
   padding-top: 90px;
   font-size: 22px;
   background: #ffffff;
-}
-
-.footer h4 {
-  position: relative;
-  padding-bottom: 30px;
-  margin-bottom: 40px;
-  display: inline-block;
-  color: #000000;
-  font-size: 30px;
-}
-
-.footer h4::after {
-  content: " ";
-  width: 62px;
-  height: 4px;
-  background: #ffcc32;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
 }
 
 .footer .icon {
@@ -2557,6 +2537,26 @@ ul.time-slots li {
 
 .footer p {
   margin-top: 40px;
+}
+
+.home-heading {
+  position: relative;
+  padding-bottom: 30px;
+  margin-bottom: 40px;
+  display: inline-block;
+  color: #000000;
+  font-size: 30px;
+}
+
+.home-heading::after {
+  content: " ";
+  width: 62px;
+  height: 4px;
+  background: #ffcc32;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .bottom-footer {
@@ -2618,7 +2618,7 @@ ul.time-slots li {
   z-index: 1;
 }
 
-@media (max-width: 815px) {
+@media (max-width: 812px) {
   .mandatory::after {
     top: 100%;
     left: 50%;
@@ -2627,7 +2627,7 @@ ul.time-slots li {
   }
 }
 
-@media (min-width: 580px) and (max-width: 815px) {
+@media (min-width: 580px) and (max-width: 812px) {
   .mandatory::after {
     right: 0;
   }
@@ -2681,7 +2681,7 @@ ul.time-slots li {
   }
 }
 
-@media (min-width: 736px) and (max-width: 815px) {
+@media (min-width: 736px) and (max-width: 812px) {
   .registration-wrapper .nav-tabs .nav-link {
     padding: 10px 30px;
   }
@@ -2747,6 +2747,58 @@ ul.time-slots li {
 
 .form-antlegs .link {
   font-size: 18px;
+}
+
+.multi-select .btn-group {
+  display: inline-block;
+  width: 100%;
+}
+
+.multi-select .btn-group .btn-default.dropdown-toggle {
+  width: 100%;
+  font-size: 18px;
+  height: 50px;
+  padding: 10px 40px 10px 10px;
+  border: 1px solid #acacac;
+  color: #000000;
+  background: #ffffff !important;
+}
+
+@media (min-width: 1600px) {
+  .multi-select .btn-group .btn-default.dropdown-toggle {
+    font-size: 26px;
+    padding: 15px;
+    height: 78px;
+  }
+}
+
+.multi-select .btn-group .btn-default.dropdown-toggle::after {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 21px;
+  height: 13px;
+  background-image: url("../images/big-down-arrow.png");
+}
+
+.multi-select .btn-group .btn-default.dropdown-toggle .multiselect-selected-text {
+  display: block;
+  text-align: left;
+}
+
+.multi-select .btn-group .dropdown-menu {
+  width: 100%;
+}
+
+.multi-select .btn-group .multiselect-container > li > a > label.radio, .multi-select .btn-group .multiselect-container > li > a > label.checkbox {
+  font-size: 18px;
+  color: #000;
+  padding: 5px 15px;
+}
+
+.multi-select .btn-group .multiselect-container > li > a > label > input[type=checkbox] {
+  margin-right: 10px;
 }
 
 .sign-in {
@@ -2848,7 +2900,7 @@ ul.time-slots li {
 
 .testimonial-wrapper {
   background: #ffffff;
-  padding: 50px 0;
+  padding: 0 0 50px;
 }
 
 .testimonial-item {
