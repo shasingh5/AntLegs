@@ -20,8 +20,8 @@
 .groups-content {
     padding: 125px 0 50px 70px;
     background: $white;
-    @include respond-to(400px, max) {
-        padding: 30px 10px 10px;
+    @include respond-to($xs, max) {
+        padding: 30px;
     }
 
     h4 {
@@ -36,7 +36,7 @@
         font-size: 20px;
         font-weight: 300;
         color: #666666;
-        @include respond-to(400px, max) {
+        @include respond-to($sm, max) {
             font-size: 16px;
         }
     }
@@ -44,7 +44,7 @@
 
 .cf-content {
     padding-top: 125px;
-    @include respond-to(400px, max) {
+    @include respond-to($xs, max) {
         padding-top: 60px;
     }
     h4 {
@@ -118,7 +118,7 @@
     padding: 80px 0;
     background: $white;
 
-    @include respond-to(400px, max) {
+    @include respond-to($xs, max) {
         padding-left: 15px;
         padding-right: 15px;
     }

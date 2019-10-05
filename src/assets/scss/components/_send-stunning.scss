@@ -16,7 +16,10 @@
     p {
         font-size: 20px;
         font-weight: 300;
-        color: #666666;
+        color: #666666;@include respond-to($sm, max) {
+            font-size: 16px;
+         }
+
     }
 }
 
@@ -30,8 +33,8 @@
     .find-content {
         padding-top: 170px;
         padding-right: 70px;
-        @include respond-to(400px, max) {
-            padding: 30px 15px;
+        @include respond-to($md, max) {
+            padding: 30px;
          }
         h4 {
             margin-bottom: 20px;

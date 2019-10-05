@@ -5,20 +5,41 @@
 
 .testimonial-item {
     width: 550px;
-    background: $grey;
+    float: left;
+    //background: $grey;
 }
 
 .testimonial-block {
-    background: $blue;
-    color: $white;
+    background: #f2f4f6;
+    color: $black;
     border-radius: 5px;
     margin-left: 20px;
-    padding: 40px;
+    padding: 30px 40px 30px 0;
+    display: table;
+    width: 100%;
+    border: 1px solid #d3d3d3;
+
+    &.active {
+        background: $blue;
+        color: $white;
+
+        .testimonial-content {
+            p {
+                color: #bfcdde;
+            }
+        }
+    }
+
+    >div {
+        display: table-cell;
+        vertical-align: top;
+    }
 }
 
 .testimonial-photo {
-    position: relative; 
-    
+    position: relative;
+    width: percentage(120/525);
+
     &::before {
         content: " ";
         display: block;
@@ -26,12 +47,119 @@
         height: 40px;
         background: url("../images/quote-icon.png") 0 0 no-repeat;
         margin-bottom: 20px;
+        float: right;
+        margin-right: 30px;
     }
 
     img.lazy {
         width: 106px;
-        height: 106px;
-        margin-left: -60px;
+        height: auto;
+        margin-left: -20px;
         @include prefixes(box-shadow, 0px 10px 15px 3px rgba(0, 0, 0, 0.25));
+    }
+}
+
+.testimonial-content {
+    h5 {
+        font-size: 18px;
+        font-weight: 300;
+        font-style: italic;
+        line-height: 1.6;
+        margin-bottom: 40px;
+
+        @include respond-to($xs, max) {
+            font-size: 14px;
+        }
+
+    }
+
+    h6 {
+        font-weight: 600;
+        position: relative;
+        @include respond-to($xs, max) {
+            font-size: 12px;
+        }
+
+        &::before {
+            content: " ";
+            position: absolute;
+            top: 6px;
+            left: -136px;
+            width: 106px;
+            height: 5px;
+            background: $yellow;
+            border-radius: 5px;
+            @include respond-to($xxs, max) {
+                left: -100px;
+                width: 77px;
+            }
+        }
+    }
+
+    p {
+        font-size: 16px;
+        color: $black;
+        @include respond-to($xs, max) {
+            font-size: 10px;
+        }
+    }
+}
+
+.testimonials-slider {
+    .slick-initialized .slick-slide.slick-current {
+        .testimonial-item>.testimonial-block {
+            background: $blue;
+            color: $white;
+
+            .testimonial-content {
+                p {
+                    color: #bfcdde;
+                }
+            }
+        }
+    }
+
+    /* the parent */
+    .slick-list {
+        
+        margin: 0 -20px;
+        @include respond-to($xs, max) {
+            margin: 0;
+        }
+    }
+
+    /* the slides */
+    .slick-slide {
+        
+        margin: 0 20px;
+        @include respond-to($xxs) {
+            margin: 0 40px;
+        }
+    }
+
+
+    
+
+    .slick-dots {
+        margin-top: 20px;
+        position: relative;
+        bottom: 0;
+
+    }
+
+    .slick-dots li button {
+        width: 7px;
+        height: 7px;
+        border-radius: 7px;
+        background: #dbdbdb;
+        @include prefixes(transition, all 0.3s ease);
+        &::before {
+            display: none;
+        }
+    }
+
+    .slick-dots li.slick-active button {
+        background: $blue;
+        width: 20px;
     }
 }

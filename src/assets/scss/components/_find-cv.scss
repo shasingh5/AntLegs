@@ -7,8 +7,8 @@
         padding-top: 127px;
         padding-left: 127px;
 
-        @include respond-to(400px, max) {
-           padding: 30px 15px;
+        @include respond-to($md, max) {
+           padding: 30px;
         }
 
         h4 span {

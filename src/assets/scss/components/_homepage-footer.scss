@@ -26,7 +26,7 @@
     .icon {
         position: relative;
         color: $halfBlack;
-        @include respond-to($xxs, max) {
+        @include respond-to($xs, max) {
             margin-bottom: 20px;
         }
 
@@ -46,7 +46,7 @@
         &.call {
             margin-right: 100px;
 
-            @include respond-to(400px, max) {
+            @include respond-to($xs, max) {
                 margin-right: 0;
                 display: block;
              }

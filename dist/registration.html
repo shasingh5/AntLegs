@@ -19,7 +19,9 @@
 <!-- Full Calendar -->
 <link href="https://fullcalendar.io/js/fullcalendar-3.0.1/fullcalendar.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.42/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
-
+<!-- Slick Slider -->
+<link href="vendor/slick/slick.css" rel="stylesheet">
+<link href="vendor/slick/slick-theme.css" rel="stylesheet">
 <!-- Custom styles -->
 <link href="assets/css/main.min.css" rel="stylesheet">
 
@@ -96,7 +98,8 @@
 					</li>
 				</ul>
 				<div class="tab-content card pt-4" id="myTabContentJust">
-					<div class="tab-pane fade show active" id="home-just" role="tabpanel" aria-labelledby="home-tab-just">
+					<div class="tab-pane fade show active" id="home-just" role="tabpanel"
+						aria-labelledby="home-tab-just">
 						<div class="form-antlegs">
 							<form autocomplete="off" class="form" role="form">
 								<div class="row">
@@ -184,9 +187,21 @@
 									</div>
 									<div class="col-12 col-md-6">
 										<div class="form-group">
-											<label for="inputName">Industry Prefered (Max3)</label>
-											<input class="form-control" id="inputName" type="text">
+											<!--label for="inputName">Industry Prefered (Max3)</label>
+											<input class="form-control" id="inputName" type="text"-->
+											<select class="mdb-select colorful-select dropdown-primary md-form" multiple
+												searchable="Search here..">
+												<option value="" disabled selected>Choose your country</option>
+												<option value="1">USA</option>
+												<option value="2">Germany</option>
+												<option value="3">France</option>
+												<option value="4">Poland</option>
+												<option value="5">Japan</option>
+											</select>
+											<label class="mdb-main-label">Label example</label>
+											<button class="btn-save btn btn-primary btn-sm">Save</button>
 										</div>
+
 									</div>
 									<div class="col-12 col-md-6">
 										<div class="form-group">
@@ -271,8 +286,10 @@
 <script type="text/javascript" src="vendor/malihu-custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
 <!-- Lazy Load -->
 <script type="text/javascript" src="vendor/jquery.lazy/jquery.lazy.min.js"></script>
-<!-- Full Calendar -->
+<!-- Slick Slider -->
+<script type="text/javascript" src="vendor/slick/slick.js"></script>
 
+<!-- Full Calendar -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.js"></script>
 
 <!-- AntLegs core JavaScript -->
