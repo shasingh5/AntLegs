@@ -32,6 +32,21 @@
         theme: "minimal-dark"
     });
 
+    tinymce.init({
+        selector: '.job-description',
+        height: 200,
+        menubar: false,
+        // plugins: [
+        //     'advlist autolink lists link image charmap print preview anchor',
+        //     'searchreplace visualblocks code fullscreen',
+        //     'insertdatetime media table contextmenu paste code'
+        // ],
+        toolbar: 'undo redo | insert | styleselect | bold italic | alignleft aligncenter alignright alignjustify |  bullist numlist outdent indent | fontsizeselect fontselect',
+        //content_css: '//www.tinymce.com/css/codepen.min.css,',
+        content_css: ['//www.tinymce.com/css/codepen.min.css', '//fonts.googleapis.com/css?family=Indie+Flower'],
+        font_formats: 'Arial Black=arial black,avant garde;Indie Flower=indie flower, cursive;Times New Roman=times new roman,times;'
+    });
+
 
     $('#dismiss, .overlay').on('click', function () {
         $('#sidebar').removeClass('active');
@@ -230,7 +245,7 @@
 
     $('#multiple-checkboxes').multiselect({
         enableFiltering: false,
-        numberDisplayed: 2, 
+        numberDisplayed: 2,
         onChange: function (option, checked) {
             // Get selected options.
             var selectedOptions = $('#multiple-checkboxes option:selected');
@@ -244,10 +259,10 @@
                     var input = $('input[value="' + $(this).val() + '"]');
                     input.prop('disabled', true);
                     input.parent('li').addClass('disabled');
-                    
+
                 });
 
-                
+
             } else {
                 // Enable all checkboxes.
                 $('#multiple-checkboxes option').each(function () {

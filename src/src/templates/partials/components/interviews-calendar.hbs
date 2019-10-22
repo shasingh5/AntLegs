@@ -1,0 +1,51 @@
+<div class="container-fluid ant-container">
+    <!-- Interviews Header -->
+    <div class="row header">
+        <div class="col-12 col-md-5 col-lg-6">
+            <a href="index.html" class="main-heading">Manage Interviews</a>
+        </div>
+        <div class="col-12 col-md-7 col-lg-6 text-right">
+            <ul class="header-button">                
+                <li>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <a href="interviews-calendar.html" class="btn btn-common active btn-rounded">Calendar</a>
+                        <a href="interviews-details.html" class="btn btn-common btn-rounded">Details</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--/ Interviews Header -->
+    <div class="calendar-wrapper">
+        <div id='calendar'></div>
+    </div>
+    
+    
+</div>
+
+<div class="modal fade" id="interviewScheduled" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title"><b>30th Sep, 2019 </b> |  12 Interview Scheduled</h4>
+            </div>
+            <div class="modal-body modal-body-scroll">
+                <div class="row row-eq-height card-wrapper">
+                    @@include('./partials/components/interviews-scheduled-card.hbs')
+                    @@include('./partials/components/interviews-scheduled-card.hbs')
+                    @@include('./partials/components/interviews-scheduled-card.hbs')
+                    @@include('./partials/components/interviews-scheduled-card.hbs')
+                    @@include('./partials/components/interviews-scheduled-card.hbs')
+                    @@include('./partials/components/interviews-scheduled-card.hbs')
+                    @@include('./partials/components/interviews-scheduled-card.hbs')
+                    @@include('./partials/components/interviews-scheduled-card.hbs')
+                </div>
+            </div>
+            <!--<div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="save-event">Save changes</button>
+            </div>-->
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

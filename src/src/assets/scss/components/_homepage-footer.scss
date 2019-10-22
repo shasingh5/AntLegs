@@ -1,0 +1,84 @@
+.footer {
+    padding-top: 90px;
+    font-size: 22px;    
+    background: $white;   
+
+    .icon {
+        position: relative;
+        color: $halfBlack;
+        @include respond-to($xs, max) {
+            margin-bottom: 20px;
+        }
+
+        &::before {
+            content: " ";
+            width: 30px;
+            height: 30px;            
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 20px;
+
+            @include respond-to($xxs, max) {
+                margin-right: 10px;
+            }
+        }
+
+        &.call {
+            margin-right: 100px;
+
+            @include respond-to($xs, max) {
+                margin-right: 0;
+                display: block;
+             }
+
+            &::before {
+                background: url("../images/blue-call-icon.png") center no-repeat;
+            }
+            
+        }
+
+        &.email::before {
+            background: url("../images/blue-email-icon.png") center no-repeat;
+        }
+
+        &.address::before {
+            background: url("../images/location-icon.png") center no-repeat;
+        }
+
+    }
+    
+    p {
+        margin-top: 40px;
+    }
+}
+
+.home-heading {
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    display: inline-block;
+    color: $black;
+    font-size: 30px;
+
+    &::after {
+        content: " ";
+        width: 62px;
+        height: 4px;
+        background: $yellow;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+.bottom-footer {
+    background: $blue;
+    padding: 50px 0;
+    margin-top: 90px;
+    p {
+        font-size: 13px;
+        color: rgba($color: #ffffff, $alpha: 0.4);
+        margin-top: 0;
+    }
+}

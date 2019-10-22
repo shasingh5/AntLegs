@@ -1,0 +1,103 @@
+.btn[class*=btn-outline-] {
+  padding: 4px 5px;
+}
+
+.btn {
+  border-radius: 5px;
+  font-size: 10px;
+  padding: 4px 5px;
+  margin: 0;
+  text-transform: capitalize;
+  color: $black;
+  @include transitionAll;
+
+  &-activated {
+    width: 75px;
+    border: 1px solid $green;
+    color: $green;
+
+    &.active,
+    &:hover {
+      background: $green;
+      color: $white;
+    }
+  }
+
+  &-deactivated {
+    border: 1px solid $red;
+    color: $red;
+    width: 75px;
+
+    &.active,
+    &:hover {
+      background: $red;
+      color: $white;
+    }
+  }
+
+  &-new {
+    border: 1px solid $blue;
+    color: $blue;
+    min-width: 75px;
+
+    &.active,
+    &:hover {
+      background: $blue;
+      color: $white;
+    }
+  }
+
+  &-non-active {
+    border: 1px solid $orange;
+    color: $orange;
+    width: 75px;
+
+    &.active,
+    &:hover {
+      background: $orange;
+      color: $white;
+    }
+  }
+
+  &-open {
+    border: 1px solid #959595;
+    color: $halfBlack;
+    width: 75px;
+
+    &.active,
+    &:hover {
+      //background: $halfBlack;
+      color: $halfBlack;
+    }
+  }
+
+  &-common {
+    padding: 8px 12px;    
+    font-size: 12px;
+    font-weight: 500;
+    min-width: 100px;
+    background: $white;
+    border: 1px solid #b7b7b7;
+    text-transform: uppercase;
+    &.active {
+      background: $blue;
+      color: $white;
+    }
+  }
+}
+
+.btn-big {
+    width: 120px;
+    border: 1px solid #b7b7b7;
+    @include bold-font;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 14px 20px;
+    box-shadow: none;
+
+    &.blue {
+        background: $blue;
+        color: $white;
+        border: 1px solid $blue;
+    }
+}

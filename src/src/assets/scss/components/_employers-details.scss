@@ -1,0 +1,105 @@
+.employer-wrapper {
+    padding: 20px;
+}
+
+.contact-details {
+    @include respond-to($xxs, max) { 
+        margin-top: 20px;
+    }
+}
+
+.candidate-status {
+    font-size: 0;
+    li {
+        list-style: none;
+        display: inline-block;
+        margin-top: 0.6em;
+        margin-bottom: .5rem;
+        width: 100%;
+        @include respond-to(400px, 570px) { 
+            width: 50%;
+        }
+        @include respond-to(1200px) { 
+            width: 50%;
+        }
+        &::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: $yellow;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        &.interviewed::before {
+            background: $blue;
+        }
+
+        &.hirings::before {
+            background: $green2;
+        }
+
+        &.rejections::before {
+            background: $pink;
+        }
+    }
+}
+
+.responses-list {
+    font-size: 0;
+    margin-top: 15px;
+    li {
+        list-style: none;
+        display: inline-block;
+        min-width: 30px;
+        height: 24px;
+        text-align: center;        
+        color: $white;
+        font-weight: 700;
+        padding: 4px;
+        margin-bottom: 15px;
+        &:not(:last-child) {
+            border-right: 1px solid $white;
+        }
+        &.shortlisted {
+            background: $yellow;
+        }
+        &.interviewed {
+            background: $blue;
+        }
+
+        &.hirings {
+            background: $green2;
+        }
+
+        &.rejections {
+            background: $pink;
+        }
+    }
+}
+
+.sort-by {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    .dropdown-menu {
+        width: 100px !important;
+    }
+}
+
+.manage-job {
+    .employer-action {
+        margin-bottom: 15px;
+    }
+}
+
+.graph-block {
+    text-align: center;
+    padding-top: 15px;
+    @include respond-to($xs, max) { 
+        margin: 20px 0;
+    }
+    img {
+        display: inline-block;
+    }
+}

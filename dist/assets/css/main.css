@@ -3074,3 +3074,85 @@ ul.time-slots li {
   background: #306ba3;
   width: 20px;
 }
+
+.mce-container [type=button]:not(:disabled),
+.mce-container [type=reset]:not(:disabled),
+.mce-container [type=submit]:not(:disabled),
+.mce-container button:not(:disabled) {
+  background: #ffffff;
+}
+
+.add-job-form {
+  margin-top: 0;
+  padding: 20px;
+}
+
+.add-job-form h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.add-job-form .last-group .btn-white,
+.add-job-form .last-group a.btn-white {
+  color: #306ba3;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.add-job-form .last-group .btn-white:hover,
+.add-job-form .last-group a.btn-white:hover {
+  color: #306ba3;
+}
+
+@media (max-width: 460px) {
+  .add-job-form .last-group .btn-white,
+  .add-job-form .last-group a.btn-white {
+    margin-bottom: 20px;
+  }
+}
+
+.add-job-form .last-group .fa-edit {
+  margin-right: 10px;
+}
+
+.add-job-form select.form-control.select {
+  background: url("../images/dropdown-arrow.png") 96% 50% no-repeat;
+  margin-left: 0;
+  padding: 10px 25px 10px 10px;
+}
+
+.add-job-form select.form-control.select:disabled {
+  background: #e9ecef;
+}
+
+.add-job-form .ant-rich-text {
+  margin-bottom: 2.2rem;
+}
+
+@media (min-width: 768px) and (max-width: 900px) {
+  .add-job-form .form-group label {
+    font-size: 14px;
+  }
+}
+
+.add-job-form .file-upload {
+  margin-top: 0;
+}
+
+.add-job-form .file-upload .custom-file-label, .add-job-form .file-upload .custom-file {
+  height: 50px;
+}
+
+.add-job-form .file-upload .custom-file-input:lang(en) ~ .custom-file-label::after {
+  height: 42px;
+}
+
+.add-job-form .file-upload .custom-file-label::before {
+  margin-right: 130px;
+}
+
+.candidate-form {
+  margin-top: 50px;
+}
