@@ -1,0 +1,18 @@
+.find-cv-wrapper {
+    .row.no-padding > div {
+        padding: 0;
+    }
+
+    .find-content {
+        padding-top: 127px;
+        padding-left: 127px;
+
+        @include respond-to($md, max) {
+           padding: 30px;
+        }
+
+        h4 span {
+            border-bottom: 3px solid $yellow;
+        }
+    }
+}
