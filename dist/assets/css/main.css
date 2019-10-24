@@ -3156,3 +3156,161 @@ ul.time-slots li {
 .candidate-form {
   margin-top: 50px;
 }
+
+.cv-view {
+  font-size: 16px;
+  padding: 15px;
+  color: #000000;
+}
+
+@media (min-width: 736px) {
+  .cv-view {
+    padding: 40px;
+  }
+}
+
+.cv-view p {
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+.cv-view p > span {
+  display: inline-block;
+}
+
+@media (min-width: 736px) {
+  .cv-view p > span {
+    min-width: 200px;
+  }
+}
+
+.cv-view p.credit {
+  font-size: 14px;
+  color: #737373;
+}
+
+.cv-view h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.cv-view hr {
+  margin-top: 1.8rem;
+  margin-bottom: 1.8rem;
+  border-top: 1px solid #dbdbdb;
+}
+
+.cv-view ul {
+  padding-left: 20px;
+}
+
+.cv-view ul li {
+  font-size: 16px;
+  line-height: 2;
+}
+
+.cv-view .form-control {
+  font-size: 18px;
+  height: 54px;
+  padding: 10px;
+  border: 1px solid #acacac;
+  color: #000;
+  margin-right: 10px;
+}
+
+@media (min-width: 736px) {
+  .cv-view .form-control {
+    width: 370px;
+  }
+}
+
+@media (max-width: 736px) {
+  .cv-view .btn-get {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.cv-view-header {
+  display: table;
+}
+
+.cv-view-header > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media (max-width: 736px) {
+  .cv-view-header > div {
+    display: block;
+    width: 100%;
+  }
+}
+
+.cv-view-header > div.cadidate-photo {
+  width: 100px;
+}
+
+.cv-view-header > div.cadidate-photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #acacac;
+}
+
+@media (min-width: 736px) {
+  .cv-view-header > div.cadidate-name {
+    padding-left: 30px;
+  }
+}
+
+.cv-view-header > div.cadidate-name h3 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.cv-view-header > div.cadidate-name p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.emp-hist-card {
+  border: 1px solid #acacac;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.emp-hist-card h5 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333333;
+}
+
+.emp-hist-card p {
+  margin-bottom: 5px;
+}
+
+.btn-print {
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  padding: 8px 12px;
+}
+
+.btn-print::before {
+  content: " ";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/print-icon.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-right: 10px;
+  vertical-align: middle;
+  margin-top: -2px;
+}

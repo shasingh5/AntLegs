@@ -1,0 +1,155 @@
+.cv-view {
+    font-size: 16px;
+    padding: 15px;
+    color: $black;
+
+    @include respond-to($xs) {
+        padding: 40px;
+    }
+
+    p {
+        margin-bottom: 15px;
+        line-height: 1.7;
+
+        >span {
+            
+            display: inline-block;
+
+            @include respond-to($xs) {
+                min-width: 200px;
+            }
+        }
+
+        &.credit {
+            font-size: 14px;
+            color: #737373;
+        }
+    }
+
+    h4 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #333333;
+        margin-bottom: 15px;
+    }
+
+    hr {
+        margin-top: 1.8rem;
+        margin-bottom: 1.8rem;
+        border-top: 1px solid#dbdbdb;
+    }
+
+    ul {
+        padding-left: 20px;
+
+        li {
+            font-size: 16px;
+            line-height: 2;
+        }
+    }
+
+    .form-control {
+        font-size: 18px;
+        height: 54px;
+        padding: 10px;
+        border: 1px solid #acacac;
+        color: #000;
+        margin-right: 10px;
+
+        @include respond-to($xs) {
+            width: 370px;
+        }
+    }
+
+    .btn-get {
+        @include respond-to($xs, max) {
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.cv-view-header {
+    display: table;
+
+    >div {
+        display: table-cell;
+        vertical-align: middle;
+
+        @include respond-to($xs, max) {
+            display: block;
+            width: 100%;
+        }
+
+        &.cadidate-photo {
+            width: 100px;
+
+            
+
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 5px solid #acacac;
+            }
+        }
+
+        &.cadidate-name {
+            
+            @include respond-to($xs) {
+                padding-left: 30px;
+            }
+
+
+            h3 {
+                font-size: 26px;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 18px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.emp-hist-card {
+    border: 1px solid #acacac;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 12px;
+    margin-bottom: 20px;
+
+    h5 {
+        font-size: 14px;
+        font-weight: 700;
+        color: #333333;
+    }
+
+    p {
+        margin-bottom: 5px;
+    }
+
+}
+
+.btn-print {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    padding: 8px 12px;
+
+    &::before {
+        content: " ";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url("../images/print-icon.png");
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        margin-right: 10px;
+        vertical-align: middle;
+        margin-top: -2px;
+    }
+}
