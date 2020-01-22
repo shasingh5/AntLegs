@@ -346,3 +346,37 @@
 #notification {
 	max-height: 500px;
 }
+
+.navbar.navbar-antlegs {
+	background: $blue;
+	color: $white;
+
+	.hamburg {		
+		background: url("../images/white-hamburg.png") center no-repeat;		
+	}
+
+	.logo span:first-child {
+		color: $white;		
+	}
+
+	.breadcrumb .nav-item .nav-link, 
+	.navbar-nav .nav-item .nav-link {
+		color: $white;
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+	.dropdown-toggle::after {		
+		background-image: url("../images/white-dropdown-arrow.png");		
+	}
+
+	.user-icon {
+		background-image: url("../images/white-user-icon.png");
+	}
+
+	.bell-icon {		
+		background-image: url("../images/white-notification-icon.png");		
+	}
+}

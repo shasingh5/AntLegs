@@ -941,6 +941,41 @@ body.modal-open {
   max-height: 500px;
 }
 
+.navbar.navbar-antlegs {
+  background: #306ba3;
+  color: #ffffff;
+}
+
+.navbar.navbar-antlegs .hamburg {
+  background: url("../images/white-hamburg.png") center no-repeat;
+}
+
+.navbar.navbar-antlegs .logo span:first-child {
+  color: #ffffff;
+}
+
+.navbar.navbar-antlegs .breadcrumb .nav-item .nav-link,
+.navbar.navbar-antlegs .navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+}
+
+.navbar.navbar-antlegs .breadcrumb .nav-item .nav-link:hover,
+.navbar.navbar-antlegs .navbar-nav .nav-item .nav-link:hover {
+  color: #ffffff;
+}
+
+.navbar.navbar-antlegs .dropdown-toggle::after {
+  background-image: url("../images/white-dropdown-arrow.png");
+}
+
+.navbar.navbar-antlegs .user-icon {
+  background-image: url("../images/white-user-icon.png");
+}
+
+.navbar.navbar-antlegs .bell-icon {
+  background-image: url("../images/white-notification-icon.png");
+}
+
 .navbar-blue {
   background: #306ba3;
   padding-top: 30px;
