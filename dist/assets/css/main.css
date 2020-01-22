@@ -87,7 +87,7 @@ ol ol {
 }
 
 a {
-  color: #306ba3;
+  color: #316ea7;
   text-decoration: none;
 }
 
@@ -317,7 +317,7 @@ p.ant-title {
 }
 
 .blue-text {
-  color: #306ba3;
+  color: #316ea7;
 }
 
 .white-wrapper {
@@ -371,7 +371,7 @@ p.ant-title {
 }
 
 .breadcrumbWrapper ol.breadcrumb li a:hover {
-  color: #306ba3;
+  color: #316ea7;
   transition: all .4s;
 }
 
@@ -540,13 +540,13 @@ body.modal-open {
 }
 
 .btn-new {
-  border: 1px solid #306ba3;
-  color: #306ba3;
+  border: 1px solid #316ea7;
+  color: #316ea7;
   min-width: 75px;
 }
 
 .btn-new.active, .btn-new:hover {
-  background: #306ba3;
+  background: #316ea7;
   color: #ffffff;
 }
 
@@ -582,7 +582,7 @@ body.modal-open {
 }
 
 .btn-common.active {
-  background: #306ba3;
+  background: #316ea7;
   color: #ffffff;
 }
 
@@ -598,9 +598,9 @@ body.modal-open {
 }
 
 .btn-big.blue {
-  background: #306ba3;
+  background: #316ea7;
   color: #ffffff;
-  border: 1px solid #306ba3;
+  border: 1px solid #316ea7;
 }
 
 .hamburg {
@@ -618,7 +618,7 @@ body.modal-open {
 }
 
 .logo span {
-  color: #306ba3;
+  color: #316ea7;
   letter-spacing: 2px;
 }
 
@@ -785,7 +785,7 @@ body.modal-open {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #306ba3;
+  background: #316ea7;
   display: inline-block;
   position: absolute;
   top: 5px;
@@ -942,7 +942,7 @@ body.modal-open {
 }
 
 .navbar.navbar-antlegs {
-  background: #306ba3;
+  background: #316ea7;
   color: #ffffff;
 }
 
@@ -977,7 +977,7 @@ body.modal-open {
 }
 
 .navbar-blue {
-  background: #306ba3;
+  background: #316ea7;
   padding-top: 30px;
   padding-bottom: 70px;
 }
@@ -1196,7 +1196,8 @@ body.modal-open {
 }
 
 footer {
-  padding: 20px 0;
+  padding: 15px 0;
+  background: #ffffff;
   color: #999999;
 }
 
@@ -1228,7 +1229,7 @@ footer {
 }
 
 .ant-dropdown + .dropdown-menu .dropdown-item:hover {
-  background: #306ba3;
+  background: #316ea7;
   color: #ffffff;
 }
 
@@ -1367,7 +1368,7 @@ footer {
   content: "Choose File";
   float: right;
   margin-right: 100px;
-  color: #306ba3;
+  color: #316ea7;
   font-weight: 500;
 }
 
@@ -1440,7 +1441,7 @@ select.select::-ms-expand {
 
 .ant-card:hover {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.16), 0 5px 20px 0 rgba(0, 0, 0, 0.12);
-  border-top: 2px solid #306ba3;
+  border-top: 2px solid #316ea7;
 }
 
 .ant-card .card-title {
@@ -1488,7 +1489,7 @@ select.select::-ms-expand {
 }
 
 .web-link {
-  color: #306ba3;
+  color: #316ea7;
   margin-bottom: 15px;
 }
 
@@ -1583,7 +1584,7 @@ ul.bank-details li span {
 }
 
 .candidate-status li.interviewed::before {
-  background: #306ba3;
+  background: #316ea7;
 }
 
 .candidate-status li.hirings::before {
@@ -1620,7 +1621,7 @@ ul.bank-details li span {
 }
 
 .responses-list li.interviewed {
-  background: #306ba3;
+  background: #316ea7;
 }
 
 .responses-list li.hirings {
@@ -1746,7 +1747,7 @@ ul.bank-details li span {
   color: #333333;
   background-color: #fff;
   border: none;
-  border-bottom: 3px solid #306ba3;
+  border-bottom: 3px solid #316ea7;
   font-weight: 600;
 }
 
@@ -1836,7 +1837,7 @@ ul.bank-details li span {
 }
 
 .activities-list li > span a {
-  color: #306ba3;
+  color: #316ea7;
   font-weight: 600;
 }
 
@@ -2214,7 +2215,7 @@ ul.time-slots li {
 }
 
 .head-center h1 span {
-  color: #306ba3;
+  color: #316ea7;
   display: inline-block;
   position: relative;
 }
@@ -2266,7 +2267,7 @@ ul.time-slots li {
   letter-spacing: 1px;
   padding: 14px 25px;
   box-shadow: none;
-  background: #306ba3;
+  background: #316ea7;
   color: #ffffff;
 }
 
@@ -2599,7 +2600,7 @@ ul.time-slots li {
 }
 
 .bottom-footer {
-  background: #306ba3;
+  background: #316ea7;
   padding: 50px 0;
   margin-top: 90px;
 }
@@ -2612,7 +2613,7 @@ ul.time-slots li {
 
 .registration {
   background-size: cover;
-  background-color: #306ba3;
+  background-color: #316ea7;
   padding-bottom: 60px;
 }
 
@@ -2917,11 +2918,11 @@ ul.time-slots li {
 .forgot-block .btn {
   padding: 11px 17px;
   font-size: 18px;
-  color: #306ba3;
+  color: #316ea7;
 }
 
 .forgot-block .btn-send {
-  border: 1px solid #306ba3;
+  border: 1px solid #316ea7;
 }
 
 .forgot-block .btn-cancel {
@@ -2959,7 +2960,7 @@ ul.time-slots li {
 }
 
 .testimonial-block.active {
-  background: #306ba3;
+  background: #316ea7;
   color: #ffffff;
 }
 
@@ -3059,7 +3060,7 @@ ul.time-slots li {
 }
 
 .testimonials-slider .slick-initialized .slick-slide.slick-current .testimonial-item > .testimonial-block {
-  background: #306ba3;
+  background: #316ea7;
   color: #ffffff;
 }
 
@@ -3110,7 +3111,7 @@ ul.time-slots li {
 }
 
 .testimonials-slider .slick-dots li.slick-active button {
-  background: #306ba3;
+  background: #316ea7;
   width: 20px;
 }
 
@@ -3134,7 +3135,7 @@ ul.time-slots li {
 
 .add-job-form .last-group .btn-white,
 .add-job-form .last-group a.btn-white {
-  color: #306ba3;
+  color: #316ea7;
   background: #ffffff;
   border: 1px solid #ccc;
   margin-right: 10px;
@@ -3142,7 +3143,7 @@ ul.time-slots li {
 
 .add-job-form .last-group .btn-white:hover,
 .add-job-form .last-group a.btn-white:hover {
-  color: #306ba3;
+  color: #316ea7;
 }
 
 @media (max-width: 460px) {
@@ -3434,7 +3435,7 @@ ul.time-slots li {
 }
 
 .invoice-header .blue {
-  background: #306ba3;
+  background: #316ea7;
   color: #ffffff;
   padding: 5px 12px;
   width: 94px;
