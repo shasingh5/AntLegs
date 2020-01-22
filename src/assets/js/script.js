@@ -1,4 +1,4 @@
-(function ($) {
+(function($) {
     // window.onload = function () {
     //     $('.skeleton-box').fadeOut(500, function () {
     //         $('.skeleton-box').remove();
@@ -48,25 +48,25 @@
     });
 
 
-    $('#dismiss, .overlay').on('click', function () {
+    $('#dismiss, .overlay').on('click', function() {
         $('#sidebar').removeClass('active');
         $('.overlay').removeClass('active');
     });
 
-    $('#sidebarCollapse').on('click', function () {
+    $('#sidebarCollapse').on('click', function() {
         $('#sidebar').addClass('active');
         $('.overlay').addClass('active');
         $('.collapse.in').toggleClass('in');
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
     });
 
-    $('.dropdown-menu').click(function (e) {
+    $('.dropdown-menu').click(function(e) {
         e.stopPropagation();
     });
 
 
 
-    $(window).scroll(function (event) {
+    $(window).scroll(function(event) {
         var scrollTop = $(document).scrollTop();
         if (scrollTop > 100) {
             $(".scroll-btn").fadeIn(400);
@@ -75,16 +75,16 @@
         }
     });
 
-    $(".scroll-btn").on('click', function (event) {
+    $(".scroll-btn").on('click', function(event) {
         event.preventDefault();
         $("html, body").animate({
             scrollTop: 0
-        }, 800, function () {
+        }, 800, function() {
             $(".scroll-btn").fadeOut(400);
         });
     });
 
-    $('.filter-tabs').on('click', 'li > a', function (event) {
+    $('.filter-tabs').on('click', 'li > a', function(event) {
         event.preventDefault();
         var id = $(this).attr('href');
         $('.filter-content').find('>div').hide();
@@ -99,12 +99,12 @@
     });
 
 
-    $(".inline-email .alert-list").on("click", function (event) {
+    $(".inline-email .alert-list").on("click", function(event) {
         $(this).next(".email-box").slideToggle();
         $(this).parent().toggleClass("open");
     });
 
-    $(".email-box > .email").on("click", function (event) {
+    $(".email-box > .email").on("click", function(event) {
         $(this).parent(".email-box").find(".msg-box").slideToggle();
         $(this).toggleClass("active");
     });
@@ -125,7 +125,7 @@
         navLinks: true, // can click day/week names to navigate views
         selectable: true,
         selectHelper: true,
-        select: function (start, end) {
+        select: function(start, end) {
             // Display the modal.
             // You could fill in the start and end fields based on the parameters
             $('#interviewScheduled').modal('show');
@@ -149,7 +149,7 @@
     $("#starts-at, #ends-at").datetimepicker();
 
     // Whenever the user clicks on the "save" button om the dialog
-    $('#save-event').on('click', function () {
+    $('#save-event').on('click', function() {
         var title = $('#title').val();
         if (title) {
             var eventData = {
@@ -180,7 +180,7 @@
         navLinks: true, // can click day/week names to navigate views
         selectable: true,
         selectHelper: true,
-        select: function (start, end) {
+        select: function(start, end) {
             // Display the modal.
             // You could fill in the start and end fields based on the parameters
             $('.rollover').show();
@@ -199,11 +199,11 @@
 
     });
 
-    $(".rollover-header").on("click", ".close", function (event) {
+    $(".rollover-header").on("click", ".close", function(event) {
         $('.rollover').hide();
     });
 
-    $(".forgot-Password").on("click", function (event) {
+    $(".forgot-Password").on("click", function(event) {
         event.preventDefault();
         $(".forgot-block").slideToggle();
     });
@@ -241,21 +241,49 @@
         ]
     });
 
+    //invoice card slider
+    $('.invoice-card-slider').slick({
+        infinite: false,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        dots: false,
+        arrows: true,
+        responsive: [{
+                breakpoint: 815,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+
+
 
 
     $('#multiple-checkboxes').multiselect({
         enableFiltering: false,
         numberDisplayed: 2,
-        onChange: function (option, checked) {
+        onChange: function(option, checked) {
             // Get selected options.
             var selectedOptions = $('#multiple-checkboxes option:selected');
 
             if (selectedOptions.length >= 3) {
                 // Disable all other checkboxes.
-                var nonSelectedOptions = $('#multiple-checkboxes option').filter(function () {
+                var nonSelectedOptions = $('#multiple-checkboxes option').filter(function() {
                     return !$(this).is(':selected');
                 });
-                nonSelectedOptions.each(function () {
+                nonSelectedOptions.each(function() {
                     var input = $('input[value="' + $(this).val() + '"]');
                     input.prop('disabled', true);
                     input.parent('li').addClass('disabled');
@@ -265,7 +293,7 @@
 
             } else {
                 // Enable all checkboxes.
-                $('#multiple-checkboxes option').each(function () {
+                $('#multiple-checkboxes option').each(function() {
                     var input = $('input[value="' + $(this).val() + '"]');
                     input.prop('disabled', false);
                     input.parent('li').addClass('disabled');
@@ -314,7 +342,7 @@ function recruiterRenderCard() {
     $('.recuiters-list span.skeleton-box').remove();
 }
 
-setTimeout(function () {
+setTimeout(function() {
     renderCard();
     recruiterRenderCard();
 }, 3000);

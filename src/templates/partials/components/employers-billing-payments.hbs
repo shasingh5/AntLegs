@@ -1,0 +1,76 @@
+<div class="container-fluid ant-container">
+    @@include('./partials/components/employers-billing-payments-header.hbs')
+
+    <div class="invoice-dashboard">
+        <div class="row">
+            <div class="col">
+                <div class="invoice-icon received"></div>
+                <p>Total Invoice(s) Received</p>
+                <h4><b>32</b> (USD 10,000)</h4>
+            </div>
+            <div class="col">
+                <div class="invoice-icon new"></div>
+                <p>New Invoice(s) (Last 30 Days)</p>
+                <h4><b>10</b> (USD 10,000)</h4>
+            </div>
+            <div class="col">
+                <div class="invoice-icon cleared"></div>
+                <p>Invoice(s) Cleared</p>
+                <h4><b>10</b> (USD 10,000)</h4>
+            </div>
+            <div class="col">
+                <div class="invoice-icon pending"></div>
+                <p>Invoice(s) Pending</p>
+                <h4><b>3</b> (USD 5,000)</h4>
+            </div>
+            <div class="col">
+                <div class="invoice-icon cancelled"></div>
+                <p>Invoice(s) Cancelled</p>
+                <h4><b>12</b> (USD 5,000)</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- new invoice Header -->
+    <div class="row header invoice-header">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+            <a href="index.html" class="main-heading">New Invoices <small>(10)</small></a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 text-right">
+            <button class="btn blue waves-effect" data-toggle="modal" data-target="#filterOpen">SUMMARY</button>
+            <button class="btn blue filter-open waves-effect" data-toggle="modal" data-target="#filterOpen">Filter</button>
+        </div>
+    </div>
+    <!--/ new invoice Header -->
+
+    <div class="row row-eq-height card-wrapper invoice-card-slider">
+        @@include('./partials/components/invoice-card-new.hbs')
+        @@include('./partials/components/invoice-card-new.hbs')
+        @@include('./partials/components/invoice-card-new.hbs')
+        @@include('./partials/components/invoice-card-new.hbs')
+        @@include('./partials/components/invoice-card-new.hbs')
+    </div>
+
+    <!-- Cleared Invoices  Header -->
+    <div class="row header invoice-header">
+        <div class="col-12">
+            <a href="index.html" class="main-heading">Cleared Invoices <small>(07)</small></a>
+        </div>
+        <!-- <div class="col-5 col-sm-6 col-md-6 col-lg-6 text-right">
+            <button class="btn blue waves-effect" data-toggle="modal" data-target="#filterOpen">SUMMARY</button>
+            <button class="btn blue filter-open waves-effect" data-toggle="modal" data-target="#filterOpen">Filter</button>
+        </div> -->
+    </div>
+    <!--/ Cleared Invoices  Header -->
+
+    <div class="row row-eq-height card-wrapper">
+        @@include('./partials/components/invoice-card-cleared.hbs')
+        @@include('./partials/components/invoice-card-cleared.hbs')
+        @@include('./partials/components/invoice-card-cleared.hbs')
+        @@include('./partials/components/invoice-card-cleared.hbs')
+    </div>
+</div>
+
+@@include('./partials/components/filter-modal.hbs')
+@@include('./partials/components/new-registration-modal.hbs')
+@@include('./partials/components/warning-modal.hbs')

@@ -1,6 +1,7 @@
 node_modules/
 UI/
 PSDs/
+e-mailer/
 package-lock.json
 AntLegs.zip
 skeleton loading link

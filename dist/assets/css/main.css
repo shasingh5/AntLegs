@@ -243,6 +243,10 @@ a[data-toggle="collapse"] {
   }
 }
 
+.main-heading.no-arrow::before {
+  display: none;
+}
+
 .header {
   padding: 15px 0;
 }
@@ -3313,4 +3317,121 @@ ul.time-slots li {
   margin-right: 10px;
   vertical-align: middle;
   margin-top: -2px;
+}
+
+.invoice-dashboard {
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  padding: 10px;
+  text-align: center;
+  color: #333333;
+}
+
+.invoice-dashboard p {
+  margin: 10px 0;
+  font-size: 12px;
+}
+
+.invoice-dashboard h4 {
+  font-size: 16px;
+}
+
+.invoice-dashboard .col {
+  border-right: 1px solid #e9e9e9;
+}
+
+@media (max-width: 420px) {
+  .invoice-dashboard .col {
+    flex-basis: unset;
+    border-right: 0;
+    padding: 10px 0;
+  }
+  .invoice-dashboard .col:not(:last-child) {
+    border-bottom: 1px solid #e9e9e9;
+    margin-bottom: 20px;
+  }
+}
+
+.invoice-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #ebeef0;
+  margin: 0 auto;
+}
+
+.invoice-icon.received {
+  background: #ebeef0 url("../images/received-icon.png") center no-repeat;
+}
+
+.invoice-icon.new {
+  background: #d3ebf5 url("../images/new-icon.png") center no-repeat;
+}
+
+.invoice-icon.cleared {
+  background: #daf5d3 url("../images/cleared-icon.png") center no-repeat;
+}
+
+.invoice-icon.pending {
+  background: #f5e2d3 url("../images/pending-icon.png") center no-repeat;
+}
+
+.invoice-icon.cancelled {
+  background: #ffcccc url("../images/pending-icon.png") center no-repeat;
+}
+
+.invoice-header .main-heading {
+  font-size: 14px;
+}
+
+.invoice-header .main-heading::before {
+  display: none;
+}
+
+.invoice-header .main-heading small {
+  font-weight: normal;
+}
+
+.invoice-header .filter-open::before {
+  background-image: url("../images/white-filter-icon.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.invoice-header .blue {
+  background: #306ba3;
+  color: #ffffff;
+  padding: 5px 12px;
+  width: 94px;
+  font-size: 12px;
+}
+
+.invoice-card-slider .slick-prev,
+.invoice-card-slider .slick-next {
+  width: 30px;
+  height: 60px;
+  z-index: 99;
+}
+
+.invoice-card-slider .slick-prev:before,
+.invoice-card-slider .slick-next:before {
+  display: none;
+}
+
+.invoice-card-slider .slick-prev {
+  left: 0;
+  background: transparent url("../images/left-white-arrow.png") center no-repeat;
+}
+
+.invoice-card-slider .slick-prev:hover {
+  background: transparent url("../images/left-blue-arrow.png") center no-repeat;
+}
+
+.invoice-card-slider .slick-next {
+  right: 0;
+  background: transparent url("../images/right-white-arrow.png") center no-repeat;
+}
+
+.invoice-card-slider .slick-next:hover {
+  background: transparent url("../images/right-blue-arrow.png") center no-repeat;
 }
