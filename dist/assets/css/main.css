@@ -3435,7 +3435,7 @@ ul.time-slots li {
 }
 
 .invoice-header .blue {
-  background: #316ea7;
+  background: #316ea7 !important;
   color: #ffffff;
   padding: 5px 12px;
   width: 94px;
