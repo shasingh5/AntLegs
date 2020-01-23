@@ -64,11 +64,11 @@ body.modal-open {
     }
 }
 
-.modal-lg {
-    @include respond-to(992px) {
-        width: 646px;
-    }
-}
+// .modal-lg {
+//     @include respond-to(992px) {
+//         width: 646px;
+//     }
+// }
 
 .modal-body {        
     background: $white;

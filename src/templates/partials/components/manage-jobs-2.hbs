@@ -1,0 +1,26 @@
+<div class="container-fluid ant-container">
+    <!-- jobs Header -->
+    <div class="row header">
+        <div class="col-4 col-sm-6 col-md-6 col-lg-6">
+            <a href="#" class="main-heading no-arrow">Manage Jobs</a>
+        </div>
+        <div class="col-8 col-sm-6 col-md-6 col-lg-6 text-right invoice-header">
+            <button class="btn blue filter-open waves-effect" data-toggle="modal" data-target="#filterOpen">Filter</button>
+            <button class="btn blue waves-effect" data-toggle="modal" data-target="#filterOpen">+ ADD JOB</button>
+        </div>
+    </div>
+    <!--/ jobs Header -->
+    <div class="row row-eq-height card-wrapper">
+        @@include('./partials/components/manage-jobs-card-open.hbs')
+        @@include('./partials/components/manage-jobs-card-open.hbs')
+        @@include('./partials/components/manage-jobs-card-open.hbs')
+        @@include('./partials/components/manage-jobs-card-open.hbs')
+        @@include('./partials/components/manage-jobs-card-open.hbs')
+        @@include('./partials/components/manage-jobs-card-open.hbs')
+        @@include('./partials/components/manage-jobs-card-open.hbs')
+        @@include('./partials/components/manage-jobs-card-open.hbs')
+    </div>
+</div>
+
+@@include('./partials/components/recruiter-filter-modal.hbs')
+@@include('./partials/components/recruiter-new-registration-modal.hbs')

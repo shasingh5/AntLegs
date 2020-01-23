@@ -71,7 +71,7 @@
         <li class="waves-effect">
             <a href="index.html" class="employers">Employers</a>
         </li>
-        <li class="waves-effect">
+        <li class="waves-effect active">
             <a href="recruiters.html" class="recruiters">Recruiters</a>
         </li>
         <li class="waves-effect">
@@ -80,8 +80,8 @@
         <li class="waves-effect">
             <a href="interviews-calendar.html" class="interviews">Interviews</a>
         </li>
-        <li class="waves-effect active">
-            <a href="#" class="payments">Payments</a>
+        <li class="waves-effect">
+            <a href="payments-billings.html" class="payments">Payments</a>
         </li>
         <li class="waves-effect">
             <a href="#" class="rewards">Rewards & Points</a>
@@ -272,167 +272,64 @@
 </nav>
       
         <div class="container-fluid ant-container">
-    <!-- Billing & Payments Header -->
+    <!-- jobs Header -->
     <div class="row header">
-        <div class="col-12 col-md-5 col-lg-6">
-            <a href="index.html" class="main-heading">Manage Billing & Payments</a>
+        <div class="col-4 col-sm-6 col-md-6 col-lg-6">
+            <a href="#" class="main-heading no-arrow">Manage Jobs</a>
         </div>
-        <div class="col-12 col-md-7 col-lg-6 text-right">
-            <ul class="header-button">
-                <li>
-                    <!--Dropdown primary-->
-                    <div class="dropdown">
-                        <!--Trigger-->
-                        <button class="btn ant-dropdown ad-big dropdown-toggle waves-effect" type="button"
-                            id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">Sort</button>
-
-                        <!--Menu-->
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item waves-effect" href="#">New</a>
-                            <a class="dropdown-item waves-effect" href="#">Cleared</a>
-                            <a class="dropdown-item waves-effect" href="#">Pending</a>
-                            <a class="dropdown-item waves-effect" href="#">Cancelled</a>
-                        </div>
-                    </div>
-                    <!--/Dropdown primary-->
-                </li>
-                <li>
-                    <button class="btn filter-open waves-effect" data-toggle="modal"
-                        data-target="#filterOpen">Filter</button>
-                </li>
-                <li>
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <a href="#" class="btn btn-common active btn-rounded">EMPLOYER</a>
-                        <a href="#" class="btn btn-common btn-rounded">RECRUITER</a>
-                    </div>
-                </li>
-            </ul>
+        <div class="col-8 col-sm-6 col-md-6 col-lg-6 text-right invoice-header">
+            <button class="btn blue filter-open waves-effect" data-toggle="modal" data-target="#filterOpen">Filter</button>
+            <button class="btn blue waves-effect" data-toggle="modal" data-target="#filterOpen">+ ADD JOB</button>
         </div>
     </div>
-    <!--/ Billing & Payments Header -->
-    <div class="row row-eq-height">
-        <div class="col-12 col-md-8">
-            <div class="white-wrapper">
-                <div class="row">
-                    <div class="col-7 col-sm-6">
-                        <h1 class="ant-title bold">Hirings for the period Jan - Dec, 2019</h1>
-                    </div>
-                    <div class="col-5 col-sm-6">
-                        <div class="employer-action text-right">
-                            <select name="" id="" class="select" required="required">
-                                <option value="">2019</option>
-                                <option value="">2018</option>
-                                <option value="">2017</option>
-                                <option value="">2016</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="graph-block">
-                    <img src="assets/images/graph.jpg" alt="Graph">
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-md-4">
-            <div class="white-wrapper ant-tab">
-                <ul class="nav nav-tabs nav-justified md-tabs" id="myTabJust" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="home-tab-just" data-toggle="tab" href="#home-just" role="tab"
-                            aria-controls="home-just" aria-selected="true">Reward & Points</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="profile-tab-just" data-toggle="tab" href="#profile-just" role="tab"
-                            aria-controls="profile-just" aria-selected="false">Invoices</a>
-                    </li>
-                </ul>
-                <div class="tab-content card pt-4" id="myTabContentJust">
-                    <div class="tab-pane fade show active" id="home-just" role="tabpanel"
-                        aria-labelledby="home-tab-just">
-                        <p class="ant-title">Total Rewards (USD): <b>200000</b></p>
-                        <p class="ant-title">Total Points : <b>20000</b></p>
-                        <br>
-                        <p class="ant-title">Membership Level : <b>Premium</b></p>
-                        <br>
-                        <div class="rating">
-                            <span class="fas fa-star"></span>
-                            <span class="fas fa-star"> </span>
-                            <span class="fas fa-star"> </span>
-                            <span class="fas fa-star-half-alt"> </span>
-                            <span class="far fa-star"> </span>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="profile-just" role="tabpanel" aria-labelledby="profile-tab-just">
-                        <div class="invoice-tab-pane">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div class="graph-block">
-                                        <img src="assets/images/graph-circle-2.jpg" alt="Graph">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <p class="ant-title nsa">Invoices Received : <b>20</b></p>
-                                    <p class="ant-title nsa">New Invoices :<b>2100</b></p>
-                                    <ul class="candidate-status">
-                                        <li class="hirings">Invoices Cleared : <b>10</b></li>
-                                        <li class="shortlisted">Invoices Pending : <b>30</b></li>
-                                        <li class="rejections">Invoices Cancelled : <b>20</b></li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!--/ jobs Header -->
     <div class="row row-eq-height card-wrapper">
         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
     <!--Card-->
     <div class="card ant-card">
         <div class="row">
             <div class="col col-sm-6">
-                <div class="employer-logo">
-                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg"
-                        alt="Microsoft" />
-                </div>
+                <!-- <div class="employer-logo">
+                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg" alt="Microsoft"/>                    
+                </div> -->
             </div>
             <div class="col col-sm-6">
                 <div class="employer-action text-right">
-                    <button type="button" class="btn btn-activated waves-effect">Sent</button>
-
+                    <button type="button" class="btn btn-open waves-effect">Open</button>
                 </div>
             </div>
         </div>
+        <br>
         <!--Card content-->
         <div class="ant-content">
             <!--Title-->
             <h5 class="card-title card-bold">
-                Hexagone Technologies Private Li...
+                Director Marketing & Communic...
             </h5>
-            <h5 class="card-title address nsa">
-                Indra Nagar, LBS Marg, Bangalore...
+            <!-- <h5 class="card-title">
+                Hexaware Technologies
+            </h5> -->
+            <h5 class="card-title">
+                Dubai, United Arab Emirates
             </h5>
-            <!--Text-->
-            <p class="card-title bold">
-                Santhosh Kurichianil
+            <br>            
+            <p class="ant-title">
+                Openings : <b>1</b>  |  <b>View JD</b>
             </p>
-            <p class="card-title nsa">
-                Python Developer
+            <p class="ant-title">
+                Receruiters Engaged : <b>20</b>
             </p>
-            <p class="card-title">
-                Invoice Amount ($USD) : <b>23000</b>
+            <p class="ant-title">
+                Total Submissions :  <b>100</b>
             </p>
-            <p class="card-title">
-                Recruiter : <b>TalentSheen</b>
-            </p>
-        </div>
-        <div class="ant-footer">
-            <hr>
+            <ul class="responses-list">
+                <li class="shortlisted">20</li>
+                <li class="interviewed">12</li>
+                <li class="hirings">10</li>
+                <li class="rejections">08</li>
+            </ul>
             <p class="publish-date">
-                2 days ago
+                <span>Posted on:</span> <b>4 days ago</b>               
             </p>
         </div>
 
@@ -444,45 +341,47 @@
     <div class="card ant-card">
         <div class="row">
             <div class="col col-sm-6">
-                <div class="employer-logo">
-                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg"
-                        alt="Microsoft" />
-                </div>
+                <!-- <div class="employer-logo">
+                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg" alt="Microsoft"/>                    
+                </div> -->
             </div>
             <div class="col col-sm-6">
                 <div class="employer-action text-right">
-                    <button type="button" class="btn btn-activated waves-effect">Sent</button>
-
+                    <button type="button" class="btn btn-open waves-effect">Open</button>
                 </div>
             </div>
         </div>
+        <br>
         <!--Card content-->
         <div class="ant-content">
             <!--Title-->
             <h5 class="card-title card-bold">
-                Hexagone Technologies Private Li...
+                Director Marketing & Communic...
             </h5>
-            <h5 class="card-title address nsa">
-                Indra Nagar, LBS Marg, Bangalore...
+            <!-- <h5 class="card-title">
+                Hexaware Technologies
+            </h5> -->
+            <h5 class="card-title">
+                Dubai, United Arab Emirates
             </h5>
-            <!--Text-->
-            <p class="card-title bold">
-                Santhosh Kurichianil
+            <br>            
+            <p class="ant-title">
+                Openings : <b>1</b>  |  <b>View JD</b>
             </p>
-            <p class="card-title nsa">
-                Python Developer
+            <p class="ant-title">
+                Receruiters Engaged : <b>20</b>
             </p>
-            <p class="card-title">
-                Invoice Amount ($USD) : <b>23000</b>
+            <p class="ant-title">
+                Total Submissions :  <b>100</b>
             </p>
-            <p class="card-title">
-                Recruiter : <b>TalentSheen</b>
-            </p>
-        </div>
-        <div class="ant-footer">
-            <hr>
+            <ul class="responses-list">
+                <li class="shortlisted">20</li>
+                <li class="interviewed">12</li>
+                <li class="hirings">10</li>
+                <li class="rejections">08</li>
+            </ul>
             <p class="publish-date">
-                2 days ago
+                <span>Posted on:</span> <b>4 days ago</b>               
             </p>
         </div>
 
@@ -494,45 +393,47 @@
     <div class="card ant-card">
         <div class="row">
             <div class="col col-sm-6">
-                <div class="employer-logo">
-                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg"
-                        alt="Microsoft" />
-                </div>
+                <!-- <div class="employer-logo">
+                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg" alt="Microsoft"/>                    
+                </div> -->
             </div>
             <div class="col col-sm-6">
                 <div class="employer-action text-right">
-                    <button type="button" class="btn btn-activated waves-effect">Sent</button>
-
+                    <button type="button" class="btn btn-open waves-effect">Open</button>
                 </div>
             </div>
         </div>
+        <br>
         <!--Card content-->
         <div class="ant-content">
             <!--Title-->
             <h5 class="card-title card-bold">
-                Hexagone Technologies Private Li...
+                Director Marketing & Communic...
             </h5>
-            <h5 class="card-title address nsa">
-                Indra Nagar, LBS Marg, Bangalore...
+            <!-- <h5 class="card-title">
+                Hexaware Technologies
+            </h5> -->
+            <h5 class="card-title">
+                Dubai, United Arab Emirates
             </h5>
-            <!--Text-->
-            <p class="card-title bold">
-                Santhosh Kurichianil
+            <br>            
+            <p class="ant-title">
+                Openings : <b>1</b>  |  <b>View JD</b>
             </p>
-            <p class="card-title nsa">
-                Python Developer
+            <p class="ant-title">
+                Receruiters Engaged : <b>20</b>
             </p>
-            <p class="card-title">
-                Invoice Amount ($USD) : <b>23000</b>
+            <p class="ant-title">
+                Total Submissions :  <b>100</b>
             </p>
-            <p class="card-title">
-                Recruiter : <b>TalentSheen</b>
-            </p>
-        </div>
-        <div class="ant-footer">
-            <hr>
+            <ul class="responses-list">
+                <li class="shortlisted">20</li>
+                <li class="interviewed">12</li>
+                <li class="hirings">10</li>
+                <li class="rejections">08</li>
+            </ul>
             <p class="publish-date">
-                2 days ago
+                <span>Posted on:</span> <b>4 days ago</b>               
             </p>
         </div>
 
@@ -544,45 +445,255 @@
     <div class="card ant-card">
         <div class="row">
             <div class="col col-sm-6">
-                <div class="employer-logo">
-                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg"
-                        alt="Microsoft" />
-                </div>
+                <!-- <div class="employer-logo">
+                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg" alt="Microsoft"/>                    
+                </div> -->
             </div>
             <div class="col col-sm-6">
                 <div class="employer-action text-right">
-                    <button type="button" class="btn btn-activated waves-effect">Sent</button>
-
+                    <button type="button" class="btn btn-open waves-effect">Open</button>
                 </div>
             </div>
         </div>
+        <br>
         <!--Card content-->
         <div class="ant-content">
             <!--Title-->
             <h5 class="card-title card-bold">
-                Hexagone Technologies Private Li...
+                Director Marketing & Communic...
             </h5>
-            <h5 class="card-title address nsa">
-                Indra Nagar, LBS Marg, Bangalore...
+            <!-- <h5 class="card-title">
+                Hexaware Technologies
+            </h5> -->
+            <h5 class="card-title">
+                Dubai, United Arab Emirates
             </h5>
-            <!--Text-->
-            <p class="card-title bold">
-                Santhosh Kurichianil
+            <br>            
+            <p class="ant-title">
+                Openings : <b>1</b>  |  <b>View JD</b>
             </p>
-            <p class="card-title nsa">
-                Python Developer
+            <p class="ant-title">
+                Receruiters Engaged : <b>20</b>
             </p>
-            <p class="card-title">
-                Invoice Amount ($USD) : <b>23000</b>
+            <p class="ant-title">
+                Total Submissions :  <b>100</b>
             </p>
-            <p class="card-title">
-                Recruiter : <b>TalentSheen</b>
+            <ul class="responses-list">
+                <li class="shortlisted">20</li>
+                <li class="interviewed">12</li>
+                <li class="hirings">10</li>
+                <li class="rejections">08</li>
+            </ul>
+            <p class="publish-date">
+                <span>Posted on:</span> <b>4 days ago</b>               
             </p>
         </div>
-        <div class="ant-footer">
-            <hr>
+
+    </div>
+    <!--/.Card-->
+</div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+    <!--Card-->
+    <div class="card ant-card">
+        <div class="row">
+            <div class="col col-sm-6">
+                <!-- <div class="employer-logo">
+                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg" alt="Microsoft"/>                    
+                </div> -->
+            </div>
+            <div class="col col-sm-6">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-open waves-effect">Open</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--Card content-->
+        <div class="ant-content">
+            <!--Title-->
+            <h5 class="card-title card-bold">
+                Director Marketing & Communic...
+            </h5>
+            <!-- <h5 class="card-title">
+                Hexaware Technologies
+            </h5> -->
+            <h5 class="card-title">
+                Dubai, United Arab Emirates
+            </h5>
+            <br>            
+            <p class="ant-title">
+                Openings : <b>1</b>  |  <b>View JD</b>
+            </p>
+            <p class="ant-title">
+                Receruiters Engaged : <b>20</b>
+            </p>
+            <p class="ant-title">
+                Total Submissions :  <b>100</b>
+            </p>
+            <ul class="responses-list">
+                <li class="shortlisted">20</li>
+                <li class="interviewed">12</li>
+                <li class="hirings">10</li>
+                <li class="rejections">08</li>
+            </ul>
             <p class="publish-date">
-                2 days ago
+                <span>Posted on:</span> <b>4 days ago</b>               
+            </p>
+        </div>
+
+    </div>
+    <!--/.Card-->
+</div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+    <!--Card-->
+    <div class="card ant-card">
+        <div class="row">
+            <div class="col col-sm-6">
+                <!-- <div class="employer-logo">
+                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg" alt="Microsoft"/>                    
+                </div> -->
+            </div>
+            <div class="col col-sm-6">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-open waves-effect">Open</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--Card content-->
+        <div class="ant-content">
+            <!--Title-->
+            <h5 class="card-title card-bold">
+                Director Marketing & Communic...
+            </h5>
+            <!-- <h5 class="card-title">
+                Hexaware Technologies
+            </h5> -->
+            <h5 class="card-title">
+                Dubai, United Arab Emirates
+            </h5>
+            <br>            
+            <p class="ant-title">
+                Openings : <b>1</b>  |  <b>View JD</b>
+            </p>
+            <p class="ant-title">
+                Receruiters Engaged : <b>20</b>
+            </p>
+            <p class="ant-title">
+                Total Submissions :  <b>100</b>
+            </p>
+            <ul class="responses-list">
+                <li class="shortlisted">20</li>
+                <li class="interviewed">12</li>
+                <li class="hirings">10</li>
+                <li class="rejections">08</li>
+            </ul>
+            <p class="publish-date">
+                <span>Posted on:</span> <b>4 days ago</b>               
+            </p>
+        </div>
+
+    </div>
+    <!--/.Card-->
+</div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+    <!--Card-->
+    <div class="card ant-card">
+        <div class="row">
+            <div class="col col-sm-6">
+                <!-- <div class="employer-logo">
+                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg" alt="Microsoft"/>                    
+                </div> -->
+            </div>
+            <div class="col col-sm-6">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-open waves-effect">Open</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--Card content-->
+        <div class="ant-content">
+            <!--Title-->
+            <h5 class="card-title card-bold">
+                Director Marketing & Communic...
+            </h5>
+            <!-- <h5 class="card-title">
+                Hexaware Technologies
+            </h5> -->
+            <h5 class="card-title">
+                Dubai, United Arab Emirates
+            </h5>
+            <br>            
+            <p class="ant-title">
+                Openings : <b>1</b>  |  <b>View JD</b>
+            </p>
+            <p class="ant-title">
+                Receruiters Engaged : <b>20</b>
+            </p>
+            <p class="ant-title">
+                Total Submissions :  <b>100</b>
+            </p>
+            <ul class="responses-list">
+                <li class="shortlisted">20</li>
+                <li class="interviewed">12</li>
+                <li class="hirings">10</li>
+                <li class="rejections">08</li>
+            </ul>
+            <p class="publish-date">
+                <span>Posted on:</span> <b>4 days ago</b>               
+            </p>
+        </div>
+
+    </div>
+    <!--/.Card-->
+</div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+    <!--Card-->
+    <div class="card ant-card">
+        <div class="row">
+            <div class="col col-sm-6">
+                <!-- <div class="employer-logo">
+                    <img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg" alt="Microsoft"/>                    
+                </div> -->
+            </div>
+            <div class="col col-sm-6">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-open waves-effect">Open</button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!--Card content-->
+        <div class="ant-content">
+            <!--Title-->
+            <h5 class="card-title card-bold">
+                Director Marketing & Communic...
+            </h5>
+            <!-- <h5 class="card-title">
+                Hexaware Technologies
+            </h5> -->
+            <h5 class="card-title">
+                Dubai, United Arab Emirates
+            </h5>
+            <br>            
+            <p class="ant-title">
+                Openings : <b>1</b>  |  <b>View JD</b>
+            </p>
+            <p class="ant-title">
+                Receruiters Engaged : <b>20</b>
+            </p>
+            <p class="ant-title">
+                Total Submissions :  <b>100</b>
+            </p>
+            <ul class="responses-list">
+                <li class="shortlisted">20</li>
+                <li class="interviewed">12</li>
+                <li class="hirings">10</li>
+                <li class="rejections">08</li>
+            </ul>
+            <p class="publish-date">
+                <span>Posted on:</span> <b>4 days ago</b>               
             </p>
         </div>
 
@@ -667,7 +778,7 @@
     </div>
 </div>
 <!-- /Filter Modal -->
-<!-- Employer new registration modal -->
+<!-- Recruiter new registration modal -->
 <div class="modal fade" id="newRegistration" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
 	aria-hidden="true">
 	<div class="modal-dialog modal-lg" role="document">
@@ -681,27 +792,23 @@
 			<div class="modal-body">
 				<div class="row">
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-						<div class="employer-logo">
-							<img src="assets/images/sample-logo.jpg" alt="Microsoft">
-
-						</div>
 						<div class="ant-content">
-
+							<h5 class="ant-title">Registered on : <b>12/08/2019</b></h5>
+							<br>
 							<h5 class="ant-title bold">
-								Hexagone Technologies Private Li...
-
+								Talentsteen
 							</h5>
-							<h5 class="ant-title">
-								Information Technology
-							</h5>
-
 							<h5 class="ant-title address">
-								Indra Nagar, LBS Marg, Bangalore...
-
+								Bangalore, Karnataka, India
 							</h5>
-							<a href="#" class="ant-title web-link">
+							<br>
+							<h5 class="ant-title bold nsa">
+								Preferred Industry
+							</h5>
+							<p class="ant-title">Information Technology, Banking & Finance</p>
+							<!--a href="#" class="ant-title web-link">
 								www.hexagone.com
-							</a>
+							</a-->
 						</div>
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
@@ -710,32 +817,23 @@
 						<h5 class="ant-title">Head Recruitment</h5>
 						<h5 class="ant-title">Human Resources</h5>
 						<h5 class="ant-title">+91 9767783435</h5>
+						<br>
 						<a href="#" class="ant-title web-link">
 							santhosh.kurichianil@gmail.com
-							<!-- <span class="skeleton-box" style="width:60%;"></span> -->
 						</a>
+						<br>
+						<p class="ant-title">LinkeIn : <a href="#"><b>https://www.linkedin.com/sant...</b></a></p>
 					</div>
-				</div>
-				<div class="file-upload">
-					<h5 class="ant-title"><span class="bold">Upload Your Company Logo:</span></span> <span>(Format : JPEG,
-							PNG, BMP or GIF and size not exceeding 2MB)</span></h5>
-					<div class="input-group">
-						<div class="custom-file">
-							<input type="file" class="custom-file-input" id="inputGroupFile01"
-								aria-describedby="inputGroupFileAddon01">
-							<label class="custom-file-label" for="inputGroupFile01">No file  chosen</label>
-						</div>
-					</div>
-				</div>
+				</div>				
 			</div>
 			<div class="modal-footer text-center">
 				<button type="button" class="btn btn-big blue waves-effect" data-dismiss="modal">Activate</button>
-				<button type="button" class="btn btn-big waves-effect" data-dismiss="modal" data-toggle="modal" data-target="#warningModal">Delete</button>
+				<button type="button" class="btn btn-big waves-effect">Delete</button>
 			</div>
 		</div>
 	</div>
 </div>
-<!--/ Employer new registration modal -->
+<!--/ Recruiter new registration modal -->
         <footer>
   <p class="text-center">Antlegs Technology Solutions Private Limited.</p>
 </footer>

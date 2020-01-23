@@ -88,12 +88,17 @@
 
 .btn-big {
     width: 120px;
-    border: 1px solid #b7b7b7;
+    border: 1px solid $blue;
+    color: $blue;
     @include bold-font;
     font-size: 14px;
     letter-spacing: 1px;
     padding: 14px 20px;
     box-shadow: none;
+
+    &:hover {
+      color: $blue;
+    }
 
     &.blue {
         background: $blue !important;
