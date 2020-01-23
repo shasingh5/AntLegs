@@ -1,0 +1,27 @@
+.job-history {
+    margin-top: 20px;
+    display: none;
+}
+
+.view-more-less {
+    position: relative;
+    color: #999999;
+    &:hover {
+        text-decoration: none;
+        color: #999999;
+    }
+    &::after {
+        content: " ";
+        display: inline-block;
+        width: 8px;
+        height: 5px;
+        background-image: url("../images/dropdown-arrow.png");
+        border: 0;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+
+    &.less::after {
+        background-image: url("../images/dropup-arrow.png");
+    }
+}

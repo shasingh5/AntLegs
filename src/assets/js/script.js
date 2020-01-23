@@ -302,6 +302,15 @@
         }
     });
 
+    $(".view-more-less").on("click", function(event) {
+        event.preventDefault();
+        $('.job-history').toggle();
+        $(this).toggleClass("less");
+        $(this).text(function(i, v){
+        return v === 'view more' ? 'view less' : 'view more';
+        })
+    });
+
 })(jQuery);
 
 function renderCard() {
