@@ -30,7 +30,6 @@ $xxl: 1920px;
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
 body {
@@ -135,6 +134,7 @@ body {
   font-size: 12px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  min-height: 100%;
 }
 
 img {
@@ -598,7 +598,7 @@ body.modal-open {
 }
 
 .btn-big.blue {
-  background: #316ea7;
+  background: #316ea7 !important;
   color: #ffffff;
   border: 1px solid #316ea7;
 }
@@ -641,7 +641,7 @@ body.modal-open {
 }
 
 #content .navbar {
-  padding: 13px 0;
+  padding: 10px 0;
 }
 
 @media (max-width: 991.98px) {
@@ -1188,6 +1188,7 @@ body.modal-open {
   position: absolute;
   top: 0;
   right: 0;
+  background: #f2f4f6;
 }
 
 #content > .navbar .fa-align-justify {
@@ -3171,6 +3172,10 @@ ul.time-slots li {
   margin-bottom: 2.2rem;
 }
 
+.add-job-form .form-group {
+  position: relative;
+}
+
 @media (min-width: 768px) and (max-width: 900px) {
   .add-job-form .form-group label {
     font-size: 14px;
@@ -3181,7 +3186,8 @@ ul.time-slots li {
   margin-top: 0;
 }
 
-.add-job-form .file-upload .custom-file-label, .add-job-form .file-upload .custom-file {
+.add-job-form .file-upload .custom-file-label,
+.add-job-form .file-upload .custom-file {
   height: 50px;
 }
 
@@ -3195,6 +3201,14 @@ ul.time-slots li {
 
 .candidate-form {
   margin-top: 50px;
+}
+
+.mandatory {
+  font-size: 16px;
+  text-align: right;
+  padding: 20px 20px 0;
+  margin-bottom: 0;
+  color: #666666;
 }
 
 .cv-view {
@@ -3358,6 +3372,7 @@ ul.time-slots li {
 .invoice-dashboard {
   background: #ffffff;
   border: 1px solid #eaeaea;
+  border-radius: 4px;
   padding: 10px;
   text-align: center;
   color: #333333;
@@ -3372,7 +3387,7 @@ ul.time-slots li {
   font-size: 16px;
 }
 
-.invoice-dashboard .col {
+.invoice-dashboard .col:not(:last-child) {
   border-right: 1px solid #e9e9e9;
 }
 
@@ -3442,6 +3457,15 @@ ul.time-slots li {
   font-size: 12px;
 }
 
+.invoice-header .dropdown {
+  display: inline-block;
+}
+
+.invoice-header .dropdown .ant-dropdown {
+  padding-top: 6.5px;
+  padding-bottom: 6.5px;
+}
+
 .invoice-card-slider .slick-prev,
 .invoice-card-slider .slick-next {
   width: 30px;
@@ -3471,3 +3495,212 @@ ul.time-slots li {
 .invoice-card-slider .slick-next:hover {
   background: transparent url("../images/right-blue-arrow.png") center no-repeat;
 }
+
+.form-wrapper {
+  max-width: 1040px;
+  margin: 0 auto 60px;
+  border-radius: 5px;
+}
+
+.floating-form {
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+}
+
+.floating-form h4 {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.floating-form .btn-white,
+.floating-form a.btn-white {
+  color: #316ea7;
+  background: #ffffff;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.floating-form .btn-white:hover,
+.floating-form a.btn-white:hover {
+  color: #316ea7;
+}
+
+@media (max-width: 460px) {
+  .floating-form .btn-white,
+  .floating-form a.btn-white {
+    margin-bottom: 20px;
+  }
+}
+
+/****  floating-Lable style start ****/
+.floating-label {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.floating-label label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+.floating-input,
+.floating-select {
+  font-size: 18px;
+  padding: 10px 20px;
+  display: block;
+  width: 100%;
+  height: 68px;
+  background-color: transparent;
+  border: 1px solid #acacac;
+  border-radius: 5px;
+}
+
+.floating-select option[value=""] {
+  display: none;
+}
+
+.floating-select.select {
+  padding: 10px 52px 10px 20px;
+  background: url("../images/big-down-arrow.png") 96% 50% no-repeat;
+  font-size: 18px;
+}
+
+.floating-input:focus,
+.floating-select:focus {
+  outline: none;
+  border: 2px solid #316ea7;
+}
+
+.floating-input:focus ~ label,
+.floating-input:not(:placeholder-shown) ~ label {
+  top: 0;
+  left: 10px;
+  font-size: 14px;
+  color: #316ea7;
+  background: white;
+  padding: 5px 10px;
+}
+
+.floating-select:focus ~ label,
+.floating-select:not([value=""]):valid ~ label {
+  top: 0;
+  font-size: 14px;
+  color: #316ea7;
+  background: white;
+  padding: 5px 10px;
+}
+
+/* active state */
+.floating-input:focus ~ .bar:before,
+.floating-input:focus ~ .bar:after,
+.floating-select:focus ~ .bar:before,
+.floating-select:focus ~ .bar:after {
+  width: 50%;
+}
+
+.floating-textarea {
+  min-height: 80px;
+  max-height: 260px;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+/* highlighter */
+.highlight {
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  top: 15%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* active state */
+.floating-input:focus ~ .highlight,
+.floating-select:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* animation */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #316ea7;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #316ea7;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+@keyframes inputHighlighter {
+  from {
+    background: #316ea7;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+/****  floating-Lable style end ****/
+/***   Body style start  ***/
+html {
+  font-family: "Helvetica Neue", Helvetica, "Noto Sans", sans-serif, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #949494;
+  background-color: #ffffff;
+}
+
+/***   Body style end  ***/
+/***   daniel - Fork me friend - style   ***/
+.floating-credit {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  color: #aaa;
+  font-size: 13px;
+  font-family: arial, sans-serif;
+}
+
+.floating-credit a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.floating-credit a:hover {
+  border-bottom: 1px dotted #f8f8f8;
+}
+
+.floating-heading {
+  position: fixed;
+  color: #aaa;
+  font-size: 20px;
+  font-family: arial, sans-serif;
+}
+
+/***  daniel - Fork me friend - style  ***/

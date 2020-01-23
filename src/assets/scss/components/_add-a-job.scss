@@ -55,16 +55,22 @@
         margin-bottom: 2.2rem;
     }
 
-    .form-group label {
-        @include respond-to(768px, 900px) {
-            font-size: 14px;
+    .form-group {
+        position: relative;
+
+        label {
+            @include respond-to(768px, 900px) {
+                font-size: 14px;
+            }
         }
+
     }
 
     .file-upload {
         margin-top: 0;
 
-        .custom-file-label, .custom-file {
+        .custom-file-label,
+        .custom-file {
             height: 50px;
         }
 
@@ -81,4 +87,29 @@
 
 .candidate-form {
     margin-top: 50px;
+}
+
+// .form-wrapper {
+//     max-width: 1040px;
+//     margin: 0 auto;
+
+//     .form-antlegs .form-group .form-control {
+//         height: 68px;
+//     }
+
+//     .add-job-form select.form-control.select {
+//         background: url("../images/big-down-arrow.png") 96% 50% no-repeat;
+
+//         &:invalid {
+//             color: #666666 !important;
+//         }
+//     }
+// }
+
+.mandatory {
+    font-size: 16px;
+    text-align: right;
+    padding: 20px 20px 0;
+    margin-bottom: 0;
+    color: #666666;
 }
