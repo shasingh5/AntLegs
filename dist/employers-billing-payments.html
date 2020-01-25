@@ -323,7 +323,7 @@
     <div class="row row-eq-height card-wrapper invoice-card-slider">
         <div class="col">
 	<!--Card-->
-	<div class="card ant-card" data-toggle="modal" data-target="#newRegistration">
+	<div class="card ant-card" data-toggle="modal" data-target="#invoiceDetails">
 		<div class="row">
 			<div class="col col-sm-6">
 				<p>Inv. No. : <b>#AL2232112</b></p>
@@ -371,7 +371,7 @@
 </div>
         <div class="col">
 	<!--Card-->
-	<div class="card ant-card" data-toggle="modal" data-target="#newRegistration">
+	<div class="card ant-card" data-toggle="modal" data-target="#invoiceDetails">
 		<div class="row">
 			<div class="col col-sm-6">
 				<p>Inv. No. : <b>#AL2232112</b></p>
@@ -419,7 +419,7 @@
 </div>
         <div class="col">
 	<!--Card-->
-	<div class="card ant-card" data-toggle="modal" data-target="#newRegistration">
+	<div class="card ant-card" data-toggle="modal" data-target="#invoiceDetails">
 		<div class="row">
 			<div class="col col-sm-6">
 				<p>Inv. No. : <b>#AL2232112</b></p>
@@ -467,7 +467,7 @@
 </div>
         <div class="col">
 	<!--Card-->
-	<div class="card ant-card" data-toggle="modal" data-target="#newRegistration">
+	<div class="card ant-card" data-toggle="modal" data-target="#invoiceDetails">
 		<div class="row">
 			<div class="col col-sm-6">
 				<p>Inv. No. : <b>#AL2232112</b></p>
@@ -515,7 +515,7 @@
 </div>
         <div class="col">
 	<!--Card-->
-	<div class="card ant-card" data-toggle="modal" data-target="#newRegistration">
+	<div class="card ant-card" data-toggle="modal" data-target="#invoiceDetails">
 		<div class="row">
 			<div class="col col-sm-6">
 				<p>Inv. No. : <b>#AL2232112</b></p>
@@ -847,75 +847,119 @@
     </div>
 </div>
 <!-- /Filter Modal -->
-<!-- Employer new registration modal -->
-<div class="modal fade" id="newRegistration" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<!-- invoice details modal -->
+<div class="modal fade" id="invoiceDetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
 	aria-hidden="true">
 	<div class="modal-dialog modal-lg" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">New Registration</h5>
+				<h5 class="modal-title" id="exampleModalLabel">Invoice Details</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
 			</div>
 			<div class="modal-body">
-				<div class="row">
-					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-						<div class="employer-logo">
-							<img src="assets/images/sample-logo.jpg" alt="Microsoft">
-
+				<div class="invoice-wrapper">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="invoice-details">
+								<img class="logo" src="assets/images/antlegs-logo.png" alt="Antlegs">
+								<p>Invoice No: <b>028 – 090120</b></p>
+								<p>Invoice Date: <b>09 / 01 / 2020</b></p>
+								<p>Mode of Payment: <b>NEFT</b></p>
+							</div>
 						</div>
-						<div class="ant-content">
-
-							<h5 class="ant-title bold">
-								Hexagone Technologies Private Li...
-
-							</h5>
-							<h5 class="ant-title">
-								Information Technology
-							</h5>
-
-							<h5 class="ant-title address">
-								Indra Nagar, LBS Marg, Bangalore...
-
-							</h5>
-							<a href="#" class="ant-title web-link">
-								www.hexagone.com
-							</a>
+						<div class="col-sm-12">
+							<div class="client-details">
+								<p>To,</p>
+								<p><b>CherryRoad Services India Private Limited</b></p>
+								<address>Bangalore, Karnataka, India - 560066</address>
+								<p class="gst">GST No : <b>29AAHCC2092G12L</b></p>
+							</div>
 						</div>
-					</div>
-					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-						<h5 class="ant-title bold">Contact Details</h5>
-						<h5 class="ant-title">Santhosh Kurichianil</h5>
-						<h5 class="ant-title">Head Recruitment</h5>
-						<h5 class="ant-title">Human Resources</h5>
-						<h5 class="ant-title">+91 9767783435</h5>
-						<a href="#" class="ant-title web-link">
-							santhosh.kurichianil@gmail.com
-							<!-- <span class="skeleton-box" style="width:60%;"></span> -->
-						</a>
+
+						<div class="col-sm-12">
+							<br>
+							<div class="table-responsive">
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th>Description</th>
+											<th>HSN / SAC</th>
+											<th>Taxable Value</th>
+											<th>IGST</th>
+											<th>Amount</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<b>Recruitment Fees</b>
+												<p>Candidate: Kavya SH</p>
+												<p>Fixed Annual Salary: INR 750,000</p>
+												<p>Fees: 8.33% of Annual Fixed Salary</p>
+											</td>
+											<td>998512</td>
+											<td>62475</td>
+											<td>18% of taxable value</td>
+											<td>11246</td>
+										</tr>
+										<tr>
+											<td colspan="4">&nbsp;</td>
+											<td>11246</td>
+										</tr>
+										<tr>
+											<td colspan="4" align="right"><b>Value of Service</b></td>
+											<td>62475</td>
+										</tr>
+										<tr>
+											<td colspan="4" align="right"><b>Total</b></td>
+											<td><b>73721</b></td>
+										</tr>
+										<tr>
+											<td colspan="5">IN WORDS : <b>INR SEVENTY THREE THOUSAND SEVEN HUNDRED AND TWENTY ONE ONLY</b>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="invoice-bank-details">
+								<p><b>Bank Details</b></p>
+								<p><span>Account Name :</span> AntLegs HR & IT Consultancy Private Limited</p>
+								<p><span>Bank Name :</span> Indus Ind</p>
+								<p><span>IFSC Code :</span> 259544038492</p>
+								<p><span>Account No :</span> INDB0000223</p>
+								<p><span>Branch :</span> Thippasandra, Bangalore - Karnataka</p>
+							</div>
+						</div>
+
+						<div class="col-sm-12">
+							<hr>
+						</div>
+						<div class="col-sm-12">
+							<div class="invoice-footer">
+								<div class="row">
+									<div class="col-sm-6">
+										<p>Powered by : <b>Antlegs</b></p>
+									</div>
+									<div class="col-sm-6 text-right">
+										<button type="button" class="btn btn-print">Print</button>
+										<button type="button" class="btn btn-print download">Download</button>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
 					</div>
 				</div>
-				<div class="file-upload">
-					<h5 class="ant-title"><span class="bold">Upload Your Company Logo:</span></span> <span>(Format : JPEG,
-							PNG, BMP or GIF and size not exceeding 2MB)</span></h5>
-					<div class="input-group">
-						<div class="custom-file">
-							<input type="file" class="custom-file-input" id="inputGroupFile01"
-								aria-describedby="inputGroupFileAddon01">
-							<label class="custom-file-label" for="inputGroupFile01">No file  chosen</label>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="modal-footer text-center">
-				<button type="button" class="btn btn-big blue waves-effect" data-dismiss="modal">Activate</button>
-				<button type="button" class="btn btn-big waves-effect" data-dismiss="modal" data-toggle="modal" data-target="#warningModal">Delete</button>
 			</div>
 		</div>
 	</div>
 </div>
-<!--/ Employer new registration modal -->
+<!--/ invoice details modal -->
 <!-- Employer new registration modal -->
 <div class="modal fade" id="warningModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
 	aria-hidden="true">

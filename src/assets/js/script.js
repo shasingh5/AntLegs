@@ -249,12 +249,6 @@
         dots: false,
         arrows: true,
         responsive: [{
-            breakpoint: 1921,
-            settings: {
-                slidesToShow: 5,
-                slidesToScroll: 1
-            }
-        },{
             breakpoint: 920,
             settings: {
                 slidesToShow: 3,
@@ -320,6 +314,11 @@
         $(this).text(function (i, v) {
             return v === 'view more' ? 'view less' : 'view more';
         })
+    });
+
+    $(".close-btn").on("click", function (event) {
+        event.preventDefault();
+        $(".coach-overlay").hide();        
     });
 
 })(jQuery);
