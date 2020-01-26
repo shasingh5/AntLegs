@@ -326,6 +326,7 @@ p.ant-title {
   background: #ffffff;
   border-radius: 5px;
   position: relative;
+  border: 1px solid #eaeaea;
 }
 
 .span {
@@ -3897,17 +3898,6 @@ ul.time-slots li {
   }
 }
 
-/****  floating-Lable style end ****/
-/***   Body style start  ***/
-html {
-  font-family: "Helvetica Neue", Helvetica, "Noto Sans", sans-serif, Arial, sans-serif;
-  font-size: 12px;
-  line-height: 1.42857143;
-  color: #949494;
-  background-color: #ffffff;
-}
-
-/***   Body style end  ***/
 /***   daniel - Fork me friend - style   ***/
 .floating-credit {
   position: fixed;
@@ -3936,6 +3926,16 @@ html {
 }
 
 /***  daniel - Fork me friend - style  ***/
+.floating-form-small .floating-input,
+.floating-form-small .floating-select {
+  font-size: 14px;
+  height: 48px;
+}
+
+.floating-form-small .floating-label label {
+  font-size: 14px;
+}
+
 .job-history {
   margin-top: 20px;
   display: none;
@@ -3964,4 +3964,89 @@ html {
 
 .view-more-less.less::after {
   background-image: url("../images/dropup-arrow.png");
+}
+
+.cp-wrapper {
+  max-width: 650px;
+  margin: 100px auto;
+}
+
+.cp-wrapper img {
+  display: inline-block;
+}
+
+.cp-wrapper .floating-form {
+  margin-top: 20px;
+}
+
+.cp-wrapper .form-antlegs .last-group .btn-get {
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  letter-spacing: -0.7px;
+  width: 170px;
+}
+
+.cp-wrapper .btn-blue-outline {
+  border: 1px solid #316ea7;
+}
+
+.add-candidate .form-antlegs .last-group {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.add-candidate .form-antlegs .last-group .btn-get {
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  letter-spacing: -0.7px;
+  width: 120px;
+}
+
+.add-candidate .btn-blue-outline {
+  border: 1px solid #316ea7;
+}
+
+.match-ratio {
+  display: table;
+  width: 100%;
+  font-size: 0;
+}
+
+.match-ratio > span {
+  display: table-cell;
+  font-size: 12px;
+}
+
+.match-ratio > span:first-child {
+  font-size: 10px;
+  width: 60px;
+}
+
+.match-ratio > span:last-child {
+  text-align: right;
+}
+
+.match-ratio > span.pb {
+  width: 65%;
+  padding: 0 20px;
+}
+
+.match-ratio > span.pb .progress {
+  height: 6px;
+}
+
+.match-ratio > span.pb .bg-green {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#81df58+0,5b9b00+100 */
+  background: #81df58;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #81df58 0%, #5b9b00 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #81df58 0%, #5b9b00 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #81df58 0%, #5b9b00 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#81df58', endColorstr='#5b9b00', GradientType=1);
+  /* IE6-9 */
 }

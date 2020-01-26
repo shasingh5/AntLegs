@@ -170,40 +170,6 @@
     }
 }
 
-/****  floating-Lable style end ****/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/***   Body style start  ***/
-
-html {
-    font-family: "Helvetica Neue", Helvetica, "Noto Sans", sans-serif, Arial, sans-serif;
-    font-size: 12px;
-    line-height: 1.42857143;
-    color: #949494;
-    background-color: #ffffff;
-}
-
-/***   Body style end  ***/
-
-
 /***   daniel - Fork me friend - style   ***/
 .floating-credit {
     position: fixed;
@@ -232,3 +198,16 @@ html {
 }
 
 /***  daniel - Fork me friend - style  ***/
+
+.floating-form-small {
+
+    .floating-input,
+    .floating-select {
+        font-size: 14px;
+        height: 48px;
+    }
+
+    .floating-label label {
+        font-size: 14px;
+    }
+}

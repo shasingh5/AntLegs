@@ -1,0 +1,66 @@
+<div class="container-fluid ant-container">
+	<!-- add candidate Header -->
+	<div class="row header">
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+			<a href="#" class="main-heading">Add Candidate</a>
+		</div>
+	</div>
+	<!--/ add candidate Header -->
+
+	<div class="invoice-dashboard add-candidate">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="card">
+					<div class="form-antlegs floating-form floating-form-small">
+						<form autocomplete="off" class="form" role="form">
+							<div class="row">
+								<div class="col-12 col-md-4">
+									<div class="floating-label">
+										<input class="floating-input" type="text" placeholder=" ">
+										<label>Full Name*</label>
+									</div>
+								</div>
+								<div class="col-12 col-md-4">
+									<div class="floating-label">
+										<input class="floating-input" type="text" placeholder=" ">
+										<label>Contact Number*</label>
+									</div>
+								</div>
+								<div class="col-12 col-md-4">
+									<div class="floating-label">
+										<input class="floating-input" type="text" placeholder=" ">
+										<label>Email*</label>
+									</div>
+								</div>								
+								<div class="col-12">
+									<div class="form-group last-group text-center">
+										<button class="btn btn-get btn-white btn-blue-outline" type="reset">Cancel</button>
+										<button class="btn btn-get" type="submit">Verify</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- new invoice Header -->
+	<div class="row header invoice-header">
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+			<a class="main-heading">Recommended Profiles</a>
+		</div>		
+	</div>
+	<!--/ new invoice Header -->
+
+	<div class="row row-eq-height card-wrapper invoice-card-slider">
+		@@include('./partials/components/add-candidate-card.hbs')
+		@@include('./partials/components/add-candidate-card.hbs')
+		@@include('./partials/components/add-candidate-card.hbs')
+		@@include('./partials/components/add-candidate-card.hbs')
+		@@include('./partials/components/add-candidate-card.hbs')
+	</div>	
+</div>
+
