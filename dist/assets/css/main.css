@@ -4050,3 +4050,140 @@ ul.time-slots li {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#81df58', endColorstr='#5b9b00', GradientType=1);
   /* IE6-9 */
 }
+
+.pd-wrapper {
+  margin: 20px 0;
+}
+
+.pd-wrapper > .row > div {
+  border: 1px solid #dfdfdf;
+}
+
+.profile-details {
+  padding: 0 20px;
+}
+
+.profile-details h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.profile-details p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.profile-details p > span {
+  display: inline-block;
+  width: 120px;
+  font-weight: normal;
+}
+
+.profile-details p i {
+  font-style: normal;
+  padding: 0 15px;
+}
+
+.btn-edit {
+  width: 90px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 7px 10px;
+  box-shadow: none;
+  color: #316ea7;
+  border: 1px solid #a1a1a1;
+}
+
+.btn-edit::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-image: url("../images/edit-icon.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-right: 10px;
+}
+
+.branches-wrapper > h6 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.branches-wrapper ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  width: 100%;
+  font-size: 0;
+}
+
+.branches-wrapper ul li {
+  display: inline-block;
+  width: 25%;
+  font-size: 14px;
+  border: 1px solid #dfdfdf;
+  padding: 15px;
+}
+
+.branches-wrapper ul li:not(:last-child) {
+  border-right: 0;
+}
+
+.branches-wrapper .branch-location {
+  display: table;
+  width: 100%;
+}
+
+.branches-wrapper .branch-location > div {
+  display: table-cell;
+}
+
+.branches-wrapper .branch-location .location::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 15px;
+  background-image: url("../images/location-grey.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.branches-wrapper .branch-location .location-edit {
+  width: 20%;
+  text-align: right;
+}
+
+.branches-wrapper .branch-location .location-edit .dropdown-toggle {
+  border: 0;
+  background: transparent;
+}
+
+.branches-wrapper .branch-location .location-edit .dropdown-toggle::after {
+  display: none;
+}
+
+.branches-wrapper .branch-location .location-edit .dropdown-item {
+  font-size: 12px;
+}
+
+.branches-wrapper .branch-location .location-edit .form-check-label {
+  font-size: 10px;
+  vertical-align: bottom;
+}
+
+.address-block {
+  font-size: 12px;
+  margin-top: 18px;
+  color: #000000;
+}
+
+.address-block h5 {
+  font-size: 12px;
+  font-weight: 600;
+}
