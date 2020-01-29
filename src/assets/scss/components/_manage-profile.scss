@@ -1,6 +1,34 @@
 .pd-wrapper {
     margin: 20px 0;
 
+    > ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: table;
+        width: 100%;
+        font-size: 0;
+        > li {
+            display: table-cell;
+            vertical-align: top;
+            width: 50%;
+            font-size: 14px;
+            border: 1px solid #dfdfdf;
+            padding: 15px;
+            color: $black;
+
+            @include respond-to(900px, max) {
+                display: block;
+                width: 100%;                
+            }
+
+            a {
+                margin: 0;
+                color: $black;
+            }
+        }
+    }
+
     >.row {
         >div {
             border: 1px solid #dfdfdf;
@@ -75,11 +103,22 @@
             display: inline-block;
             width: 25%;
             font-size: 14px;
-            border: 1px solid #dfdfdf;
-            padding: 15px;
+            border: 1px solid #dfdfdf;            
+            padding: 15px;             
 
-            &:not(:last-child) {
-                border-right: 0;
+            @include respond-to(480px, max) {
+                width: 100%;               
+                
+            }
+
+            @include respond-to(481px, $xs) {
+                width: 50%;                
+            }
+
+            @include respond-to($md) {
+                &:not(:last-child) {
+                    border-right: 0;
+                }                               
             }
 
 
@@ -209,6 +248,7 @@
         label {
             margin-top: 12px;
             font-size: 14px;
+            color: $black;
         }
 
         .form-control {
@@ -219,6 +259,20 @@
             &.c-name {
                 font-size: 16px;
             }
+
+            &.link {
+                color: $blue;
+            }
+        }
+
+        select.form-control.select {
+            padding: 10px 52px 10px 20px;
+            background: url("../images/big-down-arrow.png") 96% 50% no-repeat;    
+            background-size: 5%;        
+        }
+
+        textarea.form-control {
+            height: 100px;
         }
     }
 }

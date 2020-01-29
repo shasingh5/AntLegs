@@ -16,40 +16,33 @@
             </div>
 
             <div class="pd-wrapper">
-                <div class="table-responsive">
-                    <table class="table table-bordered">
-                        <tbody>
-                            <tr>
-                                <td width="50%">
-                                    <div class="profile-details">
-                                        <h3>Antlegs Technology Solutions Private Limited</h3>
-                                        <p><span>Industry</span> <i>:</i> Information Technology</p>
-                                        <p><span>Location</span> <i>:</i> Bangaluru</p>
-                                        <p><span>Web</span> <i>:</i> <a href="#" target="_blank">www.antlegs.com</a></p>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="profile-details">
-                                        <p><span>Contact Person</span> <i>:</i> Information Technology</p>
-                                        <p><span>Designation</span> <i>:</i> Bangaluru</p>
-                                        <p><span>Contact No</span> <i>:</i> <a href="tel:+918993765454">+91 899 376
-                                                5454</a>
-                                        </p>
-                                        <p><span>Email</span> <i>:</i> <a
-                                                href="mailto:santhosh@antlegs.com">santhosh@antlegs.com</a></p>
-                                    </div>
-                                </td>
+                <ul>
+                    <li>
+                        <div class="profile-details">
+                            <h3>Antlegs Technology Solutions Private Limited</h3>
+                            <p><span>Industry</span> <i>:</i> Information Technology</p>
+                            <p><span>Location</span> <i>:</i> Bangaluru</p>
+                            <p><span>Web</span> <i>:</i> <a href="#" target="_blank">www.antlegs.com</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="profile-details">
+                            <p><span>Contact Person</span> <i>:</i> Santhosh Mathew</p>
+                            <p><span>Designation</span> <i>:</i> Bangaluru</p>
+                            <p><span>Contact No</span> <i>:</i> <a href="tel:+918993765454">+91 899 376
+                                    5454</a>
+                            </p>
+                            <p><span>Email</span> <i>:</i> <a
+                                    href="mailto:santhosh@antlegs.com">santhosh@antlegs.com</a></p>
+                        </div>
 
-                            </tr>
-                            <tr>
-                                <td colspan="2" align="center">
-                                    <button type="button" class="btn btn-big btn-edit waves-effect" data-toggle="modal" data-target="#editBranch">Edit</button>
-                                </td>
-                            </tr>
-
-                        </tbody>
-                    </table>
+                    </li>
+                </ul>
+                <div class="add-branches text-center">
+                    <button type="button" class="btn btn-big btn-edit waves-effect" data-toggle="modal"
+                        data-target="#editDetails">Edit</button>
                 </div>
+
             </div>
 
             <div class="branches-wrapper">
@@ -62,11 +55,15 @@
                     @@include('./partials/components/branch-list.hbs')
                 </ul>
                 <div class="add-branches">
-                    <a href="#"><span class="fa fa-plus"></span> Add Branches</a>
+                    <a href="#" data-toggle="modal" data-target="#addBranch"><span class="fa fa-plus"></span> Add
+                        Branches</a>
                 </div>
             </div>
         </div>
     </div>
-</div> 
+</div>
 
+
+@@include('./partials/components/manage-profile-edit-details-modal.hbs')
 @@include('./partials/components/manage-profile-edit-branch-modal.hbs')
+@@include('./partials/components/manage-profile-add-branch-modal.hbs')

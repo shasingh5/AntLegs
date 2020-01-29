@@ -4055,6 +4055,37 @@ ul.time-slots li {
   margin: 20px 0;
 }
 
+.pd-wrapper > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: table;
+  width: 100%;
+  font-size: 0;
+}
+
+.pd-wrapper > ul > li {
+  display: table-cell;
+  vertical-align: top;
+  width: 50%;
+  font-size: 14px;
+  border: 1px solid #dfdfdf;
+  padding: 15px;
+  color: #000000;
+}
+
+@media (max-width: 900px) {
+  .pd-wrapper > ul > li {
+    display: block;
+    width: 100%;
+  }
+}
+
+.pd-wrapper > ul > li a {
+  margin: 0;
+  color: #000000;
+}
+
 .pd-wrapper > .row > div {
   border: 1px solid #dfdfdf;
 }
@@ -4129,8 +4160,22 @@ ul.time-slots li {
   padding: 15px;
 }
 
-.branches-wrapper ul li:not(:last-child) {
-  border-right: 0;
+@media (max-width: 480px) {
+  .branches-wrapper ul li {
+    width: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 736px) {
+  .branches-wrapper ul li {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .branches-wrapper ul li:not(:last-child) {
+    border-right: 0;
+  }
 }
 
 .branches-wrapper .branch-location {
@@ -4251,6 +4296,7 @@ ul.time-slots li {
 .edit-details-wrapper .form-antlegs label {
   margin-top: 12px;
   font-size: 14px;
+  color: #000000;
 }
 
 .edit-details-wrapper .form-antlegs .form-control {
@@ -4261,4 +4307,18 @@ ul.time-slots li {
 
 .edit-details-wrapper .form-antlegs .form-control.c-name {
   font-size: 16px;
+}
+
+.edit-details-wrapper .form-antlegs .form-control.link {
+  color: #316ea7;
+}
+
+.edit-details-wrapper .form-antlegs select.form-control.select {
+  padding: 10px 52px 10px 20px;
+  background: url("../images/big-down-arrow.png") 96% 50% no-repeat;
+  background-size: 5%;
+}
+
+.edit-details-wrapper .form-antlegs textarea.form-control {
+  height: 100px;
 }

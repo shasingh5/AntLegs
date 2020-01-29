@@ -321,6 +321,10 @@
         $(".coach-overlay").hide();        
     });
 
+    $('a[href$="#editBranch"]').on( "click", function() {
+        $('#editBranch').modal('show');
+    });
+
 })(jQuery);
 
 function renderCard() {

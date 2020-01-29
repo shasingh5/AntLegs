@@ -1,10 +1,10 @@
 <!-- invoice details modal -->
-<div class="modal fade" id="editBranch" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+<div class="modal fade" id="editDetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
 	aria-hidden="true">
 	<div class="modal-dialog modal-lg edit-branch" role="document">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Manage Profile  - Edit Branch</h5>
+				<h5 class="modal-title" id="exampleModalLabel">Manage Profile - Edit Details</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					<span aria-hidden="true">&times;</span>
 				</button>
@@ -16,20 +16,22 @@
 							<div class="card">
 								<div class="form-antlegs add-job-form">
 									<form autocomplete="off" class="form" role="form">
-										<div class="row">											
+										<div class="row">
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<label for="inputName" class="sr-only">Job Title*</label>
+													<input class="form-control c-name" id="inputName" type="text" value="Antlegs Technology Solutions Private Limited">
+												</div>
+											</div>
+
 											<div class="col-12 col-md-12">
 												<div class="form-group">
 													<div class="row">
 														<div class="col-12 col-md-4">
-															<label for="inputName" class=""><b>Select Branch to Edit</b></label>
+															<label for="inputName" class="">Industry</label>
 														</div>
 														<div class="col-12 col-md-8">
-															<select class="form-control select">
-																	<option value="">Select Gender</option>
-																	<option value="" selected>India - Mumbai, Cuffee Parade</option>
-																	<option value="">India - Chennai, Cuffee Parade</option>
-																	<option value="">India - Pune, Cuffee Parade</option>
-															</select>
+															<input class="form-control" id="inputName" type="text" value="Information Technology">
 														</div>
 													</div>
 												</div>
@@ -39,10 +41,10 @@
 												<div class="form-group">
 													<div class="row">
 														<div class="col-12 col-md-4">
-															<label for="inputName" class="">Company Name</label>
+															<label for="inputName" class="">Location</label>
 														</div>
 														<div class="col-12 col-md-8">
-															<input class="form-control" id="inputName" type="text" value="Antlegs Technology Solutions Private Limited">
+															<input class="form-control" id="inputName" type="text" value="Bangaluru">
 														</div>
 													</div>
 												</div>
@@ -52,23 +54,10 @@
 												<div class="form-group">
 													<div class="row">
 														<div class="col-12 col-md-4">
-															<label for="inputName" class="">Address</label>
+															<label for="inputName" class="">Web</label>
 														</div>
 														<div class="col-12 col-md-8">
-															<textarea class="form-control" id="inputName" type="text" rows="5">B/7676, 247 Park, Gandi Nagar, Cuffe Parade, Mumbai, India</textarea>
-														</div>
-													</div>
-												</div>
-											</div>
-
-											<div class="col-12 col-md-12">
-												<div class="form-group">
-													<div class="row">
-														<div class="col-12 col-md-4">
-															<label for="inputName" class="">Phone Number</label>
-														</div>
-														<div class="col-12 col-md-8">
-															<input class="form-control" id="inputName" type="text" value="+91 233 445 6767">
+															<input class="form-control link" id="inputName" type="text" value="www.antlegs.com">
 														</div>
 													</div>
 												</div>
@@ -77,14 +66,50 @@
 												<div class="form-group">
 													<div class="row">
 														<div class="col-12 col-md-4">
-															<label for="inputName" class="">Location Map</label>
+															<label for="inputName" class="">Contact Person</label>
 														</div>
 														<div class="col-12 col-md-8">
-															<input class="form-control" id="inputName" type="text" value="http://maps.google.co.in/embed...">
+															<input class="form-control" id="inputName" type="text" value="Santhosh Mathew">
 														</div>
 													</div>
 												</div>
-											</div>											
+											</div>
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-12 col-md-4">
+															<label for="inputName" class="">Designation</label>
+														</div>
+														<div class="col-12 col-md-8">
+															<input class="form-control" id="inputName" type="text" value="Founder">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-12 col-md-4">
+															<label for="inputName" class="">Contact No</label>
+														</div>
+														<div class="col-12 col-md-8">
+															<input class="form-control" id="inputName" type="text" value="+91 899 376 5454">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-12 col-md-4">
+															<label for="inputName" class="">Email</label>
+														</div>
+														<div class="col-12 col-md-8">
+															<input class="form-control link" id="inputName" type="text" value="santhosh@antlegs.com">
+														</div>
+													</div>
+												</div>
+											</div>
 											<div class="col-12">
 												<div class="form-group last-group text-center">
 													<button class="btn btn-get btn-white waves-effect waves-light" type="reset">Discard</button>
@@ -101,10 +126,8 @@
 				</div>
 
 				<div class="alert alert-success">
-					Branch Details updated successfully! 
+					Profile Details updated successfully! 
 				</div>
-
-
 			</div>
 		</div>
 	</div>
