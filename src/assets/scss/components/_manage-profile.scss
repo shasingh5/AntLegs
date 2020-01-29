@@ -75,7 +75,7 @@
             display: inline-block;
             width: 25%;
             font-size: 14px;
-            border: 1px solid #dfdfdf;            
+            border: 1px solid #dfdfdf;
             padding: 15px;
 
             &:not(:last-child) {
@@ -95,6 +95,8 @@
         }
 
         .location {
+            font-weight: 700;
+
             &::before {
                 content: "";
                 display: inline-block;
@@ -123,6 +125,11 @@
 
             .dropdown-item {
                 font-size: 12px;
+
+                &:focus,
+                &:hover {
+                    background: transparent;
+                }
             }
 
             .form-check-label {
@@ -143,4 +150,75 @@
         font-weight: 600;
     }
 
+}
+
+.add-branches {
+    border: 1px solid #dfdfdf;
+    border-top: 0;
+    padding: 20px;
+    font-size: 14px;
+
+    a {
+        color: $blue;
+
+        >span {
+            font-size: 12px;
+            display: inline-block;
+            margin-right: 5px;
+        }
+    }
+}
+
+.edit-branch {
+    .modal-title {
+        width: 80%;
+        text-align: center;
+    }
+
+    .alert-success {
+        color: $black;
+        background-color: #edf8cf;
+        border-color: #cce1aa;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+
+        &::before {
+            content: " ";
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background-image: url("../images/success-icon.png");
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            vertical-align: middle;
+            margin-right: 6px;
+        }
+    }
+}
+
+.edit-details-wrapper {
+    max-width: 550px;
+    margin: 0 auto;
+
+    .form-antlegs {
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            margin-top: 12px;
+            font-size: 14px;
+        }
+
+        .form-control {
+            font-size: 14px;
+            font-weight: 700;
+            padding: 15px;
+
+            &.c-name {
+                font-size: 16px;
+            }
+        }
+    }
 }
