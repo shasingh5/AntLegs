@@ -4322,3 +4322,176 @@ ul.time-slots li {
 .edit-details-wrapper .form-antlegs textarea.form-control {
   height: 100px;
 }
+
+.cadidate-history {
+  border: 1px solid #dfdfdf;
+  padding: 20px;
+  color: #000000;
+}
+
+.cadidate-history h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cadidate-history ul {
+  margin: 0;
+  padding: 0;
+}
+
+.cadidate-history ul li {
+  list-style: none;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.cadidate-history ul li > span {
+  display: inline-block;
+}
+
+.cadidate-history ul li > span:first-child {
+  width: 100px;
+}
+
+.cadidate-history ul li > span.status {
+  font-weight: 600;
+  color: #ffcc32;
+}
+
+.cadidate-history ul li > span.status::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #ffcc32;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.cadidate-history ul li > span.status.shortlisted::before {
+  background: #ffcc32;
+}
+
+.cadidate-history ul li > span.status.interview-stage {
+  color: #316ea7;
+}
+
+.cadidate-history ul li > span.status.interview-stage::before {
+  background: #316ea7;
+}
+
+.cadidate-history ul li > span.status.hired {
+  color: #30a38c;
+}
+
+.cadidate-history ul li > span.status.hired::before {
+  background: #30a38c;
+}
+
+.cadidate-history ul li > span.status small {
+  font-size: 12px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.cadidate-history ul li > i {
+  width: 20px;
+  font-style: normal;
+  display: inline-block;
+}
+
+.cadidate-history .more-less-block {
+  background: #f8f8f8;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: 30px;
+}
+
+.cadidate-history .cv-view {
+  padding: 20px;
+  background: #f8f8f8;
+}
+
+.cadidate-history .cv-view ul > li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.cadidate-history .cv-view ul > li::before {
+  content: " ";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #316ea7;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.cadidate-history .cv-view h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cadidate-history .cv-view p {
+  font-size: 14px;
+}
+
+.cadidate-history .cv-view p.credit {
+  color: #000000;
+}
+
+.cadidate-history .cv-view-header > div {
+  vertical-align: top;
+}
+
+.cadidate-history .cv-view-header > div.cadidate-name h3 {
+  font-size: 18px;
+}
+
+.cadidate-history .cv-view-header > div.cadidate-name p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.cadidate-history .cv-view-header > div.cadidate-photo {
+  width: 140px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 420px) {
+  .cadidate-history .cv-view-header > div.cadidate-photo {
+    margin: 0 auto 20px;
+  }
+}
+
+.cadidate-history .cv-view-header > div.cadidate-photo img {
+  width: 140px;
+  height: 140px;
+}
+
+.cadidate-history .emp-hist-card {
+  background: #ffffff;
+}
+
+.cta-view {
+  border: 1px solid #dfdfdf;
+  border-top: 0;
+  padding: 15px 20px;
+  text-align: right;
+}
+
+.candidate-header {
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.candidate-header p {
+  margin-top: 8px;
+}
+
+.candidate-header .dropdown {
+  display: inline-block;
+}

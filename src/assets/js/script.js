@@ -309,7 +309,7 @@
 
     $(".view-more-less").on("click", function (event) {
         event.preventDefault();
-        $('.job-history').slideToggle();
+        $('.more-less-block').slideToggle();
         $(this).toggleClass("less");
         $(this).text(function (i, v) {
             return v === 'view more' ? 'view less' : 'view more';

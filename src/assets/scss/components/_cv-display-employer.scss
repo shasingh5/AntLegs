@@ -1,0 +1,175 @@
+.cadidate-history {
+  border: 1px solid #dfdfdf;
+	padding: 20px;
+	color: $black;
+
+  h4 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      list-style: none;
+      font-size: 14px;
+      line-height: 2;
+
+      >span {
+        display: inline-block;
+
+        &:first-child {
+          width: 100px;
+        }
+
+        &.status {
+          font-weight: 600;
+          color: $yellow;
+
+          &::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background: $yellow;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+          }
+
+          &.shortlisted::before {
+            background: $yellow;
+          }
+
+          &.interview-stage {
+            color: $blue;
+
+            &::before {
+              background: $blue;
+            }
+          }
+
+          &.hired {
+            color: #30a38c;
+
+            &::before {
+              background: #30a38c;
+            }
+          }
+
+          small {
+            font-size: 12px;
+            font-weight: normal;
+            color: $black;
+          }
+        }
+      }
+
+      >i {
+        width: 20px;
+        font-style: normal;
+        display: inline-block;
+      }
+    }
+  }
+
+  .more-less-block {
+    background: #f8f8f8;
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: 30px;
+  }
+
+  .cv-view {
+    padding: 20px;
+		background: #f8f8f8;
+		
+		ul {
+			> li {
+				position: relative;
+				padding-left: 20px;
+				margin-bottom: 15px;
+				&::before {
+					content: " ";
+					display: inline-block;
+					width: 6px;
+					height: 6px;
+					background: $blue;
+					border-radius: 50%;
+					position: absolute;
+					top: 10px;
+					left: 0;
+				}
+			}
+		}
+
+		h4 {
+			font-size: 16px;
+			font-weight: 700;
+		}
+
+		p {
+			font-size: 14px;
+
+			&.credit {
+				color: $black;
+			}
+		}
+  }
+
+  .cv-view-header {
+    >div {
+			vertical-align: top;
+      &.cadidate-name {
+        h3 {
+          font-size: 18px;
+        }
+
+        p {
+					font-size: 14px;
+					margin-bottom: 8px;
+        }
+      }
+
+      &.cadidate-photo {
+				width: 140px;
+				margin-bottom: 20px;
+				
+				@include respond-to($xxs, max){
+					margin: 0 auto 20px;
+				}
+
+        img {
+          width: 140px;
+          height: 140px;
+        }
+      }
+    }
+
+	}
+	
+	.emp-hist-card {
+		background: $white;
+	}
+}
+
+.cta-view {
+  border: 1px solid #dfdfdf;
+  border-top: 0;
+  padding: 15px 20px;
+  text-align: right;
+}
+
+.candidate-header {
+  font-size: 12px;
+  margin-bottom: 10px;
+
+  p {
+    margin-top: 8px;
+  }
+
+  .dropdown {
+    display: inline-block;
+  }
+}
