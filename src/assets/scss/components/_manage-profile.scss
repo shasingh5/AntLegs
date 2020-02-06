@@ -1,14 +1,15 @@
 .pd-wrapper {
     margin: 20px 0;
 
-    > ul {
+    >ul {
         margin: 0;
         padding: 0;
         list-style: none;
         display: table;
         width: 100%;
         font-size: 0;
-        > li {
+
+        >li {
             display: table-cell;
             vertical-align: top;
             width: 50%;
@@ -19,7 +20,7 @@
 
             @include respond-to(900px, max) {
                 display: block;
-                width: 100%;                
+                width: 100%;
             }
 
             a {
@@ -103,22 +104,22 @@
             display: inline-block;
             width: 25%;
             font-size: 14px;
-            border: 1px solid #dfdfdf;            
-            padding: 15px;             
+            border: 1px solid #dfdfdf;
+            padding: 15px;
 
             @include respond-to(480px, max) {
-                width: 100%;               
-                
+                width: 100%;
+
             }
 
             @include respond-to(481px, $xs) {
-                width: 50%;                
+                width: 50%;
             }
 
             @include respond-to($md) {
                 &:not(:last-child) {
                     border-right: 0;
-                }                               
+                }
             }
 
 
@@ -267,8 +268,8 @@
 
         select.form-control.select {
             padding: 10px 52px 10px 20px;
-            background: url("../images/big-down-arrow.png") 96% 50% no-repeat;    
-            background-size: 5%;        
+            background: url("../images/big-down-arrow.png") 96% 50% no-repeat;
+            background-size: 5%;
         }
 
         textarea.form-control {

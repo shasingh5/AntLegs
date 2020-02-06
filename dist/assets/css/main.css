@@ -4334,31 +4334,36 @@ ul.time-slots li {
   font-weight: 600;
 }
 
-.cadidate-history ul {
+.cadidate-history h4 small {
+  font-size: 14px;
+  color: #666666;
+}
+
+.cadidate-history ul.ch-list {
   margin: 0;
   padding: 0;
 }
 
-.cadidate-history ul li {
+.cadidate-history ul.ch-list li {
   list-style: none;
   font-size: 14px;
   line-height: 2;
 }
 
-.cadidate-history ul li > span {
+.cadidate-history ul.ch-list li > span {
   display: inline-block;
 }
 
-.cadidate-history ul li > span:first-child {
+.cadidate-history ul.ch-list li > span:first-child {
   width: 100px;
 }
 
-.cadidate-history ul li > span.status {
+.cadidate-history ul.ch-list li > span.status {
   font-weight: 600;
   color: #ffcc32;
 }
 
-.cadidate-history ul li > span.status::before {
+.cadidate-history ul.ch-list li > span.status::before {
   content: "";
   width: 10px;
   height: 10px;
@@ -4368,33 +4373,33 @@ ul.time-slots li {
   margin-right: 10px;
 }
 
-.cadidate-history ul li > span.status.shortlisted::before {
+.cadidate-history ul.ch-list li > span.status.shortlisted::before {
   background: #ffcc32;
 }
 
-.cadidate-history ul li > span.status.interview-stage {
+.cadidate-history ul.ch-list li > span.status.interview-stage {
   color: #316ea7;
 }
 
-.cadidate-history ul li > span.status.interview-stage::before {
+.cadidate-history ul.ch-list li > span.status.interview-stage::before {
   background: #316ea7;
 }
 
-.cadidate-history ul li > span.status.hired {
+.cadidate-history ul.ch-list li > span.status.hired {
   color: #30a38c;
 }
 
-.cadidate-history ul li > span.status.hired::before {
+.cadidate-history ul.ch-list li > span.status.hired::before {
   background: #30a38c;
 }
 
-.cadidate-history ul li > span.status small {
+.cadidate-history ul.ch-list li > span.status small {
   font-size: 12px;
   font-weight: normal;
   color: #000000;
 }
 
-.cadidate-history ul li > i {
+.cadidate-history ul.ch-list li > i {
   width: 20px;
   font-style: normal;
   display: inline-block;
@@ -4410,6 +4415,12 @@ ul.time-slots li {
 .cadidate-history .cv-view {
   padding: 20px;
   background: #f8f8f8;
+}
+
+.cadidate-history .cv-view ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .cadidate-history .cv-view ul > li {
@@ -4476,6 +4487,10 @@ ul.time-slots li {
   background: #ffffff;
 }
 
+.cadidate-history .card-wrapper .card {
+  border: 1px solid #eaeaea;
+}
+
 .cta-view {
   border: 1px solid #dfdfdf;
   border-top: 0;
@@ -4494,4 +4509,16 @@ ul.time-slots li {
 
 .candidate-header .dropdown {
   display: inline-block;
+}
+
+.rj-wrapper {
+  margin: 20px 0;
+}
+
+.rj-wrapper .invoice-card-slider .slick-prev {
+  left: 15px;
+}
+
+.rj-wrapper .invoice-card-slider .slick-next {
+  right: 15px;
 }

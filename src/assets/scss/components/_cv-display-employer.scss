@@ -1,14 +1,19 @@
 .cadidate-history {
   border: 1px solid #dfdfdf;
 	padding: 20px;
-	color: $black;
-
+  color: $black;
+  
   h4 {
     font-size: 18px;
     font-weight: 600;
+
+    small {
+      font-size: 14px;
+      color: #666666;      
+    }
   }
 
-  ul {
+  ul.ch-list {
     margin: 0;
     padding: 0;
 
@@ -86,6 +91,9 @@
 		background: #f8f8f8;
 		
 		ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
 			> li {
 				position: relative;
 				padding-left: 20px;
@@ -151,7 +159,13 @@
 	
 	.emp-hist-card {
 		background: $white;
-	}
+  }
+  
+  .card-wrapper {
+    .card {
+      border: 1px solid #eaeaea;
+    }
+  }
 }
 
 .cta-view {
@@ -171,5 +185,15 @@
 
   .dropdown {
     display: inline-block;
+  }
+}
+
+.rj-wrapper {
+  margin: 20px 0;
+  .invoice-card-slider .slick-prev {
+    left: 15px;
+  }
+  .invoice-card-slider .slick-next {
+    right: 15px;
   }
 }
