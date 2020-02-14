@@ -1,0 +1,105 @@
+<div class="container-fluid ant-container rp-container">
+    <!-- Dashboard Header -->
+    <div class="row header">
+        <div class="col-12 col-md-12 col-lg-12">
+            <a href="index.html" class="main-heading no-arrow">Reward & Points</a>
+        </div>
+    </div>
+    <!--/ Dashboard Header -->
+    <div class="row row-eq-height">
+        <div class="col-12 col-md-6">
+            <div class="white-wrapper">
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="employer-action text-right">
+                            <select name="" id="" class="select" required="required">
+                                <option value="">2020</option>
+                                <option value="">2019</option>
+                                <option value="">2018</option>
+                                <option value="">2017</option>
+                                <option value="">2016</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="candidate-status graph-legend">
+                    <li class="shortlisted">Shortlisted : (20%)</li>
+                    <li class="interviewed">Interviewed : (40%)</li>
+                    <li class="hirings">Hirings : (10%)</li>
+                    <li class="rejections">Rejections : (60%)</li>
+                </ul>
+
+                <div class="graph-block">
+                    <img src="assets/images/graph-1.jpg" alt="Graph">
+                </div>
+
+
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="white-wrapper">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="ant-title bold">Overall Reward Summary</p>
+                        <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12">
+                        <div class="overall-summary">
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="graph-block">
+                                        <img src="assets/images/graph-circle-3.jpg" alt="Graph">
+                                    </div>
+                                    <br>
+                                    <p class="ant-title">Membership Level : <b>Premium</b></p>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <ul class="candidate-status rp-list">
+                                        <li class="shortlisted">Total Points : <br> <b>2,00,000</b></li>
+                                        <li class="hirings">Total Rewards : <br> <b>1,00,000</b></li>
+                                        <li class="interviewed">Points to Rewards : <br> <b>1,00,000</b></li>
+                                        <!-- <li class="rejections">Rejections : <b>1,00,000</b></li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row header invoice-header">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+            <a href="index.html" class="main-heading">Points to be Redeemed  <small>(1000)</small></a>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 text-right">
+            <button class="btn blue waves-effect" data-toggle="modal" data-target="#filterOpen">REDDEM ALL</button>
+            <button class="btn blue waves-effect" data-toggle="modal" data-target="#filterOpen">SUMMARY</button>
+            <button class="btn blue filter-open waves-effect" data-toggle="modal" data-target="#filterOpen">Filter</button>            
+        </div>
+    </div>
+
+    <!-- /redeemed card -->
+    <div class="manage-job redeemed-card">
+        <div class="row card-wrapper">
+            @@include('./partials/components/redeemed-card.hbs')
+            @@include('./partials/components/redeemed-card.hbs')
+            @@include('./partials/components/redeemed-card.hbs')
+            @@include('./partials/components/redeemed-card.hbs')
+        </div>
+    </div>
+    <!-- redeemed card -->
+
+    <div class="row">
+         <div class="col-12">
+             <div class="redeemed-point">Redeemed Points : <b>10500</b></div>
+         </div>
+    </div>
+</div>
+
+@@include('./partials/components/filter-modal.hbs')

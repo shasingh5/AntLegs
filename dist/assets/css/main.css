@@ -4563,3 +4563,64 @@ ul.time-slots li {
   background: #316ea7;
   color: #ffffff;
 }
+
+.rp-container .rp-list li {
+  width: 100%;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.rp-container .rp-list li::before {
+  position: absolute;
+  top: 3px;
+  left: 0;
+}
+
+.rp-container .overall-summary {
+  margin-bottom: 8px;
+}
+
+.redeemed-card .btn-outline {
+  border: 1px solid #30a38c;
+  color: #30a38c;
+}
+
+.redeemed-card .reward-trophy {
+  position: relative;
+  padding-left: 50px;
+}
+
+.redeemed-card .reward-trophy::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #c0e3dc url("../images/trophy-icon.png") center no-repeat;
+}
+
+.redeemed-card .reward-trophy p {
+  margin-bottom: 6px;
+}
+
+.redeemed-point {
+  background: #ffffff;
+  padding: 15px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  position: relative;
+}
+
+.redeemed-point::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #30a38c url("../images/white-check-icon.png") center no-repeat;
+  vertical-align: middle;
+  margin-right: 15px;
+}
