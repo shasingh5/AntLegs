@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Welcome to AntLegs</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+<!-- Material Design Bootstrap -->
+<link href="vendor/mdb/mdb.min.css" rel="stylesheet">
+<!-- Custom Scroll -->
+<link href="vendor/malihu-custom-scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+<!-- Full Calendar -->
+<link href="https://fullcalendar.io/js/fullcalendar-3.0.1/fullcalendar.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.42/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+<!-- Slick Slider -->
+<link href="vendor/slick/slick.css" rel="stylesheet">
+<link href="vendor/slick/slick-theme.css" rel="stylesheet">
+<!-- Custom styles -->
+<link href="assets/css/main.min.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <!-- Sidebar  -->
+<nav id="sidebar">    
+
+    <div class="sidebar-header">
+        <a href="javascript:;" id="dismiss" class="hamburg">&nbsp;</a>
+		<a href="#" class="logo">
+			<span>ANT</span>
+			<span>LEGS</span>
+		</a>
+    </div>
+
+    <ul class="list-unstyled components">        
+        <!-- <li class="active">
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li>
+                    <a href="#">Home 1</a>
+                </li>
+                <li>
+                    <a href="#">Home 2</a>
+                </li>
+                <li>
+                    <a href="#">Home 3</a>
+                </li>
+            </ul>
+        </li> -->
+        <li class="waves-effect">
+            <a href="employers-dashboard.html" class="dashboard">Dashboard</a>
+        </li>        
+        <li class="waves-effect active">
+            <a href="index.html" class="employers">Employers</a>
+        </li>
+        <li class="waves-effect">
+            <a href="recruiters.html" class="recruiters">Recruiters</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#" class="jobs">Jobs</a>
+        </li>
+        <li class="waves-effect">
+            <a href="interviews-calendar.html" class="interviews">Interviews</a>
+        </li>
+        <li class="waves-effect">
+            <a href="payments-billings.html" class="payments">Payments</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#" class="rewards">Rewards & Points</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#" class="reports">Reports</a>
+        </li>
+        <li class="waves-effect manage-admin">
+            <a href="#" class="manage">Manage Admin</a>
+        </li>
+    </ul>
+</nav>
+<!-- /Sidebar  -->
+
+    <!-- Page Content  -->
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-antlegs bs-none">
+	<div class="container-fluid ant-container">
+
+		<a href="javascript:;" id="sidebarCollapse" class="hamburg">&nbsp;</a>
+		<a href="#" class="logo">
+			<span>ANT</span>
+			<span>LEGS</span>
+		</a>
+
+		<button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<i class="fas fa-align-justify"></i>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="nav navbar-nav ml-auto">
+				<!-- <li class="nav-item active">
+                	<a class="nav-link" href="#">Page</a>
+              	</li> -->
+				<li class="nav-item  notification-globle dropdown">
+					<a class="nav-link dropdown-toggle" id="navbar-tools" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="true">
+						<i class="fas fa-bell bell-icon"></i><span>Notification</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbar-tools">
+						<h4><i class="fas fa-bell bell-icon"></i><span>Notification</span></h4>
+						<ul id="notification">
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">The job for Marketing Director with Hexaware Technologies has been
+											closed</span>
+										<span class="alert-time">
+											<i>20 mins ago</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>30 mins ago</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+								</li>
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">The job for Marketing Director with Hexaware Technologies has been
+											closed</span>
+										<span class="alert-time">
+											<i>2 hrs ago</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+								</li>
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">The job for Marketing Director with Hexaware Technologies has been
+											closed</span>
+										<span class="alert-time">
+											<i>4 hrs ago</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+								</li>
+								<li class="inline-email read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">Email A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>yesterday</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+									<div class="email-box">
+										<button type="button" class="btn email">Email</button>
+										<button type="button" class="btn delete">Delete</button>
+										<div class="msg-box">
+											<div class="input-group my-group">
+												<textarea class="text-area form-control" name="" id="" cols="10" rows="3"
+													placeholder="An email will be sent to your email ID with your message here (max 100 characters)"></textarea>
+												<span class="input-group-btn">
+													<button class="btn" type="submit" title="Search">Search</button>
+												</span>
+											</div>
+										</div>
+										<!-- /input-group -->
+									</div>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+							</ul>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" id="navbar-tools" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="true">
+						<i class="fas fa-user-circle user-icon"></i><span>Hi Snahal K</span></a>
+					<div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbar-tools">
+						<a class="dropdown-item d-xl-none waves-effect waves-light" href="/support/">Support Forum</a>
+						<a class="dropdown-item waves-effect waves-light" href="/snippets/">Editor &amp; Snippets</a>
+						<a class="dropdown-item waves-effect waves-light" href="/articles/">Articles</a>
+						<a class="dropdown-item waves-effect waves-light" href="/news/frontend/">News</a>
+						<a class="dropdown-item waves-effect waves-light" href="/cli/">MDB CLI <span
+								class="badge badge-danger rounded">New</span></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+      
+        <div class="container-fluid ant-container">
+	<!-- Header -->
+	<div class="row header">
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+			<a href="#" class="main-heading no-arrow">Profile View</a>
+		</div>
+	</div>
+	<!--/ Header -->
+	<div class="white-wrapper">
+		<div class="invoice-footer candidate-header">
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md-6 col-lg-6">
+					<span><b>Action</b> &nbsp;</span>
+					<!--Dropdown primary-->
+					<div class="dropdown">
+						<!--Trigger-->
+						<button class="btn ant-dropdown dropdown-toggle waves-effect" type="button" id="dropdownMenu2"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Employer</button>
+
+						<!--Menu-->
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Employer</a>
+							<a class="dropdown-item" href="#">Recruiter</a>
+						</div>
+					</div>
+					<!--/Dropdown primary-->
+					<!--Dropdown primary-->
+					<div class="dropdown">
+						<!--Trigger-->
+						<button class="btn ant-dropdown dropdown-toggle waves-effect" type="button" id="dropdownMenu2"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select Job</button>
+
+						<!--Menu-->
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">UX Designer</a>
+							<a class="dropdown-item" href="#">Product Manager</a>
+						</div>
+					</div>
+					<!--/Dropdown primary-->
+				</div>
+				<div class="col-12 col-sm-6 col-md-6 col-lg-6 text-right">
+					<button type="button" class="btn btn-print waves-effect waves-light">Print</button>
+					<button type="button" class="btn btn-print download waves-effect waves-light">Download</button>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="cadidate-wrapper">
+
+			<div class="cadidate-history">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="card cv-view no-bg">
+							<div class="cv-view-header">
+								<div class="cadidate-photo">
+									<img src="assets/images/vishal.jpg" alt="Vishal Maheshwari">
+								</div>
+								<div class="cadidate-name">
+									<h3>Vishal Maheshwari</h3>
+									<!-- <p>Applied for : <b>IT Manager</b></p> -->
+									<p>Indian / Male / Age : <b>35 Yrs</b></p>
+									<p>Current Salary (USD): <b>500000</b> | Expected Salary (USD) : <b>700000</b>
+									</p>
+									<p>Notice Period: <b>30 Days</b> | Willing to relocate: <b>Yes</b></p>
+									<p>Contact: <b>+91 9653325124</b> | Email: <b>recruiter@gmail.com</b> | Skype:
+										<b>Vishal1977</b></p>
+								</div>
+							</div>
+							<br>
+							<h4>Profile</h4>
+							<p>Over 10 years’ of progressive experience and career growth in financial planning and
+								analysis in family office, financial services and retail industries. Managing
+								finance and investments of family office, arranging credit facilities, performing
+								financial analysis</p>
+							<br>
+						</div>
+					</div>
+				</div>
+
+				<h4>Candidate History</h4>
+				<ul class="ch-list">
+					<li>
+						<span>02/01/2020</span>
+						<i>:</i>
+						<span class="status shortlisted">Shortlisted <small>(This profile was
+								shortlisted)</small></span>
+					</li>
+					<li>
+						<span>04/01/2020</span>
+						<i>:</i>
+						<span class="status interview-stage">Interview Stage <small>(The profiles was scheduled for a
+								Face – Face interview with Santhosh Kurichianil - Information Technology on
+								05/01/2020)</small></span>
+					</li>
+					<li>
+						<span>12/01/2020 </span>
+						<i>:</i>
+						<span class="status hired">Hired <small>(The profile was hired for the position of IT
+								Manager)</small></span>
+					</li>
+				</ul>
+
+				<h4>Recommended Jobs (15) <small>| <b>Applied Jobs (3)</b></small></h4>
+
+				<!-- /recommended job -->
+				<div class="rj-wrapper">
+					<div class="row row-eq-height card-wrapper card-slider rj-card-slider">
+						<div class="col">
+    <div class="card ant-card">
+        <div class="row">
+            <div class="col col-sm-6">
+                <div class="employer-logo">
+                    <img class="lazy" src="assets/images/employer-logo-1.jpg" alt="Microsoft" style="">
+                </div>
+            </div>
+            <div class="col col-sm-6">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-open btn-apply waves-effect">Apply</button>
+                </div>
+            </div>
+        </div>
+        <!--Card content-->
+        <div class="ant-content">
+            <!--Title-->
+            <h5 class="card-title card-bold">
+                Director of Sales
+            </h5>
+            <h5 class="card-title">
+                HFI Information Technology
+            </h5>
+            <h5 class="card-title">
+                Indra Nagar, LBS Marg, Bangalore
+            </h5>
+            <br>
+            <p class="ant-title">
+               www.hexagone.com
+            </p>
+            <br>
+            <hr>
+            <p class="publish-date">
+                <span>Posted on:</span> <b>Aug 16, 2019     </b>
+            </p>
+        </div>
+
+    </div>
+</div>
+						<div class="col">
+    <div class="card ant-card">
+        <div class="row">
+            <div class="col col-sm-6">
+                <div class="employer-logo">
+                    <img class="lazy" src="assets/images/employer-logo-1.jpg" alt="Microsoft" style="">
+                </div>
+            </div>
+            <div class="col col-sm-6">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-open btn-apply waves-effect">Apply</button>
+                </div>
+            </div>
+        </div>
+        <!--Card content-->
+        <div class="ant-content">
+            <!--Title-->
+            <h5 class="card-title card-bold">
+                Director of Sales
+            </h5>
+            <h5 class="card-title">
+                HFI Information Technology
+            </h5>
+            <h5 class="card-title">
+                Indra Nagar, LBS Marg, Bangalore
+            </h5>
+            <br>
+            <p class="ant-title">
+               www.hexagone.com
+            </p>
+            <br>
+            <hr>
+            <p class="publish-date">
+                <span>Posted on:</span> <b>Aug 16, 2019     </b>
+            </p>
+        </div>
+
+    </div>
+</div>
+						<div class="col">
+    <div class="card ant-card">
+        <div class="row">
+            <div class="col col-sm-6">
+                <div class="employer-logo">
+                    <img class="lazy" src="assets/images/employer-logo-1.jpg" alt="Microsoft" style="">
+                </div>
+            </div>
+            <div class="col col-sm-6">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-open btn-apply waves-effect">Apply</button>
+                </div>
+            </div>
+        </div>
+        <!--Card content-->
+        <div class="ant-content">
+            <!--Title-->
+            <h5 class="card-title card-bold">
+                Director of Sales
+            </h5>
+            <h5 class="card-title">
+                HFI Information Technology
+            </h5>
+            <h5 class="card-title">
+                Indra Nagar, LBS Marg, Bangalore
+            </h5>
+            <br>
+            <p class="ant-title">
+               www.hexagone.com
+            </p>
+            <br>
+            <hr>
+            <p class="publish-date">
+                <span>Posted on:</span> <b>Aug 16, 2019     </b>
+            </p>
+        </div>
+
+    </div>
+</div>
+						<div class="col">
+    <div class="card ant-card">
+        <div class="row">
+            <div class="col col-sm-6">
+                <div class="employer-logo">
+                    <img class="lazy" src="assets/images/employer-logo-1.jpg" alt="Microsoft" style="">
+                </div>
+            </div>
+            <div class="col col-sm-6">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-open btn-apply waves-effect">Apply</button>
+                </div>
+            </div>
+        </div>
+        <!--Card content-->
+        <div class="ant-content">
+            <!--Title-->
+            <h5 class="card-title card-bold">
+                Director of Sales
+            </h5>
+            <h5 class="card-title">
+                HFI Information Technology
+            </h5>
+            <h5 class="card-title">
+                Indra Nagar, LBS Marg, Bangalore
+            </h5>
+            <br>
+            <p class="ant-title">
+               www.hexagone.com
+            </p>
+            <br>
+            <hr>
+            <p class="publish-date">
+                <span>Posted on:</span> <b>Aug 16, 2019     </b>
+            </p>
+        </div>
+
+    </div>
+</div>
+						<div class="col">
+    <div class="card ant-card">
+        <div class="row">
+            <div class="col col-sm-6">
+                <div class="employer-logo">
+                    <img class="lazy" src="assets/images/employer-logo-1.jpg" alt="Microsoft" style="">
+                </div>
+            </div>
+            <div class="col col-sm-6">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-open btn-apply waves-effect">Apply</button>
+                </div>
+            </div>
+        </div>
+        <!--Card content-->
+        <div class="ant-content">
+            <!--Title-->
+            <h5 class="card-title card-bold">
+                Director of Sales
+            </h5>
+            <h5 class="card-title">
+                HFI Information Technology
+            </h5>
+            <h5 class="card-title">
+                Indra Nagar, LBS Marg, Bangalore
+            </h5>
+            <br>
+            <p class="ant-title">
+               www.hexagone.com
+            </p>
+            <br>
+            <hr>
+            <p class="publish-date">
+                <span>Posted on:</span> <b>Aug 16, 2019     </b>
+            </p>
+        </div>
+
+    </div>
+</div>
+						<div class="col">
+    <div class="card ant-card">
+        <div class="row">
+            <div class="col col-sm-6">
+                <div class="employer-logo">
+                    <img class="lazy" src="assets/images/employer-logo-1.jpg" alt="Microsoft" style="">
+                </div>
+            </div>
+            <div class="col col-sm-6">
+                <div class="employer-action text-right">
+                    <button type="button" class="btn btn-open btn-apply waves-effect">Apply</button>
+                </div>
+            </div>
+        </div>
+        <!--Card content-->
+        <div class="ant-content">
+            <!--Title-->
+            <h5 class="card-title card-bold">
+                Director of Sales
+            </h5>
+            <h5 class="card-title">
+                HFI Information Technology
+            </h5>
+            <h5 class="card-title">
+                Indra Nagar, LBS Marg, Bangalore
+            </h5>
+            <br>
+            <p class="ant-title">
+               www.hexagone.com
+            </p>
+            <br>
+            <hr>
+            <p class="publish-date">
+                <span>Posted on:</span> <b>Aug 16, 2019     </b>
+            </p>
+        </div>
+
+    </div>
+</div>
+					</div>
+				</div>
+				<!-- recommended job -->
+
+				<div class="more-less-block" style="display: none;">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="card cv-view">
+								<h4>Education</h4>
+								<p>2000 : <b>Post Graduate (Specialization)</b></p>
+								<p>University :<b>Standford University (USA)</b></p>
+								<br>
+								<h4>Certifications</h4>
+								<p>CCNA, MCSC, PMP</p>
+								<br>
+								<h4>Key Skills</h4>
+								<p>Team Building, Negotiation, Time Management, Quik learner</p>
+								<br>
+								<h4>Work Experience</h4>
+								<div class="row row-eq-height card-wrapper">
+									<div class="col-sm-6 col-md-4 col-lg-4">
+										<div class="emp-hist-card">
+											<h5>June 2018 – April 2019</h5>
+											<br>
+											<p><b>Microsoft</b> <br> Dubai, United Arab Emirates</p>
+											<br>
+											<p><b>Business Development Manager</b></p>
+											<p>Job Function : <b>Information Tehnology</b></p>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-4 col-lg-4">
+										<div class="emp-hist-card">
+											<h5>June 2018 – April 2019</h5>
+											<br>
+											<p><b>Microsoft</b> <br> Dubai, United Arab Emirates</p>
+											<br>
+											<p><b>Business Development Manager</b></p>
+											<p>Job Function : <b>Information Tehnology</b></p>
+										</div>
+									</div>
+									<div class="col-sm-6 col-md-4 col-lg-4">
+										<div class="emp-hist-card">
+											<h5>June 2018 – April 2019</h5>
+											<br>
+											<p><b>Microsoft</b> <br> Dubai, United Arab Emirates</p>
+											<br>
+											<p><b>Business Development Manager</b></p>
+											<p>Job Function : <b>Information Tehnology</b></p>
+										</div>
+									</div>
+
+								</div>
+
+								<br>
+								<h4>Overall Responsibilities Handled</h4>
+								<ul class="disk-list">
+									<li>Setting up entities and Special Investment Vehicles in Dubai mainland, DIFC,
+										freezones, Cayman Islands for various investments of shareholders</li>
+									<li>Managing finance and accounting, annual audit, annual compliance and returns of
+										all the entities. Managing accounting of chairman’s personal statements.</li>
+									<li>Undertaking P&amp;L and commercial analysis of existing and potential private
+										equity investments for shareholders and assisting CFO with presentations to the
+										shareholders.</li>
+									<li>Managing Sukuk and other fixed income portfolio, equities and real estate
+										portfolio of the shareholders.</li>
+								</ul>
+
+								<br>
+								<h4><b>Others</b></h4>
+								<h4>CMS Keynote Project</h4>
+								<ul>
+									<li>Setting up entities and Special Investment Vehicles in Dubai mainland, DIFC,
+										freezones, Cayman Islands for various investments of shareholders</li>
+									<li>Managing finance and accounting, annual audit, annual compliance and returns of
+										all the entities. Managing accounting of chairman’s personal statements.</li>
+									<li>Undertaking P&amp;L and commercial analysis of existing and potential private
+										equity investments for shareholders and assisting CFO with presentations to the
+										shareholders.</li>
+									<li>Managing Sukuk and other fixed income portfolio, equities and real estate
+										portfolio of the shareholders.</li>
+								</ul>
+
+								<hr>
+
+								<div>
+									<p class="credit">Powered by : <b>AntLegs</b></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cta-view">
+				<a href="#" class="view-more-less">view more</a>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+        <footer>
+  <p class="text-center">Antlegs Technology Solutions Private Limited.</p>
+</footer>
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+
+  <!-- SCRIPTS -->
+<!-- Reach Text Editor -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.5.6/tinymce.min.js"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+<!-- Reach Text Editor -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/tinymce/4.5.6/jquery.tinymce.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment-with-locales.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="vendor/MDB/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.42/js/bootstrap-datetimepicker.min.js"></script>
+
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="vendor/MDB/mdb.min.js"></script>
+<!-- Custom Scroll -->
+<script type="text/javascript" src="vendor/malihu-custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Lazy Load -->
+<script type="text/javascript" src="vendor/jquery.lazy/jquery.lazy.min.js"></script>
+<!-- Slick Slider -->
+<script type="text/javascript" src="vendor/slick/slick.js"></script>
+
+<!-- Full Calendar -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.js"></script>
+
+<!-- AntLegs core JavaScript -->
+<script src="./assets/js/script.js"></script>
+</body>
+
+</html>

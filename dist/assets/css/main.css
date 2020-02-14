@@ -4329,6 +4329,11 @@ ul.time-slots li {
   color: #000000;
 }
 
+.cadidate-history .cv-view.no-bg {
+  background: transparent;
+  padding: 20px 0 0;
+}
+
 .cadidate-history h4 {
   font-size: 18px;
   font-weight: 600;
@@ -4340,7 +4345,7 @@ ul.time-slots li {
 }
 
 .cadidate-history ul.ch-list {
-  margin: 0;
+  margin: 0 0 40px;
   padding: 0;
 }
 
@@ -4511,14 +4516,50 @@ ul.time-slots li {
   display: inline-block;
 }
 
+.card-slider .slick-prev,
+.card-slider .slick-next {
+  width: 30px;
+  height: 60px;
+  z-index: 99;
+}
+
+.card-slider .slick-prev:before,
+.card-slider .slick-next:before {
+  display: none;
+}
+
+.card-slider .slick-prev {
+  left: 0;
+  background: transparent url("../images/left-white-arrow.png") center no-repeat;
+}
+
+.card-slider .slick-prev:hover {
+  background: transparent url("../images/left-blue-arrow.png") center no-repeat;
+}
+
+.card-slider .slick-next {
+  right: 0;
+  background: transparent url("../images/right-white-arrow.png") center no-repeat;
+}
+
+.card-slider .slick-next:hover {
+  background: transparent url("../images/right-blue-arrow.png") center no-repeat;
+}
+
 .rj-wrapper {
   margin: 20px 0;
 }
 
-.rj-wrapper .invoice-card-slider .slick-prev {
+.rj-wrapper .card-slider .slick-prev {
   left: 15px;
 }
 
-.rj-wrapper .invoice-card-slider .slick-next {
+.rj-wrapper .card-slider .slick-next {
   right: 15px;
+}
+
+.rj-wrapper .btn-apply {
+  border-color: #316ea7;
+  background: #316ea7;
+  color: #ffffff;
 }

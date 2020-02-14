@@ -1,20 +1,25 @@
 .cadidate-history {
   border: 1px solid #dfdfdf;
-	padding: 20px;
+  padding: 20px;
   color: $black;
-  
+
+  .cv-view.no-bg {
+    background: transparent;
+    padding: 20px 0 0;
+  }
+
   h4 {
     font-size: 18px;
     font-weight: 600;
 
     small {
       font-size: 14px;
-      color: #666666;      
+      color: #666666;
     }
   }
 
   ul.ch-list {
-    margin: 0;
+    margin: 0 0 40px;
     padding: 0;
 
     li {
@@ -88,65 +93,68 @@
 
   .cv-view {
     padding: 20px;
-		background: #f8f8f8;
-		
-		ul {
+    background: #f8f8f8;
+
+    ul {
       margin: 0;
       padding: 0;
       list-style: none;
-			> li {
-				position: relative;
-				padding-left: 20px;
-				margin-bottom: 15px;
-				&::before {
-					content: " ";
-					display: inline-block;
-					width: 6px;
-					height: 6px;
-					background: $blue;
-					border-radius: 50%;
-					position: absolute;
-					top: 10px;
-					left: 0;
-				}
-			}
-		}
 
-		h4 {
-			font-size: 16px;
-			font-weight: 700;
-		}
+      >li {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 15px;
 
-		p {
-			font-size: 14px;
+        &::before {
+          content: " ";
+          display: inline-block;
+          width: 6px;
+          height: 6px;
+          background: $blue;
+          border-radius: 50%;
+          position: absolute;
+          top: 10px;
+          left: 0;
+        }
+      }
+    }
 
-			&.credit {
-				color: $black;
-			}
-		}
+    h4 {
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 14px;
+
+      &.credit {
+        color: $black;
+      }
+    }
   }
 
   .cv-view-header {
     >div {
-			vertical-align: top;
+      vertical-align: top;
+
       &.cadidate-name {
         h3 {
           font-size: 18px;
         }
 
         p {
-					font-size: 14px;
-					margin-bottom: 8px;
+          font-size: 14px;
+          margin-bottom: 8px;
         }
       }
 
       &.cadidate-photo {
-				width: 140px;
-				margin-bottom: 20px;
-				
-				@include respond-to($xxs, max){
-					margin: 0 auto 20px;
-				}
+        width: 140px;
+        margin-bottom: 20px;
+
+        @include respond-to($xxs, max) {
+          margin: 0 auto 20px;
+        }
 
         img {
           width: 140px;
@@ -155,12 +163,12 @@
       }
     }
 
-	}
-	
-	.emp-hist-card {
-		background: $white;
   }
-  
+
+  .emp-hist-card {
+    background: $white;
+  }
+
   .card-wrapper {
     .card {
       border: 1px solid #eaeaea;
@@ -188,12 +196,53 @@
   }
 }
 
+.card-slider {
+
+  .slick-prev,
+  .slick-next {
+    width: 30px;
+    height: 60px;
+    z-index: 99;
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    display: none;
+  }
+
+  .slick-prev {
+    left: 0;
+    background: transparent url("../images/left-white-arrow.png") center no-repeat;
+
+    &:hover {
+      background: transparent url("../images/left-blue-arrow.png") center no-repeat;
+    }
+  }
+
+  .slick-next {
+    right: 0;
+    background: transparent url("../images/right-white-arrow.png") center no-repeat;
+
+    &:hover {
+      background: transparent url("../images/right-blue-arrow.png") center no-repeat;
+    }
+  }
+}
+
 .rj-wrapper {
   margin: 20px 0;
-  .invoice-card-slider .slick-prev {
+
+  .card-slider .slick-prev {
     left: 15px;
   }
-  .invoice-card-slider .slick-next {
+
+  .card-slider .slick-next {
     right: 15px;
+  }
+
+  .btn-apply {
+    border-color: $blue;
+    background: $blue;
+    color: $white;
   }
 }
