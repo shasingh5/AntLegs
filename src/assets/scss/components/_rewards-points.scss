@@ -62,3 +62,48 @@
         margin-right: 15px;
     }
 }
+
+.redeem-body {
+    .redeemed-card {
+        .card {
+            border: 1px solid #d1d1d1;
+        }
+    }
+
+    .card-title {
+        font-size: 14px;
+    }
+}
+
+.redeem-points {
+    padding: 20px;
+
+    ul {
+        margin: 0 0 20px 0;
+        padding: 0;
+        font-size: 0;
+
+        li {
+            list-style: none;
+            display: inline-block;
+            width: 50%;
+            font-size: 16px;
+            text-align: center;
+            padding: 15px;
+
+            &:last-child {
+                border-left: 1px solid #d1d1d1;
+            }
+        }
+
+        +div {
+            border-top: 1px solid #d1d1d1;
+            padding-top: 20px;
+        }
+    }
+
+    .btn-big {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

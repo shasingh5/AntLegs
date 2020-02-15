@@ -1,0 +1,89 @@
+<!-- Filter Modal -->
+<div class="modal fade" id="redeemModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Reward & Points</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="redeem-body">
+                    <div class="employer-logo">
+                        <img class="lazy" src="assets/images/employer-logo-3.jpg" alt="Microsoft" style="">
+                    </div>
+                    <div class="ant-content">
+                        <h5 class="card-title bold">
+                            Hexaware Technologies Private Limited
+                        </h5>
+                        <h5 class="card-title">
+                            Chennai, Tamilnadu, India
+                        </h5>
+                    </div>
+
+                    <div class="row header invoice-header">
+                        <div class="col-12">
+                            <a class="main-heading">Rewards yet to be Redeemed</a>
+                        </div>
+                    </div>
+
+                    <!-- /redeemed card -->
+                    <div class="manage-job redeemed-card">
+                        <div class="row card-wrapper">
+                            @@include('./partials/components/redeem-modal-card.hbs')
+                            @@include('./partials/components/redeem-modal-card.hbs')
+                            @@include('./partials/components/redeem-modal-card.hbs')
+                        </div>
+                    </div>
+                    <!-- redeemed card -->
+
+                    <div class="row header invoice-header">
+                        <div class="col-12 text-center">
+                            <a class="main-heading">View your redeem points</a>
+                        </div>
+                    </div>
+
+                    <div class="white-wrapper redeem-points">
+                        <ul>
+                            <li>
+                                <p>Total Points</p>
+                                <p><b>20,000</b></p>
+                            </li>
+                            <li>
+                                <p> Total Reewards (USD)</p>
+                                <p><b>10,000</b></p>
+                            </li>
+                        </ul>
+                        
+                        <div class="text-center">
+                            <a href="#" class="btn btn-big blue waves-effect">Redeem</a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="row header invoice-header">
+                        <div class="col-12">
+                            <a class="main-heading">Rewards Already <span class="green-text">Redeemed</span> </a>
+                        </div>
+                    </div>
+                    <!-- /redeemed card -->
+                    <div class="manage-job redeemed-card">
+                        <div class="row card-wrapper">
+                            @@include('./partials/components/redeemed-modal-card.hbs')
+                            @@include('./partials/components/redeemed-modal-card.hbs')
+                            @@include('./partials/components/redeemed-modal-card.hbs')
+                        </div>
+                    </div>
+                    <!-- redeemed card -->
+                </div>
+            </div>
+            <!--div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div-->
+        </div>
+    </div>
+</div>
+<!-- /Filter Modal -->
