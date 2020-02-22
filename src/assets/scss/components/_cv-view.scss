@@ -168,29 +168,6 @@
         margin-bottom: 0.8rem;
     }
 
-    .interview-slots {
-        margin: 0;
-        padding: 0;
-
-        >li {
-            list-style: none;
-            font-size: 14px;
-            color: #666666;
-            margin-top: 10px;
-
-            b {
-                color: #333333;
-            }
-
-            a {
-                text-decoration: underline;
-                color: $blue;
-                margin-left: 10px;
-                font-weight: 600;
-            }
-        }
-    }
-
     .card-body {
         padding: 0;
 
@@ -209,8 +186,17 @@
         }
     }
 
-    +.modal-footer .btn-big {
-        width: auto;
+    +.modal-footer {
+        .btn-big {
+            width: auto;
+            margin-left: 6px;
+            margin-right: 6px;
+        }
+
+        .btn-blue {
+            background: $blue;
+            color: $white;            
+        }
     }
 }
 
@@ -227,6 +213,23 @@
     border-radius: 5px;
     padding: 20px;
     margin: 20px 0;
+    position: relative;
+    display: none;
+    &:after {
+        bottom: 100%;
+        left: 40%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(241, 241, 241, 0);
+        border-bottom-color: #f1f1f1;
+        border-width: 12px;
+        margin-left: -12px;
+    }
+    
     .form-group {
         margin-top: 0.3rem;
         margin-bottom: 0.3rem;
@@ -246,6 +249,52 @@
             &:focus {
                 box-shadow: none;
             }
+        }
+    }
+}
+
+.suggest-block {
+    &:after {        
+        left: 59%;
+    }
+    .ant-content .text-16 {
+        margin-bottom: 10px;
+    }
+    .im-select select.select {
+        width: 85px;
+        background-color: $white;
+    }
+
+    .border-right {
+        border-right: 1px solid #c5c5c5;
+    }
+
+    .ss-cont {
+        @include respond-to($xs, max) {
+            margin-top: 15px;
+        }
+    }
+}
+
+.interview-slots {
+    margin: 0;
+    padding: 0;
+
+    >li {
+        list-style: none;
+        font-size: 14px;
+        color: #666666;
+        margin-top: 10px;
+
+        b {
+            color: #333333;
+        }
+
+        a {
+            text-decoration: underline;
+            color: $blue;
+            margin-left: 10px;
+            font-weight: 600;
         }
     }
 }

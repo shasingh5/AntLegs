@@ -12,8 +12,8 @@
 			<div class="modal-body ism-body">
 				<div class="id-content">
 					<div class="employer-logo">
-						<img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg"
-							alt="Microsoft" />
+						<img class="lazy" src="assets/images/sample-logo.jpg"
+							data-src="assets/images/employer-logo-1.jpg" alt="Microsoft" />
 					</div>
 					<div class="ant-content">
 						<!--Title-->
@@ -77,13 +77,15 @@
 									<div class="form-group row">
 										<label class="col-lg-4 col-form-label form-control-label">Designation</label>
 										<div class="col-lg-8">
-											<input class="form-control" type="text" value="Chief Technology Officer" disabled>
+											<input class="form-control" type="text" value="Chief Technology Officer"
+												disabled>
 										</div>
 									</div>
 									<div class="form-group row">
 										<label class="col-lg-4 col-form-label form-control-label">Email</label>
 										<div class="col-lg-8">
-											<input class="form-control" type="text" value="micheael.pinto@netsoft.com" disabled>
+											<input class="form-control" type="text" value="micheael.pinto@netsoft.com"
+												disabled>
 										</div>
 									</div>
 									<div class="form-group row">
@@ -123,7 +125,8 @@
 									<div class="form-group row">
 										<label class="col-lg-4 col-form-label form-control-label">Location Map</label>
 										<div class="col-lg-8">
-											<input class="form-control" type="text" value="http://maps.google.co.in/embed..." disabled>
+											<input class="form-control" type="text"
+												value="http://maps.google.co.in/embed..." disabled>
 										</div>
 									</div>
 								</form>
@@ -134,13 +137,13 @@
 			</div>
 			<div class="modal-footer">
 				<div class="text-center">
-					<button type="button" class="btn btn-big waves-effect" data-dismiss="modal">Cancel Interview</button>
-					<button type="button" class="btn btn-big waves-effect" data-dismiss="modal">Suggest Schedule</button>
+					<button type="button" class="btn btn-big waves-effect chooseSchedule" data-schedule-id="cancelInterview">Cancel Interview</button>
+					<button type="button" class="btn btn-big waves-effect chooseSchedule" data-schedule-id="suggestSchedule">Suggest Schedule</button>
 				</div>
 
-				<div class="cancel-block">
+				<div class="cancel-block" id="cancelInterview">
 					<div class="ant-content">
-						<p class="bold">Cancel Interview</p>
+						<p class="text-16 bold">Cancel Interview</p>
 					</div>
 					<form class="">
 						<div class="row">
@@ -167,17 +170,107 @@
 							</div>
 							<div class="col-12">
 								<div class="form-group">
-									<label class="sr-only">Reason 1</label>									
+									<label class="sr-only">Reason 1</label>
 									<input type="text" class="form-control" value="Others">
 								</div>
 							</div>
 						</div>
-						
+
 						<div class="cancel-cta">
-							<button type="reset" class="btn btn-big waves-effect">Discard</button>
+							<button type="reset" class="btn btn-big waves-effect" data-dismiss="modal">Discard</button>
 							<button type="submit" class="btn btn-big waves-effect">Cancel Interview</button>
-						</div>						
+						</div>
 					</form>
+				</div>
+
+				<div class="cancel-block suggest-block" id="suggestSchedule">
+					<div class="ant-content">
+						<p class="text-16 bold">Suggest Schedule</p>
+					</div>
+
+					<div class="row">
+						<div class="col-12 col-sm-6">
+							<form class="border-right">
+								<div class="row">
+									<div class="col-12">
+										<div class="ant-content">
+											<p class="bold">Date</p>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-group custom-control-inline">
+											<label class="sr-only">Reason 1</label>
+											<div class="im-select">
+												<select name="" id="" class="select" required="required">
+													<option value="">Feb</option>
+													<option value="">Jan</option>
+													<option value="">Mar</option>
+													<option value="">Apr</option>
+												</select>
+												<select name="" id="" class="select" required="required">
+													<option value="">01</option>
+													<option value="">02</option>
+													<option value="">03</option>
+													<option value="">04</option>
+												</select>
+												<select name="" id="" class="select" required="required">
+													<option value="">2020</option>
+													<option value="">2021</option>
+													<option value="">2022</option>
+													<option value="">2023</option>
+												</select>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-12">
+										<div class="ant-content">
+											<p class="bold">Time</p>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-group custom-control-inline">
+											<label class="sr-only">Reason 1</label>
+											<div class="im-select">
+												<select name="" id="" class="select" required="required">
+													<option value="">10:30</option>
+													<option value="">11:00</option>
+													<option value="">11:30</option>
+													<option value="">12:00</option>
+												</select>
+												<select name="" id="" class="select" required="required">
+													<option value="">AM</option>
+													<option value="">PM</option>
+												</select>
+											</div>
+										</div>
+									</div>
+
+								</div>								
+							</form>
+						</div>
+						<div class="col-12 col-sm-6">
+							<div class="ant-content ss-cont">
+								<!--Title-->
+								<p class="bold">
+									Suggested Schedules
+								</p>
+								<ul class="interview-slots">
+									<li>Wednesday, <b>20/02/2020</b> | <b>13:00</b> Hrs <a href="#">Confirm</a></li>
+									<li>Wednesday, <b>20/02/2020</b> | <b>13:00</b> Hrs <a href="#">Confirm</a></li>
+									<li>Wednesday, <b>20/02/2020</b> | <b>13:00</b> Hrs <a href="#">Confirm</a></li>
+								</ul>
+								<br>
+							</div>
+						</div>
+					</div>
+
+					<div class="cancel-cta">
+						<button type="reset" class="btn btn-big waves-effect" data-dismiss="modal">Discard</button>
+						<button type="submit" class="btn btn-big waves-effect">Re-Schedule</button>
+					</div>
+
+
 				</div>
 			</div>
 		</div>

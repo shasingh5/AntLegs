@@ -353,9 +353,19 @@
         $(".coach-overlay").hide();        
     });
 
-    $('a[href$="#editBranch"]').on( "click", function() {
+    $('a[href$="#editBranch"]').on("click", function() {
         $('#editBranch').modal('show');
     });
+
+    $('.chooseSchedule').on("click", function() {
+        $(".cancel-block").hide();
+        var getBlockId = $(this).attr("data-schedule-id");
+        $(".chooseSchedule").removeClass("btn-blue");
+        $(this).addClass("btn-blue");
+        $('#'+getBlockId).show();
+    });
+
+
 
 })(jQuery);
 

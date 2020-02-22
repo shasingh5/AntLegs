@@ -3615,29 +3615,6 @@ ul.time-slots li {
   margin-bottom: 0.8rem;
 }
 
-.ism-body .interview-slots {
-  margin: 0;
-  padding: 0;
-}
-
-.ism-body .interview-slots > li {
-  list-style: none;
-  font-size: 14px;
-  color: #666666;
-  margin-top: 10px;
-}
-
-.ism-body .interview-slots > li b {
-  color: #333333;
-}
-
-.ism-body .interview-slots > li a {
-  text-decoration: underline;
-  color: #316ea7;
-  margin-left: 10px;
-  font-weight: 600;
-}
-
 .ism-body .card-body {
   padding: 0;
 }
@@ -3658,6 +3635,13 @@ ul.time-slots li {
 
 .ism-body + .modal-footer .btn-big {
   width: auto;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.ism-body + .modal-footer .btn-blue {
+  background: #316ea7;
+  color: #ffffff;
 }
 
 .im-select select.select {
@@ -3671,6 +3655,23 @@ ul.time-slots li {
   border-radius: 5px;
   padding: 20px;
   margin: 20px 0;
+  position: relative;
+  display: none;
+}
+
+.cancel-block:after {
+  bottom: 100%;
+  left: 40%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(241, 241, 241, 0);
+  border-bottom-color: #f1f1f1;
+  border-width: 12px;
+  margin-left: -12px;
 }
 
 .cancel-block .form-group {
@@ -3691,6 +3692,52 @@ ul.time-slots li {
 
 .cancel-block .custom-control-inline .form-control:focus {
   box-shadow: none;
+}
+
+.suggest-block:after {
+  left: 59%;
+}
+
+.suggest-block .ant-content .text-16 {
+  margin-bottom: 10px;
+}
+
+.suggest-block .im-select select.select {
+  width: 85px;
+  background-color: #ffffff;
+}
+
+.suggest-block .border-right {
+  border-right: 1px solid #c5c5c5;
+}
+
+@media (max-width: 736px) {
+  .suggest-block .ss-cont {
+    margin-top: 15px;
+  }
+}
+
+.interview-slots {
+  margin: 0;
+  padding: 0;
+}
+
+.interview-slots > li {
+  list-style: none;
+  font-size: 14px;
+  color: #666666;
+  margin-top: 10px;
+}
+
+.interview-slots > li b {
+  color: #333333;
+}
+
+.interview-slots > li a {
+  text-decoration: underline;
+  color: #316ea7;
+  margin-left: 10px;
+  font-weight: 600;
 }
 
 .cancel-cta {
