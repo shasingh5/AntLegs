@@ -3602,6 +3602,109 @@ ul.time-slots li {
   margin-top: -2px;
 }
 
+.text-16 {
+  font-size: 16px;
+}
+
+.ism-body .ant-content {
+  font-size: 14px;
+}
+
+.ism-body hr {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.ism-body .interview-slots {
+  margin: 0;
+  padding: 0;
+}
+
+.ism-body .interview-slots > li {
+  list-style: none;
+  font-size: 14px;
+  color: #666666;
+  margin-top: 10px;
+}
+
+.ism-body .interview-slots > li b {
+  color: #333333;
+}
+
+.ism-body .interview-slots > li a {
+  text-decoration: underline;
+  color: #316ea7;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.ism-body .card-body {
+  padding: 0;
+}
+
+.ism-body .card-body .form-group {
+  margin-bottom: 0.3rem;
+}
+
+.ism-body .card-body .form-control-label {
+  font-size: 14px;
+  color: #000000;
+}
+
+.ism-body .card-body .form-control {
+  height: 32px;
+  font-size: 14px;
+}
+
+.ism-body + .modal-footer .btn-big {
+  width: auto;
+}
+
+.im-select select.select {
+  font-size: 16px;
+  color: #666666;
+  width: 170px;
+}
+
+.cancel-block {
+  background: #f1f1f1;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.cancel-block .form-group {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.cancel-block .custom-control-inline .checkbox {
+  width: auto;
+  margin-right: 20px;
+}
+
+.cancel-block .custom-control-inline .form-control {
+  height: 25px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cancel-block .custom-control-inline .form-control:focus {
+  box-shadow: none;
+}
+
+.cancel-cta {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.cancel-cta .btn-big {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 400;
+  margin: 0 5px;
+}
+
 .invoice-dashboard {
   background: #ffffff;
   border: 1px solid #eaeaea;

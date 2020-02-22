@@ -12,7 +12,7 @@
         line-height: 1.7;
 
         >span {
-            
+
             display: inline-block;
 
             @include respond-to($xs) {
@@ -84,7 +84,7 @@
         &.cadidate-photo {
             width: 100px;
 
-            
+
 
             img {
                 width: 100px;
@@ -95,7 +95,7 @@
         }
 
         &.cadidate-name {
-            
+
             @include respond-to($xs) {
                 padding-left: 30px;
             }
@@ -151,5 +151,113 @@
         margin-right: 10px;
         vertical-align: middle;
         margin-top: -2px;
+    }
+}
+
+.text-16 {
+    font-size: 16px;
+}
+
+.ism-body {
+    .ant-content {
+        font-size: 14px;
+    }
+
+    hr {
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .interview-slots {
+        margin: 0;
+        padding: 0;
+
+        >li {
+            list-style: none;
+            font-size: 14px;
+            color: #666666;
+            margin-top: 10px;
+
+            b {
+                color: #333333;
+            }
+
+            a {
+                text-decoration: underline;
+                color: $blue;
+                margin-left: 10px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .card-body {
+        padding: 0;
+
+        .form-group {
+            margin-bottom: 0.3rem;
+        }
+
+        .form-control-label {
+            font-size: 14px;
+            color: $black;
+        }
+
+        .form-control {
+            height: 32px;
+            font-size: 14px;
+        }
+    }
+
+    +.modal-footer .btn-big {
+        width: auto;
+    }
+}
+
+.im-select {
+    select.select {
+        font-size: 16px;
+        color: #666666;
+        width: 170px;
+    }
+}
+
+.cancel-block {
+    background: #f1f1f1;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+    .form-group {
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .custom-control-inline {
+        .checkbox {
+            width: auto;
+            margin-right: 20px;
+        }
+
+        .form-control {
+            height: 25px;
+            font-size: 12px;
+            font-weight: 600;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+    }
+}
+
+.cancel-cta {
+    text-align: center;
+    padding-top: 20px;
+
+    .btn-big {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-weight: 400;
+        margin: 0 5px;
     }
 }

@@ -272,117 +272,305 @@
 </nav>
       
         <div class="container-fluid ant-container">
-    <!-- Header -->
-    <div class="row header">
-        <div class="col-5 col-sm-6 col-md-6 col-lg-6">
-            <a href="#" class="main-heading">View CV</a>
-        </div>
-        <div class="col-7 col-sm-6 col-md-6 col-lg-6 text-right">
-            <button class="btn btn-print waves-effect">Print Preview</button>
-        </div>
+	<!-- Header -->
+	<div class="row header">
+		<div class="col-5 col-sm-6 col-md-6 col-lg-6">
+			<a href="#" class="main-heading">View CV</a>
+		</div>
+		<div class="col-7 col-sm-6 col-md-6 col-lg-6 text-right">
+			<button class="btn btn-print waves-effect">Print Preview</button>
+			<button class="btn btn-print waves-effect" data-toggle="modal" data-target="#interviewSchedule">Interview Schedule</button>
+		</div>
 
-    </div>
-    <!--/ Header -->
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="card cv-view">
-                <div class="cv-view-header">
-                    <div class="cadidate-photo">
-                        <img src="assets/images/user-photo.jpg" alt="Santhosh Kamurichianil">
-                    </div>
-                    <div class="cadidate-name">
-                        <h3>Santhosh Kamurichianil</h3>
-                        <p>Applied for: Senior Software Engineer</p>
-                    </div>
-                </div>
-                <hr>
-                <p><span> Indian / Male / YOB : </span> <b>1977</b></p>
-                <p><span>Current Salary : </span> <b>USD 50000 PA</b></p>
-                <p><span>Expected Salary : </span> <b>USD 75000</b></p>
-                <p><span>Notice Period : </span> <b>90 Days</b></p>
-                <p><span>Current Location : </span> <b>Bangalore, Karnataka, India</b></p>
-                <p><span>Willing to Relocate : </span> <b>Yes</b></p>
-                <hr>
-                <h4>Profile</h4>
-                <p>Develops products by identifying potential products; conducting market research; generating product
-                    requirements; determining specifications, production timetables, pricing, and time-integrated plans
-                    for product introduction; developing marketing strategies. Develops products by identifying
-                    potential products; conducting market research; generating product requirements; determining
-                    specifications, production timetables, pricing, and time-integrated plans for product introduction;
-                    developing marketing strategies.</p>
-                <hr>
-                <h4>Education</h4>
-                <p>2002: Masters (Computer Science) <br> Mahatma Gandhi University – Kerala, India</p>
-                <hr>
-                <h4>Certifications</h4>
-                <p>CCNA, MCSC, PMP</p>
-                <hr>
-                <h4>Core Competencies</h4>
-                <p>Competency 1, Competency 2</p>
-                <hr>
-                <h4>Employement History</h4>
-                <div class="row row-eq-height card-wrapper">
-                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                        <div class="emp-hist-card">
-                            <h5>June 2018 – April 2019</h5>
-                            <p>Microsoft - Dubai, United Arab Emirates</p>
-                            <p>Business Development Manager</p>
-                            <p>Reporting to: Director</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                        <div class="emp-hist-card">
-                            <h5>June 2018 – April 2019</h5>
-                            <p>Microsoft - Dubai, United Arab Emirates</p>
-                            <p>Business Development Manager</p>
-                            <p>Reporting to: Director</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                        <div class="emp-hist-card">
-                            <h5>June 2018 – April 2019</h5>
-                            <p>Microsoft - Dubai, United Arab Emirates</p>
-                            <p>Business Development Manager</p>
-                            <p>Reporting to: Director</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
-                        <div class="emp-hist-card">
-                            <h5>June 2018 – April 2019</h5>
-                            <p>Microsoft - Dubai, United Arab Emirates</p>
-                            <p>Business Development Manager</p>
-                            <p>Reporting to: Director</p>
-                        </div>
-                    </div>
-                </div>
+	</div>
+	<!--/ Header -->
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="card cv-view">
+				<div class="cv-view-header">
+					<div class="cadidate-photo">
+						<img src="assets/images/user-photo.jpg" alt="Santhosh Kamurichianil">
+					</div>
+					<div class="cadidate-name">
+						<h3>Santhosh Kamurichianil</h3>
+						<p>Applied for: Senior Software Engineer</p>
+					</div>
+				</div>
+				<hr>
+				<p><span> Indian / Male / YOB : </span> <b>1977</b></p>
+				<p><span>Current Salary : </span> <b>USD 50000 PA</b></p>
+				<p><span>Expected Salary : </span> <b>USD 75000</b></p>
+				<p><span>Notice Period : </span> <b>90 Days</b></p>
+				<p><span>Current Location : </span> <b>Bangalore, Karnataka, India</b></p>
+				<p><span>Willing to Relocate : </span> <b>Yes</b></p>
+				<hr>
+				<h4>Profile</h4>
+				<p>Develops products by identifying potential products; conducting market research; generating product
+					requirements; determining specifications, production timetables, pricing, and time-integrated plans
+					for product introduction; developing marketing strategies. Develops products by identifying
+					potential products; conducting market research; generating product requirements; determining
+					specifications, production timetables, pricing, and time-integrated plans for product introduction;
+					developing marketing strategies.</p>
+				<hr>
+				<h4>Education</h4>
+				<p>2002: Masters (Computer Science) <br> Mahatma Gandhi University – Kerala, India</p>
+				<hr>
+				<h4>Certifications</h4>
+				<p>CCNA, MCSC, PMP</p>
+				<hr>
+				<h4>Core Competencies</h4>
+				<p>Competency 1, Competency 2</p>
+				<hr>
+				<h4>Employement History</h4>
+				<div class="row row-eq-height card-wrapper">
+					<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+						<div class="emp-hist-card">
+							<h5>June 2018 – April 2019</h5>
+							<p>Microsoft - Dubai, United Arab Emirates</p>
+							<p>Business Development Manager</p>
+							<p>Reporting to: Director</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+						<div class="emp-hist-card">
+							<h5>June 2018 – April 2019</h5>
+							<p>Microsoft - Dubai, United Arab Emirates</p>
+							<p>Business Development Manager</p>
+							<p>Reporting to: Director</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+						<div class="emp-hist-card">
+							<h5>June 2018 – April 2019</h5>
+							<p>Microsoft - Dubai, United Arab Emirates</p>
+							<p>Business Development Manager</p>
+							<p>Reporting to: Director</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+						<div class="emp-hist-card">
+							<h5>June 2018 – April 2019</h5>
+							<p>Microsoft - Dubai, United Arab Emirates</p>
+							<p>Business Development Manager</p>
+							<p>Reporting to: Director</p>
+						</div>
+					</div>
+				</div>
 
-                <hr>
-                <h4>Overall Responsibilities Handled</h4>
-                <ul>
-                    <li>Responsibility 1</li>
-                    <li>Responsibility 2</li>
-                    <li>Responsibility 3</li>
-                </ul>
+				<hr>
+				<h4>Overall Responsibilities Handled</h4>
+				<ul>
+					<li>Responsibility 1</li>
+					<li>Responsibility 2</li>
+					<li>Responsibility 3</li>
+				</ul>
 
-                <hr>
-                <h4>Others</h4>
-                <p>Training</p>
+				<hr>
+				<h4>Others</h4>
+				<p>Training</p>
 
-                <hr>
-                <h4>Foward</h4>
-                <form class="form-inline" action="/action_page.php">
-                    <label for="email" class="sr-only">Email address:</label>
-                    <input type="email" class="form-control" id="email" placeholder="enter email address">                    
-                    <button type="submit" class="btn btn-get waves-effect waves-light">Send</button>
-                </form>
+				<hr>
+				<h4>Foward</h4>
+				<form class="form-inline" action="/action_page.php">
+					<label for="email" class="sr-only">Email address:</label>
+					<input type="email" class="form-control" id="email" placeholder="enter email address">
+					<button type="submit" class="btn btn-get waves-effect waves-light">Send</button>
+				</form>
 
-                <div class="text-right">
-                    <p class="credit">Powered by :  <b>AntLegs</b></p>
-                </div>
-            </div>
-        </div>
-    </div>
+				<div class="text-right">
+					<p class="credit">Powered by : <b>AntLegs</b></p>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
+
+<!-- Interview Schedule Modal -->
+<div class="modal fade" id="interviewSchedule" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Interview Schedule</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body ism-body">
+				<div class="id-content">
+					<div class="employer-logo">
+						<img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg"
+							alt="Microsoft" />
+					</div>
+					<div class="ant-content">
+						<!--Title-->
+						<p class="text-16">
+							Compay : <b>Microsoft Incorporation</b>
+						</p>
+						<hr>
+						<p class="text-16">
+							Job Opening : <b>Cyber Security Manager</b>
+						</p>
+						<br>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-6">
+							<div class="ant-content">
+								<!--Title-->
+								<p>
+									<b>Interview Mode</b>
+								</p>
+
+								<div class="im-select">
+									<select name="" id="" class="select" required="required">
+										<option value="">Face to Face</option>
+										<option value="">Video Calling</option>
+										<option value="">Sky Call</option>
+										<option value="">Mobile</option>
+									</select>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-12 col-sm-6">
+							<div class="ant-content">
+								<!--Title-->
+								<p class="bold">
+									Interview Slots
+								</p>
+								<ul class="interview-slots">
+									<li>Wednesday, <b>20/02/2020</b> | <b>13:00</b> Hrs <a href="#">Confirm</a></li>
+									<li>Wednesday, <b>20/02/2020</b> | <b>13:00</b> Hrs <a href="#">Confirm</a></li>
+									<li>Wednesday, <b>20/02/2020</b> | <b>13:00</b> Hrs <a href="#">Confirm</a></li>
+								</ul>
+								<br>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12 col-sm-6">
+							<div class="ant-content">
+								<p class="bold">Interview Details</p>
+							</div>
+							<div class="card-body">
+								<form autocomplete="off" class="form" role="form">
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Interviewer</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="Mr. Michael Pinto" disabled>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Designation</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="Chief Technology Officer" disabled>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Email</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="micheael.pinto@netsoft.com" disabled>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Contact</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="+91 9543328784" disabled>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6">
+							<div class="ant-content">
+								<p class="bold">Venue Details</p>
+							</div>
+
+							<div class="card-body">
+								<form autocomplete="off" class="form" role="form">
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Branch</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="Avenue Park" disabled>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Location</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="Chennai, India" disabled>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Contact</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="+91 887265452" disabled>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Location Map</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="http://maps.google.co.in/embed..." disabled>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="text-center">
+					<button type="button" class="btn btn-big waves-effect" data-dismiss="modal">Cancel Interview</button>
+					<button type="button" class="btn btn-big waves-effect" data-dismiss="modal">Suggest Schedule</button>
+				</div>
+
+				<div class="cancel-block">
+					<div class="ant-content">
+						<p class="bold">Cancel Interview</p>
+					</div>
+					<form class="">
+						<div class="row">
+							<div class="col-12">
+								<div class="form-group custom-control-inline">
+									<label class="sr-only">Reason 1</label>
+									<input type="checkbox" class="form-control checkbox" id="Reason1">
+									<input type="text" class="form-control" value="Reason 1" disabled>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form-group custom-control-inline">
+									<label class="sr-only">Reason 1</label>
+									<input type="checkbox" class="form-control checkbox" id="Reason2" checked>
+									<input type="text" class="form-control" value="Reason 2">
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form-group custom-control-inline">
+									<label class="sr-only">Reason 1</label>
+									<input type="checkbox" class="form-control checkbox" id="Reason3">
+									<input type="text" class="form-control" value="Reason 3" disabled>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form-group">
+									<label class="sr-only">Reason 1</label>									
+									<input type="text" class="form-control" value="Others">
+								</div>
+							</div>
+						</div>
+						
+						<div class="cancel-cta">
+							<button type="reset" class="btn btn-big waves-effect">Discard</button>
+							<button type="submit" class="btn btn-big waves-effect">Cancel Interview</button>
+						</div>						
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /Interview Schedule Modal -->
         <footer>
   <p class="text-center">Antlegs Technology Solutions Private Limited.</p>
 </footer>
