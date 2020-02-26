@@ -3752,6 +3752,77 @@ ul.time-slots li {
   margin: 0 5px;
 }
 
+.date-box .im-select select.select {
+  width: 85px;
+  background-color: #ffffff;
+}
+
+.schedule-fixed {
+  color: #316ea7;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.other-Details .form-group {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.other-Details .custom-control-inline .checkbox {
+  width: auto;
+  margin-right: 20px;
+}
+
+.other-Details .custom-control-inline .form-control {
+  height: 25px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.other-Details .custom-control-inline .form-control:focus {
+  box-shadow: none;
+}
+
+.add-other-input {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+  color: #316ea7;
+  display: inline-block;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.schedule-address-list {
+  margin-top: 25px;
+  color: #000000;
+}
+
+.schedule-address-list .emp-hist-card h5 {
+  color: #000000;
+}
+
+.schedule-courtry {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+  position: relative;
+}
+
+.schedule-courtry::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 15px;
+  background: url("../images/location-grey.png") center no-repeat;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.sc-checkbox {
+  margin-top: 5px;
+}
+
 .invoice-dashboard {
   background: #ffffff;
   border: 1px solid #eaeaea;
