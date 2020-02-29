@@ -195,7 +195,7 @@
 
         .btn-blue {
             background: $blue;
-            color: $white;            
+            color: $white;
         }
     }
 }
@@ -215,6 +215,7 @@
     margin: 20px 0;
     position: relative;
     display: none;
+
     &:after {
         bottom: 100%;
         left: 40%;
@@ -229,7 +230,7 @@
         border-width: 12px;
         margin-left: -12px;
     }
-    
+
     .form-group {
         margin-top: 0.3rem;
         margin-bottom: 0.3rem;
@@ -254,9 +255,10 @@
 }
 
 .suggest-block {
-    &:after {        
+    &:after {
         left: 59%;
     }
+
     .ant-content .text-16 {
         margin-bottom: 10px;
     }
@@ -362,6 +364,7 @@
 .schedule-address-list {
     margin-top: 25px;
     color: $black;
+
     .emp-hist-card h5 {
         color: $black;
     }
@@ -388,3 +391,67 @@
     margin-top: 5px;
 }
 
+.modal-justification {
+    color: $black;
+    font-size: 16px;
+
+    @include respond-to($md) {
+        max-width: 800px;
+    }
+
+    .modal-body {
+        >h4 {
+            font-size: 16px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .btn-big {
+            width: 100px;
+            margin: 0 10px;
+        }
+
+        .btn-blue {
+            color: $white;
+        }
+    }
+
+    .user-state {
+        background: #f1f1f1;
+        border: 1px solid #ebebeb;
+        padding: 20px;
+        position: relative;
+        display: none;
+
+        &:after {
+            bottom: 100%;
+            left: 42%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(241, 241, 241, 0);
+            border-bottom-color: #f1f1f1;
+            border-width: 12px;
+            margin-left: -12px;
+        }
+
+
+        .form-control {
+            border-color: #acacac;
+            min-height: 45px;
+            margin: 5px 0 20px;
+            font-size: 14px;
+        }
+
+        .btn-big {
+            width: 110px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            font-weight: normal;
+            margin: 0 5px;
+        }
+    }
+}

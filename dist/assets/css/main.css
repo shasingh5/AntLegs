@@ -3823,6 +3823,70 @@ ul.time-slots li {
   margin-top: 5px;
 }
 
+.modal-justification {
+  color: #000000;
+  font-size: 16px;
+}
+
+@media (min-width: 1024px) {
+  .modal-justification {
+    max-width: 800px;
+  }
+}
+
+.modal-justification .modal-body > h4 {
+  font-size: 16px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.modal-justification .modal-body .btn-big {
+  width: 100px;
+  margin: 0 10px;
+}
+
+.modal-justification .modal-body .btn-blue {
+  color: #ffffff;
+}
+
+.modal-justification .user-state {
+  background: #f1f1f1;
+  border: 1px solid #ebebeb;
+  padding: 20px;
+  position: relative;
+  display: none;
+}
+
+.modal-justification .user-state:after {
+  bottom: 100%;
+  left: 42%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(241, 241, 241, 0);
+  border-bottom-color: #f1f1f1;
+  border-width: 12px;
+  margin-left: -12px;
+}
+
+.modal-justification .user-state .form-control {
+  border-color: #acacac;
+  min-height: 45px;
+  margin: 5px 0 20px;
+  font-size: 14px;
+}
+
+.modal-justification .user-state .btn-big {
+  width: 110px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-weight: normal;
+  margin: 0 5px;
+}
+
 .invoice-dashboard {
   background: #ffffff;
   border: 1px solid #eaeaea;
