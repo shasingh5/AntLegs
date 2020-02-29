@@ -208,6 +208,17 @@
     }
 }
 
+.id-content {
+    .form-control {
+        height: 36px;
+        border-color: #b7b7b7;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+}
+
 .cancel-block {
     background: #f1f1f1;
     border-radius: 5px;
@@ -453,5 +464,29 @@
             font-weight: normal;
             margin: 0 5px;
         }
+    }
+}
+
+.vd-body {
+    +.modal-footer {
+        padding: 2rem;
+
+        .btn-big {
+            width: 190px;
+            font-size: 18px;
+            font-weight: normal;
+        }
+    }
+}
+
+.docs-form {
+    font-size: 14px;
+
+    .form-check {
+        margin: 6px 0;
+    }
+
+    .form-check-input {
+        margin-top: .25rem;
     }
 }

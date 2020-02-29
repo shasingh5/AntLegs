@@ -3650,6 +3650,15 @@ ul.time-slots li {
   width: 170px;
 }
 
+.id-content .form-control {
+  height: 36px;
+  border-color: #b7b7b7;
+}
+
+.id-content .form-control:focus {
+  box-shadow: none;
+}
+
 .cancel-block {
   background: #f1f1f1;
   border-radius: 5px;
@@ -3885,6 +3894,28 @@ ul.time-slots li {
   padding-bottom: 4px;
   font-weight: normal;
   margin: 0 5px;
+}
+
+.vd-body + .modal-footer {
+  padding: 2rem;
+}
+
+.vd-body + .modal-footer .btn-big {
+  width: 190px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.docs-form {
+  font-size: 14px;
+}
+
+.docs-form .form-check {
+  margin: 6px 0;
+}
+
+.docs-form .form-check-input {
+  margin-top: .25rem;
 }
 
 .invoice-dashboard {
@@ -4949,4 +4980,48 @@ ul.time-slots li {
 .redeem-points .btn-big {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.rs-body {
+  font-size: 18px;
+  text-align: center;
+  padding: 30px;
+  color: #333333;
+}
+
+.rs-body h2 {
+  font-size: 30px;
+}
+
+.rs-body h3 {
+  font-size: 18px;
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+.rs-body p {
+  margin-bottom: 15px;
+}
+
+.rs-body p b {
+  margin-left: 10px;
+}
+
+.rs-body .earn-reward span {
+  display: inline-block;
+  width: 160px;
+  text-align: left;
+}
+
+.rs-body .reward-badge {
+  display: inline-block;
+  margin: 20px 0;
+}
+
+.docs-form {
+  font-size: 14px;
+}
+
+.docs-form .form-check-input {
+  margin-top: .25rem;
 }

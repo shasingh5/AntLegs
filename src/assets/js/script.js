@@ -365,9 +365,11 @@
         $('#'+getBlockId).show();
     });
 
-    $("#userSayNo").on("click", function(){
-        $(this).toggleClass("btn-blue");
+    $(".btn-no-yes").on("click", function(){
+        $(".btn-no-yes").removeClass("btn-blue")
+        $(this).addClass("btn-blue");
         $(".user-state").slideToggle();
+
     });
 
 

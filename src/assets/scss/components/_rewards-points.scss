@@ -107,3 +107,49 @@
         padding-bottom: 10px;
     }
 }
+
+.rs-body {
+    font-size: 18px;
+    text-align: center;
+    padding: 30px;
+    color: #333333;
+
+    h2 {
+        font-size: 30px;        
+    }
+
+    h3 {
+        font-size: 18px;
+        margin: 20px 0;
+        font-weight: 700;
+    }
+
+    p {
+        margin-bottom: 15px;
+
+        b {
+            margin-left: 10px;
+        }
+    }
+
+    .earn-reward {
+        span {
+            display: inline-block;
+            width: 160px;
+            text-align: left;
+        }
+    }
+
+    .reward-badge {
+        display: inline-block;
+        margin: 20px 0;
+    }
+}
+
+.docs-form {
+    font-size: 14px;
+
+    .form-check-input {
+        margin-top: .25rem;
+    }
+}
