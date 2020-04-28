@@ -1,492 +1,565 @@
 .cv-view {
-    font-size: 16px;
-    padding: 15px;
-    color: $black;
+  font-size: 16px;
+  padding: 15px;
+  color: $black;
+
+  @include respond-to($xs) {
+    padding: 40px;
+  }
+
+  p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+
+    >span {
+
+      display: inline-block;
+
+      @include respond-to($xs) {
+        min-width: 200px;
+      }
+    }
+
+    &.credit {
+      font-size: 14px;
+      color: #737373;
+    }
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 15px;
+  }
+
+  hr {
+    margin-top: 1.8rem;
+    margin-bottom: 1.8rem;
+    border-top: 1px solid#dbdbdb;
+  }
+
+  ul {
+    padding-left: 20px;
+
+    li {
+      font-size: 16px;
+      line-height: 2;
+    }
+  }
+
+  .form-control {
+    font-size: 18px;
+    height: 54px;
+    padding: 10px;
+    border: 1px solid #acacac;
+    color: #000;
+    margin-right: 10px;
 
     @include respond-to($xs) {
-        padding: 40px;
+      width: 370px;
     }
+  }
 
-    p {
-        margin-bottom: 15px;
-        line-height: 1.7;
-
-        >span {
-
-            display: inline-block;
-
-            @include respond-to($xs) {
-                min-width: 200px;
-            }
-        }
-
-        &.credit {
-            font-size: 14px;
-            color: #737373;
-        }
+  .btn-get {
+    @include respond-to($xs, max) {
+      margin-top: 15px;
+      margin-bottom: 15px;
     }
-
-    h4 {
-        font-size: 18px;
-        font-weight: 700;
-        color: #333333;
-        margin-bottom: 15px;
-    }
-
-    hr {
-        margin-top: 1.8rem;
-        margin-bottom: 1.8rem;
-        border-top: 1px solid#dbdbdb;
-    }
-
-    ul {
-        padding-left: 20px;
-
-        li {
-            font-size: 16px;
-            line-height: 2;
-        }
-    }
-
-    .form-control {
-        font-size: 18px;
-        height: 54px;
-        padding: 10px;
-        border: 1px solid #acacac;
-        color: #000;
-        margin-right: 10px;
-
-        @include respond-to($xs) {
-            width: 370px;
-        }
-    }
-
-    .btn-get {
-        @include respond-to($xs, max) {
-            margin-top: 15px;
-            margin-bottom: 15px;
-        }
-    }
+  }
 }
 
 .cv-view-header {
-    display: table;
+  display: table;
 
-    >div {
-        display: table-cell;
-        vertical-align: middle;
+  >div {
+    display: table-cell;
+    vertical-align: middle;
 
-        @include respond-to($xs, max) {
-            display: block;
-            width: 100%;
-        }
-
-        &.cadidate-photo {
-            width: 100px;
-
-
-
-            img {
-                width: 100px;
-                height: 100px;
-                border-radius: 50%;
-                border: 5px solid #acacac;
-            }
-        }
-
-        &.cadidate-name {
-
-            @include respond-to($xs) {
-                padding-left: 30px;
-            }
-
-
-            h3 {
-                font-size: 26px;
-                font-weight: 700;
-            }
-
-            p {
-                font-size: 18px;
-                margin-bottom: 0;
-            }
-        }
+    @include respond-to($xs, max) {
+      display: block;
+      width: 100%;
     }
+
+    &.cadidate-photo {
+      width: 100px;
+
+
+
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 5px solid #acacac;
+      }
+    }
+
+    &.cadidate-name {
+
+      @include respond-to($xs) {
+        padding-left: 30px;
+      }
+
+
+      h3 {
+        font-size: 26px;
+        font-weight: 700;
+      }
+
+      p {
+        font-size: 18px;
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 .emp-hist-card {
-    border: 1px solid #acacac;
-    border-radius: 5px;
-    padding: 15px;
-    font-size: 12px;
-    margin-bottom: 20px;
+  border: 1px solid #acacac;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 12px;
+  margin-bottom: 20px;
 
-    h5 {
-        font-size: 14px;
-        font-weight: 700;
-        color: #333333;
-    }
+  h5 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #333333;
+  }
 
-    p {
-        margin-bottom: 5px;
-    }
+  p {
+    margin-bottom: 5px;
+  }
 
 }
 
 .btn-print {
-    font-family: Poppins, sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: #000;
-    padding: 8px 12px;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+  padding: 8px 12px;
 
-    &::before {
-        content: " ";
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        background-image: url("../images/print-icon.png");
-        background-repeat: no-repeat;
-        background-position: 0 0;
-        margin-right: 10px;
-        vertical-align: middle;
-        margin-top: -2px;
-    }
+  &::before {
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/print-icon.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-top: -2px;
+  }
 }
 
 .text-16 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .ism-body {
-    .ant-content {
-        font-size: 14px;
+  .ant-content {
+    font-size: 14px;
+  }
+
+  hr {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .card-body {
+    padding: 0;
+
+    .form-group {
+      margin-bottom: 0.3rem;
     }
 
-    hr {
-        margin-top: 0.8rem;
-        margin-bottom: 0.8rem;
+    .form-control-label {
+      font-size: 14px;
+      color: $black;
     }
 
-    .card-body {
-        padding: 0;
+    .form-control {
+      height: 32px;
+      font-size: 14px;
+    }
+  }
 
-        .form-group {
-            margin-bottom: 0.3rem;
-        }
-
-        .form-control-label {
-            font-size: 14px;
-            color: $black;
-        }
-
-        .form-control {
-            height: 32px;
-            font-size: 14px;
-        }
+  +.modal-footer {
+    .btn-big {
+      width: auto;
+      margin-left: 6px;
+			margin-right: 6px;
+			
+			@include respond-to($xs, max) {
+				margin-bottom: 20px;
+			}
     }
 
-    +.modal-footer {
-        .btn-big {
-            width: auto;
-            margin-left: 6px;
-            margin-right: 6px;
-        }
-
-        .btn-blue {
-            background: $blue;
-            color: $white;
-        }
+    .btn-blue {
+      background: $blue;
+      color: $white;
     }
+  }
 }
 
 .im-select {
-    select.select {
-        font-size: 16px;
-        color: #666666;
-        width: 170px;
-    }
+  select.select {
+    font-size: 16px;
+    color: #666666;
+    width: 170px;
+  }
 }
 
 .id-content {
-    .form-control {
-        height: 36px;
-        border-color: #b7b7b7;
+  .form-control {
+    height: 36px;
+    border-color: #b7b7b7;
 
-        &:focus {
-            box-shadow: none;
-        }
+    &:focus {
+      box-shadow: none;
     }
+  }
 }
 
 .cancel-block {
+  background: #f1f1f1;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px 0;
+  position: relative;
+  display: none;
+
+  &:after {
+    bottom: 100%;
+    left: 40%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(241, 241, 241, 0);
+    border-bottom-color: #f1f1f1;
+    border-width: 12px;
+    margin-left: -12px;
+  }
+
+  .form-group {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .custom-control-inline {
+    .checkbox {
+      width: auto;
+      margin-right: 20px;
+    }
+
+    .form-control {
+      height: 25px;
+      font-size: 12px;
+      font-weight: 600;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.suggest-block {
+  &:after {
+    left: 59%;
+  }
+
+  .ant-content .text-16 {
+    margin-bottom: 10px;
+  }
+
+  .im-select select.select {
+    width: 85px;
+    background-color: $white;
+  }
+
+  .border-right {
+    border-right: 1px solid #c5c5c5;
+  }
+
+  .ss-cont {
+    @include respond-to($xs, max) {
+      margin-top: 15px;
+    }
+  }
+}
+
+.interview-slots {
+  margin: 0;
+	padding: 0;
+
+  >li {
+    list-style: none;
+    font-size: 14px;
+    color: #000000;
+    margin-top: 10px;
+
+    b {
+      color: #000000;
+    }
+
+    a {
+      text-decoration: underline;
+      color: $blue;
+      margin-left: 10px;
+			font-weight: 600;
+			
+			i.trash {
+				background: url("../images/delete-icon.png") 0 0 no-repeat;
+				width: 15px;
+				height: 15px;
+				display: inline-block;
+			}
+    }
+  }
+}
+
+.step {
+	counter-reset: steps ;
+	>li:before {
+		counter-increment: steps;
+		content: counter(steps) ". ";	
+	}
+}
+
+.cancel-cta {
+  text-align: center;
+  padding-top: 20px;
+
+  .btn-big {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 400;
+    margin: 0 5px;
+  }
+}
+
+.date-box {
+  .im-select select.select {
+    width: 85px;
+    background-color: $white;
+  }
+}
+
+.schedule-fixed {
+  color: $blue;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.other-Details {
+  .form-group {
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .custom-control-inline {
+    .checkbox {
+      width: auto;
+      margin-right: 20px;
+    }
+
+    .form-control {
+      height: 25px;
+      font-size: 12px;
+      font-weight: 600;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.add-other-input {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1;
+  color: $blue;
+  display: inline-block;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.schedule-address-list {
+  margin-top: 25px;
+  color: $black;
+
+  .emp-hist-card h5 {
+    color: $black;
+  }
+}
+
+.schedule-courtry {
+  font-size: 14px;
+  font-weight: 700;
+  color: $black;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 14px;
+    height: 15px;
+    background: url("../images/location-grey.png") center no-repeat;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+}
+
+.sc-checkbox {
+  margin-top: 5px;
+}
+
+.modal-justification {
+  color: $black;
+  font-size: 16px;
+
+  @include respond-to($md) {
+    max-width: 800px;
+  }
+
+  .modal-body {
+    >h4 {
+      font-size: 16px;
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .btn-big {
+      width: 100px;
+      margin: 0 10px;
+    }
+
+    .btn-blue {
+      color: $white;
+    }
+  }
+
+  .user-state {
     background: #f1f1f1;
-    border-radius: 5px;
+    border: 1px solid #ebebeb;
     padding: 20px;
-    margin: 20px 0;
     position: relative;
     display: none;
 
     &:after {
-        bottom: 100%;
-        left: 40%;
-        border: solid transparent;
-        content: " ";
-        height: 0;
-        width: 0;
-        position: absolute;
-        pointer-events: none;
-        border-color: rgba(241, 241, 241, 0);
-        border-bottom-color: #f1f1f1;
-        border-width: 12px;
-        margin-left: -12px;
+      bottom: 100%;
+      left: 42%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(241, 241, 241, 0);
+      border-bottom-color: #f1f1f1;
+      border-width: 12px;
+      margin-left: -12px;
     }
 
-    .form-group {
-        margin-top: 0.3rem;
-        margin-bottom: 0.3rem;
+
+    .form-control {
+      border-color: #acacac;
+      min-height: 45px;
+      margin: 5px 0 20px;
+      font-size: 14px;
     }
-
-    .custom-control-inline {
-        .checkbox {
-            width: auto;
-            margin-right: 20px;
-        }
-
-        .form-control {
-            height: 25px;
-            font-size: 12px;
-            font-weight: 600;
-
-            &:focus {
-                box-shadow: none;
-            }
-        }
-    }
-}
-
-.suggest-block {
-    &:after {
-        left: 59%;
-    }
-
-    .ant-content .text-16 {
-        margin-bottom: 10px;
-    }
-
-    .im-select select.select {
-        width: 85px;
-        background-color: $white;
-    }
-
-    .border-right {
-        border-right: 1px solid #c5c5c5;
-    }
-
-    .ss-cont {
-        @include respond-to($xs, max) {
-            margin-top: 15px;
-        }
-    }
-}
-
-.interview-slots {
-    margin: 0;
-    padding: 0;
-
-    >li {
-        list-style: none;
-        font-size: 14px;
-        color: #666666;
-        margin-top: 10px;
-
-        b {
-            color: #333333;
-        }
-
-        a {
-            text-decoration: underline;
-            color: $blue;
-            margin-left: 10px;
-            font-weight: 600;
-        }
-    }
-}
-
-.cancel-cta {
-    text-align: center;
-    padding-top: 20px;
 
     .btn-big {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        font-weight: 400;
-        margin: 0 5px;
+      width: 110px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      font-weight: normal;
+      margin: 0 5px;
     }
-}
-
-.date-box {
-    .im-select select.select {
-        width: 85px;
-        background-color: $white;
-    }
-}
-
-.schedule-fixed {
-    color: $blue;
-    font-weight: 700;
-    font-size: 14px;
-}
-
-.other-Details {
-    .form-group {
-        margin-top: 0.3rem;
-        margin-bottom: 0.3rem;
-    }
-
-    .custom-control-inline {
-        .checkbox {
-            width: auto;
-            margin-right: 20px;
-        }
-
-        .form-control {
-            height: 25px;
-            font-size: 12px;
-            font-weight: 600;
-
-            &:focus {
-                box-shadow: none;
-            }
-        }
-    }
-}
-
-.add-other-input {
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 1;
-    color: $blue;
-    display: inline-block;
-    margin-left: 15px;
-    cursor: pointer;
-}
-
-.schedule-address-list {
-    margin-top: 25px;
-    color: $black;
-
-    .emp-hist-card h5 {
-        color: $black;
-    }
-}
-
-.schedule-courtry {
-    font-size: 14px;
-    font-weight: 700;
-    color: $black;
-    position: relative;
-
-    &::before {
-        content: "";
-        display: inline-block;
-        width: 14px;
-        height: 15px;
-        background: url("../images/location-grey.png") center no-repeat;
-        vertical-align: middle;
-        margin-right: 10px;
-    }
-}
-
-.sc-checkbox {
-    margin-top: 5px;
-}
-
-.modal-justification {
-    color: $black;
-    font-size: 16px;
-
-    @include respond-to($md) {
-        max-width: 800px;
-    }
-
-    .modal-body {
-        >h4 {
-            font-size: 16px;
-            text-align: center;
-            margin: 40px 0;
-        }
-
-        .btn-big {
-            width: 100px;
-            margin: 0 10px;
-        }
-
-        .btn-blue {
-            color: $white;
-        }
-    }
-
-    .user-state {
-        background: #f1f1f1;
-        border: 1px solid #ebebeb;
-        padding: 20px;
-        position: relative;
-        display: none;
-
-        &:after {
-            bottom: 100%;
-            left: 42%;
-            border: solid transparent;
-            content: " ";
-            height: 0;
-            width: 0;
-            position: absolute;
-            pointer-events: none;
-            border-color: rgba(241, 241, 241, 0);
-            border-bottom-color: #f1f1f1;
-            border-width: 12px;
-            margin-left: -12px;
-        }
-
-
-        .form-control {
-            border-color: #acacac;
-            min-height: 45px;
-            margin: 5px 0 20px;
-            font-size: 14px;
-        }
-
-        .btn-big {
-            width: 110px;
-            padding-top: 4px;
-            padding-bottom: 4px;
-            font-weight: normal;
-            margin: 0 5px;
-        }
-    }
+  }
 }
 
 .vd-body {
-    +.modal-footer {
-        padding: 2rem;
+  +.modal-footer {
+    padding: 2rem;
 
-        .btn-big {
-            width: 190px;
-            font-size: 18px;
-            font-weight: normal;
-        }
+    .btn-big {
+      width: 190px;
+      font-size: 18px;
+      font-weight: normal;
     }
+  }
 }
 
 .docs-form {
-    font-size: 14px;
+  font-size: 14px;
 
-    .form-check {
-        margin: 6px 0;
-    }
+  .form-check {
+    margin: 6px 0;
+  }
 
-    .form-check-input {
-        margin-top: .25rem;
-    }
+  .form-check-input {
+    margin-top: .25rem;
+  }
+}
+
+.reschedule-block {
+	.form-control {
+		border: 1px solid #b7b7b7;
+	}
+
+	.input-group {
+		.form-control {
+			border-right: 0;
+		}
+	}
+
+	.im-select select.select {
+		width: 100%;
+		background-color: $white;
+		background-position: 95% 50%;
+		min-height: 38px;
+	}
+
+	.btn-big {
+		padding: 7px 20px;
+		margin-top: .3rem;
+    margin-bottom: .3rem;
+	}
+
+	.input-group-text {
+		background-color: #fff;
+    border: 1px solid #b7b7b7;
+    border-left: 0;
+		label {
+			margin-bottom: 0;
+		}
+
+		.calendar {
+			background: url("../images/calendar-icon.png") 0 0 no-repeat;
+				width: 20px;
+				height: 20px;
+				display: inline-block;
+		}
+	}
+
+	.btn-add {
+		@include respond-to($xxs, max) {
+			width: 100% !important;
+			margin: 0 !important;
+		}
+	}
+}
+
+#interviewReschedule {
+	.schedule-address-list {
+		margin-top: 0;
+	}
 }

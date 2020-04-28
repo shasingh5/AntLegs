@@ -62,9 +62,7 @@
 
     $('.dropdown-menu').click(function (e) {
         e.stopPropagation();
-    });
-
-
+    });    
 
     $(window).scroll(function (event) {
         var scrollTop = $(document).scrollTop();
@@ -372,7 +370,9 @@
 
     });
 
-
+    $('#datetimepicker2').datetimepicker({
+        format: 'DD-MM-YYYY'
+    });
 
 })(jQuery);
 

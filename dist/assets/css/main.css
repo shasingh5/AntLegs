@@ -3639,6 +3639,12 @@ ul.time-slots li {
   margin-right: 6px;
 }
 
+@media (max-width: 736px) {
+  .ism-body + .modal-footer .btn-big {
+    margin-bottom: 20px;
+  }
+}
+
 .ism-body + .modal-footer .btn-blue {
   background: #316ea7;
   color: #ffffff;
@@ -3734,12 +3740,12 @@ ul.time-slots li {
 .interview-slots > li {
   list-style: none;
   font-size: 14px;
-  color: #666666;
+  color: #000000;
   margin-top: 10px;
 }
 
 .interview-slots > li b {
-  color: #333333;
+  color: #000000;
 }
 
 .interview-slots > li a {
@@ -3747,6 +3753,22 @@ ul.time-slots li {
   color: #316ea7;
   margin-left: 10px;
   font-weight: 600;
+}
+
+.interview-slots > li a i.trash {
+  background: url("../images/delete-icon.png") 0 0 no-repeat;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+
+.step {
+  counter-reset: steps;
+}
+
+.step > li:before {
+  counter-increment: steps;
+  content: counter(steps) ". ";
 }
 
 .cancel-cta {
@@ -3916,6 +3938,55 @@ ul.time-slots li {
 
 .docs-form .form-check-input {
   margin-top: .25rem;
+}
+
+.reschedule-block .form-control {
+  border: 1px solid #b7b7b7;
+}
+
+.reschedule-block .input-group .form-control {
+  border-right: 0;
+}
+
+.reschedule-block .im-select select.select {
+  width: 100%;
+  background-color: #ffffff;
+  background-position: 95% 50%;
+  min-height: 38px;
+}
+
+.reschedule-block .btn-big {
+  padding: 7px 20px;
+  margin-top: .3rem;
+  margin-bottom: .3rem;
+}
+
+.reschedule-block .input-group-text {
+  background-color: #fff;
+  border: 1px solid #b7b7b7;
+  border-left: 0;
+}
+
+.reschedule-block .input-group-text label {
+  margin-bottom: 0;
+}
+
+.reschedule-block .input-group-text .calendar {
+  background: url("../images/calendar-icon.png") 0 0 no-repeat;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+@media (max-width: 420px) {
+  .reschedule-block .btn-add {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+}
+
+#interviewReschedule .schedule-address-list {
+  margin-top: 0;
 }
 
 .invoice-dashboard {
@@ -5016,12 +5087,4 @@ ul.time-slots li {
 .rs-body .reward-badge {
   display: inline-block;
   margin: 20px 0;
-}
-
-.docs-form {
-  font-size: 14px;
-}
-
-.docs-form .form-check-input {
-  margin-top: .25rem;
 }
