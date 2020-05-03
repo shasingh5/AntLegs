@@ -154,8 +154,20 @@
   }
 }
 
+.text-12 {
+  font-size: 12px;
+}
+
+.text-14 {
+  font-size: 14px;
+}
+
 .text-16 {
   font-size: 16px;
+}
+
+.text-bold {
+  font-weight: 600;
 }
 
 .ism-body {
@@ -190,11 +202,11 @@
     .btn-big {
       width: auto;
       margin-left: 6px;
-			margin-right: 6px;
-			
-			@include respond-to($xs, max) {
-				margin-bottom: 20px;
-			}
+      margin-right: 6px;
+
+      @include respond-to($xs, max) {
+        margin-bottom: 20px;
+      }
     }
 
     .btn-blue {
@@ -296,7 +308,7 @@
 
 .interview-slots {
   margin: 0;
-	padding: 0;
+  padding: 0;
 
   >li {
     list-style: none;
@@ -312,24 +324,25 @@
       text-decoration: underline;
       color: $blue;
       margin-left: 10px;
-			font-weight: 600;
-			
-			i.trash {
-				background: url("../images/delete-icon.png") 0 0 no-repeat;
-				width: 15px;
-				height: 15px;
-				display: inline-block;
-			}
+      font-weight: 600;
+
+      i.trash {
+        background: url("../images/delete-icon.png") 0 0 no-repeat;
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+      }
     }
   }
 }
 
 .step {
-	counter-reset: steps ;
-	>li:before {
-		counter-increment: steps;
-		content: counter(steps) ". ";	
-	}
+  counter-reset: steps;
+
+  >li:before {
+    counter-increment: steps;
+    content: counter(steps) ". ";
+  }
 }
 
 .cancel-cta {
@@ -511,55 +524,66 @@
 }
 
 .reschedule-block {
-	.form-control {
-		border: 1px solid #b7b7b7;
-	}
+  .form-control {
+    border: 1px solid #b7b7b7;
+  }
 
-	.input-group {
-		.form-control {
-			border-right: 0;
-		}
-	}
+  .input-group {
+    .form-control {
+      border-right: 0;
+    }
+  }
 
-	.im-select select.select {
-		width: 100%;
-		background-color: $white;
-		background-position: 95% 50%;
-		min-height: 38px;
-	}
+  .im-select select.select {
+    width: 100%;
+    background-color: $white;
+    background-position: 95% 50%;
+    min-height: 38px;
+  }
 
-	.btn-big {
-		padding: 7px 20px;
-		margin-top: .3rem;
+  .btn-big {
+    padding: 7px 20px;
+    margin-top: .3rem;
     margin-bottom: .3rem;
-	}
+  }
 
-	.input-group-text {
-		background-color: #fff;
+  .input-group-text {
+    background-color: #fff;
     border: 1px solid #b7b7b7;
     border-left: 0;
-		label {
-			margin-bottom: 0;
-		}
 
-		.calendar {
-			background: url("../images/calendar-icon.png") 0 0 no-repeat;
-				width: 20px;
-				height: 20px;
-				display: inline-block;
-		}
-	}
+    label {
+      margin-bottom: 0;
+    }
 
-	.btn-add {
-		@include respond-to($xxs, max) {
-			width: 100% !important;
-			margin: 0 !important;
-		}
-	}
+    .calendar {
+      background: url("../images/calendar-icon.png") 0 0 no-repeat;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+    }
+  }
+
+  .btn-add {
+    @include respond-to($xxs, max) {
+      width: 100% !important;
+      margin: 0 !important;
+    }
+  }
 }
 
 #interviewReschedule {
-	.schedule-address-list {
-		margin-top: 0;
-	}
+  .schedule-address-list {
+    margin-top: 0;
+  }
+}
+
+.ir-footer {
+  .cancel-block:after {
+    left: 38%;
+  }
+
+  .reschedule-block:after {
+    left: 55%;
+  }
 }

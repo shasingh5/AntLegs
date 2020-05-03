@@ -1,0 +1,36 @@
+.ism-body {
+    .schedule-address-list {
+        .im-select select.select {
+            width: 100%;
+        }
+
+        hr {
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+        }
+    }
+}
+
+.btn-ci {
+    width: auto;
+    padding: 14px 17px;
+    background: $blue;
+    color: $white;
+    font-size: 18px;
+    font-weight: normal;
+    &:hover {
+        background: $blue;
+        color: $white;
+    }
+}
+
+.ise-footer {
+    .cancel-block:after {
+        left: 58%;
+    }
+
+    .reschedule-block:after {
+        left: 40%;
+    }
+}
+

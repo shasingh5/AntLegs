@@ -3602,8 +3602,20 @@ ul.time-slots li {
   margin-top: -2px;
 }
 
+.text-12 {
+  font-size: 12px;
+}
+
+.text-14 {
+  font-size: 14px;
+}
+
 .text-16 {
   font-size: 16px;
+}
+
+.text-bold {
+  font-weight: 600;
 }
 
 .ism-body .ant-content {
@@ -3987,6 +3999,14 @@ ul.time-slots li {
 
 #interviewReschedule .schedule-address-list {
   margin-top: 0;
+}
+
+.ir-footer .cancel-block:after {
+  left: 38%;
+}
+
+.ir-footer .reschedule-block:after {
+  left: 55%;
 }
 
 .invoice-dashboard {
@@ -5087,4 +5107,35 @@ ul.time-slots li {
 .rs-body .reward-badge {
   display: inline-block;
   margin: 20px 0;
+}
+
+.ism-body .schedule-address-list .im-select select.select {
+  width: 100%;
+}
+
+.ism-body .schedule-address-list hr {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.btn-ci {
+  width: auto;
+  padding: 14px 17px;
+  background: #316ea7;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.btn-ci:hover {
+  background: #316ea7;
+  color: #ffffff;
+}
+
+.ise-footer .cancel-block:after {
+  left: 58%;
+}
+
+.ise-footer .reschedule-block:after {
+  left: 40%;
 }

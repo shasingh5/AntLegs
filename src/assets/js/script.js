@@ -358,9 +358,14 @@
     $('.chooseSchedule').on("click", function() {
         $(".cancel-block").hide();
         var getBlockId = $(this).attr("data-schedule-id");
+        var getTitle = $(this).attr("title");
+
         $(".chooseSchedule").removeClass("btn-blue");
         $(this).addClass("btn-blue");
         $('#'+getBlockId).show();
+
+        //Set Title to paragraph
+        $(".ise-footer .action-text").text(getTitle);
     });
 
     $(".btn-no-yes").on("click", function(){
