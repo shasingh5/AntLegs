@@ -1,0 +1,120 @@
+.st-block {
+  .nav-pills {
+    border-bottom: 1px solid #e6e6e6;
+
+    .nav-link {
+      color: #333333;
+      border-radius: 0;
+      padding: 0.5rem 1.2rem;
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s ease;
+
+      &.active {
+        background: $white;
+        font-weight: 700;
+        border-bottom: 3px solid $blue;
+      }
+    }
+  }
+
+  .tab-content {
+    padding: 1rem 0;
+    margin-left: -15px;
+    margin-right: -15px;
+
+    .user-alert {
+      background: #e1eccc;
+      color: $black;
+      text-align: center;
+      font-size: 14px;
+      padding: 0.8rem;
+
+      p {
+        margin-bottom: 0;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 17px;
+          height: 17px;
+          background: transparent url("../images/info-icon-green.png") 0 0 no-repeat;
+          margin-right: 10px;
+          vertical-align: text-top;
+        }
+      }
+    }
+  }
+
+  .cancel-block:after {
+    left: 6%;
+  }
+
+  .btn-add {
+    .plus-sign {
+      line-height: 0.5;
+    }
+  }
+
+  .id {
+    min-height: 196px;
+  }
+}
+
+.custom-dropdown {
+  .three-dot {
+    width: 20px;
+    height: 17px;
+    background: transparent url("../images/black-nav-icon.png") center 0 no-repeat;
+    display: inline-block;
+  }
+
+  &.show {
+    .three-dot {
+      background: transparent url("../images/blue-nav-icon.png") center 0 no-repeat;
+    }
+  }
+
+  .dropdown-item {
+    font-size: 12px;
+
+    &:hover {
+      color: $blue;
+      text-decoration: underline;
+    }
+  }
+}
+
+.plus-sign {
+  font-size: 25px;
+  font-weight: 600;
+  vertical-align: middle;
+}
+
+
+
+.btn-xl {  
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 14px 20px;
+  box-shadow: none;
+  margin-left: 6px;
+  margin-right: 6px;
+  border: 1px solid transparent;
+
+  &-blue {
+    background: $blue;
+    color: $white;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.btn-ol-blue {
+  border: 1px solid $blue;
+  color: $blue;
+  &:hover {
+    color: $blue;
+  }
+}

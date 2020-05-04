@@ -1,78 +1,525 @@
 <!-- Interview Schedule Modal -->
 <div class="modal fade" id="addInterview" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-	aria-hidden="true">
-	<div class="modal-dialog modal-lg" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Interview Schedule</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body ism-body">
-				<div class="id-content">
-					<div class="ant-content">
-						<!--Title-->
-						<p class="text-16">
-							Position : <b>Head of Information Technology</b>
-						</p>
-						<p class="text-16">
-							Candidate Name : <b>Michael Paul</b>
-						</p>
-						<br>	
-					</div>
-					<div class="row">
-						<div class="col-12">
-							<div class="ant-content">
-								<!--Title-->
-								<p>
-									<b>Schedule Interview</b>
-								</p>
-							</div>
-						</div>
-					</div>
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Interview Schedule</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body ism-body">
+        <div class="id-content">
+          <div class="ant-content">
+            <!--Title-->
+            <p class="text-16">
+              Position : <b>Head of Information Technology</b>
+            </p>
+            <p class="text-16">
+              Candidate Name : <b>Michael Paul</b>
+            </p>
+            <br>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="ant-content">
+                <!--Title-->
+                <p>
+                  <b>Schedule Interview</b>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="st-block">
+            <!-- Nav tabs -->
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#interviewDetail">Interview Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#interviewerDetails">Interviewer Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#venueDetails">Venue Details</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#ps">Preview & Schedule</a>
+              </li>
+            </ul>
 
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-pills">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#interviewDetail">Interview Details</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#interviewerDetails">Interviewer Details</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#venueDetails">Venue Details</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#ps">Preview & Schedule</a>
-                        </li>
-                    </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <!-- Interview Detail -->
+              <div class="tab-pane container active" id="interviewDetail">
+                <div class="user-alert">
+                  <p>Please enter the details to schedule the interview. You have the <b>limit of 3 schedules</b></p>
+                </div>
+                <!-- Interview Detail List -->
+                <div class="schedule-address-list">
+                  <div class="row row-eq-height card-wrapper">
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                      <div class="emp-hist-card">
+                        <div class="row">
+                          <div class="col-10">
+                            <p>Interview Mode : <b>Telephonic</b></p>
+                          </div>
+                          <div class="col-2">
+                            <div class="dropdown custom-dropdown">
+                              <a class="three-dot" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <!-- <img src="assets/images/black-nav-icon.png" alt="Antlegs"> -->
+                              </a>
 
-                    <!-- Tab panes -->
-                    <div class="tab-content">
-                        <div class="tab-pane container active" id="interviewDetail">
-                            <p>Interview Details</p>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">
+                                  Edit
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                  Delete
+                                </a>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="tab-pane container fade" id="interviewerDetails">
-                            <p>Interviewer Details</p>
+                        <br>
+                        <p>Time Zone : <b>GMT + 5:30</b></p>
+                        <p>Date : <b>06/05/2020</b></p>
+                        <p>Time : <b>11:300 hrs</b></p>
+                        <p>Duration : <b>60 mins</b></p>
+                        <br>                     
+                      </div>
+                    </div>  
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                      <div class="emp-hist-card">
+                        <div class="row">
+                          <div class="col-10">
+                            <p>Interview Mode : <b>Telephonic</b></p>
+                          </div>
+                          <div class="col-2">
+                            <div class="dropdown custom-dropdown">
+                              <a class="three-dot" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <!-- <img src="assets/images/black-nav-icon.png" alt="Antlegs"> -->
+                              </a>
+
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">
+                                  Edit
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                  Delete
+                                </a>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="tab-pane container fade" id="venueDetails">
-                            <p>Venue Details</p>
+                        <br>
+                        <p>Time Zone : <b>GMT + 5:30</b></p>
+                        <p>Date : <b>06/05/2020</b></p>
+                        <p>Time : <b>11:300 hrs</b></p>
+                        <p>Duration : <b>60 mins</b></p>
+                        <br>                     
+                      </div>
+                    </div>                   
+                  </div>
+                </div>
+                <!--/ Interview Detail List -->
+                <a href="#" class="link"> <span class="plus-sign">+</span> <u>Add Schedule</u></a>
+
+                <div class="cancel-block reschedule-block" style="display: block;">
+                  <div class="row">
+                    <div class="col-12 col-sm-3">
+                      <div class="form-group">
+                        <label class="sr-only">Time Zone</label>
+                        <div class="im-select">
+                          <select name="" id="" class="select" required="required">   
+                            <option value="">Time Zone : GMT +5:30</option>                         
+                            <option value="">Time Zone : GMT +5:00</option>                            
+                            <option value="">Time Zone : GMT +6:00</option>
+                            <option value="">Time Zone : GMT +6:30</option>
+                          </select>
                         </div>
-                        <div class="tab-pane container fade" id="ps">
-                            <p>Preview & Schedule</p>
-                        </div>
+                      </div>
                     </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-sm-3">
+                      <div class="form-group">
+                        <label class="sr-only">Select Interview Mode</label>
+                        <div class="im-select">
+                          <select name="" id="" class="select" required="required">
+                            <option value="">Interview Mode</option>
+                            <option value="">Video Call</option>
+                            <option value="">Face to Face</option>
+                            <option value="">Mobile Call</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-3">
+                      <div class="form-group">
+                        <div class="input-group date" id="datetimepicker2">
+                          <input type="text" class="form-control" placeholder="Select Date">
+                          <div class="input-group-addon input-group-append">
+                            <span class="input-group-text">
+                              <span class="calendar"></span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-2">
+                      <div class="form-group">
+                        <label class="sr-only">Time (From)</label>
+                        <div class="im-select">
+                          <select name="" id="" class="select" required="required">
+                            <option value="">Time (From)</option>
+                            <option value="">10:00AM</option>
+                            <option value="">10:30Am</option>
+                            <option value="">01:00PM</option>
+                            <option value="">02:00PM</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-2">
+                      <div class="form-group">
+                        <label class="sr-only">Time (To)</label>
+                        <div class="im-select">
+                          <select name="" id="" class="select" required="required">
+                            <option value="">Time (To)</option>
+                            <option value="">10:00AM</option>
+                            <option value="">10:30Am</option>
+                            <option value="">01:00PM</option>
+                            <option value="">02:00PM</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-2">
+                      <a href="#" class="btn btn-big btn-add waves-effect">+ Add</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <div class="text-center">
+                    <button type="button" class="btn btn-xl btn-ol-blue waves-effect" data-dismiss="modal">Discard</button>
+                    <button type="button" class="btn btn-xl btn-xl-blue disbled waves-effect">Add Interviewer</button>
+                  </div>
+                </div>
+              </div>
+              <!--/ Interview Detail -->
+              <!-- Interviewer  Details -->
+              <div class="tab-pane container fade" id="interviewerDetails">
+                <!--<div class="user-alert">
+                  <p>Please enter the details to schedule the interview. You have the <b>limit of 3 schedules</b></p>
+                </div>-->
+                <!-- Interview Detail List -->
+                <div class="schedule-address-list">
+                  <div class="row row-eq-height card-wrapper">
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                      <div class="emp-hist-card">
+                        <div class="row">
+                          <div class="col-10">
+                            <p><b>Santhosh Mathew</b></p>
+                          </div>
+                          <div class="col-2">
+                            <div class="dropdown custom-dropdown">
+                              <a class="three-dot" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <!-- <img src="assets/images/black-nav-icon.png" alt="Antlegs"> -->
+                              </a>
 
-				</div>
-			</div>
-			<div class="modal-footer ise-footer">				
-				<div class="text-center">
-					<button type="button" class="btn btn-big waves-effect" data-dismiss="modal">Discard</button>
-					<button type="button" class="btn btn-big disbled waves-effect">Add Interviewer</button>
-				</div>
-			</div>
-		</div>
-	</div>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">
+                                  Edit
+                                </a>                                
+                                <a class="dropdown-item" href="#">
+                                  De-Activate
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                  Delete
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <p><b>Head of Information Technology</b></p>
+                        <p><b>Job Function</b></p>
+                        <br>
+                        <p>Telephone : +9772238345</p>
+                        <p>Email : <a href="mailto:santhosh@antlegs.com">santhosh@antlegs.com</a></p>
+                        <br>                     
+                      </div>
+                    </div>                                        
+                  </div>
+                </div>
+                <!--/ Interview Detail List -->
+                <a href="#" class="link"> <span class="plus-sign">+</span> <u>Add Interviewer</u></a>
+
+                <div class="cancel-block reschedule-block" style="display: block;">
+                  <div class="row">
+                    <div class="col-12 col-sm-4">
+                      <div class="form-group">
+                        <label class="sr-only">Name</label>
+                        <input type="text" class="form-control" placeholder="Name">
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                      <div class="form-group">
+                        <label class="sr-only">Designation</label>
+                        <input type="text" class="form-control" placeholder="Designation">
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                      <div class="form-group">
+                        <label class="sr-only">Function</label>
+                        <input type="text" class="form-control" placeholder="Function">
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                      <div class="form-group">
+                        <label class="sr-only">Contact No.</label>
+                        <input type="text" class="form-control" placeholder="Contact No.">
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                      <div class="form-group">
+                        <label class="sr-only">Email</label>
+                        <input type="text" class="form-control" placeholder="Email">
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                      <a href="#" class="btn btn-big btn-add waves-effect"><span class="plus-sign">+</span> Add</a>
+                    </div>
+                  </div>                  
+                </div>
+                <div class="modal-footer">
+                  <div class="text-center">
+                    <button type="button" class="btn btn-xl btn-ol-blue go-back-tab waves-effect" data-back-tab="interviewDetail" data-toggle="tab">Back</button>
+                    <button type="button" class="btn btn-xl btn-ol-blue waves-effect" data-dismiss="modal">Discard</button>
+                    <button type="button" class="btn btn-xl btn-xl-blue disbled waves-effect">Add Venue</button>
+                  </div>
+                </div>
+              </div>
+              <!--/ Interviewer Details -->              
+              <!-- Venue Details -->
+              <div class="tab-pane container fade" id="venueDetails">
+                <!--<div class="user-alert">
+                  <p>Please enter the details to schedule the interview. You have the <b>limit of 3 schedules</b></p>
+                </div>-->
+                <!-- Interview Detail List -->
+                <div class="schedule-address-list">
+                  <div class="row row-eq-height card-wrapper">
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                      <div class="emp-hist-card">
+                        <div class="row">
+                          <div class="col-10">
+                            <p><b>Banglore Branch</b></p>
+                          </div>
+                          <div class="col-2">
+                            <div class="dropdown custom-dropdown">
+                              <a class="three-dot" id="dropdownMenuButton" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <!-- <img src="assets/images/black-nav-icon.png" alt="Antlegs"> -->
+                              </a>
+
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">
+                                  Edit
+                                </a>                                
+                                <a class="dropdown-item" href="#">
+                                  De-Activate
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                  Delete
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <p>Salarpuria Tower 1 <br> 7th Block,  Koramangalam <br> Banglore, Karnataka, India</p>
+                        <a href="#" class="link">Location Map</a>
+                        <br>
+                        <br>  
+                        <p>Santosh Mathew</p>
+                        <p>Telephone : +9772238345</p>
+                   
+                      </div>
+                    </div>                                        
+                  </div>
+                </div>
+                <!--/ Interview Detail List -->
+                <a href="#" class="link"> <span class="plus-sign">+</span> <u>Add Branch</u></a>
+
+                <div class="cancel-block reschedule-block" style="display: block;">
+                  <div class="row">
+                    <div class="col-12 col-sm-3">
+                      <div class="form-group">
+                        <label class="sr-only">Branch Name</label>
+                        <input type="text" class="form-control" placeholder="Branch Name">
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-3">
+                      <div class="form-group">
+                        <label class="sr-only">Location API</label>
+                        <input type="text" class="form-control" placeholder="Location API">
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-3">
+                      <div class="form-group">
+                        <label class="sr-only">Office Address</label>
+                        <input type="text" class="form-control" placeholder="Office Address">
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-3">
+                      <div class="form-group">
+                        <label class="sr-only">Location Map</label>
+                        <input type="text" class="form-control" placeholder="Location Map">
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                      <div class="form-group">
+                        <label class="sr-only">Contact Name</label>
+                        <input type="text" class="form-control" placeholder="Contact Name">
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                      <div class="form-group">
+                        <label class="sr-only">Contact No.</label>
+                        <input type="text" class="form-control" placeholder="Contact No.">
+                      </div>
+                    </div>                    
+                    <div class="col-12 col-sm-4">
+                      <a href="#" class="btn btn-big btn-add waves-effect"><span class="plus-sign">+</span> Add</a>
+                    </div>
+                  </div>                  
+                </div>
+                <div class="modal-footer">
+                  <div class="text-center">
+                    <button type="button" class="btn btn-xl btn-ol-blue go-back-tab waves-effect" data-back-tab="interviewerDetails" data-toggle="tab">Back</button>
+                    <button type="button" class="btn btn-xl btn-ol-blue waves-effect" data-dismiss="modal">Discard</button>
+                    <button type="button" class="btn btn-xl btn-ol-blue go-back-tab waves-effect" data-back-tab="ps" data-toggle="tab">Preview & Schedule</button>
+                  </div>
+                </div>
+              </div>
+              <!--/ Venue Details --> 
+              <!-- Preview & Schedule -->
+              <div class="tab-pane container fade" id="ps">
+                <!--<div class="user-alert">
+                  <p>Please enter the details to schedule the interview. You have the <b>limit of 3 schedules</b></p>
+                </div>-->
+                <!-- Interview Detail List -->
+                <div class="schedule-address-list">
+                  <div class="row row-eq-height card-wrapper">
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                      <div class="emp-hist-card">
+                        <div class="row">
+                          <div class="col-12">
+                            <p>Interview Mode : <b>Telephonic</b></p>
+                          </div>                          
+                        </div>
+                        <br>
+                        <p>Time Zone : <b>GMT + 5:30</b></p>
+                        <p>Date : <b>06/05/2020</b></p>
+                        <p>Time : <b>11:300 hrs</b></p>
+                        <p>Duration : <b>60 mins</b></p>
+                        <br>                     
+                      </div>
+                    </div>  
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                      <div class="emp-hist-card">
+                        <div class="row">
+                          <div class="col-12">
+                            <p>Interview Mode : <b>Telephonic</b></p>
+                          </div>                          
+                        </div>
+                        <br>
+                        <p>Time Zone : <b>GMT + 5:30</b></p>
+                        <p>Date : <b>06/05/2020</b></p>
+                        <p>Time : <b>11:300 hrs</b></p>
+                        <p>Duration : <b>60 mins</b></p>
+                        <br>                     
+                      </div>
+                    </div> 
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                      <div class="emp-hist-card">
+                        <div class="row">
+                          <div class="col-12">
+                            <p>Interview Mode : <b>Telephonic</b></p>
+                          </div>                          
+                        </div>
+                        <br>
+                        <p>Time Zone : <b>GMT + 5:30</b></p>
+                        <p>Date : <b>06/05/2020</b></p>
+                        <p>Time : <b>11:300 hrs</b></p>
+                        <p>Duration : <b>60 mins</b></p>
+                        <br>                     
+                      </div>
+                    </div> 
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                      <p><b>Interviewer Details</b></p>
+                      <div class="emp-hist-card id">
+                        <div class="row">
+                          <div class="col-12">
+                            <p><b>Santhosh Mathew</b></p>
+                          </div>
+                        </div>
+                        
+                        <p><b>Head of Information Technology</b></p>
+                        <p><b>Job Function</b></p>
+                        <br>
+                        <p>Telephone : +9772238345</p>
+                        <p>Email : <a href="mailto:santhosh@antlegs.com">santhosh@antlegs.com</a></p>
+                        <br>                     
+                      </div>
+                    </div> 
+                    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                      <p><b>Venue Details</b></p>
+                      <div class="emp-hist-card">
+                        <div class="row">
+                          <div class="col-12">
+                            <p><b>Banglore Branch</b></p>
+                          </div>                          
+                        </div>
+                        
+                        <p>Salarpuria Tower 1 <br> 7th Block,  Koramangalam <br> Banglore, Karnataka, India</p>
+                        <a href="#" class="link">Location Map</a>
+                        <br>
+                        <br>  
+                        <p>Santosh Mathew</p>
+                        <p>Telephone : +9772238345</p>
+                   
+                      </div>
+                    </div>                                      
+                  </div>
+                </div>
+                <!--/ Interview Detail List -->                
+                <div class="modal-footer">
+                  <div class="text-center">
+                    <button type="button" class="btn btn-xl btn-ol-blue go-back-tab waves-effect" data-back-tab="venueDetails" data-toggle="tab">Back</button>
+                    <button type="button" class="btn btn-xl btn-ol-blue waves-effect" data-dismiss="modal">Discard</button>
+                    <button type="button" class="btn btn-xl btn-xl-blue disbled waves-effect">Schedule</button>
+                  </div>
+                </div>
+              </div>
+              <!--/ Preview & Schedule --> 
+              
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!--div class="modal-footer ise-footer">
+        <div class="text-center">
+          <button type="button" class="btn btn-big waves-effect" data-dismiss="modal">Discard</button>
+          <button type="button" class="btn btn-big btn-blue disbled waves-effect">Add Interviewer</button>
+        </div>
+      </div-->
+    </div>
+  </div>
 </div>
 <!-- /Interview Schedule Modal -->

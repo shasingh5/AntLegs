@@ -379,6 +379,13 @@
         format: 'DD-MM-YYYY'
     });
 
+    //Onlick trigger tab
+    $(".go-back-tab").on("click", function(){
+        //add tab href which you want trigger.
+        var getTabUrl = $(this).attr("data-back-tab");
+        $(".nav-pills a.nav-link[href='#"+getTabUrl+"']").trigger("click");
+    });
+
 })(jQuery);
 
 function renderCard() {
