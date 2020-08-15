@@ -2436,6 +2436,7 @@ ul.time-slots li {
   line-height: 1.4;
   color: #666666;
   margin: 20px 0;
+  padding: 0 15px;
 }
 
 @media (max-width: 736px) {
@@ -2462,7 +2463,7 @@ ul.time-slots li {
   }
 }
 
-@media (min-width: 812px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 960px) {
   .head-center h1 {
     font-size: 32px;
   }
@@ -2486,10 +2487,11 @@ ul.time-slots li {
   z-index: -1;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 815px) {
   .head-center h1 span::after {
     height: 2px;
     border-radius: 2px;
+    bottom: 2px;
   }
 }
 
@@ -2513,8 +2515,14 @@ ul.time-slots li {
 
 .re-action {
   background: #f2f4f6;
-  padding: 50px 75px;
+  padding: 15px;
   border-radius: 0 0 10px 10px;
+}
+
+@media (min-width: 736px) {
+  .re-action {
+    padding: 50px 75px;
+  }
 }
 
 .re-action h4 {
@@ -2546,6 +2554,12 @@ ul.time-slots li {
   background-color: #ffcc32;
 }
 
+@media (min-width: 736px) and (max-width: 960px) {
+  .re-action .re-employers::before {
+    left: -24px;
+  }
+}
+
 .re-action .re-employers h4 {
   color: #ffcc32;
 }
@@ -2557,6 +2571,12 @@ ul.time-slots li {
 
 .re-action .re-box {
   max-width: 405px;
+}
+
+@media (max-width: 736px) {
+  .re-action .re-box {
+    margin-bottom: 30px;
+  }
 }
 
 .core-features-wrapper {
@@ -2676,6 +2696,26 @@ ul.time-slots li {
 
 .feature-list > li.empower::before {
   background: #eccbda url("../images/empower-icon.png") center no-repeat;
+}
+
+.feature-list > li.robot::before {
+  background: #f5eccf url("../images/robot-icon.png") center no-repeat;
+}
+
+.feature-list > li.interactive::before {
+  background: #c9eed9 url("../images/interactive-icon.png") center no-repeat;
+}
+
+.feature-list > li.format::before {
+  background: #cceff8 url("../images/format-icon.png") center no-repeat;
+}
+
+.feature-list > li.dynamic::before {
+  background: #e3cbf0 url("../images/dynamic-icon.png") center no-repeat;
+}
+
+.feature-list > li.star::before {
+  background: #eccbda url("../images/star-icon.png") center no-repeat;
 }
 
 .feature-list > li h5 {
@@ -3224,8 +3264,8 @@ ul.time-slots li {
 }
 
 .testimonial-wrapper {
-  background: #ffffff;
-  padding: 0 0 50px;
+  background: #f2f4f6;
+  padding: 50px 0;
 }
 
 .testimonial-item {
@@ -5301,4 +5341,93 @@ ul.time-slots li {
 
 .btn-ol-blue:hover {
   color: #316ea7;
+}
+
+.why-antlegs-wrapper {
+  background: #ffffff;
+  padding-top: 75px;
+}
+
+.why-antlegs-wrapper .nav-pills .nav-link {
+  font-size: 24px;
+  font-weight: 600;
+  background: none;
+  color: #666666;
+  border-radius: 0;
+  border-bottom: 4px solid transparent;
+}
+
+@media (min-width: 500px) {
+  .why-antlegs-wrapper .nav-pills .nav-link {
+    padding: 10px 46px;
+  }
+}
+
+.why-antlegs-wrapper .nav-pills .nav-link.active {
+  color: #000000;
+  border-bottom: 4px solid #316ea7;
+}
+
+.why-antlegs-wrapper .yellow-tab-content {
+  background: #ffcc32;
+  padding: 70px 0 20px;
+  margin-top: 1px;
+}
+
+.why-antlegs-wrapper .employers-feature {
+  margin-bottom: 30px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.why-antlegs-wrapper .employers-feature > li {
+  list-style: none;
+  padding-left: 80px;
+  position: relative;
+}
+
+@media (max-width: 960px) {
+  .why-antlegs-wrapper .employers-feature > li {
+    margin-bottom: 30px;
+  }
+}
+
+.why-antlegs-wrapper .employers-feature > li::before {
+  content: " ";
+  width: 65px;
+  height: 65px;
+  background: #f5eccf url("../images/postcard-icon.png") center no-repeat;
+  border-radius: 65px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.why-antlegs-wrapper .employers-feature > li.postcard::before {
+  background: #f5eccf url("../images/postcard-icon.png") center no-repeat;
+}
+
+.why-antlegs-wrapper .employers-feature > li.eye::before {
+  background: #f5eccf url("../images/eye-icon.png") center no-repeat;
+}
+
+.why-antlegs-wrapper .employers-feature > li.briefcase::before {
+  background: #f5eccf url("../images/briefcase-icon.png") center no-repeat;
+}
+
+.why-antlegs-wrapper .employers-feature > li.money::before {
+  background: #f5eccf url("../images/money-stack-icon.png") center no-repeat;
+}
+
+.why-antlegs-wrapper .employers-feature > li h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.why-antlegs-wrapper .employers-feature > li p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #666666;
 }

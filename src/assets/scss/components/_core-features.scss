@@ -101,6 +101,26 @@
         &.empower::before {
             background: #eccbda url("../images/empower-icon.png") center no-repeat;
         }
+        
+        &.robot::before {
+            background: #f5eccf url("../images/robot-icon.png") center no-repeat;
+        }
+        
+        &.interactive::before {
+            background: #c9eed9 url("../images/interactive-icon.png") center no-repeat;
+        }
+        
+        &.format::before {
+            background: #cceff8 url("../images/format-icon.png") center no-repeat;
+        }
+        
+        &.dynamic::before {
+            background: #e3cbf0 url("../images/dynamic-icon.png") center no-repeat;
+        }
+        
+        &.star::before {
+            background: #eccbda url("../images/star-icon.png") center no-repeat;
+        }
 
         h5 {
             font-size: 20px;

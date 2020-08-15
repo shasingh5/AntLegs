@@ -1,0 +1,85 @@
+.why-antlegs-wrapper {
+  background: $white;
+  padding-top: 75px;
+
+  .nav-pills {
+    .nav-link {
+      font-size: 24px;
+      font-weight: 600;
+      background: none;
+      color: #666666;
+      border-radius: 0;
+      border-bottom: 4px solid transparent;
+      @include respond-to(500px) {
+        padding: 10px 46px;
+      }
+      &.active {
+        color: $black;
+        border-bottom: 4px solid $blue;
+      }
+    }
+  }
+
+  .yellow-tab-content {
+    background: $yellow;
+    padding: 70px 0 20px;
+    margin-top: 1px;
+  }
+
+  .employers-feature {
+    margin-bottom: 30px;
+    margin-left: 0;
+    margin-right: 0;
+
+    > li {
+      list-style: none;
+      padding-left: 80px;
+      position: relative;
+
+      @include respond-to(960px, max) {
+        margin-bottom: 30px;
+      }
+
+      &::before {
+        content: " ";
+        width: 65px;
+        height: 65px;
+        background: #f5eccf url("../images/postcard-icon.png") center no-repeat;
+        border-radius: 65px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      &.postcard::before {
+        background: #f5eccf url("../images/postcard-icon.png") center no-repeat;
+      }
+
+      &.eye::before {
+        background: #f5eccf url("../images/eye-icon.png") center no-repeat;
+      }
+
+      &.briefcase::before {
+        background: #f5eccf url("../images/briefcase-icon.png") center no-repeat;
+      }
+
+      &.money::before {
+        background: #f5eccf url("../images/money-stack-icon.png") center
+          no-repeat;
+      }
+
+      h4 {
+        font-size: 22px;
+        font-weight: 600;
+        color: $black;
+        margin-top: 10px;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 500;
+        color: #666666;
+      }
+    }
+  }
+}
