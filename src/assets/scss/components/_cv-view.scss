@@ -361,6 +361,11 @@
   .im-select select.select {
     width: 85px;
     background-color: $white;
+
+    @include respond-to($xxs, max) {
+      width: 80px;
+      margin-left: 0;
+    }
   }
 }
 

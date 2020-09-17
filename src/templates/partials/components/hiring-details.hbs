@@ -1,7 +1,7 @@
 <!-- Interview Schedule Modal -->
 <div class="modal fade" id="verificationDetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
-    <div class="modal-dialog modal-justification" role="document">
+    <div class="modal-dialog modal-justification hiring-details" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Hiring Details</h5>
@@ -12,12 +12,18 @@
             <div class="modal-body ism-body vd-body">
                 <div class="id-content">
                     <div class="ant-content">
-                        <!--Title-->
-                        <p class="text-center">
+                        <div class="condidate-info">
+                            <p>
+                                <span>Candidate </span><b>Freddy George Fernandez</b>
+                            </p>
+                            <p>
+                                <span>Position </span><b>Head of Information Techonology</b>
+                            </p>
+                        </div>
+                        <p>
                             Please enter the date of joining and the final salary below
                         </p>
                     </div>
-                    <br>
                     <div class="row">
                         <div class="col-12 col-sm-5">
                             <div class="ant-content">
@@ -36,7 +42,7 @@
                                 <label class="sr-only">Date</label>
                                 <div class="im-select">
                                     <select name="" id="" class="select" required="required">
-                                        <option value="">Feb</option>
+                                        <option value="">Oct</option>
                                         <option value="">Jan</option>
                                         <option value="">Mar</option>
                                         <option value="">Apr</option>
@@ -57,8 +63,7 @@
                             </div>
                         </div>
                     </div>
-                    <br>
-
+                    <hr>
                     <div class="docs-form">
                         <div class="ant-content">
                             <p class="text-16 bold">List of documents to be submitted to roll out the offer</p>
@@ -67,7 +72,7 @@
                             <div class="col-12 col-sm-6">
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input" value="">Passport
+                                        <input type="checkbox" class="form-check-input" value="" checked>Passport
                                     </label>
                                 </div>
                             </div>
@@ -111,45 +116,69 @@
                             <div class="col-12 col-sm-6">
                                 <div class="form-check">
                                     <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input" value="">Others
+                                        <input type="checkbox" class="form-check-input" value="" checked>Others
                                     </label>
                                 </div>
                                 <form class="other-Details">
                                     <div class="row">
                                         <div class="col-12">
-                                            <div class="form-group custom-control-inline">
+                                            <div class="form-group custom-control-inline hd-others">
                                                 <label class="sr-only">Others</label>
                                                 <!-- <input type="checkbox" class="form-control checkbox" id="Others"
                                                     checked> -->
-                                                <input type="text" class="form-control" value="Others, please specify">
+                                                <input type="text" class="form-control" value=""
+                                                    placeholder="Others, please specify">
                                                 <span class="add-other-input" title="Add input box">+</span>
                                             </div>
                                         </div>
                                     </div>
                                 </form>
-                            </div>                            
+                            </div>
                         </div>
                     </div>
-                    <br>
                     <hr>
-                     <div class="row">
+                    <div class="row">
+                        <div class="col-12 col-sm-4">
+                            <div class="ant-content">
+                                <p class="bold">Or Forward documents to:</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-8">
+                            <div class="form-check form-check-inline">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="address" id="" value="checkedValue"> Email ID
+                                </label>
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="address" id="" value="checkedValue" checked> Address
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-8">
+                            <div class="form-group">
+                                <label for="Address" class="sr-only">Address</label>
+                                <textarea class="form-control" name="" id="Address" rows="1" placeholder="Enter Address here to courier the documents"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
                         <div class="col-12 col-sm-5">
                             <div class="ant-content">
                                 <p class="bold">Last date to submit the documents</p>
-                            </div>                            
+                            </div>
                         </div>
-                        <div class="col-12 col-sm-7">                            
+                        <div class="col-12 col-sm-7">
                             <div class="form-group custom-control-inline date-box">
                                 <label class="sr-only">Date</label>
                                 <div class="im-select">
                                     <select name="" id="" class="select" required="required">
-                                        <option value="">Feb</option>
+                                        <option value="">Sep</option>
                                         <option value="">Jan</option>
                                         <option value="">Mar</option>
                                         <option value="">Apr</option>
                                     </select>
                                     <select name="" id="" class="select" required="required">
-                                        <option value="">01</option>
+                                        <option value="">15</option>
                                         <option value="">02</option>
                                         <option value="">03</option>
                                         <option value="">04</option>

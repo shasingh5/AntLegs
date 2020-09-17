@@ -2976,8 +2976,8 @@ ul.time-slots li {
 .mandatory::after {
   content: attr(title);
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 27px;
+  right: 20px;
   font-size: 13px;
   color: #666666;
   z-index: 1;
@@ -3068,8 +3068,8 @@ ul.time-slots li {
 
 .form-antlegs .form-group label {
   display: block;
-  font-size: 18px;
-  color: #666;
+  font-size: 20px;
+  color: #333333;
   text-align: left;
 }
 
@@ -3108,10 +3108,68 @@ ul.time-slots li {
   text-align: left;
   font-size: 16px;
   color: #666;
+  margin-top: -20px;
 }
 
 .form-antlegs .link {
   font-size: 18px;
+}
+
+.form-antlegs .already {
+  font-size: 15px;
+}
+
+.form-antlegs .already a {
+  font-size: 18px;
+}
+
+.form-antlegs .big-title {
+  font-size: 40px;
+  font-weight: 500;
+  color: #316ea7;
+  margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+  .form-antlegs .big-title {
+    margin-top: 65px;
+  }
+}
+
+@media (min-width: 815px) {
+  .form-antlegs .big-title {
+    font-size: 60px;
+    margin-bottom: 0;
+  }
+}
+
+.form-antlegs .big-title span {
+  color: #ffcc32;
+  display: inline-block;
+  margin-top: 30px;
+  position: relative;
+}
+
+.form-antlegs .big-title span::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #ffcc32;
+  margin-top: 30px;
+  display: block;
+}
+
+.ant-tab.no-border {
+  border: 0;
+}
+
+.ant-tab.no-border .nav-tabs {
+  border: 0;
+}
+
+.ant-tab.no-border .nav-tabs .nav-item {
+  margin-bottom: 0;
+  border-bottom: 1px solid #acacac;
 }
 
 .multi-select .btn-group {
@@ -3156,13 +3214,14 @@ ul.time-slots li {
   width: 100%;
 }
 
-.multi-select .btn-group .multiselect-container > li > a > label.radio, .multi-select .btn-group .multiselect-container > li > a > label.checkbox {
+.multi-select .btn-group .multiselect-container > li > a > label.radio,
+.multi-select .btn-group .multiselect-container > li > a > label.checkbox {
   font-size: 18px;
   color: #000;
   padding: 5px 15px;
 }
 
-.multi-select .btn-group .multiselect-container > li > a > label > input[type=checkbox] {
+.multi-select .btn-group .multiselect-container > li > a > label > input[type="checkbox"] {
   margin-right: 10px;
 }
 
@@ -3889,6 +3948,13 @@ ul.time-slots li {
 .date-box .im-select select.select {
   width: 85px;
   background-color: #ffffff;
+}
+
+@media (max-width: 420px) {
+  .date-box .im-select select.select {
+    width: 80px;
+    margin-left: 0;
+  }
 }
 
 .schedule-fixed {
@@ -4821,6 +4887,82 @@ ul.time-slots li {
   height: 100px;
 }
 
+.profile-name {
+  padding: 0 15px 0 40px;
+  margin-top: 15px;
+  border-radius: 4px;
+  background: #ffffff url("../images/user-profile-icon.png") 0 center no-repeat;
+  color: #333333;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.profile-warning {
+  padding: 15px 15px 15px 50px;
+  margin: 12px 0 20px;
+  border: 1px solid #efb16b;
+  border-radius: 4px;
+  background: #fbf7dc url("../images/info-icon-black.png") 15px center no-repeat;
+  color: #000000;
+  font-size: 14px;
+}
+
+.form-profile .col-form-label {
+  font-size: 1rem;
+  color: #000000;
+}
+
+.form-profile .col-form-label.sub-label {
+  font-size: 14px;
+  color: #333333;
+}
+
+.form-profile .form-control:focus {
+  box-shadow: 0 0px 3px 0.2rem rgba(100, 145, 228, 0.33);
+  border-color: #316ea7;
+}
+
+.form-profile h6 {
+  color: #000000;
+}
+
+.form-profile .add-input {
+  display: inline-block;
+  height: 38px;
+  width: 100%;
+  text-align: center;
+  border-radius: 4px;
+  vertical-align: middle;
+  line-height: 36px;
+  font-weight: normal;
+  font-size: 14px;
+  margin-left: -25px;
+}
+
+.form-profile .area-group {
+  margin-top: 2rem;
+}
+
+.form-profile .area-group .form-group {
+  margin-bottom: 0.3rem;
+}
+
+.form-profile .group-btn {
+  display: flex;
+  align-items: center;
+}
+
+.form-profile .group-btn .btn-get {
+  width: 48%;
+}
+
+.form-profile .btn-white {
+  color: #316ea7;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
 .cadidate-history {
   border: 1px solid #dfdfdf;
   padding: 20px;
@@ -5430,4 +5572,59 @@ ul.time-slots li {
   font-size: 18px;
   font-weight: 500;
   color: #666666;
+}
+
+.custom-control-inline.hd-others {
+  margin-left: 1.5rem;
+}
+
+.custom-control-inline.hd-others .form-control {
+  height: inherit;
+  padding: 8px 10px;
+  max-width: 300px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.custom-control-inline.hd-others .add-other-input {
+  margin-top: 6px;
+}
+
+.hiring-details .id-content {
+  padding-bottom: 0;
+}
+
+@media (max-width: 420px) {
+  .hiring-details .id-content {
+    padding: 0;
+  }
+}
+
+.hiring-details .modal-header {
+  padding: 0.8rem;
+}
+
+.hiring-details .form-check-inline {
+  font-size: 14px;
+}
+
+.hiring-details .form-check-inline .form-check-label + .form-check-label {
+  margin-left: 50px;
+}
+
+.condidate-info {
+  border-left: 2px solid #666666;
+  padding-left: 17px;
+  margin-bottom: 20px;
+}
+
+.condidate-info span {
+  display: inline-block;
+  padding-right: 25px;
+  min-width: 110px;
+}
+
+.condidate-info span::after {
+  content: ":";
+  float: right;
 }

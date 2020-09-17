@@ -1,0 +1,1079 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Welcome to AntLegs</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+<!-- Material Design Bootstrap -->
+<link href="vendor/mdb/mdb.min.css" rel="stylesheet">
+<!-- Custom Scroll -->
+<link href="vendor/malihu-custom-scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+<!-- Full Calendar -->
+<link href="https://fullcalendar.io/js/fullcalendar-3.0.1/fullcalendar.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.42/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+<!-- Slick Slider -->
+<link href="vendor/slick/slick.css" rel="stylesheet">
+<link href="vendor/slick/slick-theme.css" rel="stylesheet">
+<!-- Custom styles -->
+<link href="assets/css/main.min.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <!-- Sidebar  -->
+<nav id="sidebar">    
+
+    <div class="sidebar-header">
+        <a href="javascript:;" id="dismiss" class="hamburg">&nbsp;</a>
+		<a href="#" class="logo">
+			<span>ANT</span>
+			<span>LEGS</span>
+		</a>
+    </div>
+
+    <ul class="list-unstyled components">        
+        <!-- <li class="active">
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li>
+                    <a href="#">Home 1</a>
+                </li>
+                <li>
+                    <a href="#">Home 2</a>
+                </li>
+                <li>
+                    <a href="#">Home 3</a>
+                </li>
+            </ul>
+        </li> -->
+        <li class="waves-effect">
+            <a href="employers-dashboard.html" class="dashboard">Dashboard</a>
+        </li>        
+        <li class="waves-effect active">
+            <a href="index.html" class="employers">Employers</a>
+        </li>
+        <li class="waves-effect">
+            <a href="recruiters.html" class="recruiters">Recruiters</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#" class="jobs">Jobs</a>
+        </li>
+        <li class="waves-effect">
+            <a href="interviews-calendar.html" class="interviews">Interviews</a>
+        </li>
+        <li class="waves-effect">
+            <a href="payments-billings.html" class="payments">Payments</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#" class="rewards">Rewards & Points</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#" class="reports">Reports</a>
+        </li>
+        <li class="waves-effect manage-admin">
+            <a href="#" class="manage">Manage Admin</a>
+        </li>
+    </ul>
+</nav>
+<!-- /Sidebar  -->
+
+    <!-- Page Content  -->
+    <div id="content">
+      <nav class="navbar navbar-expand-lg navbar-light navbar-antlegs bs-none">
+	<div class="container-fluid ant-container">
+
+		<a href="javascript:;" id="sidebarCollapse" class="hamburg">&nbsp;</a>
+		<a href="#" class="logo">
+			<span>ANT</span>
+			<span>LEGS</span>
+		</a>
+
+		<button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<i class="fas fa-align-justify"></i>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="nav navbar-nav ml-auto">
+				<!-- <li class="nav-item active">
+                	<a class="nav-link" href="#">Page</a>
+              	</li> -->
+				<li class="nav-item  notification-globle dropdown">
+					<a class="nav-link dropdown-toggle" id="navbar-tools" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="true">
+						<i class="fas fa-bell bell-icon"></i><span>Notification</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbar-tools">
+						<h4><i class="fas fa-bell bell-icon"></i><span>Notification</span></h4>
+						<ul id="notification">
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">The job for Marketing Director with Hexaware Technologies has been
+											closed</span>
+										<span class="alert-time">
+											<i>20 mins ago</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>30 mins ago</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+								</li>
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">The job for Marketing Director with Hexaware Technologies has been
+											closed</span>
+										<span class="alert-time">
+											<i>2 hrs ago</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+								</li>
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">The job for Marketing Director with Hexaware Technologies has been
+											closed</span>
+										<span class="alert-time">
+											<i>4 hrs ago</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+								</li>
+								<li class="inline-email read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">Email A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>yesterday</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+									<div class="email-box">
+										<button type="button" class="btn email">Email</button>
+										<button type="button" class="btn delete">Delete</button>
+										<div class="msg-box">
+											<div class="input-group my-group">
+												<textarea class="text-area form-control" name="" id="" cols="10" rows="3"
+													placeholder="An email will be sent to your email ID with your message here (max 100 characters)"></textarea>
+												<span class="input-group-btn">
+													<button class="btn" type="submit" title="Search">Search</button>
+												</span>
+											</div>
+										</div>
+										<!-- /input-group -->
+									</div>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+							</ul>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" id="navbar-tools" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="true">
+						<i class="fas fa-user-circle user-icon"></i><span>Hi Snahal K</span></a>
+					<div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbar-tools">
+						<a class="dropdown-item d-xl-none waves-effect waves-light" href="/support/">Support Forum</a>
+						<a class="dropdown-item waves-effect waves-light" href="/snippets/">Editor &amp; Snippets</a>
+						<a class="dropdown-item waves-effect waves-light" href="/articles/">Articles</a>
+						<a class="dropdown-item waves-effect waves-light" href="/news/frontend/">News</a>
+						<a class="dropdown-item waves-effect waves-light" href="/cli/">MDB CLI <span
+								class="badge badge-danger rounded">New</span></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav> 
+      <div class="container-fluid ant-container">
+	<!-- change password Header -->
+	<div class="row header">
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+			<a href="#" class="main-heading no-arrow">Manage Profile</a>
+		</div>
+	</div>
+	<!--/ change password Header -->
+
+	<div class="white-wrapper">
+
+		<div class="profile-name">Santhosh Kurichianil</div>
+		<div class="profile-warning">Below fields are <b>mandatory</b> to get access to all the activities on this
+			website.</div>
+
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+					aria-controls="profile" aria-selected="true">Profile</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="bank-details-tab" data-toggle="tab" href="#bankDetails" role="tab"
+					aria-controls="bankDetails" aria-selected="false">Bank Details</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="usage-stats-tab" data-toggle="tab" href="#usageStats" role="tab"
+					aria-controls="usageStats" aria-selected="false">Usage Stats</a>
+			</li>
+		</ul>
+		<div class="tab-content" id="myTabContent">
+			<div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+				<div class="profile-edit sr-only">
+					<div class="row">
+					<div class="col-lg-10 col-xl-7">
+						<div class="card">
+							<div class="form-profile">
+								<form autocomplete="off" class="form" role="form">
+									<div class="form-group row">
+										<label for="displayName" class="col-sm-5 col-form-label">Display Name</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" id="displayName"
+												placeholder="Santosh">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="nationality" class="col-sm-5 col-form-label">Nationality</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" id="nationality"
+												placeholder="Indian">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="gender" class="col-sm-5 col-form-label">Gender</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" id="gender" placeholder="Male">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="dob" class="col-sm-5 col-form-label">Date of Birth</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" id="dob" placeholder="03/05/1980">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="location" class="col-sm-5 col-form-label">Location</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" id="location"
+												placeholder="Bengaluru, Karnataka, India">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="contact" class="col-sm-5 col-form-label">Contact No.</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" id="contact"
+												placeholder="+91 9765542321">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="email" class="col-sm-5 col-form-label">Email</label>
+										<div class="col-sm-6">
+											<input type="email" class="form-control" id="email"
+												placeholder="sanmathew@gmail.com">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="linkedInProfile" class="col-sm-5 col-form-label">LinkedIn
+											Profile</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" id="linkedInProfile"
+												placeholder="https://www.linkedin.com/6685524/">
+										</div>
+									</div>
+
+
+									<h6>Education</h6>
+									<div class="form-group row">
+										<label for="degree" class="col-sm-5 col-form-label sub-label">Degree</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" id="degree"
+												placeholder="Graduate in B. Sc. Computer Science">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="specialization"
+											class="col-sm-5 col-form-label sub-label">Specialization</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" id="specialization"
+												placeholder="PGDMS">
+										</div>
+									</div>
+									<br>
+									<div class="form-group row">
+										<label for="re" class="col-sm-5 col-form-label">Recruitment Experience
+											(Yrs)</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" id="re" placeholder="10">
+										</div>
+									</div>
+									<div class="area-group">
+										<div class="form-group row">
+											<label for="ip" class="col-sm-5 col-form-label">Industries Preferred</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" id="ip"
+													placeholder="Information Technology">
+											</div>
+										</div>
+
+
+										<div class="form-group row">
+											<label for="ip" class="col-sm-5 col-form-label">
+												<span class="sr-only">Industries Preferred</span>
+											</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" id="ip"
+													placeholder="Healthcare">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="ip" class="col-sm-5 col-form-label">
+												<span class="sr-only">Industries Preferred</span>
+											</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" id="ip"
+													placeholder="Banking & Finance">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="ip" class="col-sm-5 col-form-label">
+												<span class="sr-only">Industries Preferred</span>
+											</label>
+											<div class="col-10 col-sm-6">
+												<input type="text" class="form-control" id="Niche"
+													placeholder="Others, please specify">
+											</div>
+											<div class="col-2 col-sm-1">
+												<a href="javascript:;" class="add-input" title="Add field"><span
+														class="fa fa-plus"></span></a>
+											</div>
+										</div>
+
+									</div>
+									<div class="area-group">
+										<div class="form-group row">
+											<label for="Niche" class="col-sm-5 col-form-label">
+												Niche Skills Worked on
+											</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" id="Niche"
+													placeholder="Soft Skills">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="Niche" class="col-sm-5 col-form-label">
+												<span class="sr-only">Niche Skills Worked on </span>
+											</label>
+											<div class="col-10 col-sm-6">
+												<input type="text" class="form-control" id="Niche"
+													placeholder="Others, please specify">
+											</div>
+											<div class="col-2 col-sm-1">
+												<a href="javascript:;" class="add-input" title="Add field"><span
+														class="fa fa-plus"></span></a>
+											</div>
+										</div>
+									</div>
+									<br>
+									<div class="form-group row">
+										<label for="Niche" class="col-sm-5 col-form-label">
+											<span class="sr-only">Call to action</span>
+										</label>
+										<div class="col-sm-6">
+											<div class="group-btn">
+												<button class="btn btn-get btn-white waves-effect waves-light"
+													type="button" disabled="disabled">
+													<span class="fa fa-edit"></span> Edit
+												</button>
+												<button class="btn btn-get waves-effect waves-light"
+													type="submit">Save</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					</div>
+				</div>
+				<div class="profile-view">
+					<div class="row">
+					<div class="col-lg-10 col-xl-7">
+						<div class="card">
+							<div class="form-profile">
+								<form autocomplete="off" class="form" role="form">
+									<div class="form-group row">
+										<label for="displayName" class="col-sm-5 col-form-label">Display Name</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" readonly disabled id="displayName"
+												value="Santosh">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="nationality" class="col-sm-5 col-form-label">Nationality</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" readonly disabled id="nationality"
+												value="Indian">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="gender" class="col-sm-5 col-form-label">Gender</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" readonly disabled id="gender" value="Male">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="dob" class="col-sm-5 col-form-label">Date of Birth</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" readonly disabled id="dob" value="03/05/1980">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="location" class="col-sm-5 col-form-label">Location</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" readonly disabled id="location"
+												value="Bengaluru, Karnataka, India">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="contact" class="col-sm-5 col-form-label">Contact No.</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" readonly disabled id="contact"
+												value="+91 9765542321">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="email" class="col-sm-5 col-form-label">Email</label>
+										<div class="col-sm-6">
+											<input type="email" class="form-control" readonly disabled id="email"
+												value="sanmathew@gmail.com">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="linkedInProfile" class="col-sm-5 col-form-label">LinkedIn
+											Profile</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" readonly disabled id="linkedInProfile"
+												value="https://www.linkedin.com/6685524/">
+										</div>
+									</div>
+
+
+									<h6>Education</h6>
+									<div class="form-group row">
+										<label for="degree" class="col-sm-5 col-form-label sub-label">Degree</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" readonly disabled id="degree"
+												value="Graduate in B. Sc. Computer Science">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label for="specialization"
+											class="col-sm-5 col-form-label sub-label">Specialization</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" readonly disabled id="specialization"
+												value="PGDMS">
+										</div>
+									</div>
+									<br>
+									<div class="form-group row">
+										<label for="re" class="col-sm-5 col-form-label">Recruitment Experience
+											(Yrs)</label>
+										<div class="col-sm-6">
+											<input type="text" class="form-control" readonly disabled id="re" value="10">
+										</div>
+									</div>
+									<div class="area-group">
+										<div class="form-group row">
+											<label for="ip" class="col-sm-5 col-form-label">Industries Preferred</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" readonly disabled id="ip"
+													value="Information Technology">
+											</div>
+										</div>
+
+
+										<div class="form-group row">
+											<label for="ip" class="col-sm-5 col-form-label">
+												<span class="sr-only">Industries Preferred</span>
+											</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" readonly disabled id="ip"
+													value="Healthcare">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="ip" class="col-sm-5 col-form-label">
+												<span class="sr-only">Industries Preferred</span>
+											</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" readonly disabled id="ip"
+													value="Banking & Finance">
+											</div>
+										</div>
+									</div>
+									<div class="area-group">
+										<div class="form-group row">
+											<label for="Niche" class="col-sm-5 col-form-label">
+												Niche Skills Worked on
+											</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" readonly disabled id="Niche"
+													value="Soft Skills">
+											</div>
+										</div>
+									</div>
+									<br>
+									<div class="form-group row">
+										<label for="Niche" class="col-sm-5 col-form-label">
+											<span class="sr-only">Call to action</span>
+										</label>
+										<div class="col-sm-6">
+											<div class="group-btn">
+												<button class="btn btn-get waves-effect waves-light"
+													type="button">
+													<span class="fa fa-edit"></span> Edit
+												</button>												
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="bankDetails" role="tabpanel" aria-labelledby="bank-details-tab">
+				Bank Details
+			</div>
+			<div class="tab-pane fade" id="usageStats" role="tabpanel" aria-labelledby="usage-stats-tab">
+				Usage
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+
+<!-- invoice details modal -->
+<div class="modal fade" id="editDetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog modal-lg edit-branch" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Manage Profile - Edit Details</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="edit-details-wrapper">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="card">
+								<div class="form-antlegs add-job-form">
+									<form autocomplete="off" class="form" role="form">
+										<div class="row">
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<label for="inputName" class="sr-only">Job Title*</label>
+													<input class="form-control c-name" id="inputName" type="text" value="Antlegs Technology Solutions Private Limited">
+												</div>
+											</div>
+
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-12 col-md-4">
+															<label for="inputName" class="">Industry</label>
+														</div>
+														<div class="col-12 col-md-8">
+															<input class="form-control" id="inputName" type="text" value="Information Technology">
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-12 col-md-4">
+															<label for="inputName" class="">Location</label>
+														</div>
+														<div class="col-12 col-md-8">
+															<input class="form-control" id="inputName" type="text" value="Bangaluru">
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-12 col-md-4">
+															<label for="inputName" class="">Web</label>
+														</div>
+														<div class="col-12 col-md-8">
+															<input class="form-control link" id="inputName" type="text" value="www.antlegs.com">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-12 col-md-4">
+															<label for="inputName" class="">Contact Person</label>
+														</div>
+														<div class="col-12 col-md-8">
+															<input class="form-control" id="inputName" type="text" value="Santhosh Mathew">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-12 col-md-4">
+															<label for="inputName" class="">Designation</label>
+														</div>
+														<div class="col-12 col-md-8">
+															<input class="form-control" id="inputName" type="text" value="Founder">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-12 col-md-4">
+															<label for="inputName" class="">Contact No</label>
+														</div>
+														<div class="col-12 col-md-8">
+															<input class="form-control" id="inputName" type="text" value="+91 899 376 5454">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-12 col-md-4">
+															<label for="inputName" class="">Email</label>
+														</div>
+														<div class="col-12 col-md-8">
+															<input class="form-control link" id="inputName" type="text" value="santhosh@antlegs.com">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12">
+												<div class="form-group last-group text-center">
+													<button class="btn btn-get btn-white waves-effect waves-light" type="reset">Discard</button>
+													<button class="btn btn-get waves-effect waves-light" type="submit">Update</button>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="alert alert-success">
+					Profile Details updated successfully! 
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--/ invoice details modal -->
+<!-- invoice details modal -->
+<div class="modal fade" id="editBranch" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog modal-lg edit-branch" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Manage Profile  - Edit Branch</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="edit-details-wrapper">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="card">
+								<div class="form-antlegs add-job-form">
+									<form autocomplete="off" class="form" role="form">
+										<div class="row">											
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-12 col-md-4">
+															<label for="inputName" class=""><b>Select Branch to Edit</b></label>
+														</div>
+														<div class="col-12 col-md-8">
+															<select class="form-control select">
+																	<option value="">Select Gender</option>
+																	<option value="" selected>India - Mumbai, Cuffee Parade</option>
+																	<option value="">India - Chennai, Cuffee Parade</option>
+																	<option value="">India - Pune, Cuffee Parade</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-12 col-md-4">
+															<label for="inputName" class="">Company Name</label>
+														</div>
+														<div class="col-12 col-md-8">
+															<input class="form-control" id="inputName" type="text" value="Antlegs Technology Solutions Private Limited">
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-12 col-md-4">
+															<label for="inputName" class="">Address</label>
+														</div>
+														<div class="col-12 col-md-8">
+															<textarea class="form-control" id="inputName" type="text" rows="5">B/7676, 247 Park, Gandi Nagar, Cuffe Parade, Mumbai, India</textarea>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-12 col-md-4">
+															<label for="inputName" class="">Phone Number</label>
+														</div>
+														<div class="col-12 col-md-8">
+															<input class="form-control" id="inputName" type="text" value="+91 233 445 6767">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-12 col-md-4">
+															<label for="inputName" class="">Location Map</label>
+														</div>
+														<div class="col-12 col-md-8">
+															<input class="form-control" id="inputName" type="text" value="http://maps.google.co.in/embed...">
+														</div>
+													</div>
+												</div>
+											</div>											
+											<div class="col-12">
+												<div class="form-group last-group text-center">
+													<button class="btn btn-get btn-white waves-effect waves-light" type="reset">Discard</button>
+													<button class="btn btn-get waves-effect waves-light" type="submit">Update</button>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="alert alert-success">
+					Branch Details updated successfully! 
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+<!--/ invoice details modal -->
+<!-- invoice details modal -->
+<div class="modal fade" id="addBranch" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog modal-lg edit-branch" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Manage Profile  - Add Branch</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<div class="edit-details-wrapper">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="card">
+								<div class="form-antlegs add-job-form">
+									<form autocomplete="off" class="form" role="form">
+										<div class="row">											
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-12 col-md-4">
+															<label for="inputName" class=""><b>Add Branch Details</b></label>
+														</div>
+														<div class="col-12 col-md-8">
+															<select class="form-control select">
+																	<option value="">Select Country</option>
+																	<option value="">India</option>
+																	<option value="">USA</option>
+																	<option value="">UK</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-12 col-md-4">
+															<label for="inputName" class="sr-only"><b>Add Branch Details</b></label>
+														</div>
+														<div class="col-12 col-md-8">
+															<select class="form-control select">
+																	<option value="">Select City</option>
+																	<option value="">Mumbai</option>
+																	<option value="">Pune</option>
+																	<option value="">Hydrabad</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-12 col-md-4">
+															<label for="inputName" class="">Company Name</label>
+														</div>
+														<div class="col-12 col-md-8">
+															<input class="form-control" id="inputName" type="text" value="Antlegs Technology Solutions Private Limited">
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-12 col-md-4">
+															<label for="inputName" class="">Address</label>
+														</div>
+														<div class="col-12 col-md-8">
+															<textarea class="form-control" id="inputName" type="text" rows="5" placeholder="Enter Branch location here: Eg: B/7676, 247 Park, Gandi Nagar, Cuffe Parade, Mumbai, India"></textarea>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-12 col-md-4">
+															<label for="inputName" class="">Phone Number</label>
+														</div>
+														<div class="col-12 col-md-8">
+															<input class="form-control" id="inputName" type="text" value="+91 233 445 6767">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-12 col-md-12">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-12 col-md-4">
+															<label for="inputName" class="">Location Map</label>
+														</div>
+														<div class="col-12 col-md-8">
+															<input class="form-control link" id="inputName" type="text" value="http://maps.google.co.in/embed...">
+														</div>
+													</div>
+												</div>
+											</div>											
+											<div class="col-12">
+												<div class="form-group last-group text-center">
+													<button class="btn btn-get btn-white waves-effect waves-light" type="button" data-dismiss="modal" aria-label="Close">Discard</button>
+													<button class="btn btn-get waves-effect waves-light" type="submit">Update</button>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="alert alert-success">
+					Branch added successfully! 
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+</div>
+<!--/ invoice details modal --> 
+      <footer>
+  <p class="text-center">Antlegs Technology Solutions Private Limited.</p>
+</footer>
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+
+  <!-- SCRIPTS -->
+<!-- Reach Text Editor -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.5.6/tinymce.min.js"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+<!-- Reach Text Editor -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/tinymce/4.5.6/jquery.tinymce.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment-with-locales.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="vendor/MDB/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.42/js/bootstrap-datetimepicker.min.js"></script>
+
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="vendor/MDB/mdb.min.js"></script>
+<!-- Custom Scroll -->
+<script type="text/javascript" src="vendor/malihu-custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Lazy Load -->
+<script type="text/javascript" src="vendor/jquery.lazy/jquery.lazy.min.js"></script>
+<!-- Slick Slider -->
+<script type="text/javascript" src="vendor/slick/slick.js"></script>
+
+<!-- Full Calendar -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.js"></script>
+
+<!-- AntLegs core JavaScript -->
+<script src="./assets/js/script.js"></script>
+</body>
+
+</html>
