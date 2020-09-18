@@ -1,0 +1,13 @@
+.card-manage {
+  .branch-location > div {
+    vertical-align: middle;
+  }
+
+  .branches-wrapper .branch-location .location-edit .dropdown-item {
+    font-size: 14px;
+    &:focus,
+    &:hover {
+      color: #000000;
+    }
+  }
+}

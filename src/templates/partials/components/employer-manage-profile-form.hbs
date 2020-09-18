@@ -12,26 +12,26 @@
 		<div class="profile-name">Hexaware Technologies Private Limited </div>
 		<div class="profile-warning">Below fields are <b>mandatory</b> to get access to all the activities on this
 			website.</div>
-
-		<ul class="nav manage-tabs" id="myTab" role="tablist">
-			<li class="nav-item">
-				<a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
-					aria-selected="true">Profile</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" id="bank-details-tab" data-toggle="tab" href="#bankDetails" role="tab"
-					aria-controls="bankDetails" aria-selected="false">Bank Details</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" id="manage-users-tab" data-toggle="tab" href="#manageUsers" role="tab"
-					aria-controls="manageUsers" aria-selected="false">Manage Users</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" id="usage-stats-tab" data-toggle="tab" href="#usageStats" role="tab"
-					aria-controls="usageStats" aria-selected="false">Usage Stats</a>
-			</li>
-			
-		</ul>
+		<div class="tabs-responsive">
+			<ul class="nav manage-tabs" id="myTab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+						aria-selected="true">Profile</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="bank-details-tab" data-toggle="tab" href="#bankDetails" role="tab"
+						aria-controls="bankDetails" aria-selected="false">Bank Details</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="manage-users-tab" data-toggle="tab" href="#manageUsers" role="tab"
+						aria-controls="manageUsers" aria-selected="false">Manage Users</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="usage-stats-tab" data-toggle="tab" href="#usageStats" role="tab"
+						aria-controls="usageStats" aria-selected="false">Usage Stats </a>
+				</li>
+			</ul>
+		</div>
 		<div class="tab-content" id="myTabContent">
 			<div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
 				<!-- Profile View Start -->
@@ -225,7 +225,8 @@
 									<label for="contact" class="col-sm-3 col-form-label">About Hexaware
 										Technology</label>
 									<div class="col-sm-7">
-										<textarea name="branch" id="branch" rows="12" class="form-control">A technologically advanced, new and revolutionary referral driven recruiting platform that brings employers, referrers to match top quality talent with great positions, and make the experience extremely rewarding for everyone involved. AntLegs realizes a future where recruiters can seamlessly work with employers to fill open / vacant positions faster improving quality of hire and significantly reduce cost per hire.
+										<textarea name="branch" id="branch" rows="12"
+											class="form-control">A technologically advanced, new and revolutionary referral driven recruiting platform that brings employers, referrers to match top quality talent with great positions, and make the experience extremely rewarding for everyone involved. AntLegs realizes a future where recruiters can seamlessly work with employers to fill open / vacant positions faster improving quality of hire and significantly reduce cost per hire.
 										A technologically advanced, new and revolutionary referral driven recruiting platform that brings employers, referrers to match top quality talent with great positions, and make the experience extremely rewarding for everyone involved. AntLegs realizes a future where recruiters can seamlessly work with employers to fill open / vacant positions faster improving quality of hire and significantly reduce cost per hire.</textarea>
 
 									</div>
@@ -237,7 +238,7 @@
 										<span class="sr-only">Call to action</span>
 									</label>
 									<div class="col-sm-4">
-										<div class="group-btn">											
+										<div class="group-btn">
 											<button class="btn btn-get  btn-white btn-profile waves-effect waves-light" type="button"
 												data-id="profileEdit" disabled="disabled">
 												<span class="fa edit-pencil"></span> Edit
@@ -264,7 +265,8 @@
 										<div class="form-group row">
 											<label for="displayName" class="col-sm-5 col-form-label">Branch Name</label>
 											<div class="col-sm-6">
-												<input type="text" class="form-control" readonly disabled id="displayName" value="Hexaware Information Technology">
+												<input type="text" class="form-control" readonly disabled id="displayName"
+													value="Hexaware Information Technology">
 											</div>
 										</div>
 
@@ -278,10 +280,9 @@
 
 										<div class="form-group row">
 											<label for="nationality" class="col-sm-5 col-form-label">State
-												</label>
+											</label>
 											<div class="col-sm-6">
-												<input type="text" class="form-control" readonly disabled id="Bangaluru"
-													value="Bangaluru">
+												<input type="text" class="form-control" readonly disabled id="Bangaluru" value="Bangaluru">
 											</div>
 										</div>
 
@@ -295,7 +296,8 @@
 										<div class="form-group row">
 											<label for="dob" class="col-sm-5 col-form-label">Location Map</label>
 											<div class="col-sm-6">
-												<input type="text" class="form-control" readonly disabled id="dob" value="https://goo.gl/maps/BANqVJZPM5x5X9G">
+												<input type="text" class="form-control" readonly disabled id="dob"
+													value="https://goo.gl/maps/BANqVJZPM5x5X9G">
 											</div>
 										</div>
 
@@ -306,7 +308,7 @@
 											</div>
 										</div>
 
-										
+
 										<br>
 										<div class="form-group row">
 											<label for="Niche" class="col-sm-5 col-form-label">
@@ -341,23 +343,24 @@
 										<div class="form-group row">
 											<label for="displayName" class="col-sm-5 col-form-label">Branch Name</label>
 											<div class="col-sm-6">
-												<input type="text" class="form-control" id="displayName" value="Hexaware Information Technology">
+												<input type="text" class="form-control" id="displayName"
+													value="Hexaware Information Technology">
 											</div>
 										</div>
 
 										<div class="form-group row">
 											<label for="contact" class="col-sm-5 col-form-label">Branch Address</label>
 											<div class="col-sm-6">
-												<textarea name="branch" id="branch" rows="3" class="form-control">102 - 109, Hexaware Tech Towers 2, Kormangalam, LBS Marg, Bangaluru, Karnataka, India</textarea>
+												<textarea name="branch" id="branch" rows="3"
+													class="form-control">102 - 109, Hexaware Tech Towers 2, Kormangalam, LBS Marg, Bangaluru, Karnataka, India</textarea>
 											</div>
 										</div>
 
 										<div class="form-group row">
 											<label for="nationality" class="col-sm-5 col-form-label">State
-												</label>
+											</label>
 											<div class="col-sm-6">
-												<input type="text" class="form-control" id="Bangaluru"
-													value="Bangaluru">
+												<input type="text" class="form-control" id="Bangaluru" value="Bangaluru">
 											</div>
 										</div>
 
@@ -382,7 +385,7 @@
 											</div>
 										</div>
 
-										
+
 										<br>
 										<div class="form-group row">
 											<label for="Niche" class="col-sm-5 col-form-label">
@@ -404,7 +407,7 @@
 											</div>
 										</div>
 									</form>
-									
+
 								</div>
 							</div>
 						</div>
@@ -414,7 +417,20 @@
 				<!-- Bank Details Edit end -->
 			</div>
 			<div class="tab-pane fade" id="manageUsers" role="tabpanel" aria-labelledby="manage-users-tab">
-				<h1>Manage Users</h1>
+				<div class="row card-wrapper">
+					@@include('./partials/components/manage-user-card.hbs')
+					@@include('./partials/components/manage-user-card.hbs')
+					@@include('./partials/components/manage-user-card.hbs')
+					@@include('./partials/components/manage-user-card.hbs')
+					@@include('./partials/components/manage-user-card.hbs')
+					@@include('./partials/components/manage-user-card.hbs')
+					@@include('./partials/components/manage-user-card.hbs')
+					@@include('./partials/components/manage-user-card.hbs')
+				</div>
+				<br>
+				<div class="text-center">
+					<button class="btn btn-get waves-effect waves-light" type="button" data-toggle="modal" data-target="#editUser">Add User</button>
+				</div>
 			</div>
 			<div class="tab-pane fade" id="usageStats" role="tabpanel" aria-labelledby="usage-stats-tab">
 				<div class="row">
@@ -463,6 +479,6 @@
 </div>
 
 
-@@include('./partials/components/manage-profile-edit-details-modal.hbs')
-@@include('./partials/components/manage-profile-edit-branch-modal.hbs')
-@@include('./partials/components/manage-profile-add-branch-modal.hbs')
+<!-- Add manage user modal start -->
+@@include('./partials/components/manage-users-modal.hbs')
+<!-- Add manage user modal end -->

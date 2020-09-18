@@ -62,7 +62,7 @@
 
     $('.dropdown-menu').click(function (e) {
         e.stopPropagation();
-    });    
+    });
 
     $(window).scroll(function (event) {
         var scrollTop = $(document).scrollTop();
@@ -348,27 +348,27 @@
 
     $(".close-btn").on("click", function (event) {
         event.preventDefault();
-        $(".coach-overlay").hide();        
+        $(".coach-overlay").hide();
     });
 
-    $('a[href$="#editBranch"]').on("click", function() {
+    $('a[href$="#editBranch"]').on("click", function () {
         $('#editBranch').modal('show');
     });
 
-    $('.chooseSchedule').on("click", function() {
+    $('.chooseSchedule').on("click", function () {
         $(".cancel-block").hide();
         var getBlockId = $(this).attr("data-schedule-id");
         var getTitle = $(this).attr("title");
 
         $(".chooseSchedule").removeClass("btn-blue");
         $(this).addClass("btn-blue");
-        $('#'+getBlockId).show();
+        $('#' + getBlockId).show();
 
         //Set Title to paragraph
         $(".ise-footer .action-text").text(getTitle);
     });
 
-    $(".btn-no-yes").on("click", function(){
+    $(".btn-no-yes").on("click", function () {
         $(".btn-no-yes").removeClass("btn-blue")
         $(this).addClass("btn-blue");
         $(".user-state").slideToggle();
@@ -380,10 +380,10 @@
     });
 
     //Onlick trigger tab
-    $(".go-back-tab").on("click", function(){
+    $(".go-back-tab").on("click", function () {
         //add tab href which you want trigger.
         var getTabUrl = $(this).attr("data-back-tab");
-        $(".nav-pills a.nav-link[href='#"+getTabUrl+"']").trigger("click");
+        $(".nav-pills a.nav-link[href='#" + getTabUrl + "']").trigger("click");
     });
 
     $('.btn-profile').on('click', function (event) {
@@ -391,10 +391,36 @@
         var id = $(this).attr('data-id');
         // console.log(id);
         $(this).parents(".match").hide();
-        $('#'+id).show();
+        $('#' + id).show();
     });
 
+    $('a[href$="#editUser"]').on("click", function () {
+        $('#editUser').modal('show');
+    });
+    
+    responsiveTabs();
+
+    $(window).resize(function () {
+        responsiveTabs();
+    })
+
 })(jQuery);
+
+function responsiveTabs() {
+    var totalWidths = 0;
+    var width = $(window).width();
+    if (width <= 480) {
+        $('.tabs-responsive > ul > li').each(function () {
+            totalWidths += $(this).outerWidth(true);
+            $(this).parent("ul").css("width", totalWidths + 21);
+        });
+    } else {
+        $('.tabs-responsive > ul').css("width", "auto");
+    }
+    //console.log(totalWidths);
+}
+
+
 
 function renderCard() {
     $('#skeletonBox .employer-logo').html('<img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg" alt="Sample Logo"/>');

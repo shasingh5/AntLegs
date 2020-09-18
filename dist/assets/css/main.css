@@ -5082,6 +5082,11 @@ ul.time-slots li {
   border-right: 0;
 }
 
+.tabs-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
 .cadidate-history {
   border: 1px solid #dfdfdf;
   padding: 20px;
@@ -5746,4 +5751,16 @@ ul.time-slots li {
 .condidate-info span::after {
   content: ":";
   float: right;
+}
+
+.card-manage .branch-location > div {
+  vertical-align: middle;
+}
+
+.card-manage .branches-wrapper .branch-location .location-edit .dropdown-item {
+  font-size: 14px;
+}
+
+.card-manage .branches-wrapper .branch-location .location-edit .dropdown-item:focus, .card-manage .branches-wrapper .branch-location .location-edit .dropdown-item:hover {
+  color: #000000;
 }
