@@ -386,6 +386,14 @@
         $(".nav-pills a.nav-link[href='#"+getTabUrl+"']").trigger("click");
     });
 
+    $('.btn-profile').on('click', function (event) {
+        event.preventDefault();
+        var id = $(this).attr('data-id');
+        // console.log(id);
+        $(this).parents(".match").hide();
+        $('#'+id).show();
+    });
+
 })(jQuery);
 
 function renderCard() {

@@ -4888,13 +4888,20 @@ ul.time-slots li {
 }
 
 .profile-name {
-  padding: 0 15px 0 40px;
+  padding: 2px 15px 2px 40px;
   margin-top: 15px;
   border-radius: 4px;
   background: #ffffff url("../images/user-profile-icon.png") 0 center no-repeat;
   color: #333333;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .profile-name {
+    font-size: 22px;
+    padding: 0 15px 0 40px;
+  }
 }
 
 .profile-warning {
@@ -4904,7 +4911,13 @@ ul.time-slots li {
   border-radius: 4px;
   background: #fbf7dc url("../images/info-icon-black.png") 15px center no-repeat;
   color: #000000;
-  font-size: 14px;
+  font-size: 12px;
+}
+
+@media (min-width: 768px) {
+  .profile-warning {
+    font-size: 14px;
+  }
 }
 
 .form-profile .col-form-label {
@@ -4961,6 +4974,112 @@ ul.time-slots li {
   background: #fff;
   border: 1px solid #ccc;
   margin-right: 10px;
+}
+
+.form-profile p {
+  font-size: 1rem;
+}
+
+.tab-content > .tab-pane {
+  padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+  .tab-content > .tab-pane {
+    padding: 20px;
+  }
+}
+
+.manage-tabs {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.manage-tabs .nav-item {
+  text-align: center;
+}
+
+@media (min-width: 480px) {
+  .manage-tabs .nav-item {
+    min-width: 100px;
+  }
+}
+
+.manage-tabs .nav-link {
+  border-bottom: 2px solid transparent;
+  color: #333;
+}
+
+@media (max-width: 360px) {
+  .manage-tabs .nav-link {
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+}
+
+.manage-tabs .nav-link.active, .manage-tabs .nav-link:hover {
+  border-color: #316ea7;
+  font-weight: 600;
+}
+
+.profile-view .form-control:disabled,
+.profile-view .form-control[readonly] {
+  background-color: #ffffff;
+  border-color: #ffffff;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  .profile-view .form-control:disabled,
+  .profile-view .form-control[readonly] {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: -10px;
+  }
+}
+
+.edit-pencil {
+  position: relative;
+}
+
+.edit-pencil::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 21px;
+  background: url("../images/pencil-icon-white.png") center no-repeat;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+  right: 4px;
+}
+
+.profile-edit .form-profile .btn-white {
+  color: #666;
+}
+
+.profile-edit .form-profile .btn-white .edit-pencil::before {
+  width: 20px;
+  height: 21px;
+  background: url("../images/pencil-icon.png") center no-repeat;
+}
+
+.table-responsive > .usage-table {
+  border-top: 0;
+}
+
+.usage-table {
+  border-top: 0;
+}
+
+.usage-table td,
+.usage-table th {
+  border-left: 0;
+  border-right: 1px solid #dee2e6;
+}
+
+.usage-table td:last-child,
+.usage-table th:last-child {
+  border-right: 0;
 }
 
 .cadidate-history {

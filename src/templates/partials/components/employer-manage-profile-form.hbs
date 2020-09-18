@@ -1,0 +1,468 @@
+<div class="container-fluid ant-container">
+	<!-- change password Header -->
+	<div class="row header">
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+			<a href="#" class="main-heading no-arrow">Manage Profile</a>
+		</div>
+	</div>
+	<!--/ change password Header -->
+
+	<div class="white-wrapper">
+
+		<div class="profile-name">Hexaware Technologies Private Limited </div>
+		<div class="profile-warning">Below fields are <b>mandatory</b> to get access to all the activities on this
+			website.</div>
+
+		<ul class="nav manage-tabs" id="myTab" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile"
+					aria-selected="true">Profile</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="bank-details-tab" data-toggle="tab" href="#bankDetails" role="tab"
+					aria-controls="bankDetails" aria-selected="false">Bank Details</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="manage-users-tab" data-toggle="tab" href="#manageUsers" role="tab"
+					aria-controls="manageUsers" aria-selected="false">Manage Users</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="usage-stats-tab" data-toggle="tab" href="#usageStats" role="tab"
+					aria-controls="usageStats" aria-selected="false">Usage Stats</a>
+			</li>
+			
+		</ul>
+		<div class="tab-content" id="myTabContent">
+			<div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+				<!-- Profile View Start -->
+				<div class="profile-view match" id="profileView">
+					<div class="card">
+						<div class="form-profile">
+							<form autocomplete="off" class="form" role="form">
+								<div class="form-group row">
+									<label for="displayName" class="col-sm-3 col-form-label">Display
+										Name</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" readonly disabled id="displayName"
+											value="Hexaware Technologies">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="nationality" class="col-sm-3 col-form-label">Industry</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" readonly disabled id="nationality"
+											value="Information Technology">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="gender" class="col-sm-3 col-form-label">Location</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" readonly disabled id="gender"
+											value="Bangaluru, Karnataka, India">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="dob" class="col-sm-3 col-form-label">Website</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" readonly disabled id="dob"
+											value="https://www.hexawaretech.com">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="location" class="col-sm-3 col-form-label">Contact Person</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" readonly disabled id="location" value="Santhosh K.">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="contact" class="col-sm-3 col-form-label">Designation</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" readonly disabled id="contact"
+											value="Chief Technology Officer">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="email" class="col-sm-3 col-form-label">Job Function</label>
+									<div class="col-sm-4">
+										<input type="email" class="form-control" readonly disabled id="email" value="IT">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="linkedInProfile" class="col-sm-3 col-form-label">Contact Mobile
+										No.</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" readonly disabled id="linkedInProfile"
+											value="+91 9443328765">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="degree" class="col-sm-3 col-form-label">Email</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" readonly disabled id="degree"
+											value="santhosh@hexawaretech.com">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="contact" class="col-sm-3 col-form-label">About Hexaware
+										Technology</label>
+									<div class="col-sm-7">
+										<p>A technologically advanced, new and revolutionary referral driven recruiting
+											platform that brings employers, referrers to match top quality talent with
+											great positions, and make the experience extremely rewarding for everyone
+											involved. AntLegs realizes a future where recruiters can seamlessly work
+											with employers to fill open / vacant positions faster improving quality of
+											hire and significantly reduce cost per hire.</p>
+										<br>
+										<p>A technologically advanced, new and revolutionary referral driven recruiting
+											platform that brings employers, referrers to match top quality talent with
+											great positions, and make the experience extremely rewarding for everyone
+											involved. AntLegs realizes a future where recruiters can seamlessly work
+											with employers to fill open / vacant positions faster improving quality of
+											hire and significantly reduce cost per hire.</p>
+
+									</div>
+								</div>
+
+								<br>
+								<div class="form-group row">
+									<label for="Niche" class="col-sm-3 col-form-label">
+										<span class="sr-only">Call to action</span>
+									</label>
+									<div class="col-sm-4">
+										<div class="group-btn">
+											<button class="btn btn-get btn-profile waves-effect waves-light" type="button"
+												data-id="profileEdit">
+												<span class="fa edit-pencil"></span> Edit
+											</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- Profile View end -->
+				<!-- Profile Edit Start -->
+				<div class="profile-edit match collapse" id="profileEdit">
+					<div class="card">
+						<div class="form-profile">
+							<form autocomplete="off" class="form" role="form">
+								<div class="form-group row">
+									<label for="displayName" class="col-sm-3 col-form-label">Display
+										Name</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" id="displayName" value="Hexaware Technologies">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="nationality" class="col-sm-3 col-form-label">Industry</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" id="nationality" value="Information Technology">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="gender" class="col-sm-3 col-form-label">Location</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" id="gender" value="Bangaluru, Karnataka, India">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="dob" class="col-sm-3 col-form-label">Website</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" id="dob" value="https://www.hexawaretech.com">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="location" class="col-sm-3 col-form-label">Contact Person</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" id="location" value="Santhosh K.">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="contact" class="col-sm-3 col-form-label">Designation</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" id="contact" value="Chief Technology Officer">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="email" class="col-sm-3 col-form-label">Job Function</label>
+									<div class="col-sm-4">
+										<input type="email" class="form-control" id="email" value="IT">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="linkedInProfile" class="col-sm-3 col-form-label">Contact Mobile
+										No.</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" id="linkedInProfile" value="+91 9443328765">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="degree" class="col-sm-3 col-form-label">Email</label>
+									<div class="col-sm-4">
+										<input type="text" class="form-control" id="degree" value="santhosh@hexawaretech.com">
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="contact" class="col-sm-3 col-form-label">About Hexaware
+										Technology</label>
+									<div class="col-sm-7">
+										<textarea name="branch" id="branch" rows="12" class="form-control">A technologically advanced, new and revolutionary referral driven recruiting platform that brings employers, referrers to match top quality talent with great positions, and make the experience extremely rewarding for everyone involved. AntLegs realizes a future where recruiters can seamlessly work with employers to fill open / vacant positions faster improving quality of hire and significantly reduce cost per hire.
+										A technologically advanced, new and revolutionary referral driven recruiting platform that brings employers, referrers to match top quality talent with great positions, and make the experience extremely rewarding for everyone involved. AntLegs realizes a future where recruiters can seamlessly work with employers to fill open / vacant positions faster improving quality of hire and significantly reduce cost per hire.</textarea>
+
+									</div>
+								</div>
+
+								<br>
+								<div class="form-group row">
+									<label for="Niche" class="col-sm-3 col-form-label">
+										<span class="sr-only">Call to action</span>
+									</label>
+									<div class="col-sm-4">
+										<div class="group-btn">											
+											<button class="btn btn-get  btn-white btn-profile waves-effect waves-light" type="button"
+												data-id="profileEdit" disabled="disabled">
+												<span class="fa edit-pencil"></span> Edit
+											</button>
+											<button class="btn btn-get waves-effect waves-light btn-profile" type="button"
+												data-id="profileView">Save</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- Profile Edit end -->
+			</div>
+			<div class="tab-pane fade" id="bankDetails" role="tabpanel" aria-labelledby="bank-details-tab">
+				<!-- Bank Details View Start -->
+				<div class="profile-view bank-details-view match" id="bankDetailsView">
+					<div class="row">
+						<div class="col-lg-10 col-xl-7">
+							<div class="card">
+								<div class="form-profile">
+									<form autocomplete="off" class="form" role="form">
+										<div class="form-group row">
+											<label for="displayName" class="col-sm-5 col-form-label">Branch Name</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" readonly disabled id="displayName" value="Hexaware Information Technology">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="contact" class="col-sm-5 col-form-label">Branch Address</label>
+											<div class="col-sm-6">
+												<textarea name="branch" id="branch" rows="3" class="form-control" readonly
+													disabled>102 - 109, Hexaware Tech Towers 2, Kormangalam, LBS Marg, Bangaluru, Karnataka, India</textarea>
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="nationality" class="col-sm-5 col-form-label">State
+												</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" readonly disabled id="Bangaluru"
+													value="Bangaluru">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="gender" class="col-sm-5 col-form-label">Country</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" readonly disabled id="gender" value="India">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="dob" class="col-sm-5 col-form-label">Location Map</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" readonly disabled id="dob" value="https://goo.gl/maps/BANqVJZPM5x5X9G">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="Contact" class="col-sm-5 col-form-label">Contact Mobile No.</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" readonly disabled id="Contact" value="+91 9455543432">
+											</div>
+										</div>
+
+										
+										<br>
+										<div class="form-group row">
+											<label for="Niche" class="col-sm-5 col-form-label">
+												<span class="sr-only">Call to action</span>
+											</label>
+											<div class="col-sm-6">
+												<div class="group-btn">
+													<button class="btn btn-get btn-profile waves-effect waves-light" type="button"
+														data-id="bankDetailsEdit">
+														<span class="fa edit-pencil"></span> Edit
+													</button>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- Bank Details View End -->
+
+				<!-- Bank Details Edit Start -->
+				<div class="profile-edit bank-details-edit match collapse" id="bankDetailsEdit">
+					<div class="row">
+						<div class="col-lg-10 col-xl-7">
+							<div class="card">
+								<div class="form-profile">
+
+									<form autocomplete="off" class="form" role="form">
+										<div class="form-group row">
+											<label for="displayName" class="col-sm-5 col-form-label">Branch Name</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" id="displayName" value="Hexaware Information Technology">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="contact" class="col-sm-5 col-form-label">Branch Address</label>
+											<div class="col-sm-6">
+												<textarea name="branch" id="branch" rows="3" class="form-control">102 - 109, Hexaware Tech Towers 2, Kormangalam, LBS Marg, Bangaluru, Karnataka, India</textarea>
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="nationality" class="col-sm-5 col-form-label">State
+												</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" id="Bangaluru"
+													value="Bangaluru">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="gender" class="col-sm-5 col-form-label">Country</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" id="gender" value="India">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="dob" class="col-sm-5 col-form-label">Location Map</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" id="dob" value="https://goo.gl/maps/BANqVJZPM5x5X9G">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="Contact" class="col-sm-5 col-form-label">Contact Mobile No.</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" id="Contact" value="+91 9455543432">
+											</div>
+										</div>
+
+										
+										<br>
+										<div class="form-group row">
+											<label for="Niche" class="col-sm-5 col-form-label">
+												<span class="sr-only">Call to action</span>
+											</label>
+											<div class="col-sm-6">
+												<div class="group-btn">
+													<!-- <button class="btn btn-get btn-white waves-effect waves-light"
+														type="button" disabled="disabled">
+														<span class="fa fa-edit"></span> Edit
+													</button> -->
+													<button class="btn btn-get  btn-white btn-profile waves-effect waves-light" type="button"
+														data-id="bankDetailsEdit" disabled="disabled">
+														<span class="fa edit-pencil"></span> Edit
+													</button>
+													<button class="btn btn-get waves-effect waves-light btn-profile" type="button"
+														data-id="bankDetailsView">Save</button>
+												</div>
+											</div>
+										</div>
+									</form>
+									
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- Bank Details Edit end -->
+			</div>
+			<div class="tab-pane fade" id="manageUsers" role="tabpanel" aria-labelledby="manage-users-tab">
+				<h1>Manage Users</h1>
+			</div>
+			<div class="tab-pane fade" id="usageStats" role="tabpanel" aria-labelledby="usage-stats-tab">
+				<div class="row">
+					<div class="col-md-7">
+						<div class="table-responsive">
+							<table class="table table-bordered usage-table table-hover">
+								<thead>
+									<tr>
+										<th scope="col" class="text-center"><b>Sr. No</b></th>
+										<th scope="col"><b>Login Time </b></th>
+										<th scope="col"><b> Logged Out</b></th>
+										<th scope="col"><b>IP Address</b></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row" class="text-center">1</th>
+										<td>09:22</td>
+										<td>14:43</td>
+										<td>195.33.54.34</td>
+									</tr>
+									<tr>
+										<th scope="row" class="text-center">2</th>
+										<td>09:22</td>
+										<td>14:43</td>
+										<td>195.33.54.34</td>
+									</tr>
+									<tr>
+										<th scope="row" class="text-center">3</th>
+										<td>09:22</td>
+										<td>14:43</td>
+										<td>195.33.54.34</td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+
+@@include('./partials/components/manage-profile-edit-details-modal.hbs')
+@@include('./partials/components/manage-profile-edit-branch-modal.hbs')
+@@include('./partials/components/manage-profile-add-branch-modal.hbs')
