@@ -4992,10 +4992,23 @@ ul.time-slots li {
 
 .manage-tabs {
   border-bottom: 1px solid #e6e6e6;
+  width: 100%;
+  display: flex;
+  flex-wrap: inherit;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  position: relative;
+}
+
+.manage-tabs::-webkit-scrollbar {
+  overflow: hidden;
+  background: transparent;
+  display: none;
 }
 
 .manage-tabs .nav-item {
   text-align: center;
+  white-space: nowrap;
 }
 
 @media (min-width: 480px) {
@@ -5007,13 +5020,6 @@ ul.time-slots li {
 .manage-tabs .nav-link {
   border-bottom: 2px solid transparent;
   color: #333;
-}
-
-@media (max-width: 360px) {
-  .manage-tabs .nav-link {
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
-  }
 }
 
 .manage-tabs .nav-link.active, .manage-tabs .nav-link:hover {
@@ -5080,11 +5086,6 @@ ul.time-slots li {
 .usage-table td:last-child,
 .usage-table th:last-child {
   border-right: 0;
-}
-
-.tabs-responsive {
-  width: 100%;
-  overflow-x: auto;
 }
 
 .cadidate-history {

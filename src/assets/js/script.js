@@ -398,27 +398,27 @@
         $('#editUser').modal('show');
     });
     
-    responsiveTabs();
+    // responsiveTabs();
 
-    $(window).resize(function () {
-        responsiveTabs();
-    })
+    // $(window).resize(function () {
+    //     responsiveTabs();
+    // })
 
 })(jQuery);
 
-function responsiveTabs() {
-    var totalWidths = 0;
-    var width = $(window).width();
-    if (width <= 480) {
-        $('.tabs-responsive > ul > li').each(function () {
-            totalWidths += $(this).outerWidth(true);
-            $(this).parent("ul").css("width", totalWidths + 21);
-        });
-    } else {
-        $('.tabs-responsive > ul').css("width", "auto");
-    }
-    //console.log(totalWidths);
-}
+// function responsiveTabs() {
+//     var totalWidths = 0;
+//     var width = $(window).width();
+//     if (width <= 480) {
+//         $('.tabs-responsive > ul > li').each(function () {
+//             totalWidths += $(this).outerWidth(true);
+//             $(this).parent("ul").css("width", totalWidths + 21);
+//         });
+//     } else {
+//         $('.tabs-responsive > ul').css("width", "auto");
+//     }
+//     //console.log(totalWidths);
+// }
 
 
 

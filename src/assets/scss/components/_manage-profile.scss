@@ -371,9 +371,22 @@
 
 .manage-tabs {
   border-bottom: 1px solid #e6e6e6;
+  width: 100%;
+  display: flex;
+  flex-wrap: inherit;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  position: relative;
+
+  &::-webkit-scrollbar {
+    overflow: hidden;
+    background: transparent;
+    display: none;    
+  }
 
   .nav-item {
     text-align: center;
+    white-space: nowrap;
     @include respond-to(480px) {
       min-width: 100px;
     }
@@ -382,11 +395,6 @@
   .nav-link {
     border-bottom: 2px solid transparent;
     color: #333;
-
-    @include respond-to(360px, max) {
-      padding-left: 0.6rem;
-      padding-right: 0.6rem;
-    }
 
     &.active,
     &:hover {
@@ -454,7 +462,7 @@
   }
 }
 
-.tabs-responsive {
-  width: 100%;
-  overflow-x: auto;
-}
+// .tabs-responsive {
+//   width: 100%;
+//   overflow-x: auto;
+// }
