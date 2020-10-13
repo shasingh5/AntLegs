@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Welcome to AntLegs</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+<!-- Material Design Bootstrap -->
+<link href="vendor/mdb/mdb.min.css" rel="stylesheet">
+<!-- Custom Scroll -->
+<link href="vendor/malihu-custom-scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+<!-- Full Calendar -->
+<link href="https://fullcalendar.io/js/fullcalendar-3.0.1/fullcalendar.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.42/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+<!-- Slick Slider -->
+<link href="vendor/slick/slick.css" rel="stylesheet">
+<link href="vendor/slick/slick-theme.css" rel="stylesheet">
+<!-- Custom styles -->
+<link href="assets/css/main.min.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <!-- Sidebar  -->
+<nav id="sidebar">    
+
+    <div class="sidebar-header">
+        <a href="javascript:;" id="dismiss" class="hamburg">&nbsp;</a>
+		<a href="#" class="logo">
+			<span>ANT</span>
+			<span>LEGS</span>
+		</a>
+    </div>
+
+    <ul class="list-unstyled components">        
+        <!-- <li class="active">
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li>
+                    <a href="#">Home 1</a>
+                </li>
+                <li>
+                    <a href="#">Home 2</a>
+                </li>
+                <li>
+                    <a href="#">Home 3</a>
+                </li>
+            </ul>
+        </li> -->
+        <li class="waves-effect">
+            <a href="employers-dashboard.html" class="dashboard">Dashboard</a>
+        </li>        
+        <li class="waves-effect active">
+            <a href="index.html" class="employers">Employers</a>
+        </li>
+        <li class="waves-effect">
+            <a href="recruiters.html" class="recruiters">Recruiters</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#" class="jobs">Jobs</a>
+        </li>
+        <li class="waves-effect">
+            <a href="interviews-calendar.html" class="interviews">Interviews</a>
+        </li>
+        <li class="waves-effect">
+            <a href="payments-billings.html" class="payments">Payments</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#" class="rewards">Rewards & Points</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#" class="reports">Reports</a>
+        </li>
+        <li class="waves-effect manage-admin">
+            <a href="#" class="manage">Manage Admin</a>
+        </li>
+    </ul>
+</nav>
+<!-- /Sidebar  -->
+
+    <!-- Page Content  -->
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-antlegs bs-none">
+	<div class="container-fluid ant-container">
+
+		<a href="javascript:;" id="sidebarCollapse" class="hamburg">&nbsp;</a>
+		<a href="#" class="logo">
+			<span>ANT</span>
+			<span>LEGS</span>
+		</a>
+
+		<button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<i class="fas fa-align-justify"></i>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="nav navbar-nav ml-auto">
+				<!-- <li class="nav-item active">
+                	<a class="nav-link" href="#">Page</a>
+              	</li> -->
+				<li class="nav-item  notification-globle dropdown">
+					<a class="nav-link dropdown-toggle" id="navbar-tools" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="true">
+						<i class="fas fa-bell bell-icon"></i><span>Notification</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbar-tools">
+						<h4><i class="fas fa-bell bell-icon"></i><span>Notification</span></h4>
+						<ul id="notification">
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">The job for Marketing Director with Hexaware Technologies has been
+											closed</span>
+										<span class="alert-time">
+											<i>20 mins ago</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>30 mins ago</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+								</li>
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">The job for Marketing Director with Hexaware Technologies has been
+											closed</span>
+										<span class="alert-time">
+											<i>2 hrs ago</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+								</li>
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">The job for Marketing Director with Hexaware Technologies has been
+											closed</span>
+										<span class="alert-time">
+											<i>4 hrs ago</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+								</li>
+								<li class="inline-email read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">Email A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>yesterday</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+									<div class="email-box">
+										<button type="button" class="btn email">Email</button>
+										<button type="button" class="btn delete">Delete</button>
+										<div class="msg-box">
+											<div class="input-group my-group">
+												<textarea class="text-area form-control" name="" id="" cols="10" rows="3"
+													placeholder="An email will be sent to your email ID with your message here (max 100 characters)"></textarea>
+												<span class="input-group-btn">
+													<button class="btn" type="submit" title="Search">Search</button>
+												</span>
+											</div>
+										</div>
+										<!-- /input-group -->
+									</div>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+							</ul>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" id="navbar-tools" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="true">
+						<i class="fas fa-user-circle user-icon"></i><span>Hi Snahal K</span></a>
+					<div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbar-tools">
+						<a class="dropdown-item d-xl-none waves-effect waves-light" href="/support/">Support Forum</a>
+						<a class="dropdown-item waves-effect waves-light" href="/snippets/">Editor &amp; Snippets</a>
+						<a class="dropdown-item waves-effect waves-light" href="/articles/">Articles</a>
+						<a class="dropdown-item waves-effect waves-light" href="/news/frontend/">News</a>
+						<a class="dropdown-item waves-effect waves-light" href="/cli/">MDB CLI <span
+								class="badge badge-danger rounded">New</span></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+      
+        <div class="container-fluid ant-container">
+	<!-- Header -->
+	<div class="row header">
+		<div class="col-5 col-sm-6 col-md-6 col-lg-3">
+			<a href="#" class="main-heading">Verification Details</a>
+		</div>
+		<div class="col-7 col-sm-6 col-md-6 col-lg-9 text-right">
+			<button class="btn btn-print waves-effect">Print Preview</button>
+			<button class="btn btn-print waves-effect" data-toggle="modal" data-target="#interviewSchedule">Interview Schedule</button>
+			<button class="btn btn-print waves-effect" data-toggle="modal" data-target="#interviewSchedule2">Interview Schedule 2</button>
+			<button class="btn btn-print waves-effect" data-toggle="modal" data-target="#interviewReschedule">Interview Reschedule</button>
+			<button class="btn btn-print waves-effect" data-toggle="modal" data-target="#justificationNoYes">Opinion</button>
+			<button class="btn btn-print waves-effect" data-toggle="modal" data-target="#verificationDetails">Verification Details</button>
+		</div>
+
+	</div>
+	<!--/ Header -->
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="card cv-view">
+				<div class="cv-view-header">
+					<div class="cadidate-photo">
+						<img src="assets/images/user-photo.jpg" alt="Santhosh Kamurichianil">
+					</div>
+					<div class="cadidate-name">
+						<h3>Santhosh Kamurichianil</h3>
+						<p>Applied for: Senior Software Engineer</p>
+					</div>
+				</div>
+				<hr>
+				<p><span> Indian / Male / YOB : </span> <b>1977</b></p>
+				<p><span>Current Salary : </span> <b>USD 50000 PA</b></p>
+				<p><span>Expected Salary : </span> <b>USD 75000</b></p>
+				<p><span>Notice Period : </span> <b>90 Days</b></p>
+				<p><span>Current Location : </span> <b>Bangalore, Karnataka, India</b></p>
+				<p><span>Willing to Relocate : </span> <b>Yes</b></p>
+				<hr>
+				<h4>Profile</h4>
+				<p>Develops products by identifying potential products; conducting market research; generating product
+					requirements; determining specifications, production timetables, pricing, and time-integrated plans
+					for product introduction; developing marketing strategies. Develops products by identifying
+					potential products; conducting market research; generating product requirements; determining
+					specifications, production timetables, pricing, and time-integrated plans for product introduction;
+					developing marketing strategies.</p>
+				<hr>
+				<h4>Education</h4>
+				<p>2002: Masters (Computer Science) <br> Mahatma Gandhi University – Kerala, India</p>
+				<hr>
+				<h4>Certifications</h4>
+				<p>CCNA, MCSC, PMP</p>
+				<hr>
+				<h4>Core Competencies</h4>
+				<p>Competency 1, Competency 2</p>
+				<hr>
+				<h4>Employement History</h4>
+				<div class="row row-eq-height card-wrapper">
+					<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+						<div class="emp-hist-card">
+							<h5>June 2018 – April 2019</h5>
+							<p>Microsoft - Dubai, United Arab Emirates</p>
+							<p>Business Development Manager</p>
+							<p>Reporting to: Director</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+						<div class="emp-hist-card">
+							<h5>June 2018 – April 2019</h5>
+							<p>Microsoft - Dubai, United Arab Emirates</p>
+							<p>Business Development Manager</p>
+							<p>Reporting to: Director</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+						<div class="emp-hist-card">
+							<h5>June 2018 – April 2019</h5>
+							<p>Microsoft - Dubai, United Arab Emirates</p>
+							<p>Business Development Manager</p>
+							<p>Reporting to: Director</p>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-3 col-xl-2">
+						<div class="emp-hist-card">
+							<h5>June 2018 – April 2019</h5>
+							<p>Microsoft - Dubai, United Arab Emirates</p>
+							<p>Business Development Manager</p>
+							<p>Reporting to: Director</p>
+						</div>
+					</div>
+				</div>
+
+				<hr>
+				<h4>Overall Responsibilities Handled</h4>
+				<ul>
+					<li>Responsibility 1</li>
+					<li>Responsibility 2</li>
+					<li>Responsibility 3</li>
+				</ul>
+
+				<hr>
+				<h4>Others</h4>
+				<p>Training</p>
+
+				<hr>
+				<h4>Foward</h4>
+				<form class="form-inline" action="/action_page.php">
+					<label for="email" class="sr-only">Email address:</label>
+					<input type="email" class="form-control" id="email" placeholder="enter email address">
+					<button type="submit" class="btn btn-get waves-effect waves-light">Send</button>
+				</form>
+
+				<div class="text-right">
+					<p class="credit">Powered by : <b>AntLegs</b></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Interview Schedule Modal -->
+<div class="modal fade" id="interviewSchedule" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Interview Schedule</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body ism-body">
+				<div class="id-content">
+					<div class="employer-logo">
+						<img class="lazy" src="assets/images/sample-logo.jpg" data-src="assets/images/employer-logo-1.jpg"
+							alt="Microsoft" />
+					</div>
+					<div class="ant-content">
+						<!--Title-->
+						<p class="text-16">
+							Compay : <b>Microsoft Incorporation</b>
+						</p>
+						<hr>
+						<p class="text-16">
+							Job Opening : <b>Cyber Security Manager</b>
+						</p>
+						<br>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-6">
+							<div class="ant-content">
+								<!--Title-->
+								<p>
+									<b>Interview Mode</b>
+								</p>
+
+								<div class="im-select">
+									<select name="" id="" class="select" required="required">
+										<option value="">Face to Face</option>
+										<option value="">Video Calling</option>
+										<option value="">Sky Call</option>
+										<option value="">Mobile</option>
+									</select>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-12 col-sm-6">
+							<div class="ant-content">
+								<!--Title-->
+								<p class="bold">
+									Interview Slots
+								</p>
+								<ul class="interview-slots">
+									<li>Wednesday, <b>20/02/2020</b> | <b>13:00</b> Hrs <a href="#">Confirm</a></li>
+									<li>Wednesday, <b>20/02/2020</b> | <b>13:00</b> Hrs <a href="#">Confirm</a></li>
+									<li>Wednesday, <b>20/02/2020</b> | <b>13:00</b> Hrs <a href="#">Confirm</a></li>
+								</ul>
+								<br>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12 col-sm-6">
+							<div class="ant-content">
+								<p class="bold">Interview Details</p>
+							</div>
+							<div class="card-body">
+								<form autocomplete="off" class="form" role="form">
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Interviewer</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="Mr. Michael Pinto" disabled>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Designation</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="Chief Technology Officer" disabled>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Email</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="micheael.pinto@netsoft.com" disabled>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Contact</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="+91 9543328784" disabled>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6">
+							<div class="ant-content">
+								<p class="bold">Venue Details</p>
+							</div>
+
+							<div class="card-body">
+								<form autocomplete="off" class="form" role="form">
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Branch</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="Avenue Park" disabled>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Location</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="Chennai, India" disabled>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Contact</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="+91 887265452" disabled>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Location Map</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="http://maps.google.co.in/embed..." disabled>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="text-center">
+					<button type="button" class="btn btn-big waves-effect chooseSchedule"
+						data-schedule-id="cancelInterview">Cancel Interview</button>
+					<button type="button" class="btn btn-big waves-effect chooseSchedule"
+						data-schedule-id="suggestSchedule">Suggest Schedule</button>
+				</div>
+
+				<div class="cancel-block" id="cancelInterview">
+					<div class="ant-content">
+						<p class="text-16 bold">Cancel Interview</p>
+					</div>
+					<form class="">
+						<div class="row">
+							<div class="col-12">
+								<div class="form-group custom-control-inline">
+									<label class="sr-only">Reason 1</label>
+									<input type="checkbox" class="form-control checkbox" id="Reason1">
+									<input type="text" class="form-control" value="Reason 1" disabled>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form-group custom-control-inline">
+									<label class="sr-only">Reason 1</label>
+									<input type="checkbox" class="form-control checkbox" id="Reason2" checked>
+									<input type="text" class="form-control" value="Reason 2">
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form-group custom-control-inline">
+									<label class="sr-only">Reason 1</label>
+									<input type="checkbox" class="form-control checkbox" id="Reason3">
+									<input type="text" class="form-control" value="Reason 3" disabled>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form-group">
+									<label class="sr-only">Reason 1</label>
+									<input type="text" class="form-control" value="Others">
+								</div>
+							</div>
+						</div>
+
+						<div class="cancel-cta">
+							<button type="reset" class="btn btn-big waves-effect" data-dismiss="modal">Discard</button>
+							<button type="submit" class="btn btn-big waves-effect">Cancel Interview</button>
+						</div>
+					</form>
+				</div>
+
+				<div class="cancel-block suggest-block" id="suggestSchedule">
+					<div class="ant-content">
+						<p class="text-16 bold">Suggest Schedule</p>
+					</div>
+
+					<div class="row">
+						<div class="col-12 col-sm-6">
+							<form class="border-right">
+								<div class="row">
+									<div class="col-12">
+										<div class="ant-content">
+											<p class="bold">Date</p>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-group custom-control-inline">
+											<label class="sr-only">Reason 1</label>
+											<div class="im-select">
+												<select name="" id="" class="select" required="required">
+													<option value="">Feb</option>
+													<option value="">Jan</option>
+													<option value="">Mar</option>
+													<option value="">Apr</option>
+												</select>
+												<select name="" id="" class="select" required="required">
+													<option value="">01</option>
+													<option value="">02</option>
+													<option value="">03</option>
+													<option value="">04</option>
+												</select>
+												<select name="" id="" class="select" required="required">
+													<option value="">2020</option>
+													<option value="">2021</option>
+													<option value="">2022</option>
+													<option value="">2023</option>
+												</select>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-12">
+										<div class="ant-content">
+											<p class="bold">Time</p>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="form-group custom-control-inline">
+											<label class="sr-only">Reason 1</label>
+											<div class="im-select">
+												<select name="" id="" class="select" required="required">
+													<option value="">10:30</option>
+													<option value="">11:00</option>
+													<option value="">11:30</option>
+													<option value="">12:00</option>
+												</select>
+												<select name="" id="" class="select" required="required">
+													<option value="">AM</option>
+													<option value="">PM</option>
+												</select>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</form>
+						</div>
+						<div class="col-12 col-sm-6">
+							<div class="ant-content ss-cont">
+								<!--Title-->
+								<p class="bold">
+									Suggested Schedules
+								</p>
+								<ul class="interview-slots">
+									<li>Wednesday, <b>20/02/2020</b> | <b>13:00</b> Hrs <a href="#">Confirm</a></li>
+									<li>Wednesday, <b>20/02/2020</b> | <b>13:00</b> Hrs <a href="#">Confirm</a></li>
+									<li>Wednesday, <b>20/02/2020</b> | <b>13:00</b> Hrs <a href="#">Confirm</a></li>
+								</ul>
+								<br>
+							</div>
+						</div>
+					</div>
+
+					<div class="cancel-cta">
+						<button type="reset" class="btn btn-big waves-effect" data-dismiss="modal">Discard</button>
+						<button type="submit" class="btn btn-big waves-effect">Re-Schedule</button>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /Interview Schedule Modal -->
+<!-- Interview Schedule Modal -->
+<div class="modal fade" id="interviewSchedule2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Interview Schedule</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body ism-body">
+				<div class="id-content">
+					<div class="ant-content">
+						<!--Title-->
+						<p class="text-16">
+							Job Opening : <b>Cyber Security Manager</b>
+						</p>
+						<br>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="ant-content">
+								<!--Title-->
+								<p>
+									<b>Interview Mode</b>
+								</p>
+
+								<div class="im-select">
+									<select name="" id="" class="select" required="required">
+										<option value="">Face to Face</option>
+										<option value="">Video Calling</option>
+										<option value="">Sky Call</option>
+										<option value="">Mobile</option>
+									</select>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<br>
+
+					<div class="row">
+						<div class="col-12 col-sm-4">
+							<div class="ant-content">
+								<p class="bold">Date</p>
+							</div>
+							<div class="form-group custom-control-inline date-box">
+								<label class="sr-only">Date</label>
+								<div class="im-select">
+									<select name="" id="" class="select" required="required">
+										<option value="">Feb</option>
+										<option value="">Jan</option>
+										<option value="">Mar</option>
+										<option value="">Apr</option>
+									</select>
+									<select name="" id="" class="select" required="required">
+										<option value="">01</option>
+										<option value="">02</option>
+										<option value="">03</option>
+										<option value="">04</option>
+									</select>
+									<select name="" id="" class="select" required="required">
+										<option value="">2020</option>
+										<option value="">2021</option>
+										<option value="">2022</option>
+										<option value="">2023</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-3">
+							<div class="ant-content">
+								<p class="bold">Time</p>
+							</div>
+							<div class="form-group custom-control-inline date-box">
+								<label class="sr-only">Time</label>
+								<div class="im-select">
+									<select name="" id="" class="select" required="required">
+										<option value="">10:30</option>
+										<option value="">11:00</option>
+										<option value="">11:30</option>
+										<option value="">12:00</option>
+									</select>
+									<select name="" id="" class="select" required="required">
+										<option value="">AM</option>
+										<option value="">PM</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-5">
+							<div class="ant-content">
+								<p class="bold">Duration</p>
+							</div>
+							<div class="form-group custom-control-inline date-box">
+								<label class="sr-only">Duration</label>
+								<div class="im-select">
+									<select name="" id="" class="select" required="required">
+										<option value="">00:30</option>
+										<option value="">01:00</option>
+										<option value="">01:30</option>
+										<option value="">02:00</option>
+									</select>
+									<select name="" id="" class="select" required="required">
+										<option value="">Hrs</option>
+										<option value="">Mts</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<p class="schedule-fixed">Schedule : Tuesday 26/02/2020 at 09:15 Hrs</p>
+
+					<br>
+					<div class="row">
+						<div class="col-12 col-sm-6">
+							<div class="ant-content">
+								<p class="bold">Interview Details</p>
+							</div>
+							<div class="card-body">
+								<form autocomplete="off" class="form" role="form">
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Interviewer</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="Mr. Michael Pinto" disabled>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Designation</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="Chief Technology Officer"
+												disabled>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Email</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="micheael.pinto@netsoft.com"
+												disabled>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Contact</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="+91 9543328784" disabled>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6">
+							<div class="ant-content">
+								<p class="bold">Location Details</p>
+							</div>
+
+							<div class="card-body">
+								<form autocomplete="off" class="form" role="form">
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Branch</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="Avenue Park" disabled>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Location</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="Chennai, India" disabled>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Contact</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text" value="+91 887265452" disabled>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Location Map</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text"
+												value="http://maps.google.co.in/embed..." disabled>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<br>
+
+					<div class="ant-content">
+						<p class="text-16 bold">Other Details</p>
+					</div>
+					<form class="other-Details">
+						<div class="row">
+							<div class="col-12">
+								<div class="form-group custom-control-inline">
+									<label class="sr-only">Travel Expense</label>
+									<input type="checkbox" class="form-control checkbox" id="travelExpense">
+									<input type="text" class="form-control" value="Travel Expense" disabled>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form-group custom-control-inline">
+									<label class="sr-only">Accomodation / Food</label>
+									<input type="checkbox" class="form-control checkbox" id="accomodationFood">
+									<input type="text" class="form-control" value="Accomodation / Food" disabled>
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="form-group custom-control-inline">
+									<label class="sr-only">Others</label>
+									<input type="checkbox" class="form-control checkbox" id="Others" checked>
+									<input type="text" class="form-control" value="Others, please specify"> <span
+										class="add-other-input" title="Add input box">+</span>
+								</div>
+							</div>
+						</div>
+					</form>
+
+					<div class="schedule-address-list">
+						<div class="row row-eq-height card-wrapper">
+							<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+								<div class="emp-hist-card">
+									<div class="row">
+										<div class="col-10">
+											<div class="schedule-courtry">India</div>
+										</div>
+										<div class="col-2">
+											<input type="checkbox" class="sc-checkbox">
+										</div>
+									</div>
+									<br>
+									<h5>Antlegs Technology</h5>
+									<p>B/7676, 247 Park, Gandi Nagar,</p>
+									<p>Cuffe Parade, Europe</p>
+									<p>+91 233 445 6767</p>
+									<p>Location Map: </p>
+									<a href="#">http://maps.google.co.in/embed...</a>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+								<div class="emp-hist-card">
+									<div class="row">
+										<div class="col-10">
+											<div class="schedule-courtry">Dubai, UAE</div>
+										</div>
+										<div class="col-2">
+											<input type="checkbox" class="sc-checkbox">
+										</div>
+									</div>
+									<br>
+									<h5>Antlegs Technology</h5>
+									<p>B/7676, 247 Park, Gandi Nagar,</p>
+									<p>Cuffe Parade, Europe</p>
+									<p>+91 233 445 6767</p>
+									<p>Location Map: </p>
+									<a href="#">http://maps.google.co.in/embed...</a>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+								<div class="emp-hist-card">
+									<div class="row">
+										<div class="col-10">
+											<div class="schedule-courtry">Singapore</div>
+										</div>
+										<div class="col-2">
+											<input type="checkbox" class="sc-checkbox">
+										</div>
+									</div>
+									<br>
+									<h5>Antlegs Technology</h5>
+									<p>B/7676, 247 Park, Gandi Nagar,</p>
+									<p>Cuffe Parade, Europe</p>
+									<p>+91 233 445 6767</p>
+									<p>Location Map: </p>
+									<a href="#">http://maps.google.co.in/embed...</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<div class="text-center">
+					<button type="button" class="btn btn-big waves-effect" data-dismiss="modal">Discard</button>
+					<button type="button" class="btn btn-big btn-blue waves-effect">Preview & Schedule</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /Interview Schedule Modal -->
+<!-- Interview Schedule Modal -->
+<div class="modal fade" id="interviewReschedule" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+	aria-hidden="true">
+	<div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Interview Schedule</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body ism-body">
+				<div class="id-content">
+					<div class="employer-logo">
+						<img class="lazy" src="assets/images/employer-logo-1.jpg" alt="Microsoft" style="">
+					</div>
+					<div class="ant-content">
+						<!--Title-->
+						<p class="text-16">
+							Employer : <b>Microsoft Incorporation</b>
+						</p>
+						<p class="text-16">
+							Position : <b>Head of Information Technology</b>
+						</p>
+						<p class="text-16">
+							Candidate Name : <b>Michael Paul</b>
+						</p>
+						<br>
+					</div>
+					<div class="row">
+						<div class="col-12">
+							<div class="ant-content">
+								<!--Title-->
+								<p>
+									<b>Interview Mode</b>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="schedule-address-list">
+						<div class="row row-eq-height card-wrapper">
+							<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+								<div class="emp-hist-card">
+									<div class="row">
+										<div class="col-10">
+											<div class="">Interview Mode : Telephone</div>
+										</div>
+										<div class="col-2">
+											<input type="checkbox" class="sc-checkbox">
+										</div>
+									</div>
+									<p>Date : Tue 20 August, 2020</p>
+									<p>Time : 11:15 AM</p>
+									<p>Duration : 50 mins</p>
+									<br>
+									<p><b>Interviewer</b></p>
+									<p>Santhosh Mathew</p>
+									<p>Head of Information Technology</p>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+								<div class="emp-hist-card">
+									<div class="row">
+										<div class="col-10">
+											<div class="">Interview Mode : Telephone</div>
+										</div>
+										<div class="col-2">
+											<input type="checkbox" class="sc-checkbox">
+										</div>
+									</div>
+									<p>Date : Wed 21 August, 2020</p>
+									<p>Time : 11:15 AM</p>
+									<p>Duration : 50 mins</p>
+									<br>
+									<p><b>Interviewer</b></p>
+									<p>Santhosh Mathew</p>
+									<p>Head of Information Technology</p>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+								<div class="emp-hist-card">
+									<div class="row">
+										<div class="col-10">
+											<div class="">Interview Mode : Telephone</div>
+										</div>
+										<div class="col-2">
+											<input type="checkbox" class="sc-checkbox">
+										</div>
+									</div>
+									<p>Date : Thu 22 August, 2020</p>
+									<p>Time : 11:15 AM</p>
+									<p>Duration : 50 mins</p>
+									<br>
+									<p><b>Interviewer</b></p>
+									<p>Santhosh Mathew</p>
+									<p>Head of Information Technology</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12 col-sm-6">
+							<div class="ant-content">
+								<p class="bold">
+									Venue Details
+								</p>
+								<p class="bold">
+									Antlegs Technology
+								</p>
+								<p class="">
+									B/7676, 247 Park, Gandi Nagar, <br> Cuffe Parade, Europe
+								</p>
+								<p>Location Map: <a href="#">http://maps.google.co.in/embed...</a></p>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6">
+							<div class="ant-content">
+								<p class="bold">
+									Contact Details
+								</p>
+								<p>
+									Contact Person : Santhosh Mathew
+								</p>
+								<p>
+									Contact Number : 8998767232
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer ir-footer">
+				<div class="text-center">
+					<button type="button" class="btn btn-big waves-effect" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-big waves-effect chooseSchedule"
+						data-schedule-id="cancelInterview2">Cancel Interview</button>
+					<button type="button" class="btn btn-big waves-effect chooseSchedule"
+						data-schedule-id="suggestReschedule">Re-Schedule</button>
+					<button type="button" class="btn btn-big waves-effect" data-dismiss="modal">Confirm & Share</button>
+				</div>
+				<div class="cancel-block" id="cancelInterview2">
+					<form class="">
+						<div class="row">
+							<div class="col-12">
+								<div class="form-group">
+									<label class="sr-only">Reason 1</label>
+									<textarea class="form-control" name="reason" id="reason" cols="3" rows="2"
+										placeholder="Kindly specify the reason for cancellation"></textarea>
+								</div>
+							</div>
+						</div>
+
+						<div class="cancel-cta">
+							<button type="reset" class="btn btn-big waves-effect" data-dismiss="modal">Discard</button>
+							<button type="submit" class="btn btn-big waves-effect">Cancel Interview</button>
+						</div>
+					</form>
+				</div>
+				<div class="cancel-block reschedule-block" id="suggestReschedule">
+
+					<div class="row">
+						<div class="col-12 col-sm-3">							
+							<div class="form-group">
+								<div class="input-group date" id='datetimepicker2'>
+									<input type="text" class="form-control" placeholder="Date">
+									<div class="input-group-addon input-group-append">
+										<span class="input-group-text">
+											<span class="calendar"></span>
+										</span>
+									</div>
+								</div>
+							</div>							
+						</div>
+						<div class="col-12 col-sm-3">
+							<div class="form-group">
+								<label class="sr-only">Select Time Range</label>
+								<div class="im-select">
+									<select name="" id="" class="select" required="required">
+										<option value="">Time Range</option>
+										<option value="">10:00AM</option>
+										<option value="">10:30Am</option>
+										<option value="">01:00PM</option>
+										<option value="">02:00PM</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-4">
+							<div class="form-group">
+								<label class="sr-only">Select Interview Mode</label>
+								<div class="im-select">
+									<select name="" id="" class="select" required="required">
+										<option value="">Interview Mode</option>
+										<option value="">Video Call</option>
+										<option value="">Face to Face</option>
+										<option value="">Mobile Call</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-2">
+							<a href="#" class="btn btn-big btn-add waves-effect">+ Add</a>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12 col-sm-12">
+							<div class="ant-content ss-cont">
+								<ul class="interview-slots step">
+									<li>Telephonic Interview Scheduled on <b>12/05/2020</b> | At <b>12:00</b> hrs & duration of <b>60
+											mins</b> <a href="#"><i class="trash"></i> Delete</a></li>
+									<li>Telephonic Interview Scheduled on <b>12/05/2020</b> | At <b>14:00</b> hrs & duration of <b>60
+											mins</b> <a href="#"><i class="trash"></i> Delete</a></li>
+								</ul>
+								<br>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12">
+							<div class="form-group">
+								<label class="sr-only">Reason</label>
+								<input type="text" class="form-control" placeholder="Kindly specify the reason for the re-scheduling">
+							</div>
+						</div>
+					</div>
+
+
+					<div class="cancel-cta">
+						<button type="reset" class="btn btn-big waves-effect" data-dismiss="modal">Discard</button>
+						<button type="submit" class="btn btn-big waves-effect">Re-Schedule</button>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /Interview Schedule Modal -->
+<!-- Interview Schedule Modal -->
+<div class="modal fade" id="justificationNoYes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-justification" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Your Opinion Matters</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h4>Kindly let us know your opinion</h4>
+
+                <div class="text-center">
+                    <button type="button" class="btn btn-big btn-no-yes waves-effect" id="userSayNo">No</button>
+                    <button type="button" class="btn btn-big btn-no-yes waves-effect" data-dismiss="modal">Yes</button>
+                </div>
+                <br>
+
+                <div class="user-state">
+                    <div>
+                        <p><b>Kindly share your justification</b></p>
+                        <input type="text" name="state" id="state" class="form-control" placeholder="State your reason for “No”">
+
+                        <div class="text-center">
+                            <button type="button" class="btn btn-big waves-effect" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-big waves-effect">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Interview Schedule Modal -->
+<!-- Interview Schedule Modal -->
+<div class="modal fade" id="verificationDetails" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-justification" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Interview Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body ism-body vd-body id-body">
+                <div class="id-content">
+                    <div class="row">
+                        <div class="col-sm-9">
+                            <div class="id-warning">A reschedule request has been initiated by Talentsteen</div>
+                        </div>
+                        <div class="col-sm-3">
+                            <button type="button" class="btn btn-res">Re-Scheduled</button>
+                        </div>
+                    </div>
+                    <div class="ant-content">
+                        <p>
+                            Job Opening : Marketing & Communication Manager
+                        </p>
+                        <p>
+                            Candidate : Freddy George Fernandez
+                        </p>
+                        <p>
+                            Level : Level 1 (Technical)
+                        </p>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="ant-content">
+                                <p><b>Interview Schedule</b> (Level 1 : <b>Technical</b>)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">&nbsp;</th>
+                                    <th scope="col">Mode</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Time Range</th>
+                                    <th scope="col">Time Zone</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>In-Person</td>
+                                    <td>25th Oct, 2020</td>
+                                    <td>
+                                        <div class="im-select">
+                                            <select name="" id="" class="select" required="required">
+                                                <option value="">09:00 - 13:00 hrs</option>
+                                                <option value="">13:00 - 15:00 hrs</option>
+                                                <option value="">15:00 - 17:00 hrs</option>
+                                                <option value="">17:00 - 18:00 hrs</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>In-Person</td>
+                                    <td>26th Oct, 2020</td>
+                                    <td>
+                                        <div class="im-select">
+                                            <select name="" id="" class="select" required="required">
+                                                <option value="">09:00 - 13:00 hrs</option>
+                                                <option value="">13:00 - 15:00 hrs</option>
+                                                <option value="">15:00 - 17:00 hrs</option>
+                                                <option value="">17:00 - 18:00 hrs</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>@fat</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>In-Person</td>
+                                    <td>27th Oct, 2020</td>
+                                    <td>
+                                        <div class="im-select">
+                                            <select name="" id="" class="select" required="required">
+                                                <option value="">09:00 - 13:00 hrs</option>
+                                                <option value="">13:00 - 15:00 hrs</option>
+                                                <option value="">15:00 - 17:00 hrs</option>
+                                                <option value="">17:00 - 18:00 hrs</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>@twitter</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br>
+
+                    <div class="docs-form">
+                        <div class="ant-content">
+                            <p class="text-16 bold">Documents required for verification </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" value="">Passport
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" value="">Pancard
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" value="">10th Certificate
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" value="">12th Certificate
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" value="">Graduate
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" value="">Post Graduate
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" value="">Driving Licence
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input" value="">Salary Slip
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="ant-content">
+                        <p class="text-16 bold">Other Details</p>
+                    </div>
+                    <form class="other-Details">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group custom-control-inline">
+                                    <label class="sr-only">Others</label>
+                                    <input type="checkbox" class="form-control checkbox" id="Others" checked>
+                                    <input type="text" class="form-control" value="Others, please specify"> <span
+                                        class="add-other-input" title="Add input box">+</span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="text-center">
+                    <button type="button" class="btn btn-big waves-effect" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-big btn-blue waves-effect">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /Interview Schedule Modal -->
+        <footer>
+  <p class="text-center">Antlegs Technology Solutions Private Limited.</p>
+</footer>
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+
+  <!-- SCRIPTS -->
+<!-- Reach Text Editor -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.5.6/tinymce.min.js"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+<!-- Reach Text Editor -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/tinymce/4.5.6/jquery.tinymce.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment-with-locales.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="vendor/MDB/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.42/js/bootstrap-datetimepicker.min.js"></script>
+
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="vendor/MDB/mdb.min.js"></script>
+<!-- Custom Scroll -->
+<script type="text/javascript" src="vendor/malihu-custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Lazy Load -->
+<script type="text/javascript" src="vendor/jquery.lazy/jquery.lazy.min.js"></script>
+<!-- Slick Slider -->
+<script type="text/javascript" src="vendor/slick/slick.js"></script>
+
+<!-- Full Calendar -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.js"></script>
+
+<!-- AntLegs core JavaScript -->
+<script src="./assets/js/script.js"></script>
+</body>
+
+</html>

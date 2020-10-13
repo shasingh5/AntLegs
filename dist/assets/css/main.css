@@ -5765,3 +5765,35 @@ ul.time-slots li {
 .card-manage .branches-wrapper .branch-location .location-edit .dropdown-item:focus, .card-manage .branches-wrapper .branch-location .location-edit .dropdown-item:hover {
   color: #000000;
 }
+
+.id-warning {
+  padding: 8px 15px 8px 50px;
+  margin-bottom: 20px;
+  border: 1px solid #f1bea0;
+  border-radius: 4px;
+  background: url("../images/info-icon-black.png") 15px center no-repeat #fbfbc9;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-res {
+  width: 100%;
+  background: #f19a3c;
+  color: #fff;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.id-body .im-select select.select {
+  font-size: 14px;
+  color: #000;
+  padding: 3px 30px 3px 10px;
+}
+
+.id-body table.table td,
+.id-body table.table th {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  vertical-align: middle;
+}

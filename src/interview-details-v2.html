@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Welcome to AntLegs</title>
+  @@include('./partials/base/styles.hbs')
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    @@include('./partials/base/sidebar-nav.hbs')
+
+    <!-- Page Content  -->
+    <div id="content">
+        @@include('./partials/base/nav.hbs')
+      
+        @@include('./partials/components/interview-details-v2.hbs')
+        @@include('./partials/base/footer.hbs')
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+
+  @@include('./partials/base/scripts.hbs')
+</body>
+
+</html>
