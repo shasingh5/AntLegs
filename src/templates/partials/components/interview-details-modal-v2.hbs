@@ -47,11 +47,12 @@
                                     <th scope="col">Date</th>
                                     <th scope="col">Time Range</th>
                                     <th scope="col">Time Zone</th>
+                                    <th scope="col">&nbsp;</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
+                                <tr class="active">
+                                    <td scope="row">1</td>
                                     <td>In-Person</td>
                                     <td>25th Oct, 2020</td>
                                     <td>
@@ -64,10 +65,17 @@
                                             </select>
                                         </div>
                                     </td>
-                                    <td>@mdo</td>
+                                    <td>Asia/Kolkata</td>
+                                    <td>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" value="" checked> &nbsp;
+                                            </label>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">2</th>
+                                    <td scope="row">2</td>
                                     <td>In-Person</td>
                                     <td>26th Oct, 2020</td>
                                     <td>
@@ -80,10 +88,17 @@
                                             </select>
                                         </div>
                                     </td>
-                                    <td>@fat</td>
+                                    <td>Asia/Kolkata</td>
+                                    <td>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" value=""> &nbsp;
+                                            </label>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row">3</th>
+                                    <td scope="row">3</td>
                                     <td>In-Person</td>
                                     <td>27th Oct, 2020</td>
                                     <td>
@@ -96,97 +111,117 @@
                                             </select>
                                         </div>
                                     </td>
-                                    <td>@twitter</td>
+                                    <td>Asia/Kolkata</td>
+                                    <td>
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input" value=""> &nbsp;
+                                            </label>
+                                        </div>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     <br>
-
-                    <div class="docs-form">
-                        <div class="ant-content">
-                            <p class="text-16 bold">Documents required for verification </p>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-sm-6">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input" value="">Passport
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input" value="">Pancard
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input" value="">10th Certificate
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input" value="">12th Certificate
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input" value="">Graduate
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input" value="">Post Graduate
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input" value="">Driving Licence
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="checkbox" class="form-check-input" value="">Salary Slip
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="ant-content">
-                        <p class="text-16 bold">Other Details</p>
-                    </div>
-                    <form class="other-Details">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="form-group custom-control-inline">
-                                    <label class="sr-only">Others</label>
-                                    <input type="checkbox" class="form-control checkbox" id="Others" checked>
-                                    <input type="text" class="form-control" value="Others, please specify"> <span
-                                        class="add-other-input" title="Add input box">+</span>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+                    <div class="row">
+						<div class="col-12 col-sm-6">
+							<div class="ant-content">
+								<p class="bold">
+									Interviewer Details
+								</p>
+                                <hr>								
+								<p class="">
+									Marketing & Communication Manager
+								</p>
+                                <p><a href="#"><span class="fa fa-plus"></span> Add <b>more</b> Interviewer</a> </p>
+								<p><a href="#"><span class="fa fa-plus"></span> Add <b>new</b> Interviewer</a> </p>
+                                <div class="card-body">
+								<form autocomplete="off" class="form" role="form">
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Full Name</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Designation</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Job Function</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Contact No.</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="text">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-lg-4 col-form-label form-control-label">Email</label>
+										<div class="col-lg-8">
+											<input class="form-control" type="exmail">
+										</div>
+									</div>
+								</form>
+							</div>
+                                
+							</div>
+                            <br>
+                            <div class="ant-content">
+								<p class="bold">
+									Other Details
+								</p>
+                                <hr>	
+                                <ul class="od-list">
+                                    <li>Transportation Provided</li>
+                                    <li>Hotel Stay Provided</li>
+                                </ul>							
+								<p>
+                                    <a href="#" class="cha-loc">Edit</a>
+                                </p>
+                                
+							</div>
+						</div>
+						<div class="col-12 col-sm-6">
+							<div class="ant-content">
+								<p class="bold">
+									Venue Details
+								</p>
+                                <hr>
+								<ol class="add-list">
+                                    <li>301/312, Indira Park, Bangalore, <br> Karnataka, India</li>
+                                    <li>12/31, Gandhi Park, Cochi, <br> Kerala, India</li>
+                                </ol>
+								<div class="location-list">
+									<a href="#">Location Map 1  </a>
+									<a href="#">Location Map 2  </a>
+								</div>
+                                <p>
+                                    <a href="#" class="cha-loc">Change Location</a>
+                                </p>
+                                <p>
+                                    <a href="#"><span class="fa fa-plus"></span> Add Location</a>
+                                </p>
+							</div>
+						</div>
+					</div>
+                    
+                    <div class="note-caution">
+                        <p><b>Note: </b>You can cancel or reschedule the interview only 12 hours before the confirmed schedule. <br> Otherwise please contact Antlegs support team +91 9543328231</p>
+                    </div>                    
                 </div>
             </div>
             <div class="modal-footer">
                 <div class="text-center">
-                    <button type="button" class="btn btn-big waves-effect" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-big waves-effect" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-big waves-effect" data-dismiss="modal">Cancel Interview</button>
+                    <button type="button" class="btn btn-big waves-effect" data-dismiss="modal">Request Reschedule</button>
                     <button type="button" class="btn btn-big btn-blue waves-effect">Confirm</button>
                 </div>
             </div>
