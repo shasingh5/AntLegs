@@ -5785,6 +5785,20 @@ ul.time-slots li {
   font-size: 12px;
 }
 
+@media (max-width: 812px) {
+  .btn-res {
+    width: 230px;
+    margin: 0 auto 20px;
+    display: block;
+  }
+}
+
+@media (max-width: 812px) {
+  .id-body + .modal-footer .btn-big {
+    margin-bottom: 20px;
+  }
+}
+
 .id-body .id-content {
   padding: 0 20px;
 }
@@ -5803,6 +5817,14 @@ ul.time-slots li {
   height: 31px;
   border-color: #acacac;
   font-size: 12px;
+}
+
+.id-body .table .mode-td {
+  min-width: 180px;
+}
+
+.id-body .table .date-td {
+  min-width: 100px;
 }
 
 .id-body .table thead th {

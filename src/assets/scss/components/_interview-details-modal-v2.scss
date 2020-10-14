@@ -15,6 +15,18 @@
   color: #fff;
   padding: 10px;
   font-size: 12px;
+
+  @include respond-to(812px, max) {
+    width: 230px;
+    margin: 0 auto 20px;
+    display: block;
+  }
+}
+
+.id-body+.modal-footer .btn-big {
+  @include respond-to(812px, max) {
+    margin-bottom: 20px;
+  }
 }
 
 .id-body {
@@ -33,6 +45,14 @@
       height: 31px;
       border-color: #acacac;
       font-size: 12px;
+    }
+
+    .mode-td {
+      min-width: 180px;
+    }
+
+    .date-td {
+      min-width: 100px;
     }
   }
 
