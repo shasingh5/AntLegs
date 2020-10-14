@@ -397,12 +397,57 @@
     $('a[href$="#editUser"]').on("click", function () {
         $('#editUser').modal('show');
     });
-    
+
     // responsiveTabs();
 
     // $(window).resize(function () {
     //     responsiveTabs();
     // })
+
+    // $('#basic').multiselect({
+    //     templates: {
+    //         li: '<li><a href="javascript:void(0);"><label class="pl-2"></label></a></li>'
+    //     }
+    // });
+
+    $('.custom-select').multiselect({
+        enableFiltering: false,
+        numberDisplayed: 2,
+        onChange: function (option, checked) {
+            // Get selected options.
+            var selectedOptions = $('#multiple-checkboxes option:selected');
+
+            if (selectedOptions.length >= 3) {
+                // Disable all other checkboxes.
+                var nonSelectedOptions = $('#multiple-checkboxes option').filter(function () {
+                    return !$(this).is(':selected');
+                });
+                nonSelectedOptions.each(function () {
+                    var input = $('input[value="' + $(this).val() + '"]');
+                    input.prop('disabled', true);
+                    input.parent('li').addClass('disabled');
+
+                });
+
+
+            } else {
+                // Enable all checkboxes.
+                $('#multiple-checkboxes option').each(function () {
+                    var input = $('input[value="' + $(this).val() + '"]');
+                    input.prop('disabled', false);
+                    input.parent('li').addClass('disabled');
+                });
+            }
+        }
+    });
+
+    $("#odEditBtn").on("click", function () {
+        $("#odList").find(".form-check-input").prop('disabled', function (_, val) { return !val; });        
+
+        $(this).text(function (i, text) {
+            return text === "Edit" ? "Save" : "Edit";
+        })
+    });
 
 })(jQuery);
 

@@ -5799,6 +5799,12 @@ ul.time-slots li {
   margin-top: 5px;
 }
 
+.id-body .table .form-control {
+  height: 31px;
+  border-color: #acacac;
+  font-size: 12px;
+}
+
 .id-body .table thead th {
   border-top: 1px solid #d7d7d7;
   border-bottom: 1px solid #d7d7d7;
@@ -5813,7 +5819,6 @@ ul.time-slots li {
 .id-body table.table th {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  vertical-align: middle;
 }
 
 .id-body table.table thead th {
@@ -5849,7 +5854,6 @@ ul.time-slots li {
 
 .id-body .cha-loc {
   padding-left: 20px;
-  margin-bottom: 15px;
   background: url("../images/pencil-icon-blue.png") 0 center no-repeat;
   display: inline-block;
 }
@@ -5861,11 +5865,13 @@ ul.time-slots li {
 }
 
 .id-body .od-list li {
-  padding-left: 20px;
   margin-bottom: 10px;
-  background: url("../images/check-icon-blue.png") 0 center no-repeat;
   display: block;
   font-size: 14px;
+}
+
+.id-body .od-list .form-check-input {
+  margin-top: 0.2rem;
 }
 
 .id-body + .modal-footer .btn-big {
@@ -5886,4 +5892,108 @@ ul.time-slots li {
 
 .note-caution p {
   color: #333;
+}
+
+.id-form-edit {
+  border-top: 1px solid #acacac;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.id-form-edit .form-group {
+  margin-bottom: 0.2rem;
+}
+
+.id-form-edit label {
+  color: #666666;
+}
+
+.id-form-edit .form-control {
+  height: 32px;
+  border-color: #acacac;
+  font-size: 14px;
+}
+
+.id-form-edit .im-select select.select {
+  width: 100%;
+  padding-top: 4.5px;
+  padding-bottom: 4.5px;
+  padding-right: 20px;
+  border-color: #acacac;
+  background-position: 97% 50%;
+}
+
+.id-form-edit .save {
+  border: 0;
+  color: #2e669c;
+  background-color: transparent;
+  font-size: 14px;
+}
+
+.od-edit .form-control {
+  height: 31px;
+  border-color: #acacac;
+  font-size: 14px;
+  color: #000;
+}
+
+.od-edit .add-input {
+  margin-top: 6px;
+  display: inline-block;
+  color: #666666;
+  font-size: 12px;
+}
+
+.od-edit .add-input .fa {
+  color: #316ea7;
+}
+
+.amd .btn-group {
+  margin: 5px 0 10px;
+}
+
+.amd .btn-default {
+  width: 230px;
+  padding: 6px 20px 6px 6px;
+  background-color: #fff !important;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  color: #666;
+  text-align: left;
+}
+
+.amd .btn-default::after {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+
+.amd .btn-default:hover, .amd .btn-default:focus, .amd .btn-default:visited, .amd .btn-default:active {
+  background-color: #fff !important;
+  color: #666666;
+}
+
+.amd .btn-default:not([disabled]):not(.disabled).active,
+.amd .btn-default:not([disabled]):not(.disabled):active,
+.amd .show > .btn-default.dropdown-toggle {
+  background-color: #fff !important;
+  color: #666666;
+}
+
+.amd .dropdown-menu {
+  width: 100%;
+}
+
+.amd .multiselect-container > li > a {
+  color: #333333;
+}
+
+.amd .multiselect-container > li > a > label {
+  padding: 5px 5px 5px 10px;
+  width: 100%;
+}
+
+.amd .multiselect-container > li > a > label > input[type="checkbox"] {
+  margin-bottom: 3px;
+  vertical-align: middle;
 }

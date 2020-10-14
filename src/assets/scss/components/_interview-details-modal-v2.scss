@@ -29,6 +29,11 @@
 
   .table {
     margin-top: 5px;
+    .form-control {
+      height: 31px;
+      border-color: #acacac;
+      font-size: 12px;
+    }
   }
 
   .table thead th {
@@ -45,7 +50,7 @@
   table.table th {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    vertical-align: middle;
+    // vertical-align: middle;
   }
 
   table.table thead th {
@@ -82,7 +87,6 @@
 
   .cha-loc {
     padding-left: 20px;
-    margin-bottom: 15px;
     background: url("../images/pencil-icon-blue.png") 0 center no-repeat;
     display: inline-block;
   }
@@ -93,11 +97,15 @@
     list-style: none;
 
     li {
-      padding-left: 20px;
+      // padding-left: 20px;
       margin-bottom: 10px;
-      background: url("../images/check-icon-blue.png") 0 center no-repeat;
+      // background: url("../images/check-icon-blue.png") 0 center no-repeat;
       display: block;
       font-size: 14px;
+    }
+
+    .form-check-input {
+      margin-top: 0.2rem;
     }
   }
 
@@ -119,5 +127,110 @@
 
   p {
     color: #333;
+  }
+}
+
+.id-form-edit {
+  border-top: 1px solid #acacac;
+  margin-top: 10px;
+  padding-top: 10px;
+  .form-group {
+    margin-bottom: 0.2rem;
+  }
+  label {
+    color: #666666;
+  }
+
+  .form-control {
+    height: 32px;
+    border-color: #acacac;
+    font-size: 14px;
+  }
+
+  .im-select select.select {
+    width: 100%;
+    padding-top: 4.5px;
+    padding-bottom: 4.5px;
+    padding-right: 20px;
+    border-color: #acacac;
+    background-position: 97% 50%;
+  }
+
+  .save {
+    border: 0;
+    color: #2e669c;
+    background-color: transparent;
+    font-size: 14px;
+  }
+}
+
+.od-edit {
+  .form-control {
+    height: 31px;
+    border-color: #acacac;
+    font-size: 14px;
+    color: #000;
+  }
+
+  .add-input {
+    margin-top: 6px;
+    display: inline-block;
+    color: #666666;
+    font-size: 12px;
+
+    .fa {
+      color: #316ea7;
+    }
+  }
+}
+
+.amd {
+  .btn-group {
+    margin: 5px 0 10px;
+  }
+  .btn-default {
+    width: 230px;
+    padding: 6px 20px 6px 6px;
+    background-color: #fff !important;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #666;
+    text-align: left;
+    &::after {
+      position: absolute;
+      top: 15px;
+      right: 10px;
+    }
+
+    &:hover,
+    &:focus,
+    &:visited,
+    &:active {
+      background-color: #fff !important;
+      color: #666666;
+    }
+  }
+
+  .btn-default:not([disabled]):not(.disabled).active,
+  .btn-default:not([disabled]):not(.disabled):active,
+  .show > .btn-default.dropdown-toggle {
+    background-color: #fff !important;
+    color: #666666;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+  }
+
+  .multiselect-container > li > a {
+    color: #333333;
+    > label {
+      padding: 5px 5px 5px 10px;
+      width: 100%;
+      > input[type="checkbox"] {
+        margin-bottom: 3px;
+        vertical-align: middle;
+      }
+    }
   }
 }
