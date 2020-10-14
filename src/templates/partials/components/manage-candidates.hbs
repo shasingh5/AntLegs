@@ -1,0 +1,39 @@
+<div class="container-fluid ant-container">
+    <!-- jobs Header -->
+    <div class="row header">
+        <div class="col-12 col-md-3 col-lg-4">
+            <a href="#" class="main-heading no-arrow">Manage Candidates</a>
+        </div>
+        <div class="col-12 col-md-9 col-lg-8">
+            <div class="candidate-action">
+                <form autocomplete="off" class="form" role="form">
+                    <input class="form-control search" type="text" placeholder="Search by title, skill or company">
+                </form>
+                <div class="im-select">
+                    <select name="" id="" class="select" required="required">
+                        <option value="">Sort by</option>
+                        <option value="">Shortlist</option>
+                        <option value="">Hired</option>
+                        <option value="">Selected</option>
+                    </select>
+                </div>                
+                <button class="btn btn-blue waves-effect" data-toggle="modal" data-target="#filterOpen">Add
+                    Candidate</button>
+            </div>
+        </div>
+    </div>
+    <!--/ jobs Header -->
+    <div class="row row-eq-height card-wrapper">
+        @@include('./partials/components/manage-jobs-card-open.hbs')
+        @@include('./partials/components/manage-jobs-card-open.hbs')
+        @@include('./partials/components/manage-jobs-card-open.hbs')
+        @@include('./partials/components/manage-jobs-card-open.hbs')
+        @@include('./partials/components/manage-jobs-card-open.hbs')
+        @@include('./partials/components/manage-jobs-card-open.hbs')
+        @@include('./partials/components/manage-jobs-card-open.hbs')
+        @@include('./partials/components/manage-jobs-card-open.hbs')
+    </div>
+</div>
+
+@@include('./partials/components/recruiter-filter-modal.hbs')
+@@include('./partials/components/recruiter-new-registration-modal.hbs')
