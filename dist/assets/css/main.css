@@ -6038,16 +6038,31 @@ ul.time-slots li {
   margin: 0 3px;
 }
 
+.candidate-action .form {
+  position: relative;
+}
+
 @media (max-width: 480px) {
   .candidate-action .form {
     width: 100%;
   }
 }
 
+.candidate-action .form .cleartext {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 41px;
+  height: 39px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #666666;
+  border: 0;
+  background: transparent;
+}
+
 .candidate-action .search {
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left: 40px;
+  padding: 9px 40px;
   border-color: #acacac;
   height: 41px;
   background: #ffffff url("../images/search-icon-black.png") 10px center no-repeat;
