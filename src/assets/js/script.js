@@ -449,6 +449,12 @@
         })
     });
 
+    $(".pi-body").on("click", ".toggle-col", function(e) {
+        e.preventDefault();           
+        $(this).parent().toggleClass("active");
+        $(this).parent().parent().next().slideToggle();
+    });
+
 })(jQuery);
 
 // function responsiveTabs() {

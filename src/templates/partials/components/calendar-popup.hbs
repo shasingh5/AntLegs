@@ -1,0 +1,99 @@
+<div class="container-fluid ant-container">
+    <!-- Interviews Header -->
+    <div class="row header">
+        <div class="col-12 col-md-5 col-lg-6">
+            <a href="index.html" class="main-heading">Manage Interviews</a>
+        </div>
+        <div class="col-12 col-md-7 col-lg-6 text-right">
+            <ul class="header-button">
+                <li>
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <a href="interviews-calendar.html" class="btn btn-common active btn-rounded">Calendar</a>
+                        <a href="interviews-details.html" class="btn btn-common btn-rounded">Details</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--/ Interviews Header -->
+    <div class="calendar-wrapper">
+        <div id='calendar'></div>
+    </div>
+
+
+</div>
+
+<div class="modal fade mic-popup" id="interviewScheduled" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Sep 28, 2020  |  Interview Confirmed</h4>
+            </div>
+            <div class="modal-body modal-body-scroll">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">Position</th>
+                                <th scope="col">Candidate</th>
+                                <th scope="col">Interv. Mode</th>
+                                <th scope="col">Time</th>
+                                <th scope="col">Interviewer</th>
+                                <th scope="col">Recruiter</th>
+                            </tr>
+                        </thead>
+                        <tbody class="pi-body">
+                            <tr>
+                                <td>Marketing Manager</td>
+                                <td>Freddy George</td>
+                                <td>
+                                    <a href="#" class="toggle-col">Zoom Meet</a>
+                                </td>
+                                <td>5:00 PM</td>
+                                <td>Santhosh Kuriachil</td>
+                                <td>Talent Sheen</td>
+                            </tr>
+                            <tr class="pi-confirm">
+                                <td colspan="6">
+                                    <b>Link to your meeting :</b> <a href="#" target="_blank">https://meet.google.com/bvo-ewai-zya</a> <button type="button">Send Reminder</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>IT Manager</td>
+                                <td>Prashant Kumar</td>
+                                <td><a href="#" class="toggle-col">Google Meet</a></td>
+                                <td>5:30 PM</td>
+                                <td>Vikas Sugathan</td>
+                                <td>Antlegs</td>
+                            </tr>
+                            <tr class="pi-confirm">
+                                <td colspan="6">
+                                    <b>Link to your meeting :</b> <a href="#" target="_blank">https://meet.google.com/bvo-ewai-zya</a> <button type="button">Send Reminder</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>HR Head</td>
+                                <td>Madhavan Iyer</td>
+                                <td><a href="#" class="toggle-col">In-Person</a></td>
+                                <td>4:00 PM</td>
+                                <td>Abhinav Gupta</td>
+                                <td>Antlegs</td>
+                            </tr>
+                            <tr class="pi-confirm">
+                                <td colspan="6">
+                                    <b>Venue : </b> 105, East Park Road, Malleshwaram, Malleshwaram, Bengaluru, Karnataka 560003 <button type="button" class="set-btn">Send Reminder</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!--<div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="save-event">Save changes</button>
+            </div>-->
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
