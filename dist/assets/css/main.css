@@ -6199,3 +6199,46 @@ ul.time-slots li {
   width: 12px;
   background: url("../images/set-icon.png") center no-repeat;
 }
+
+.error-wrap {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,f5fafe+100 */
+  background: #f5fafe;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 0%, #f5fafe 50%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, white 0%, #f5fafe 50%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, white 0%, #f5fafe 50%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f5fafe',GradientType=0 );
+  /* IE6-9 */
+  padding: 0;
+}
+
+.error-container {
+  text-align: center;
+  max-width: 820px;
+  margin: 50px auto 10px;
+}
+
+.error-container h1 {
+  font-size: 70px;
+  color: #316ea7;
+  font-weight: 700;
+}
+
+.error-container h3 {
+  font-size: 30px;
+  color: #333333;
+}
+
+.error-container p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 20px auto 0;
+  color: #666666;
+}
+
+.img-gateway {
+  width: 100%;
+}
