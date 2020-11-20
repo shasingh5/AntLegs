@@ -1,5 +1,9 @@
 footer {
-    padding: 15px 0;
-    background: $white;
-    color: $grey;
+  padding: 15px 0;
+  background: $white;
+  color: $grey;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
