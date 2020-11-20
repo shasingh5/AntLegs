@@ -6266,3 +6266,115 @@ ul.time-slots li {
 .img-gateway {
   width: 100%;
 }
+
+.user-header p {
+  font-size: 14px;
+  color: #000000;
+}
+
+.user-header span {
+  color: #316ea7;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.ra-list {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+
+.ra-list li {
+  list-style: none;
+  font-size: 12px;
+  display: table;
+  width: 100%;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #e9e9e9;
+  transition: all .3s;
+}
+
+.ra-list li:hover {
+  background: #e9e9e9;
+}
+
+.ra-list li > span {
+  display: table-cell;
+  padding: 0 10px;
+  line-height: 1.5;
+}
+
+.ra-list li > span:first-child {
+  width: 100px;
+}
+
+.ra-list li > span a {
+  color: #316ea7;
+  font-weight: 600;
+}
+
+.ra-scroll {
+  max-height: 220px;
+  margin: 15px 0;
+}
+
+.opening-div {
+  width: 100px;
+}
+
+@media (max-width: 420px) {
+  .projects-list > li .div-table > span {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .projects-list > li .div-table > span.last-activity.text-right {
+    text-align-last: left;
+  }
+}
+
+.demo-fixed {
+  position: relative;
+}
+
+.demo-fixed .coach-overlay {
+  position: absolute;
+  top: 0;
+}
+
+.demo-fixed .coach-overlay .guide {
+  margin-top: 100px;
+}
+
+.demo-fixed .coach-body {
+  position: initial;
+}
+
+.demo-fixed .coach-body h2 {
+  margin-top: 20px;
+}
+
+.demo-fixed .coach-content .blue {
+  width: 130px;
+  font-size: 18px;
+  padding: 8px 12px;
+  background: #316ea7;
+}
+
+.demo-fixed .coach-content .group-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 60px;
+  transform: translateX(-50%);
+}
+
+.demo-fixed .guide-desc {
+  margin-top: 40px;
+}
+
+.demo-fixed .coach-body::after {
+  display: none;
+}

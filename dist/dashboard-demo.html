@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Welcome to AntLegs</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+<!-- Material Design Bootstrap -->
+<link href="vendor/mdb/mdb.min.css" rel="stylesheet">
+<!-- Custom Scroll -->
+<link href="vendor/malihu-custom-scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+<!-- Full Calendar -->
+<link href="https://fullcalendar.io/js/fullcalendar-3.0.1/fullcalendar.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.42/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+<!-- Slick Slider -->
+<link href="vendor/slick/slick.css" rel="stylesheet">
+<link href="vendor/slick/slick-theme.css" rel="stylesheet">
+<!-- Custom styles -->
+<link href="assets/css/main.min.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <!-- Sidebar  -->
+<nav id="sidebar">    
+
+    <div class="sidebar-header">
+        <a href="javascript:;" id="dismiss" class="hamburg">&nbsp;</a>
+		<a href="#" class="logo">
+			<span>ANT</span>
+			<span>LEGS</span>
+		</a>
+    </div>
+
+    <ul class="list-unstyled components">        
+        <!-- <li class="active">
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li>
+                    <a href="#">Home 1</a>
+                </li>
+                <li>
+                    <a href="#">Home 2</a>
+                </li>
+                <li>
+                    <a href="#">Home 3</a>
+                </li>
+            </ul>
+        </li> -->
+        <li class="waves-effect active">
+            <a href="employers-dashboard.html" class="dashboard">Dashboard</a>
+        </li>        
+        <li class="waves-effect">
+            <a href="index.html" class="employers">Employers</a>
+        </li>
+        <li class="waves-effect">
+            <a href="recruiters.html" class="recruiters">Recruiters</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#" class="jobs">Jobs</a>
+        </li>
+        <li class="waves-effect">
+            <a href="interviews-calendar.html" class="interviews">Interviews</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#" class="payments">Payments</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#" class="rewards">Rewards & Points</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#" class="reports">Reports</a>
+        </li>
+        <li class="waves-effect manage-admin">
+            <a href="#" class="manage">Manage Admin</a>
+        </li>
+    </ul>
+</nav>
+<!-- /Sidebar  -->
+
+    <!-- Page Content  -->
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-antlegs bs-none">
+	<div class="container-fluid ant-container">
+
+		<a href="javascript:;" id="sidebarCollapse" class="hamburg">&nbsp;</a>
+		<a href="#" class="logo">
+			<span>ANT</span>
+			<span>LEGS</span>
+		</a>
+
+		<button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<i class="fas fa-align-justify"></i>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="nav navbar-nav ml-auto">
+				<!-- <li class="nav-item active">
+                	<a class="nav-link" href="#">Page</a>
+              	</li> -->
+				<li class="nav-item  notification-globle dropdown">
+					<a class="nav-link dropdown-toggle" id="navbar-tools" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="true">
+						<i class="fas fa-bell bell-icon"></i><span>Notification</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbar-tools">
+						<h4><i class="fas fa-bell bell-icon"></i><span>Notification</span></h4>
+						<ul id="notification">
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">The job for Marketing Director with Hexaware Technologies has been
+											closed</span>
+										<span class="alert-time">
+											<i>20 mins ago</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>30 mins ago</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+								</li>
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">The job for Marketing Director with Hexaware Technologies has been
+											closed</span>
+										<span class="alert-time">
+											<i>2 hrs ago</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+								</li>
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">The job for Marketing Director with Hexaware Technologies has been
+											closed</span>
+										<span class="alert-time">
+											<i>4 hrs ago</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+								</li>
+								<li class="inline-email read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">Email A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>yesterday</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+									<div class="email-box">
+										<button type="button" class="btn email">Email</button>
+										<button type="button" class="btn delete">Delete</button>
+										<div class="msg-box">
+											<div class="input-group my-group">
+												<textarea class="text-area form-control" name="" id="" cols="10" rows="3"
+													placeholder="An email will be sent to your email ID with your message here (max 100 characters)"></textarea>
+												<span class="input-group-btn">
+													<button class="btn" type="submit" title="Search">Search</button>
+												</span>
+											</div>
+										</div>
+										<!-- /input-group -->
+									</div>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+							</ul>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" id="navbar-tools" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="true">
+						<i class="fas fa-user-circle user-icon"></i><span>Hi Snahal K</span></a>
+					<div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbar-tools">
+						<a class="dropdown-item d-xl-none waves-effect waves-light" href="/support/">Support Forum</a>
+						<a class="dropdown-item waves-effect waves-light" href="/snippets/">Editor &amp; Snippets</a>
+						<a class="dropdown-item waves-effect waves-light" href="/articles/">Articles</a>
+						<a class="dropdown-item waves-effect waves-light" href="/news/frontend/">News</a>
+						<a class="dropdown-item waves-effect waves-light" href="/cli/">MDB CLI <span
+								class="badge badge-danger rounded">New</span></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+      
+        <div class="container-fluid ant-container">
+    <br>
+    <div class="white-wrapper user-header">
+        <p class="font-14">Hey Santhosh,</p>
+        <p>Welcome to the employer’s Dashboard. We understand this space is new and we are here to help. Just Get
+            started with our <span>step by step guide</span></p>
+    </div>
+
+    <div class="demo-fixed">
+        <div class="row row-eq-height">
+            <div class="col-12 col-md-6">
+                <div class="white-wrapper">
+                    <h1 class="ant-title bold">Trend Analysis</h1>
+                    <div class="row">
+                        <div class="col-12 col-sm-8">
+                            <p class="span">
+                                <span>Total Projects : <b>15</b></span>
+                                <span>Total Submission : <b>10</b> </span>
+                            </p>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <div class="employer-action text-right">
+                                <select name="" id="" class="select" required="required">
+                                    <option value="">2020</option>
+                                    <option value="">2019</option>
+                                    <option value="">2018</option>
+                                    <option value="">2017</option>
+                                    <option value="">2016</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--ul class="candidate-status graph-legend">
+                        <li class="shortlisted">Total Projects : 15</li>
+                        <li class="interviewed">Total Submission : 10</li>					
+                    </ul-->
+
+                    <div class="graph-block">
+                        <img src="assets/images/trend-graph.jpg" alt="Graph">
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="white-wrapper">
+                    <div class="row">
+                        <div class="col-7 col-sm-8">
+                            <p class="ant-title bold">Ant Board</p>
+                        </div>
+                        <!--div class="col-5 col-sm-4">
+                            <div class="employer-action text-right">
+                                <select name="" id="" class="select" required="required">
+                                    <option value="">Select Employer</option>
+                                    <option value="">Microsoft</option>
+                                    <option value="">TCS</option>
+                                    <option value="">Tech Mahindra</option>
+                                </select>
+                            </div>
+                        </div-->
+                    </div>
+                    <div class="graph-block">
+                        <div id='dashboardCalendar'></div>
+                    </div>
+                    <div class="rollover" style="display: none;">
+                        <div class="rollover-header clearfix">
+                            <h4><b>30th Sep, 2019</b> | 12 Interview Scheduled</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="rollover-content">
+                            <div class="rollover-list">
+                                <ul>
+                                    <li>
+                                        <span>The job for Marketing Director with Hexaware Technologies has <br> been
+                                            closed</span>
+                                        <span>09:30 am</span>
+                                    </li>
+                                    <li>
+                                        <span>A new job for Creative Head has been posed by<br> Hexaware
+                                            Technologies</span>
+                                        <span>09:30 am</span>
+                                    </li>
+                                    <li>
+                                        <span>The job for Marketing Director with Hexaware Technologies has <br> been
+                                            closed</span>
+                                        <span>09:30 am</span>
+                                    </li>
+                                    <li>
+                                        <span>A new job for Creative Head has been posed by<br> Hexaware
+                                            Technologies</span>
+                                        <span>09:30 am</span>
+                                    </li>
+                                    <li>
+                                        <span>The job for Marketing Director with Hexaware Technologies has <br> been
+                                            closed</span>
+                                        <span>09:30 am</span>
+                                    </li>
+                                    <li>
+                                        <span>A new job for Creative Head has been posed by<br> Hexaware
+                                            Technologies</span>
+                                        <span>09:30 am</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-eq-height">
+            <div class="col-12 col-md-6">
+                <div class="white-wrapper ra-wrap">
+                    <div class="row">
+                        <div class="col-12 col-sm-4">
+                            <p class="ant-title bold">Recent Activity</p>
+                        </div>
+                        <div class="col-12 col-sm-8">
+                            <div class="employer-action text-right">
+                                <select name="" id="" class="select" required="required">
+                                    <option value="">Employer Name</option>
+                                    <option value="">Microsoft</option>
+                                    <option value="">TCS</option>
+                                    <option value="">Tech Mahindra</option>
+                                </select>
+                                <select name="" id="" class="select" required="required">
+                                    <option value="">Job Name</option>
+                                    <option value="">Accounts</option>
+                                    <option value="">HR</option>
+                                    <option value="">Sale Executive</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="activities-wrapper">
+                        <div class="ra-scroll">
+                            <ul class="ra-list">
+    <li>
+        <span>Nov 30, 2020</span>
+        <span><a href="#">Interview Re-Scheduled</a>, request sent for Rajendra Reddy to AL Employer for the role of
+            Front End Developer</span>
+    </li>
+    <li>
+        <span>Nov 26, 2020</span>
+        <span><a href="#">Interview Confirmed (Level 1)</a>, request sent for Rajendra Reddy to AL
+            Employer for the role of Front End Developer</span>
+    </li>
+    <li>
+        <span>Nov 20, 2020</span>
+        <span><a href="#">Interview Re-Scheduled</a>, request sent for Rajendra Reddy to AL Employer for the role of
+            Front End Developer</span>
+    </li>
+    <li>
+        <span>Nov 16, 2020</span>
+        <span><a href="#">Interview Confirmed (Level 1)</a>, request sent for Rajendra Reddy to AL
+            Employer for the role of Front End Developer</span>
+    </li>
+    <li>
+        <span>Nov 30, 2020</span>
+        <span><a href="#">Interview Re-Scheduled</a>, request sent for Rajendra Reddy to AL Employer for the role of
+            Front End Developer</span>
+    </li>
+    <li>
+        <span>Nov 26, 2020</span>
+        <span><a href="#">Interview Confirmed (Level 1)</a>, request sent for Rajendra Reddy to AL
+            Employer for the role of Front End Developer</span>
+    </li>
+    <li>
+        <span>Nov 20, 2020</span>
+        <span><a href="#">Interview Re-Scheduled</a>, request sent for Rajendra Reddy to AL Employer for the role of
+            Front End Developer</span>
+    </li>
+    <li>
+        <span>Nov 16, 2020</span>
+        <span><a href="#">Interview Confirmed (Level 1)</a>, request sent for Rajendra Reddy to AL
+            Employer for the role of Front End Developer</span>
+    </li>
+
+</ul>
+                        </div>
+
+                        <div class="text-center">
+                            <a href="$" class="link">View All</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="white-wrapper">
+                    <div class="row">
+                        <div class="col-5 col-sm-5">
+                            <p class="ant-title bold">Projects</p>
+                        </div>
+                        <div class="col-7 col-sm-7">
+                            <div class="employer-action text-right">
+                                <select name="" id="" class="select" required="required">
+                                    <option value="">Employer Name</option>
+                                    <option value="">Microsoft</option>
+                                    <option value="">TCS</option>
+                                    <option value="">Tech Mahindra</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="activities-wrapper">
+                        <div class="ra-scroll">
+                            <ul class="open-job-list projects-list">
+	<li>
+		
+        <div class="div-table">			
+			<span>
+				<h2 class="ant-title"><b>Associate Director - Operations @ Al Employer</b> | </h2>
+			</span>			
+			<span class="opening-div">
+				(No. 7)
+			</span>			
+			<span class="last-activity text-right">Expires in: <b>70 days</b></span>
+		</div>
+		<div class="div-table">			
+			<span>
+				<ul class="responses-list">
+					<li>In Progress: <b>100</b></li>
+					<li class="shortlisted">20</li>
+					<li class="interviewed">12</li>
+					<li class="hirings">10</li>
+					<li class="rejections">08</li>
+                    <li>&nbsp;</li>
+				</ul>
+			</span>			
+			<span class="last-activity"><i>Last Activity : </i>10 days ago</span>
+		</div>
+	</li>
+	<li>
+		
+        <div class="div-table">			
+			<span>
+				<h2 class="ant-title"><b>Markegting & Communications Director</b></h2>
+			</span>			
+			<span class="opening-div">
+				(No. 2)
+			</span>			
+			<span class="last-activity text-right"><b class="red-text">Expired</b></span>
+		</div>
+		<div class="div-table">			
+			<span>
+				<ul class="responses-list">
+					<li>In Progress: <b>100</b></li>
+					<li class="shortlisted">20</li>
+					<li class="interviewed">12</li>
+					<li class="hirings">10</li>
+					<li class="rejections">08</li>
+                    <li>&nbsp;</li>
+				</ul>
+			</span>			
+			<span class="last-activity"><i>Last Activity : </i>10 days ago</span>
+		</div>
+	</li>
+    <li>
+		
+        <div class="div-table">			
+			<span>
+				<h2 class="ant-title"><b>Associate Director - Operations @ Al Employer</b> | </h2>
+			</span>			
+			<span class="opening-div">
+				(No. 7)
+			</span>			
+			<span class="last-activity text-right">Expires in: <b>70 days</b></span>
+		</div>
+		<div class="div-table">			
+			<span>
+				<ul class="responses-list">
+					<li>In Progress: <b>100</b></li>
+					<li class="shortlisted">20</li>
+					<li class="interviewed">12</li>
+					<li class="hirings">10</li>
+					<li class="rejections">08</li>
+                    <li>&nbsp;</li>
+				</ul>
+			</span>			
+			<span class="last-activity"><i>Last Activity : </i>10 days ago</span>
+		</div>
+	</li>
+	<li>
+		
+        <div class="div-table">			
+			<span>
+				<h2 class="ant-title"><b>Markegting & Communications Director</b></h2>
+			</span>			
+			<span class="opening-div">
+				(No. 2)
+			</span>			
+			<span class="last-activity text-right"><b class="red-text">Expired</b></span>
+		</div>
+		<div class="div-table">			
+			<span>
+				<ul class="responses-list">
+					<li>In Progress: <b>100</b></li>
+					<li class="shortlisted">20</li>
+					<li class="interviewed">12</li>
+					<li class="hirings">10</li>
+					<li class="rejections">08</li>
+                    <li>&nbsp;</li>
+				</ul>
+			</span>			
+			<span class="last-activity"><i>Last Activity : </i>10 days ago</span>
+		</div>
+	</li>
+    <li>
+		
+        <div class="div-table">			
+			<span>
+				<h2 class="ant-title"><b>Associate Director - Operations @ Al Employer</b> | </h2>
+			</span>			
+			<span class="opening-div">
+				(No. 7)
+			</span>			
+			<span class="last-activity text-right">Expires in: <b>70 days</b></span>
+		</div>
+		<div class="div-table">			
+			<span>
+				<ul class="responses-list">
+					<li>In Progress: <b>100</b></li>
+					<li class="shortlisted">20</li>
+					<li class="interviewed">12</li>
+					<li class="hirings">10</li>
+					<li class="rejections">08</li>
+                    <li>&nbsp;</li>
+				</ul>
+			</span>			
+			<span class="last-activity"><i>Last Activity : </i>10 days ago</span>
+		</div>
+	</li>
+	<li>
+		
+        <div class="div-table">			
+			<span>
+				<h2 class="ant-title"><b>Markegting & Communications Director</b></h2>
+			</span>			
+			<span class="opening-div">
+				(No. 2)
+			</span>			
+			<span class="last-activity text-right"><b class="red-text">Expired</b></span>
+		</div>
+		<div class="div-table">			
+			<span>
+				<ul class="responses-list">
+					<li>In Progress: <b>100</b></li>
+					<li class="shortlisted">20</li>
+					<li class="interviewed">12</li>
+					<li class="hirings">10</li>
+					<li class="rejections">08</li>
+                    <li>&nbsp;</li>
+				</ul>
+			</span>			
+			<span class="last-activity"><i>Last Activity : </i>10 days ago</span>
+		</div>
+	</li>
+    
+    
+    
+</ul>
+                        </div>
+                        <div class="text-center">
+                            <a href="$" class="link">View All</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="coach-overlay">
+            <a href="#" class="close-btn"></a>
+            <div class="coach-body">
+
+                <h2>Get Started</h2>
+                <div class="coach-content">
+                    <div class="guide text-center">                        
+                        <span>Start using the system by posting a job</span>
+                    </div>
+
+                    <div class="text-center">
+                        <a href="#" class="btn blue waves-effect">Post Jobs</a>
+                    </div>                    
+
+                    <div class="guide-desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque unde labore obcaecati est ut
+                            dolor architecto itaque quos, vitae nam ipsum sequi voluptas distinctio. Hic illum et quasi
+                            optio omnis.</p>
+                    </div>
+
+                    <div class="group-btn">
+                        <a href="#" class="prev">Prev</a>
+                        <a href="#" class="next">Next</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <footer>
+  <p class="text-center">Antlegs Technology Solutions Private Limited.</p>
+</footer>
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+
+  <!-- SCRIPTS -->
+<!-- Reach Text Editor -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.5.6/tinymce.min.js"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+<!-- Reach Text Editor -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/tinymce/4.5.6/jquery.tinymce.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment-with-locales.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="vendor/MDB/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.42/js/bootstrap-datetimepicker.min.js"></script>
+
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="vendor/MDB/mdb.min.js"></script>
+<!-- Custom Scroll -->
+<script type="text/javascript" src="vendor/malihu-custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Lazy Load -->
+<script type="text/javascript" src="vendor/jquery.lazy/jquery.lazy.min.js"></script>
+<!-- Slick Slider -->
+<script type="text/javascript" src="vendor/slick/slick.js"></script>
+
+<!-- Full Calendar -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.js"></script>
+
+<!-- AntLegs core JavaScript -->
+<script src="./assets/js/script.js"></script>
+</body>
+
+</html>

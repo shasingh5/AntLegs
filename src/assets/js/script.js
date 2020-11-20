@@ -32,6 +32,10 @@
         theme: "minimal-dark"
     });
 
+    $(".ra-scroll").mCustomScrollbar({
+        theme: "minimal-dark"
+    });
+
     tinymce.init({
         selector: '.job-description',
         height: 200,
