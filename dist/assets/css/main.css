@@ -6378,3 +6378,106 @@ ul.time-slots li {
 .demo-fixed .coach-body::after {
   display: none;
 }
+
+.job-desc {
+  color: #333333;
+}
+
+@media (min-width: 736px) {
+  .job-desc {
+    padding: 20px;
+  }
+}
+
+.job-desc h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.job-desc h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+
+.job-desc ul {
+  margin-bottom: 25px;
+}
+
+.job-desc ul li {
+  list-style: none;
+  font-size: 14px;
+  color: #333333;
+  line-height: 2;
+}
+
+.job-desc ul.dots li {
+  position: relative;
+  padding-left: 15px;
+}
+
+.job-desc ul.dots li::before {
+  content: " ";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #316ea7;
+  position: absolute;
+  top: 11px;
+  left: 0;
+}
+
+.job-desc p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.job-desc .content-footer {
+  margin: 30px 0 10px;
+}
+
+.job-desc .btn-big {
+  width: auto;
+  padding: 14px 15px;
+  border: 1px solid #666;
+  color: #666;
+}
+
+@media (min-width: 736px) {
+  .job-desc .btn-big {
+    padding: 14px 40px;
+  }
+}
+
+.job-desc .btn-big.blue {
+  color: #ffffff;
+}
+
+@media (min-width: 736px) and (max-width: 1023px) {
+  .similar-job {
+    padding: 20px 10px;
+  }
+}
+
+.similar-job .ant-card {
+  border: 1px solid #b7b7b7;
+}
+
+.similar-job .btn-open {
+  border: 1px solid #3a72a7;
+}
+
+.similar-job .btn-open:hover {
+  background: #316ea7;
+  color: #ffffff;
+}
+
+@media (min-width: 736px) and (max-width: 1023px) {
+  .similar-job .tab-content > .tab-pane {
+    padding: 20px 0;
+  }
+}
