@@ -3100,6 +3100,10 @@ ul.time-slots li {
   }
 }
 
+.form-antlegs .form-group .form-control[type="file"] {
+  overflow: hidden;
+}
+
 .form-antlegs .last-group {
   margin-top: 2rem;
 }

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Welcome to AntLegs</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+<!-- Material Design Bootstrap -->
+<link href="vendor/mdb/mdb.min.css" rel="stylesheet">
+<!-- Custom Scroll -->
+<link href="vendor/malihu-custom-scrollbar/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+<!-- Full Calendar -->
+<link href="https://fullcalendar.io/js/fullcalendar-3.0.1/fullcalendar.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.42/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+<!-- Slick Slider -->
+<link href="vendor/slick/slick.css" rel="stylesheet">
+<link href="vendor/slick/slick-theme.css" rel="stylesheet">
+<!-- Custom styles -->
+<link href="assets/css/main.min.css" rel="stylesheet">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <!-- Sidebar  -->
+    <!-- Sidebar  -->
+<nav id="sidebar">    
+
+    <div class="sidebar-header">
+        <a href="javascript:;" id="dismiss" class="hamburg">&nbsp;</a>
+		<a href="#" class="logo">
+			<span>ANT</span>
+			<span>LEGS</span>
+		</a>
+    </div>
+
+    <ul class="list-unstyled components">        
+        <!-- <li class="active">
+            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li>
+                    <a href="#">Home 1</a>
+                </li>
+                <li>
+                    <a href="#">Home 2</a>
+                </li>
+                <li>
+                    <a href="#">Home 3</a>
+                </li>
+            </ul>
+        </li> -->
+        <li class="waves-effect">
+            <a href="employers-dashboard.html" class="dashboard">Dashboard</a>
+        </li>        
+        <li class="waves-effect active">
+            <a href="index.html" class="employers">Employers</a>
+        </li>
+        <li class="waves-effect">
+            <a href="recruiters.html" class="recruiters">Recruiters</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#" class="jobs">Jobs</a>
+        </li>
+        <li class="waves-effect">
+            <a href="interviews-calendar.html" class="interviews">Interviews</a>
+        </li>
+        <li class="waves-effect">
+            <a href="payments-billings.html" class="payments">Payments</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#" class="rewards">Rewards & Points</a>
+        </li>
+        <li class="waves-effect">
+            <a href="#" class="reports">Reports</a>
+        </li>
+        <li class="waves-effect manage-admin">
+            <a href="#" class="manage">Manage Admin</a>
+        </li>
+    </ul>
+</nav>
+<!-- /Sidebar  -->
+
+    <!-- Page Content  -->
+    <div id="content">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-antlegs bs-none">
+	<div class="container-fluid ant-container">
+
+		<a href="javascript:;" id="sidebarCollapse" class="hamburg">&nbsp;</a>
+		<a href="#" class="logo">
+			<span>ANT</span>
+			<span>LEGS</span>
+		</a>
+
+		<button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<i class="fas fa-align-justify"></i>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="nav navbar-nav ml-auto">
+				<!-- <li class="nav-item active">
+                	<a class="nav-link" href="#">Page</a>
+              	</li> -->
+				<li class="nav-item  notification-globle dropdown">
+					<a class="nav-link dropdown-toggle" id="navbar-tools" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="true">
+						<i class="fas fa-bell bell-icon"></i><span>Notification</span>
+					</a>
+					<div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbar-tools">
+						<h4><i class="fas fa-bell bell-icon"></i><span>Notification</span></h4>
+						<ul id="notification">
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">The job for Marketing Director with Hexaware Technologies has been
+											closed</span>
+										<span class="alert-time">
+											<i>20 mins ago</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>30 mins ago</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+								</li>
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">The job for Marketing Director with Hexaware Technologies has been
+											closed</span>
+										<span class="alert-time">
+											<i>2 hrs ago</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+								</li>
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">The job for Marketing Director with Hexaware Technologies has been
+											closed</span>
+										<span class="alert-time">
+											<i>4 hrs ago</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+								</li>
+								<li class="inline-email read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">Email A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>yesterday</i>
+											<!--i> 09:40am</i-->
+										</span>
+									</a>
+									<div class="email-box">
+										<button type="button" class="btn email">Email</button>
+										<button type="button" class="btn delete">Delete</button>
+										<div class="msg-box">
+											<div class="input-group my-group">
+												<textarea class="text-area form-control" name="" id="" cols="10" rows="3"
+													placeholder="An email will be sent to your email ID with your message here (max 100 characters)"></textarea>
+												<span class="input-group-btn">
+													<button class="btn" type="submit" title="Search">Search</button>
+												</span>
+											</div>
+										</div>
+										<!-- /input-group -->
+									</div>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="unread-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+								<li class="read-msg">
+									<a href="#" class="alert-list">
+										<span class="alert-msg">A new job for Creative Head has been posed by Hexaware
+											Technologies</span>
+										<span class="alert-time">
+											<i>12/09/19</i>
+											<i> 09:40am</i>
+										</span>
+									</a>
+								</li>
+							</ul>
+					</div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" id="navbar-tools" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="true">
+						<i class="fas fa-user-circle user-icon"></i><span>Hi Snahal K</span></a>
+					<div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbar-tools">
+						<a class="dropdown-item d-xl-none waves-effect waves-light" href="/support/">Support Forum</a>
+						<a class="dropdown-item waves-effect waves-light" href="/snippets/">Editor &amp; Snippets</a>
+						<a class="dropdown-item waves-effect waves-light" href="/articles/">Articles</a>
+						<a class="dropdown-item waves-effect waves-light" href="/news/frontend/">News</a>
+						<a class="dropdown-item waves-effect waves-light" href="/cli/">MDB CLI <span
+								class="badge badge-danger rounded">New</span></a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+      
+        <div class="container-fluid ant-container">
+    <!-- Header -->
+    <div class="row header">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <a href="add-a-job.html" class="main-heading no-arrow">Add Business Partner</a>
+        </div>
+
+    </div>
+    <!--/ Header -->
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="card">                
+                <div class="form-antlegs add-job-form">
+                    <p class="text-right">all fields are mandatory</p>
+                    <form autocomplete="off" class="form" role="form">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="inputName">Business Partner</label>
+                                    <input class="form-control" id="inputName" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="inputName">Display Name</label>
+                                    <input class="form-control" id="inputName" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="inputName">Location</label>
+                                    <input class="form-control" id="inputName" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="inputName">Website</label>
+                                    <input class="form-control" id="inputName" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="inputName">Contact Person</label>
+                                    <input class="form-control" id="inputName" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="inputName">Designation</label>
+                                    <input class="form-control" id="inputName" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="inputName">Email</label>
+                                    <input class="form-control" id="inputName" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="inputName">Contact Number</label>
+                                    <input class="form-control" id="inputName" type="text">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="inputName">Upload Logo</label>
+                                    <input class="form-control" id="inputName" type="file">
+                                    <small>Format : JPEG, PNG or GIF (Size : 1 MB Max)</small>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="inputName">Upload Agreement Copy</label>
+                                    <input class="form-control" id="inputName" type="file">
+                                    <small>Format : Word, PDF (Size : 1 MB Max)</small>
+                                </div>
+                            </div>
+
+                            <div class="col-12">                                
+                                <div class="row justify-content-md-center form-group last-group text-center">
+                                    <button class="col col-lg-2 btn btn-get btn-white" type="reset">Cencel</button>  
+                                    <button class="col col-lg-2 btn btn-get" type="submit">Add</button>  
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+        <footer>
+  <p class="text-center">Antlegs Technology Solutions Private Limited.</p>
+</footer>
+    </div>
+  </div>
+
+  <div class="overlay"></div>
+
+  <!-- SCRIPTS -->
+<!-- Reach Text Editor -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.5.6/tinymce.min.js"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+<!-- Reach Text Editor -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/tinymce/4.5.6/jquery.tinymce.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment-with-locales.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="vendor/MDB/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.42/js/bootstrap-datetimepicker.min.js"></script>
+
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="vendor/MDB/mdb.min.js"></script>
+<!-- Custom Scroll -->
+<script type="text/javascript" src="vendor/malihu-custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Lazy Load -->
+<script type="text/javascript" src="vendor/jquery.lazy/jquery.lazy.min.js"></script>
+<!-- Slick Slider -->
+<script type="text/javascript" src="vendor/slick/slick.js"></script>
+
+<!-- Full Calendar -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.1/fullcalendar.js"></script>
+
+<!-- AntLegs core JavaScript -->
+<script src="./assets/js/script.js"></script>
+</body>
+
+</html>

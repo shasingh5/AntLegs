@@ -135,6 +135,10 @@
         padding: 15px;
         height: 78px;
       }
+
+      &[type="file"] {
+        overflow: hidden;
+      }
     }
   }
 
