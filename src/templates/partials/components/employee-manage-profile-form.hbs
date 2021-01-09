@@ -1,0 +1,505 @@
+<div class="container-fluid ant-container">
+	<!-- change password Header -->
+	<div class="row header">
+		<div class="col-12 col-sm-12 col-md-12 col-lg-12">
+			<a href="#" class="main-heading no-arrow">Manage Profile</a>
+		</div>
+	</div>
+	<!--/ change password Header -->
+
+	<div class="white-wrapper">
+		<div class="profile-name mb-3">Rajeev Menon</div>
+		<!--div class="profile-warning">Below fields are <b>mandatory</b> to get access to all the activities on this
+			website.</div-->
+		<div class="tabs-responsive">
+			<ul class="nav manage-tabs" id="myTab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+						aria-controls="profile" aria-selected="true">Profile</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="bank-details-tab" data-toggle="tab" href="#bankDetails" role="tab"
+						aria-controls="bankDetails" aria-selected="false">Bank Details</a>
+				</li>
+			</ul>
+		</div>
+		<div class="tab-content" id="myTabContent">
+			<div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+				<!-- Profile View Start -->
+				<div class="profile-view match" id="profileView">
+					<div class="card">
+						<div class="form-profile">
+							<form autocomplete="off" class="form" role="form">
+								<h6 class="bold mb-3">Personal Details</h6>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label for="displayName" class="col-sm-4 col-form-label">Nationality <span
+													class="float-right">:</span></label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control bold" id="displayName" value="Indian" readonly disabled>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label for="nationality" class="col-sm-4 col-form-label">Gender <span
+													class="float-right">:</span></label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control bold" readonly disabled id="nationality" value="Male">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label for="nationality" class="col-sm-4 col-form-label">Age (Yrs) <span
+													class="float-right">:</span></label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control bold" readonly disabled id="nationality" value="45 yrs">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label for="nationality" class="col-sm-4 col-form-label">Current Location <span
+													class="float-right">:</span></label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control bold" readonly disabled id="nationality"
+													value="Bangalore, Karnatake, India">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label for="nationality" class="col-sm-4 col-form-label">LinkedIn Profile <span
+													class="float-right">:</span></label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control bold" readonly disabled id="nationality"
+													value="www.linkedin.com/in-santhosh-mathew-112321">
+											</div>
+										</div>
+									</div>
+								</div>
+								<hr>
+
+								<h6 class="bold mb-4">Contact Details</h6>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label for="displayName" class="col-sm-4 col-form-label clearfix">Email<span
+													class="float-right">:</span></label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control bold" id="displayName" value="sanmathew@gmail.com"
+													readonly disabled>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label for="nationality" class="col-sm-4 col-form-label clearfix">Contact No. <span
+													class="float-right">:</span></label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control bold" readonly disabled id="+91 9658896421" value="+91 9658896421">
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<hr>
+
+								<h6 class="bold mb-4">Education Details</h6>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label for="displayName" class="col-sm-4 col-form-label clearfix">Degree<span
+													class="float-right">:</span></label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control bold" id="displayName" value="Graduate"
+													readonly disabled>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label for="nationality" class="col-sm-4 col-form-label clearfix">Specialization<span
+													class="float-right">:</span></label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control bold" readonly disabled id="+919658896421" value="Computer Science">
+											</div>
+										</div>
+									</div>
+								</div>
+								<hr>
+
+								<h6 class="bold mb-4">Others</h6>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label for="displayName" class="col-sm-4 col-form-label clearfix">Recruitment Experience (Yrs)<span
+													class="float-right">:</span></label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control bold" id="displayName" value="20"
+													readonly disabled>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label for="nationality" class="col-sm-4 col-form-label clearfix">Industries Preferred<span
+													class="float-right">:</span></label>
+											<div class="col-sm-8">
+												<p class="bold mt-2">Information Technology, Engineering, Architecture and Interior Designing</p>
+												<!--input type="text" class="form-control bold" readonly disabled id="+919658896421" value="Information Technology, Engineering,
+Architecture and Interior Designing"-->
+											</div>
+										</div>
+									</div>
+								</div>
+								<hr>
+
+								<br>
+								<div class="form-group row">
+									<label for="Niche" class="col-sm-3 col-form-label">
+										<span class="sr-only">Call to action</span>
+									</label>
+									<div class="col-sm-4">
+										<div class="group-btn">
+											<button class="btn btn-get btn-profile waves-effect waves-light" type="button"
+												data-id="profileEdit">
+												<span class="fa edit-pencil"></span> Edit
+											</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- Profile View end -->
+				<!-- Profile Edit Start -->
+				<div class="profile-edit match collapse" id="profileEdit">
+					<div class="card">
+						<div class="form-profile">
+							<form autocomplete="off" class="form" role="form">
+								<h6 class="bold mb-3">Personal Details</h6>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label for="displayName" class="col-sm-4 col-form-label">Nationality <span
+													class="float-right">:</span></label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control bold" id="displayName" value="Indian" >
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label for="nationality" class="col-sm-4 col-form-label">Gender <span
+													class="float-right">:</span></label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control bold"  id="nationality" value="Male">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label for="nationality" class="col-sm-4 col-form-label">Age (Yrs) <span
+													class="float-right">:</span></label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control bold"  id="nationality" value="45 yrs">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label for="nationality" class="col-sm-4 col-form-label">Current Location <span
+													class="float-right">:</span></label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control bold"  id="nationality"
+													value="Bangalore, Karnatake, India">
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label for="nationality" class="col-sm-4 col-form-label">LinkedIn Profile <span
+													class="float-right">:</span></label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control bold"  id="nationality"
+													value="www.linkedin.com/in-santhosh-mathew-112321">
+											</div>
+										</div>
+									</div>
+								</div>
+								<hr>
+
+								<h6 class="bold mb-4">Contact Details</h6>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label for="displayName" class="col-sm-4 col-form-label clearfix">Email<span
+													class="float-right">:</span></label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control bold" id="displayName" value="sanmathew@gmail.com"
+													>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label for="nationality" class="col-sm-4 col-form-label clearfix">Contact No. <span
+													class="float-right">:</span></label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control bold"  id="+91 9658896421" value="Male">
+											</div>
+										</div>
+									</div>
+
+								</div>
+								<hr>
+
+								<h6 class="bold mb-4">Education Details</h6>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label for="displayName" class="col-sm-4 col-form-label clearfix">Degree<span
+													class="float-right">:</span></label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control bold" id="displayName" value="Graduate"
+													>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label for="nationality" class="col-sm-4 col-form-label clearfix">Specialization<span
+													class="float-right">:</span></label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control bold"  id="+919658896421" value="Computer Science">
+											</div>
+										</div>
+									</div>
+								</div>
+								<hr>
+
+								<h6 class="bold mb-4">Others</h6>
+								<div class="row">
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label for="displayName" class="col-sm-4 col-form-label clearfix">Recruitment Experience (Yrs)<span
+													class="float-right">:</span></label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control bold" id="displayName" value="20"
+													>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="form-group row">
+											<label for="nationality" class="col-sm-4 col-form-label clearfix">Industries Preferred<span
+													class="float-right">:</span></label>
+											<div class="col-sm-8">
+												<input type="text" class="form-control bold"  id="+919658896421" value="Information Technology, Engineering,
+Architecture and Interior Designing">
+											</div>
+										</div>
+									</div>
+								</div>
+								<hr>
+
+								<br>
+								<div class="form-group row">
+									<label for="Niche" class="col-sm-3 col-form-label">
+										<span class="sr-only">Call to action</span>
+									</label>
+									<div class="col-sm-4">
+										<div class="group-btn">
+											<button class="btn btn-get  btn-white btn-profile waves-effect waves-light" type="button"
+												data-id="profileEdit" disabled="disabled">
+												<span class="fa edit-pencil"></span> Edit
+											</button>
+											<button class="btn btn-get waves-effect waves-light btn-profile" type="button"
+												data-id="profileView">Save</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- Profile Edit end -->
+			</div>
+			<div class="tab-pane fade" id="bankDetails" role="tabpanel" aria-labelledby="bank-details-tab">
+				<!-- Bank Details View Start -->
+				<div class="profile-view bank-details-view match" id="bankDetailsView">
+					<div class="row">
+						<div class="col-lg-10 col-xl-7">
+							<div class="card">
+								<div class="form-profile">
+									<form autocomplete="off" class="form" role="form">
+										<div class="form-group row">
+											<label for="displayName" class="col-sm-5 col-form-label">Branch Name</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" readonly disabled id="displayName"
+													value="Hexaware Information Technology">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="contact" class="col-sm-5 col-form-label">Branch Address</label>
+											<div class="col-sm-6">
+												<textarea name="branch" id="branch" rows="3" class="form-control" readonly
+													disabled>102 - 109, Hexaware Tech Towers 2, Kormangalam, LBS Marg, Bangaluru, Karnataka, India</textarea>
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="nationality" class="col-sm-5 col-form-label">State
+											</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" readonly disabled id="Bangaluru" value="Bangaluru">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="gender" class="col-sm-5 col-form-label">Country</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" readonly disabled id="gender" value="India">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="dob" class="col-sm-5 col-form-label">Location Map</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" readonly disabled id="dob"
+													value="https://goo.gl/maps/BANqVJZPM5x5X9G">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="Contact" class="col-sm-5 col-form-label">Contact Mobile
+												No.</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" readonly disabled id="Contact" value="+91 9455543432">
+											</div>
+										</div>
+
+
+										<br>
+										<div class="form-group row">
+											<label for="Niche" class="col-sm-5 col-form-label">
+												<span class="sr-only">Call to action</span>
+											</label>
+											<div class="col-sm-6">
+												<div class="group-btn">
+													<button class="btn btn-get btn-profile waves-effect waves-light" type="button"
+														data-id="bankDetailsEdit">
+														<span class="fa edit-pencil"></span> Edit
+													</button>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- Bank Details View End -->
+
+				<!-- Bank Details Edit Start -->
+				<div class="profile-edit bank-details-edit match collapse" id="bankDetailsEdit">
+					<div class="row">
+						<div class="col-lg-10 col-xl-7">
+							<div class="card">
+								<div class="form-profile">
+
+									<form autocomplete="off" class="form" role="form">
+										<div class="form-group row">
+											<label for="displayName" class="col-sm-5 col-form-label">Branch Name</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" id="displayName"
+													value="Hexaware Information Technology">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="contact" class="col-sm-5 col-form-label">Branch Address</label>
+											<div class="col-sm-6">
+												<textarea name="branch" id="branch" rows="3"
+													class="form-control">102 - 109, Hexaware Tech Towers 2, Kormangalam, LBS Marg, Bangaluru, Karnataka, India</textarea>
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="nationality" class="col-sm-5 col-form-label">State
+											</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" id="Bangaluru" value="Bangaluru">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="gender" class="col-sm-5 col-form-label">Country</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" id="gender" value="India">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="dob" class="col-sm-5 col-form-label">Location Map</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" id="dob" value="https://goo.gl/maps/BANqVJZPM5x5X9G">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label for="Contact" class="col-sm-5 col-form-label">Contact Mobile
+												No.</label>
+											<div class="col-sm-6">
+												<input type="text" class="form-control" id="Contact" value="+91 9455543432">
+											</div>
+										</div>
+
+
+										<br>
+										<div class="form-group row">
+											<label for="Niche" class="col-sm-5 col-form-label">
+												<span class="sr-only">Call to action</span>
+											</label>
+											<div class="col-sm-6">
+												<div class="group-btn">
+													<!-- <button class="btn btn-get btn-white waves-effect waves-light"
+														type="button" disabled="disabled">
+														<span class="fa fa-edit"></span> Edit
+													</button> -->
+													<button class="btn btn-get  btn-white btn-profile waves-effect waves-light" type="button"
+														data-id="bankDetailsEdit" disabled="disabled">
+														<span class="fa edit-pencil"></span> Edit
+													</button>
+													<button class="btn btn-get waves-effect waves-light btn-profile" type="button"
+														data-id="bankDetailsView">Save</button>
+												</div>
+											</div>
+										</div>
+									</form>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<!-- Bank Details Edit end -->
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+
+<!-- Add manage user modal start -->
+@@include('./partials/components/manage-users-modal.hbs')
+<!-- Add manage user modal end -->
