@@ -4638,7 +4638,7 @@ ul.time-slots li {
 
 @media (min-width: 420px) {
   .rate-candi-block {
-    padding: 30px;
+    padding: 0 30px 30px;
   }
 }
 
@@ -4660,7 +4660,6 @@ ul.time-slots li {
   line-height: 1.1;
   color: #333333;
   position: relative;
-  text-align: center;
 }
 
 .rate-candi-block .hand.dislike::before {
@@ -4672,6 +4671,10 @@ ul.time-slots li {
   background: url("../images/dislike-hand.png") center no-repeat padding-box;
   margin-right: 10px;
   margin-top: 2px;
+}
+
+.rate-candi-block .hand.like {
+  text-align: right;
 }
 
 .rate-candi-block .hand.like::after {
@@ -4694,15 +4697,47 @@ ul.time-slots li {
   font-size: 18px;
   font-weight: 700;
   color: #333333;
+  position: relative;
+  padding: .1rem .5rem;
+}
+
+.rate-candi-block .tooltip-inner:after, .rate-candi-block .tooltip-inner:before {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.rate-candi-block .tooltip-inner:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-top-color: #ffffff;
+  border-width: 5px;
+  margin-left: -5px;
+}
+
+.rate-candi-block .tooltip-inner:before {
+  border-color: rgba(192, 192, 192, 0);
+  border-top-color: #c0c0c0;
+  border-width: 6px;
+  margin-left: -6px;
+}
+
+.rate-candi-block .slider .tooltip.bs-tooltip-top .arrow {
+  display: none;
 }
 
 .rate-candi-block .slider.slider-horizontal .slider-tick,
 .rate-candi-block .slider.slider-horizontal .slider-handle {
-  margin-left: -14px;
+  margin-left: -15px;
+  z-index: 1;
 }
 
 .rate-candi-block .slider .tooltip.bs-tooltip-top {
-  margin-top: -56px;
+  margin-top: -51px;
 }
 
 .rate-candi-block .rating-list {
@@ -4724,7 +4759,7 @@ ul.time-slots li {
   background-image: -ms-linear-gradient(0deg, #ec7a90 0%, #5b9b00 99%);
 }
 
-.slider-handle {
+.slider-handle, .slider.slider-disabled .slider-handle {
   top: -6px;
   width: 30px;
   height: 30px;
