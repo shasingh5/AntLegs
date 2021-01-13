@@ -1,62 +1,184 @@
 .add-candidate {
-    .form-antlegs .last-group {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
+  .form-antlegs .last-group {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 
-    .form-antlegs .last-group .btn-get {
-        font-size: 14px;
-        padding-left: 10px;
-        padding-right: 10px;
-        letter-spacing: -0.7px;
-        width: 120px;
-    }
+  .form-antlegs .last-group .btn-get {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    letter-spacing: -0.7px;
+    width: 120px;
+  }
 
-    .btn-blue-outline {
-        border: 1px solid $blue;
-    }
+  .btn-blue-outline {
+    border: 1px solid $blue;
+  }
 }
 
 .match-ratio {
-    display: table;
-    width: 100%;
-    font-size: 0;
+  display: table;
+  width: 100%;
+  font-size: 0;
 
-    >span {
-        display: table-cell;
-        font-size: 12px;
+  > span {
+    display: table-cell;
+    font-size: 12px;
 
-        &:first-child {
-            font-size: 10px;
-            width: 60px;
-        }
-
-        &:last-child {
-            text-align: right;
-        }
-
-        &.pb {
-            width: 65%;
-            padding: 0 20px;
-
-            .progress {
-                height: 6px;
-            }
-
-            .bg-green {
-                /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#81df58+0,5b9b00+100 */
-                background: #81df58;
-                /* Old browsers */
-                background: -moz-linear-gradient(left, #81df58 0%, #5b9b00 100%);
-                /* FF3.6-15 */
-                background: -webkit-linear-gradient(left, #81df58 0%, #5b9b00 100%);
-                /* Chrome10-25,Safari5.1-6 */
-                background: linear-gradient(to right, #81df58 0%, #5b9b00 100%);
-                /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#81df58', endColorstr='#5b9b00', GradientType=1);
-                /* IE6-9 */
-
-            }
-        }
+    &:first-child {
+      font-size: 10px;
+      width: 60px;
     }
+
+    &:last-child {
+      text-align: right;
+    }
+
+    &.pb {
+      width: 65%;
+      padding: 0 20px;
+
+      .progress {
+        height: 6px;
+      }
+
+      .bg-green {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#81df58+0,5b9b00+100 */
+        background: #81df58;
+        /* Old browsers */
+        background: -moz-linear-gradient(left, #81df58 0%, #5b9b00 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, #81df58 0%, #5b9b00 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, #81df58 0%, #5b9b00 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#81df58', endColorstr='#5b9b00', GradientType=1);
+        /* IE6-9 */
+      }
+    }
+  }
+}
+
+.modal-md {
+  max-width: 800px;
+}
+
+.rate-candi-block {
+  background: #f4f4f4;
+  padding: 10px;
+  margin-top: 20px;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+
+  @include respond-to($xxs) {
+    padding: 30px;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
+  }
+
+  h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333333;
+  }
+
+  .hand {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #333333;
+    position: relative;
+    text-align: center;
+
+    &.dislike {
+      &::before {
+        content: " ";
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url("../images/dislike-hand.png") center no-repeat
+          padding-box;
+        margin-right: 10px;
+        margin-top: 2px;
+      }
+    }
+
+    &.like {
+      &::after {
+        content: " ";
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url("../images/like-hand.png") center no-repeat padding-box;
+        margin-left: 10px;
+        margin-top: -6px;
+      }
+    }
+  }
+  .tooltip-inner {
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 0.25rem;
+    border: 1px solid #c0c0c0;
+    box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    font-weight: 700;
+    color: #333333;
+  }
+
+  .slider.slider-horizontal .slider-tick,
+  .slider.slider-horizontal .slider-handle {
+    margin-left: -14px;
+  }
+
+  .slider .tooltip.bs-tooltip-top {
+    margin-top: -56px;
+  }
+
+  .rating-list {
+      padding-top: 50px;
+  }
+}
+
+.slider.slider-horizontal {
+  width: 100%;
+}
+
+.slider-track-low,
+.slider-track-high {
+  background: #dadcde;
+}
+
+.slider-selection {
+  background-image: -moz-linear-gradient(
+    0deg,
+    rgb(236, 122, 144) 0%,
+    rgb(91, 155, 0) 99%
+  );
+  background-image: -webkit-linear-gradient(
+    0deg,
+    rgb(236, 122, 144) 0%,
+    rgb(91, 155, 0) 99%
+  );
+  background-image: -ms-linear-gradient(
+    0deg,
+    rgb(236, 122, 144) 0%,
+    rgb(91, 155, 0) 99%
+  );
+}
+
+.slider-handle {
+  top: -6px;
+  width: 30px;
+  height: 30px;
+  background: #ffffff url("../images/v-line.png") center no-repeat;
+  border: 1px solid #c0c0c0;
+  box-shadow: -2px 2px 3px rgba(0, 0, 0, 0.2);
 }

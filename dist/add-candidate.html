@@ -13,6 +13,7 @@
 <!-- Bootstrap core CSS -->
 <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.min.css" integrity="sha512-3q8fi8M0VS+X/3n64Ndpp6Bit7oXSiyCnzmlx6IDBLGlY5euFySyJ46RUlqIVs0DPCGOypqP8IRk/EyPvU28mQ==" crossorigin="anonymous" />
 <!-- Material Design Bootstrap -->
 <link href="vendor/mdb/mdb.min.css" rel="stylesheet">
 <!-- Custom Scroll -->
@@ -269,7 +270,7 @@
 			</ul>
 		</div>
 	</div>
-</nav> 
+</nav>
             <div class="container-fluid ant-container">
 	<!-- add candidate Header -->
 	<div class="row header">
@@ -333,7 +334,7 @@
     <div class="card ant-card">
         <div class="row">
             <div class="col col-sm-12">
-                <div class="match-ratio">
+                <div class="match-ratio" data-toggle="modal" data-target="#rateCadidate">
                     <span>Match Ratio</span>
                     <span class="pb">
                         <div class="progress">
@@ -384,7 +385,7 @@
     <div class="card ant-card">
         <div class="row">
             <div class="col col-sm-12">
-                <div class="match-ratio">
+                <div class="match-ratio" data-toggle="modal" data-target="#rateCadidate">
                     <span>Match Ratio</span>
                     <span class="pb">
                         <div class="progress">
@@ -435,7 +436,7 @@
     <div class="card ant-card">
         <div class="row">
             <div class="col col-sm-12">
-                <div class="match-ratio">
+                <div class="match-ratio" data-toggle="modal" data-target="#rateCadidate">
                     <span>Match Ratio</span>
                     <span class="pb">
                         <div class="progress">
@@ -486,7 +487,7 @@
     <div class="card ant-card">
         <div class="row">
             <div class="col col-sm-12">
-                <div class="match-ratio">
+                <div class="match-ratio" data-toggle="modal" data-target="#rateCadidate">
                     <span>Match Ratio</span>
                     <span class="pb">
                         <div class="progress">
@@ -537,7 +538,7 @@
     <div class="card ant-card">
         <div class="row">
             <div class="col col-sm-12">
-                <div class="match-ratio">
+                <div class="match-ratio" data-toggle="modal" data-target="#rateCadidate">
                     <span>Match Ratio</span>
                     <span class="pb">
                         <div class="progress">
@@ -586,7 +587,170 @@
 	</div>	
 </div>
 
- 
+<!-- Interview Schedule Modal -->
+<div class="modal fade show" id="rateCadidate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Antlegs Rating</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="text-14 text-center">Antlegs rating for the profile <b>Santhosh Kurichanil</b> for the position of <b>Marketing Manager</b></p>
+                <div class="rate-candi-block">
+                    <!--h4>Employer Rating Skills</h4-->
+                    <div class="rating-groups">
+                        <div class="rating-list">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <h5>Data Analysis</h5>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="row no-gutters">
+                                        <div class="col-2">
+                                            <div class="hand dislike">0</div>
+                                        </div>
+                                        <div class="col-8">
+                                            <input class="rating" id="" data-slider-id='ratingSlider' type="text"
+                                                data-slider-min="0" data-slider-max="10" data-slider-step="1"
+                                                data-slider-value="7" />
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="hand like">10</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rating-list">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <h5>Search Engine Optimization</h5>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="row no-gutters">
+                                        <div class="col-2">
+                                            <div class="hand dislike">0</div>
+                                        </div>
+                                        <div class="col-8">
+                                            <input class="rating" id="" data-slider-id='ratingSlider' type="text"
+                                                data-slider-min="0" data-slider-max="10" data-slider-step="1"
+                                                data-slider-value="4" />
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="hand like">10</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rating-list">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <h5>Artificial Intelligence</h5>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="row no-gutters">
+                                        <div class="col-2">
+                                            <div class="hand dislike">0</div>
+                                        </div>
+                                        <div class="col-8">
+                                            <input class="rating" id="" data-slider-id='ratingSlider' type="text"
+                                                data-slider-min="0" data-slider-max="10" data-slider-step="1"
+                                                data-slider-value="9" />
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="hand like">10</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rating-list">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <h5>Data Analysis</h5>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="row no-gutters">
+                                        <div class="col-2">
+                                            <div class="hand dislike">0</div>
+                                        </div>
+                                        <div class="col-8">
+                                            <input class="rating" id="" data-slider-id='ratingSlider' type="text"
+                                                data-slider-min="0" data-slider-max="10" data-slider-step="1"
+                                                data-slider-value="7" />
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="hand like">10</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rating-list">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <h5>Search Engine Optimization</h5>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="row no-gutters">
+                                        <div class="col-2">
+                                            <div class="hand dislike">0</div>
+                                        </div>
+                                        <div class="col-8">
+                                            <input class="rating" id="" data-slider-id='ratingSlider' type="text"
+                                                data-slider-min="0" data-slider-max="10" data-slider-step="1"
+                                                data-slider-value="4" />
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="hand like">10</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rating-list">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <h5>Artificial Intelligence</h5>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="row no-gutters">
+                                        <div class="col-2">
+                                            <div class="hand dislike">0</div>
+                                        </div>
+                                        <div class="col-8">
+                                            <input class="rating" id="" data-slider-id='ratingSlider' type="text"
+                                                data-slider-min="0" data-slider-max="10" data-slider-step="1"
+                                                data-slider-value="9" />
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="hand like">10</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--div class="modal-footer ise-footer">
+                <div class="text-center">
+                    <button type="button" class="btn btn-big btn-blue waves-effect" modal="dismiss">Rate</button>
+                </div>
+            </div-->
+        </div>
+    </div>
+</div>
+<!-- /Interview Schedule Modal -->
             <footer>
   <p class="text-center">Antlegs Technology Solutions Private Limited.</p>
 </footer>
@@ -609,6 +773,7 @@
 <script type="text/javascript" src="vendor/bootstrap/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.42/js/bootstrap-datetimepicker.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js" integrity="sha512-f0VlzJbcEB6KiW8ZVtL+5HWPDyW1+nJEjguZ5IVnSQkvZbwBt2RfCBY0CBO1PsMAqxxrG4Di6TfsCPP3ZRwKpA==" crossorigin="anonymous"></script>
 
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="vendor/MDB/mdb.min.js"></script>
@@ -624,6 +789,14 @@
 
 <!-- AntLegs core JavaScript -->
 <script src="./assets/js/script.js"></script>
+    <script>
+        // With JQuery
+        $('.rating').slider({
+            formatter: function (value) {
+                return value;
+            }
+        });
+    </script>
 </body>
 
 </html>

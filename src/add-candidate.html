@@ -14,8 +14,8 @@
 
         <!-- Page Content  -->
         <div id="content">
-            @@include('./partials/base/nav.hbs') 
-            @@include('./partials/components/add-candidate.hbs') 
+            @@include('./partials/base/nav.hbs')
+            @@include('./partials/components/add-candidate.hbs')
             @@include('./partials/base/footer.hbs')
         </div>
     </div>
@@ -23,6 +23,14 @@
     <div class="overlay"></div>
 
     @@include('./partials/base/scripts.hbs')
+    <script>
+        // With JQuery
+        $('.rating').slider({
+            formatter: function (value) {
+                return value;
+            }
+        });
+    </script>
 </body>
 
 </html>
